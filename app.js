@@ -226,8 +226,30 @@
     };
   }
 
-  function dayCost(stops) {
-    return stops.reduce(function (a, s) { return a + (typeof s.cost === 'number' ? s.cost : 0); }, 0);
+  // 원작자의 cost 합산 규칙 유지. 선택한 유료 온천이 있으면 실제 선택값만 합산한다.
+  // 선택하지 않았거나 확인되지 않은 옵션 비용은 0으로 두며, 미확인 비용 전체가 무료라는 의미는 아니다.
+  function dayCost(stops, date, key) {
+    var saved = load(PICK_KEY) || {};
+    return stops.reduce(function (sum, s) {
+      if (typeof s.cost === 'number') sum += s.cost;
+      if (s.type === 'choice' && s.options) {
+        var code = date + ':' + key + ':' + (s._k || s.title || s.name);
+        var chosen = saved[code] || [];
+        chosen.forEach(function (i) {
+          var option = s.options[i];
+          if (option && typeof option.cost === 'number') sum += option.cost;
+        });
+      }
+      return sum;
+    }, 0);
+  }
+  function refreshDayCost() {
+    var field = document.querySelector('#day .stat .v[data-count]');
+    if (!field || !plan || !plan.days[current]) return;
+    var d = view(plan.days[current]);
+    var total = dayCost(d.stops, d.date, d.key);
+    field.setAttribute('data-count', String(total));
+    field.firstChild.nodeValue = grouped(total);
   }
 
   // 여러 정보가 한 줄에 몰리면 읽기 어려워서 문장 단위로 줄을 나눔
@@ -292,7 +314,7 @@
     openSheet('map-sheet');
   }
 
-  function acts(title, link, embed, url, officialUrl) {
+  function acts(title, link, embed, url, officialUrl, fareUrl) {
     var row = el('div', { class: 'acts' });
     if (link) row.appendChild(el('a', { class: 'btn', href: link, target: '_blank', rel: 'noopener', text: T('구글 지도') }));
     if (embed && window.MAPS_KEY) {
@@ -302,6 +324,7 @@
     }
     if (url) row.appendChild(el('a', { class: 'btn', href: url, target: '_blank', rel: 'noopener', text: T('상품 페이지') }));
     if (officialUrl) row.appendChild(el('a', { class: 'btn', href: officialUrl, target: '_blank', rel: 'noopener', text: LANG === 'ja' ? '公式案内' : LANG === 'en' ? 'Official info' : '공식 안내' }));
+    if (fareUrl && /^https:\/\//.test(fareUrl)) row.appendChild(el('a', { class: 'btn', href: fareUrl, target: '_blank', rel: 'noopener', text: LANG === 'ja' ? '料金出典' : LANG === 'en' ? 'Fare source' : '요금 출처' }));
     return row.childNodes.length ? row : null;
   }
 
@@ -347,7 +370,7 @@
     if (s.note) b.appendChild(lines('note', s.note));
     if (s.tip) b.appendChild(lines('tip', s.tip));
     var r = reviews(s); if (r) b.appendChild(r);
-    var a = s.pid || s.q || s.url || s.hoursSource ? acts(s.name, (s.pid || s.q) && placeLink(s), s.pid && placeEmbed(s.pid), s.url, sourceLink(s)) : null;
+    var a = s.pid || s.q || s.url || s.hoursSource || s.costSource ? acts(s.name, (s.pid || s.q) && placeLink(s), s.pid && placeEmbed(s.pid), s.url, sourceLink(s), s.costSource) : null;
     if (a) b.appendChild(a);
     return b;
   }
@@ -369,6 +392,7 @@
       var on = chosen.indexOf(oi) !== -1;
       var pick = el('button', { class: 'opt-pick', type: 'button', 'aria-pressed': on ? 'true' : 'false', html: CHECK });
       pick.appendChild(el('span', { class: 'title', text: o.name }));
+      if (typeof o.cost === 'number') pick.appendChild(el('span', { class: 'opt-cost', text: price(grouped(o.cost)) }));
       // 고르지 않은 선택지는 이름 한 줄로 접어 두고, 꺾쇠로 펼쳐 볼 수 있게 함
       var more = el('button', { class: 'opt-more', type: 'button', 'aria-label': T('자세히 보기'), html: ICON.chev });
       var inner = el('div', null, [pills(o)]);
@@ -376,7 +400,7 @@
       if (o.note) inner.appendChild(lines('note', o.note));
       if (o.tip) inner.appendChild(lines('tip', o.tip));
       var r = reviews(o); if (r) inner.appendChild(r);
-      var a = o.pid || o.q || o.hoursSource ? acts(o.name, (o.pid || o.q) && placeLink(o), o.pid && placeEmbed(o.pid), null, sourceLink(o)) : null; if (a) inner.appendChild(a);
+      var a = o.pid || o.q || o.hoursSource || o.costSource ? acts(o.name, (o.pid || o.q) && placeLink(o), o.pid && placeEmbed(o.pid), null, sourceLink(o), o.costSource) : null; if (a) inner.appendChild(a);
       // 펼쳐 볼 내용이 없는 선택지(생략 등)는 꺾쇠를 달지 않음
       var opt = el('div', { class: 'opt' + (on ? ' on' : '') + (inner.childNodes.length ? '' : ' bare') }, [el('div', { class: 'opt-row' }, [pick, more]), el('div', { class: 'opt-body' }, [inner])]);
       more.addEventListener('click', function () { opt.classList.toggle('peek'); });
@@ -393,6 +417,7 @@
           n.querySelector('.opt-pick').setAttribute('aria-pressed', on2 ? 'true' : 'false');
         });
         box.classList.toggle('picked', cur.length > 0);
+        refreshDayCost();
       });
       box.appendChild(opt);
     });
@@ -415,6 +440,10 @@
       var r = m.route;
       var a = acts(r.label || m.name, dirLink(r.fromName, r.from, r.toName, r.to, r.mode), dirEmbed(r.from, r.to, r.mode));
       if (a) card.appendChild(a);
+    }
+    if (m.costSource) {
+      var fare = acts(m.name, null, null, null, null, m.costSource);
+      if (fare) card.appendChild(fare);
     }
     return card;
   }
@@ -743,8 +772,9 @@
     if (day.point) hero.appendChild(el('span', { class: 'point', text: day.point }));
     main.appendChild(hero);
 
-    var num = el('div', { class: 'v', 'data-count': String(dayCost(day.stops)) }, ['0', el('small', { text: price('') })]);
-    var stats = [el('div', { class: 'stat rv' }, [el('div', { class: 'l', text: T('교통과 입장료') }), num, el('div', { class: 's', text: T('식비 제외') })])];
+    var num = el('div', { class: 'v', 'data-count': String(dayCost(day.stops, day.date, day.key)) }, ['0', el('small', { text: price('') })]);
+    var costCaption = T('식비 제외') + (plan.trip.costNote ? ' · ' + T(plan.trip.costNote) : '');
+    var stats = [el('div', { class: 'stat rv' }, [el('div', { class: 'l', text: T('교통과 입장료') }), num, el('div', { class: 's', text: costCaption })])];
     // 노천탕 칸은 온천 장소(onsenPids)가 있는 여행에서만 보여 줌
     if (plan.onsenPids && plan.onsenPids.length) {
       stats.push(el('div', { class: 'stat rv' }, [el('div', { class: 'l', text: T('노천탕') }), el('div', { class: 'v txt', text: onsenName(day.stops) }), el('div', { class: 's', text: T('하루 한 번') })]));
