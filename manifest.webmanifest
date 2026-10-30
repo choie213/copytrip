@@ -1,0 +1,31 @@
+{
+  "id": "./",
+  "name": "COPYTRIP 여행 플래너",
+  "short_name": "copytrip",
+  "description": "여행별 일정과 동선을 확인하는 COPYTRIP",
+  "lang": "ko",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#fdfcf8",
+  "theme_color": "#fdfcf8",
+  "icons": [
+    {
+      "src": "copytrip-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "copytrip-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "copytrip-icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
