@@ -402,7 +402,11 @@
     },
     {
       "name": "덴진 지하상가",
-      "q": "덴진 지하상가 후쿠오카"
+      "q": "天神地下街",
+      "address": "福岡県福岡市中央区天神（天神駅・天神南駅直結）",
+      "hours": "상점 10:00~20:00 / 음식점 ~21:00 (점포별 상이)",
+      "hoursSource": "https://www.tenchika.com/service/",
+      "hoursChecked": "2026-10-31"
     },
     {
       "name": "이나바쵸 잇케이",
@@ -625,13 +629,19 @@
     },
     {
       "name": "JR 모지코 역",
-      "q": "모지코역",
-      "note": "원본 메모: 1시간 45분 소요"
+      "q": "JR 門司港駅",
+      "note": "원본 메모: 1시간 45분 소요",
+      "address": "福岡県北九州市門司区西海岸1丁目5-31",
+      "hoursSource": "https://www.jrkyushu.co.jp/railway/station/1191912_1601.html"
     },
     {
       "name": "미츠이 클럽",
-      "q": "미츠이 클럽 모지코",
-      "note": "식사 아님, 관광"
+      "q": "旧門司三井倶楽部",
+      "note": "2026년 8월 31일 식당 영업 종료. 건물 관람은 가능.",
+      "address": "福岡県北九州市門司区港町7-1",
+      "hours": "09:00~17:00 (건물 관람)",
+      "hoursSource": "https://www.crossroadfukuoka.jp/spot/13190",
+      "hoursChecked": "2026-10-31"
     },
     {
       "name": "모지코 레트로",
@@ -647,12 +657,20 @@
     },
     {
       "name": "블루윙 모지",
-      "q": "블루윙 모지 모지코"
+      "q": "ブルーウィングもじ",
+      "address": "福岡県北九州市門司区港町4-1",
+      "hours": "다리 개방 10:00·11:00·13:00·14:00·15:00·16:00 / 20분 뒤 닫힘",
+      "hoursSource": "https://www.crossroadfukuoka.jp/spot/13074",
+      "hoursChecked": "2026-10-31"
     },
     {
       "name": "구 모지세관",
-      "q": "구 모지세관 모지코",
-      "note": "건물 뒤편 바다 방향 포토스팟"
+      "q": "旧門司税関",
+      "note": "건물 뒤편 바다 방향 포토스팟",
+      "address": "福岡県北九州市門司区東港町1-24",
+      "hours": "09:00~17:00 (일부 안내에 단축 10:00~17:00)",
+      "hoursSource": "https://kitakyushucity.guide/spots/detail/ca7bf998-c3f1-4ace-8201-f0381128775d",
+      "hoursChecked": "2026-10-31"
     },
     {
       "name": "모지코 레트로 전망대",
@@ -685,8 +703,10 @@
     },
     {
       "name": "JR 모지코 역",
-      "q": "모지코역",
-      "note": "이동"
+      "q": "JR 門司港駅",
+      "note": "이동",
+      "address": "福岡県北九州市門司区西海岸1丁目5-31",
+      "hoursSource": "https://www.jrkyushu.co.jp/railway/station/1191912_1601.html"
     },
     {
       "name": "쇼하치만 신사",
@@ -770,7 +790,11 @@
     },
     {
       "name": "유후인 플로랄 빌리지",
-      "q": "유후인 플로랄 빌리지 유후인"
+      "q": "湯布院フローラルヴィレッジ",
+      "address": "大分県由布市湯布院町川上1503-3",
+      "hours": "09:30~17:30",
+      "hoursSource": "https://floral-village.com/about",
+      "hoursChecked": "2026-10-31"
     },
     {
       "type": "choice",
@@ -796,7 +820,9 @@
     },
     {
       "name": "긴린 호수",
-      "q": "긴린코 호수 유후인"
+      "q": "金鱗湖",
+      "address": "大分県由布市湯布院町川上1561-1",
+      "hoursSource": "https://www.visit-oita.jp/spots/detail/4362"
     },
     {
       "name": "덴소 신사",
@@ -841,7 +867,11 @@
     },
     {
       "name": "유후인 미르히",
-      "q": "유후인 미르히 유후인"
+      "q": "由布院ミルヒ 本店",
+      "address": "大分県由布市湯布院町川上3015-1",
+      "hours": "10:30~17:30 (본점)",
+      "hoursSource": "https://www.milch-japan.co.jp/shops/",
+      "hoursChecked": "2026-10-31"
     },
     {
       "name": "세이키치 차야",
@@ -1049,8 +1079,12 @@
     },
     {
       "name": "오야마댐 진격의 거인 동상",
-      "q": "오야마댐 진격의 거인 동상 히타",
-      "note": "원본 메모: 중가와라 하차, 도보 30분, 그 언덕의 나무"
+      "q": "大山ダム エレン ミカサ アルミン 銅像",
+      "note": "원본 메모: 중가와라 하차, 도보 30분, 그 언덕의 나무",
+      "address": "大分県日田市大山町西大山2008-1 大山ダム下流広場",
+      "hours": "하류 광장 연중 개방 (댐 사무소는 평일 08:30~17:00)",
+      "hoursSource": "https://shingeki-hita.com/spot/001.html",
+      "hoursChecked": "2026-10-31"
     },
     {
       "name": "진격의 거인 박물관",
