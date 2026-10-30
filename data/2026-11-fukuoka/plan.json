@@ -4,7 +4,8 @@
     "name": "후쿠오카",
     "period": "11월 4일 ~ 10일",
     "timezone": "Asia/Tokyo",
-    "currency": "엔"
+    "currency": "엔",
+    "costNote": "확인된 요금만 합산"
   },
   "flights": [
     {
@@ -56,6 +57,7 @@
           "sun": [
             0,
             1,
+            100,
             2,
             3,
             4,
@@ -66,6 +68,7 @@
           "rain": [
             0,
             1,
+            100,
             2,
             3,
             4,
@@ -145,6 +148,7 @@
             26,
             27,
             28,
+            101,
             29,
             30,
             31,
@@ -163,12 +167,14 @@
             44,
             45,
             46,
+            102,
             47
           ],
           "rain": [
             26,
             27,
             28,
+            101,
             29,
             30,
             31,
@@ -187,6 +193,7 @@
             44,
             45,
             46,
+            102,
             47
           ]
         }
@@ -306,9 +313,12 @@
           "sun": [
             81,
             82,
+            103,
             83,
+            104,
             84,
             85,
+            105,
             86,
             87,
             88,
@@ -316,14 +326,18 @@
             90,
             91,
             92,
+            106,
             93
           ],
           "rain": [
             81,
             82,
+            103,
             83,
+            104,
             84,
             85,
+            105,
             86,
             87,
             88,
@@ -331,6 +345,7 @@
             90,
             91,
             92,
+            106,
             93
           ]
         }
@@ -347,10 +362,12 @@
           "weather": "fukuoka",
           "sun": [
             94,
+            107,
             95
           ],
           "rain": [
             94,
+            107,
             95
           ]
         }
@@ -590,7 +607,7 @@
     {
       "name": "마이즈루 공원",
       "q": "마이즈루 공원 후쿠오카",
-      "note": "팀랩/마츠노 축제 (원본 메모), 18:30~22:00"
+      "note": "팀랩/마츠노 축제 (원본 메모), 18:30~22:00 · 팀랩 등 유료 체험권은 가격·예약 확인 전이므로 교통·입장료 합계에서 제외."
     },
     {
       "type": "choice",
@@ -690,7 +707,11 @@
       "address": "福岡県北九州市門司区東港町1-32 門司港レトロハイマート 31F",
       "hours": "10:00~22:00 (최종 입장 21:30; 단축 영업 재확인)",
       "hoursChecked": "2026-10-31",
-      "hoursSource": "https://mojiko-retoro9.jp/spot/mojiko_retro_observation_room/"
+      "hoursSource": "https://mojiko-retoro9.jp/spot/mojiko_retro_observation_room/",
+      "cost": 600,
+      "costSource": "https://mojiko-retoro9.jp/spot/mojiko_retro_observation_room/",
+      "costChecked": "2026-10-31",
+      "note": "성인 입장료, 2026년 4월 개정 기준."
     },
     {
       "type": "choice",
@@ -723,7 +744,7 @@
     {
       "name": "쇼하치만 신사",
       "q": "쇼하치만 신사 고쿠라",
-      "note": "원본 메모: 모지코에서 1시간 30분, 고쿠라까지 1시간"
+      "note": "원본 메모: 모지코에서 1시간 30분, 고쿠라까지 1시간 · 모지코→쇼하치만신사→고쿠라 우회 구간 교통비는 경로 미확정으로 합계 제외(모지코→고쿠라 직행 요금과 다름)."
     },
     {
       "name": "고쿠라 역",
@@ -752,11 +773,14 @@
     {
       "name": "코로나노유 온천",
       "q": "天然温泉コロナの湯 小倉店",
-      "note": "1시간 정도, 시간 부족하면 생략 가능",
+      "note": "1시간 정도, 시간 부족하면 생략 가능 · 금요일 일반 성인 입욕료. 시간이 부족해 온천을 생략하면 해당 금액을 빼야 함. 수건 별도.",
       "address": "福岡県北九州市小倉北区西港町27-5",
       "hours": "09:00~익일 01:00 (정기 점검 휴관 가능)",
       "hoursChecked": "2026-10-31",
-      "hoursSource": "https://www.korona.co.jp/onsen/basic/kok/598"
+      "hoursSource": "https://www.korona.co.jp/onsen/basic/kok/598",
+      "cost": 1000,
+      "costSource": "https://www.korona.co.jp/onsen/basic/kok/598",
+      "costChecked": "2026-10-31"
     },
     {
       "name": "코로나 월드",
@@ -792,7 +816,8 @@
     },
     {
       "name": "버스투어 출발",
-      "time": "08:00"
+      "time": "08:00",
+      "note": "유투어버스 선결제 상품. 실제 결제금액이 전달되지 않아 합계에 포함하지 않음."
     },
     {
       "name": "유후인",
@@ -851,31 +876,40 @@
         {
           "name": "누루카와 온센",
           "q": "누루카와 온센 유후인",
-          "note": "노천탕 600엔 (원본 메모), 시간 가능 시"
+          "note": "남녀별 대욕장 2026-10-01부터 성인 800엔(원본 600엔은 구가격).",
+          "cost": 800,
+          "costSource": "https://hpdsp.jp/nurukawa/news/222966",
+          "costChecked": "2026-10-31"
         },
         {
           "name": "유후인 이요토미",
           "q": "유후인 이요토미 유후인",
-          "note": "가족탕만 800엔 (원본 메모)"
+          "note": "공식 안내 2025년 800엔, 2026년 가을 요금 재개정 예정으로 방문 전 확인. 미확정 요금은 합계에서 제외."
         },
         {
           "name": "유후다케 온천",
           "q": "유후다케 온천 유후인",
-          "note": "600엔 (원본 메모)"
+          "note": "성인 일반 입욕료 600엔(2026년 확인, 변경 가능).",
+          "cost": 600,
+          "costSource": "https://yufuin.gr.jp/spot/spot-5582/",
+          "costChecked": "2026-10-31"
         },
         {
           "name": "누루카와",
           "q": "누루카와 유후인",
-          "note": "600엔 (원본 메모)"
+          "note": "누루카와 대욕장 동일 매장. 성인 800엔(2026-10-01부터).",
+          "cost": 800,
+          "costSource": "https://hpdsp.jp/nurukawa/news/222966",
+          "costChecked": "2026-10-31"
         },
         {
           "name": "무소엔 온천",
           "q": "무소엔 온천 유후인",
-          "note": "가족탕 1,000엔, 대기 가능성 (원본 메모)"
+          "note": "대절탕 등 이용 종류에 따라 요금 상이. 원본 메모 1,000엔은 공식 확인 전으로 합계 제외."
         }
       ],
       "multi": false,
-      "note": "온천 선택지"
+      "note": "온천은 실제 선택한 장소의 확인된 입욕료만 교통·입장료 합계에 추가. 미확인 요금은 별도."
     },
     {
       "name": "유후인 미르히",
@@ -1109,11 +1143,14 @@
     {
       "name": "진격의 거인 박물관",
       "q": "進撃の巨人 in HITA ミュージアム 道の駅 水辺の郷おおやま",
-      "note": "본관",
+      "note": "본관 · 본관 성인 입장료.",
       "address": "大分県日田市大山町西大山4106 道の駅 水辺の郷おおやま内",
       "hours": "평일 09:30~16:00 / 주말·공휴일 09:30~17:00",
       "hoursChecked": "2026-10-31",
-      "hoursSource": "https://shingeki-hita.com/news_2026.html"
+      "hoursSource": "https://shingeki-hita.com/news_2026.html",
+      "cost": 500,
+      "costSource": "https://www.city.hita.oita.jp/site/hitanioideyo/2866.html",
+      "costChecked": "2026-10-31"
     },
     {
       "name": "삿포로 맥주 규슈 히타 공장",
@@ -1126,7 +1163,11 @@
       "address": "大分県日田市大字高瀬6979 サッポロビール九州日田工場内",
       "hours": "10:00~19:00",
       "hoursChecked": "2026-10-31",
-      "hoursSource": "https://www.city.hita.oita.jp/site/hitanioideyo/2866.html"
+      "hoursSource": "https://www.city.hita.oita.jp/site/hitanioideyo/2866.html",
+      "cost": 700,
+      "costSource": "https://www.city.hita.oita.jp/site/hitanioideyo/2866.html",
+      "costChecked": "2026-10-31",
+      "note": "아넥스 성인 입장료. · 박물관 간 추가 이동비는 미확인으로 합계 제외."
     },
     {
       "type": "choice",
@@ -1135,12 +1176,18 @@
         {
           "name": "Senraku Hot Spring",
           "q": "Senraku Hot Spring 히타",
-          "note": "600엔 (원본 메모), 필요시/생략 가능"
+          "note": "대욕장 성인 600엔(대절탕 제외).",
+          "cost": 600,
+          "costSource": "https://senrakuyu.com/access/",
+          "costChecked": "2026-10-31"
         },
         {
           "name": "琴ひら温泉露天風呂",
           "q": "琴ひら温泉露天風呂 히타",
-          "note": "800엔 (원본 메모)"
+          "note": "일반 성인 노천탕 800엔(특별기간 별도).",
+          "cost": 800,
+          "costSource": "https://kotohira-onsen.com/air_bath/",
+          "costChecked": "2026-10-31"
         }
       ],
       "multi": false,
@@ -1218,6 +1265,70 @@
       "hours": "10:00~21:00",
       "hoursChecked": "2026-10-31",
       "hoursSource": "https://cameranonaniwa.jp/shop/pages/shop_list.aspx"
+    },
+    {
+      "name": "지하철 공항선 · 후쿠오카공항→나카스카와바타",
+      "type": "move",
+      "cost": 260,
+      "note": "공항 도착 후 숙소 이동. 공항선 일반 성인 편도 요금, 국제선에서 국내선 지하철역까지 무료 셔틀 이동 별도.",
+      "costSource": "https://ekitan.com/rail-company/640/fare/sf-8026/st-7851",
+      "costChecked": "2026-10-31"
+    },
+    {
+      "name": "JR 가고시마본선 · 하카타→모지코",
+      "type": "move",
+      "cost": 1730,
+      "note": "보통·쾌속 기준 성인 편도. 특급·신칸센 이용 시 추가 요금.",
+      "costSource": "https://ekitan.com/rail-company/6/fare/sf-7930/st-8149",
+      "costChecked": "2026-10-31"
+    },
+    {
+      "name": "JR 가고시마본선 · 고쿠라→하카타",
+      "type": "move",
+      "cost": 1510,
+      "note": "보통열차 성인 편도. 특급·신칸센은 별도 요금.",
+      "costSource": "https://ekitan.com/rail-company/6/fare/sf-7930/st-7614",
+      "costChecked": "2026-10-31"
+    },
+    {
+      "name": "고속버스 히타호 · 하카타→히타",
+      "type": "move",
+      "cost": 1980,
+      "note": "하카타 버스터미널 출발, 성인 편도. 2026-10-01 시행 요금. 미예약 좌석정원제.",
+      "costSource": "https://prtimes.jp/main/html/rd/p/000001018.000017692.html",
+      "costChecked": "2026-10-31"
+    },
+    {
+      "name": "히타 노선버스 · 히타BT→나카가와라",
+      "type": "move",
+      "cost": 460,
+      "note": "오야마댐 진격의 거인 동상 방면. 나카가와라 하차 후 도보 약 30분. 버스 시간표 확인 필수.",
+      "costSource": "https://shingeki-hita.com/spot/001.html",
+      "costChecked": "2026-10-31"
+    },
+    {
+      "name": "히타 노선버스 · 나카가와라→히타BT",
+      "type": "move",
+      "cost": 460,
+      "note": "댐 방문 후 복귀 가정, 왕복 교통비 중 귀로 편도. 이후 다른 관광지 이동비는 포함되지 않음.",
+      "costSource": "https://shingeki-hita.com/spot/001.html",
+      "costChecked": "2026-10-31"
+    },
+    {
+      "name": "고속버스 히타호 · 히타→하카타",
+      "type": "move",
+      "cost": 1980,
+      "note": "성인 편도, 2026-10-01 요금. 시내 이동비와 별도.",
+      "costSource": "https://prtimes.jp/main/html/rd/p/000001018.000017692.html",
+      "costChecked": "2026-10-31"
+    },
+    {
+      "name": "지하철 공항선 · 하카타→후쿠오카공항",
+      "type": "move",
+      "cost": 260,
+      "note": "하카타역에서 공항선 일반 성인 편도. 국제선 이용 시 국내선 터미널에서 무료 셔틀 이동 필요.",
+      "costSource": "https://ekitan.com/rail-company/640/fare/sf-7930/st-8026",
+      "costChecked": "2026-10-31"
     }
   ]
 }
