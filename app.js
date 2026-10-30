@@ -122,7 +122,7 @@
   }
   var I18N = null, rawPlan = null;
   // 장소 ID, 검색어처럼 지도에 넘기는 값은 번역하지 않음
-  var KEEP = { pid: 1, q: 1, home: 1, from: 1, to: 1, timezone: 1, url: 1 };
+  var KEEP = { pid: 1, q: 1, home: 1, from: 1, to: 1, timezone: 1, url: 1, address: 1, hours: 1, hoursSource: 1, hoursChecked: 1 };
   function localize(o, k) {
     if (typeof o === 'string') return KEEP[k] || LANG === 'ko' || !I18N || !I18N[LANG] ? o : (I18N[LANG][o] || o);
     if (Array.isArray(o)) return o.map(function (x) { return localize(x, k); });
@@ -327,10 +327,27 @@
     return wrap;
   }
 
+  // 공식/매장 안내에서 확인된 정적 장소 정보. 영업 중 실시간 판정은 제공하지 않음.
+  function placeInfo(s) {
+    if (!s.address && !s.hours) return null;
+    var labels = LANG === 'ja' ? ['所在地', '通常営業時間', '確認日', '出典'] :
+      LANG === 'en' ? ['Location', 'Regular hours', 'Checked', 'Source'] : ['위치', '일반 영업시간', '확인일', '출처'];
+    var wrap = el('div', { class: 'place-info' });
+    if (s.address) wrap.appendChild(el('div', { class: 'place-row' }, [el('span', { class: 'place-label', text: labels[0] }), el('span', { text: s.address })]));
+    if (s.hours) wrap.appendChild(el('div', { class: 'place-row' }, [el('span', { class: 'place-label', text: labels[1] }), el('span', { text: s.hours })]));
+    if (s.hoursChecked || s.hoursSource) {
+      var verified = el('div', { class: 'place-verify' });
+      if (s.hoursChecked) verified.appendChild(el('span', { text: labels[2] + ' ' + s.hoursChecked + ' · ' }));
+      if (s.hoursSource && /^https:\/\//.test(s.hoursSource)) verified.appendChild(el('a', { href: s.hoursSource, target: '_blank', rel: 'noopener', text: labels[3] }));
+      wrap.appendChild(verified);
+    }
+    return wrap;
+  }
   function body(s) {
     var t = el('div', { class: 'title', text: s.name });
     if (s.rec) t.appendChild(el('span', { class: 'rec', text: T('추천') }));
     var b = el('div', null, [t, pills(s)]);
+    var place = placeInfo(s); if (place) b.appendChild(place);
     if (s.note) b.appendChild(lines('note', s.note));
     if (s.tip) b.appendChild(lines('tip', s.tip));
     var r = reviews(s); if (r) b.appendChild(r);
@@ -359,6 +376,7 @@
       // 고르지 않은 선택지는 이름 한 줄로 접어 두고, 꺾쇠로 펼쳐 볼 수 있게 함
       var more = el('button', { class: 'opt-more', type: 'button', 'aria-label': T('자세히 보기'), html: ICON.chev });
       var inner = el('div', null, [pills(o)]);
+      var optPlace = placeInfo(o); if (optPlace) inner.appendChild(optPlace);
       if (o.note) inner.appendChild(lines('note', o.note));
       if (o.tip) inner.appendChild(lines('tip', o.tip));
       var r = reviews(o); if (r) inner.appendChild(r);
