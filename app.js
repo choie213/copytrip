@@ -292,7 +292,7 @@
     openSheet('map-sheet');
   }
 
-  function acts(title, link, embed, url) {
+  function acts(title, link, embed, url, officialUrl) {
     var row = el('div', { class: 'acts' });
     if (link) row.appendChild(el('a', { class: 'btn', href: link, target: '_blank', rel: 'noopener', text: T('구글 지도') }));
     if (embed && window.MAPS_KEY) {
@@ -301,6 +301,7 @@
       row.appendChild(b);
     }
     if (url) row.appendChild(el('a', { class: 'btn', href: url, target: '_blank', rel: 'noopener', text: T('상품 페이지') }));
+    if (officialUrl) row.appendChild(el('a', { class: 'btn', href: officialUrl, target: '_blank', rel: 'noopener', text: LANG === 'ja' ? '公式案内' : LANG === 'en' ? 'Official info' : '공식 안내' }));
     return row.childNodes.length ? row : null;
   }
 
@@ -327,31 +328,26 @@
     return wrap;
   }
 
-  // 공식/매장 안내에서 확인된 정적 장소 정보. 영업 중 실시간 판정은 제공하지 않음.
-  function placeInfo(s) {
-    if (!s.address && !s.hours) return null;
-    var labels = LANG === 'ja' ? ['所在地', '通常営業時間', '確認日', '出典'] :
-      LANG === 'en' ? ['Location', 'Regular hours', 'Checked', 'Source'] : ['위치', '일반 영업시간', '확인일', '출처'];
-    var wrap = el('div', { class: 'place-info' });
-    if (s.address) wrap.appendChild(el('div', { class: 'place-row' }, [el('span', { class: 'place-label', text: labels[0] }), el('span', { text: s.address })]));
-    if (s.hours) wrap.appendChild(el('div', { class: 'place-row' }, [el('span', { class: 'place-label', text: labels[1] }), el('span', { text: s.hours })]));
-    if (s.hoursChecked || s.hoursSource) {
-      var verified = el('div', { class: 'place-verify' });
-      if (s.hoursChecked) verified.appendChild(el('span', { text: labels[2] + ' ' + s.hoursChecked + ' · ' }));
-      if (s.hoursSource && /^https:\/\//.test(s.hoursSource)) verified.appendChild(el('a', { href: s.hoursSource, target: '_blank', rel: 'noopener', text: labels[3] }));
-      wrap.appendChild(verified);
-    }
-    return wrap;
+  // 영업시간은 주소 정보 상자가 아닌 기존 카드의 메모 흐름에 간결히 표시한다.
+  // 동적 운영 여부를 추정하지 않고 저장된 정규 영업시간만 표기한다.
+  function openingText(s) {
+    if (!s.hours) return null;
+    var prefix = LANG === 'ja' ? '営業時間 ' : LANG === 'en' ? 'Hours ' : '영업시간 ';
+    return lines('note', prefix + s.hours);
+  }
+  function sourceLink(s) {
+    if (!s.hoursSource || !/^https:\/\//.test(s.hoursSource)) return null;
+    return s.hoursSource;
   }
   function body(s) {
     var t = el('div', { class: 'title', text: s.name });
     if (s.rec) t.appendChild(el('span', { class: 'rec', text: T('추천') }));
     var b = el('div', null, [t, pills(s)]);
-    var place = placeInfo(s); if (place) b.appendChild(place);
+    var hours = openingText(s); if (hours) b.appendChild(hours);
     if (s.note) b.appendChild(lines('note', s.note));
     if (s.tip) b.appendChild(lines('tip', s.tip));
     var r = reviews(s); if (r) b.appendChild(r);
-    var a = s.pid || s.q || s.url ? acts(s.name, (s.pid || s.q) && placeLink(s), s.pid && placeEmbed(s.pid), s.url) : null;
+    var a = s.pid || s.q || s.url || s.hoursSource ? acts(s.name, (s.pid || s.q) && placeLink(s), s.pid && placeEmbed(s.pid), s.url, sourceLink(s)) : null;
     if (a) b.appendChild(a);
     return b;
   }
@@ -376,11 +372,11 @@
       // 고르지 않은 선택지는 이름 한 줄로 접어 두고, 꺾쇠로 펼쳐 볼 수 있게 함
       var more = el('button', { class: 'opt-more', type: 'button', 'aria-label': T('자세히 보기'), html: ICON.chev });
       var inner = el('div', null, [pills(o)]);
-      var optPlace = placeInfo(o); if (optPlace) inner.appendChild(optPlace);
+      var optHours = openingText(o); if (optHours) inner.appendChild(optHours);
       if (o.note) inner.appendChild(lines('note', o.note));
       if (o.tip) inner.appendChild(lines('tip', o.tip));
       var r = reviews(o); if (r) inner.appendChild(r);
-      var a = o.pid || o.q ? acts(o.name, placeLink(o), o.pid && placeEmbed(o.pid)) : null; if (a) inner.appendChild(a);
+      var a = o.pid || o.q || o.hoursSource ? acts(o.name, (o.pid || o.q) && placeLink(o), o.pid && placeEmbed(o.pid), null, sourceLink(o)) : null; if (a) inner.appendChild(a);
       // 펼쳐 볼 내용이 없는 선택지(생략 등)는 꺾쇠를 달지 않음
       var opt = el('div', { class: 'opt' + (on ? ' on' : '') + (inner.childNodes.length ? '' : ' bare') }, [el('div', { class: 'opt-row' }, [pick, more]), el('div', { class: 'opt-body' }, [inner])]);
       more.addEventListener('click', function () { opt.classList.toggle('peek'); });
