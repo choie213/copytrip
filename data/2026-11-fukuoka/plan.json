@@ -372,9 +372,11 @@
     },
     {
       "name": "더 밀레니얼스 후쿠오카",
-      "q": "더 밀레니얼스 후쿠오카",
+      "q": "The Millennials Fukuoka 中洲5丁目2-18",
       "time": "18:10",
-      "note": "체크인"
+      "note": "체크인",
+      "address": "福岡県福岡市博多区中洲5-2-18",
+      "hoursSource": "https://www.livelyhotels.com/ja/themillennialsfukuoka/access/"
     },
     {
       "type": "choice",
@@ -382,8 +384,12 @@
       "options": [
         {
           "name": "이치란 본사 총본점",
-          "q": "이치란 본사 총본점 후쿠오카",
-          "note": "원본 메모: 이치란 & 원갈비"
+          "q": "一蘭 本社総本店 中洲5-3-2",
+          "note": "원본 메모: 이치란 & 원갈비",
+          "address": "福岡県福岡市博多区中洲5-3-2",
+          "hours": "24시간 (임시 변경 가능)",
+          "hoursSource": "https://ichiran.com/shop/kyushu/sohonten/",
+          "hoursChecked": "2026-10-31"
         },
         {
           "name": "돈테키 부타야 쇼쿠도",
@@ -400,7 +406,11 @@
     },
     {
       "name": "덴진 지하상가",
-      "q": "덴진 지하상가 후쿠오카"
+      "q": "天神地下街",
+      "address": "福岡県福岡市中央区天神（天神駅・天神南駅直結）",
+      "hours": "상점 10:00~20:00 / 음식점 ~21:00 (점포별 상이)",
+      "hoursSource": "https://www.tenchika.com/service/",
+      "hoursChecked": "2026-10-31"
     },
     {
       "name": "이나바쵸 잇케이",
@@ -413,13 +423,17 @@
     },
     {
       "name": "더 밀레니얼스 후쿠오카",
-      "q": "더 밀레니얼스 후쿠오카",
-      "note": "숙소 귀환"
+      "q": "The Millennials Fukuoka 中洲5丁目2-18",
+      "note": "숙소 귀환",
+      "address": "福岡県福岡市博多区中洲5-2-18",
+      "hoursSource": "https://www.livelyhotels.com/ja/themillennialsfukuoka/access/"
     },
     {
       "name": "더 밀레니얼스 후쿠오카",
-      "q": "더 밀레니얼스 후쿠오카",
-      "note": "출발"
+      "q": "The Millennials Fukuoka 中洲5丁目2-18",
+      "note": "출발",
+      "address": "福岡県福岡市博多区中洲5-2-18",
+      "hoursSource": "https://www.livelyhotels.com/ja/themillennialsfukuoka/access/"
     },
     {
       "type": "choice",
@@ -446,17 +460,30 @@
     },
     {
       "name": "북오프 수퍼 바자르 미나 덴진 점",
-      "q": "북오프 수퍼 바자르 미나 덴진 점 후쿠오카",
-      "note": "피규어"
+      "q": "BOOKOFF SUPER BAZAAR ミーナ天神店",
+      "note": "피규어",
+      "address": "福岡県福岡市中央区天神4-3-8 ミーナ天神 7F",
+      "hours": "10:00~21:00",
+      "hoursChecked": "2026-10-31",
+      "hoursSource": "https://www.bookoff.co.jp/shop/shop20529.html"
     },
     {
-      "name": "애니메이트 후쿠오카 덴진",
-      "q": "애니메이트 후쿠오카 덴진 후쿠오카"
+      "name": "애니메이트 라시크 후쿠오카 텐진",
+      "q": "アニメイトラシック福岡天神 三越8階",
+      "address": "福岡県福岡市中央区天神2-1-1 福岡三越 8F ラシック福岡天神",
+      "hours": "10:00~20:00",
+      "hoursChecked": "2026-10-31",
+      "hoursSource": "https://www.animate.co.jp/en/news/51885/",
+      "note": "2026-10-24 기존 PARCO점에서 이전. PARCO 8F는 별도 ANNEX 매장(11/2 오픈)."
     },
     {
       "name": "Royal Flash",
-      "q": "Royal Flash 후쿠오카",
-      "note": "원본 메모: 유튜버 사히 보고 왔다고 하면 할인"
+      "q": "ROYAL FLASH VIORO 福岡",
+      "note": "원본 메모: 유튜버 사히 보고 왔다고 하면 할인",
+      "address": "福岡県福岡市中央区天神2-10-3 VIORO 4F",
+      "hours": "10:00~20:00",
+      "hoursChecked": "2026-10-31",
+      "hoursSource": "https://vioro.jp/shop/royalflash/"
     },
     {
       "name": "꼼데가르송 후쿠오카 이와타야 점",
@@ -464,15 +491,26 @@
     },
     {
       "name": "아크테릭스 후쿠오카 덴진 브랜드 스토어",
-      "q": "아크테릭스 후쿠오카 덴진 브랜드 스토어 후쿠오카"
+      "q": "アークテリクス 福岡 天神ブランドストア",
+      "address": "福岡県福岡市中央区大名1-12-62",
+      "hoursSource": "https://arcteryx.jp/pages/storelist",
+      "note": "영업 종료 시각이 공식 사이트 간 다름(19:00/20:00). 방문 전 지도·매장 확인."
     },
     {
       "name": "휴먼 메이드 후쿠오카 점",
-      "q": "휴먼 메이드 후쿠오카 점 후쿠오카"
+      "q": "HUMAN MADE FUKUOKA",
+      "address": "福岡県福岡市中央区大名2-1-13",
+      "hours": "11:00~19:00",
+      "hoursChecked": "2026-10-31",
+      "hoursSource": "https://www.humanmade.jp/ko/news/human-made-season-29-launch-2025-jan.html"
     },
     {
       "name": "만다라케 후쿠오카 점",
-      "q": "만다라케 후쿠오카 점 후쿠오카"
+      "q": "まんだらけ福岡店",
+      "address": "福岡県福岡市中央区大名2-9-5 グランドビル",
+      "hours": "12:00~20:00",
+      "hoursChecked": "2026-10-31",
+      "hoursSource": "https://www.mandarake.co.jp/dir/fko/"
     },
     {
       "type": "choice",
@@ -484,7 +522,11 @@
         },
         {
           "name": "규카츠 모토무라 후쿠오카 텐진 니시도리 점",
-          "q": "규카츠 모토무라 후쿠오카 텐진 니시도리 점 후쿠오카"
+          "q": "牛かつもと村 福岡天神西通り店",
+          "address": "福岡県福岡市中央区大名1-14-5 有光ビル 1F",
+          "hours": "11:00~22:00 (L.O.21:30)",
+          "hoursSource": "https://www.gyukatsu-motomura.com/store/Fukuoka-Tenjin_Nishidori",
+          "hoursChecked": "2026-10-31"
         }
       ],
       "multi": false,
@@ -501,11 +543,19 @@
     },
     {
       "name": "베이프 후쿠오카",
-      "q": "베이프 후쿠오카 후쿠오카"
+      "q": "BAPE STORE FUKUOKA 大名1丁目11-28",
+      "address": "福岡県福岡市中央区大名1-11-28",
+      "hours": "11:00~19:00",
+      "hoursChecked": "2026-10-31",
+      "hoursSource": "https://www.fashion-press.net/maps/10497/"
     },
     {
       "name": "캐피탈 후쿠오카 점",
-      "q": "캐피탈 후쿠오카 점 후쿠오카"
+      "q": "KAPITAL FUKUOKA",
+      "address": "福岡県福岡市中央区大名1-3-42 ローズマンション大名1F",
+      "hours": "11:00~20:00",
+      "hoursChecked": "2026-10-31",
+      "hoursSource": "https://www.kapital.jp/shop/detail/14.html"
     },
     {
       "type": "choice",
@@ -518,8 +568,12 @@
         },
         {
           "name": "규카츠 모토무라 후쿠오카 텐진 니시도리 점",
-          "q": "규카츠 모토무라 후쿠오카 텐진 니시도리 점 후쿠오카",
-          "note": "점심 후보에도 있음"
+          "q": "牛かつもと村 福岡天神西通り店",
+          "note": "점심 후보에도 있음",
+          "address": "福岡県福岡市中央区大名1-14-5 有光ビル 1F",
+          "hours": "11:00~22:00 (L.O.21:30)",
+          "hoursSource": "https://www.gyukatsu-motomura.com/store/Fukuoka-Tenjin_Nishidori",
+          "hoursChecked": "2026-10-31"
         },
         {
           "name": "멘야가가 텐진점",
@@ -561,13 +615,17 @@
     },
     {
       "name": "더 밀레니얼스 후쿠오카",
-      "q": "더 밀레니얼스 후쿠오카",
-      "note": "숙소 귀환"
+      "q": "The Millennials Fukuoka 中洲5丁目2-18",
+      "note": "숙소 귀환",
+      "address": "福岡県福岡市博多区中洲5-2-18",
+      "hoursSource": "https://www.livelyhotels.com/ja/themillennialsfukuoka/access/"
     },
     {
       "name": "더 밀레니얼스 후쿠오카",
-      "q": "더 밀레니얼스 후쿠오카",
-      "note": "출발"
+      "q": "The Millennials Fukuoka 中洲5丁目2-18",
+      "note": "출발",
+      "address": "福岡県福岡市博多区中洲5-2-18",
+      "hoursSource": "https://www.livelyhotels.com/ja/themillennialsfukuoka/access/"
     },
     {
       "name": "뺑 스톡",
@@ -583,13 +641,19 @@
     },
     {
       "name": "JR 모지코 역",
-      "q": "모지코역",
-      "note": "원본 메모: 1시간 45분 소요"
+      "q": "JR 門司港駅",
+      "note": "원본 메모: 1시간 45분 소요",
+      "address": "福岡県北九州市門司区西海岸1丁目5-31",
+      "hoursSource": "https://www.jrkyushu.co.jp/railway/station/1191912_1601.html"
     },
     {
       "name": "미츠이 클럽",
-      "q": "미츠이 클럽 모지코",
-      "note": "식사 아님, 관광"
+      "q": "旧門司三井倶楽部",
+      "note": "2026년 8월 31일 식당 영업 종료. 건물 관람은 가능.",
+      "address": "福岡県北九州市門司区港町7-1",
+      "hours": "09:00~17:00 (건물 관람)",
+      "hoursSource": "https://www.crossroadfukuoka.jp/spot/13190",
+      "hoursChecked": "2026-10-31"
     },
     {
       "name": "모지코 레트로",
@@ -597,20 +661,36 @@
     },
     {
       "name": "구 오사카 상선",
-      "q": "구 오사카 상선 모지코"
+      "q": "旧大阪商船 門司港",
+      "address": "福岡県北九州市門司区港町7-18",
+      "hours": "09:00~17:00 (건물 내부)",
+      "hoursChecked": "2026-10-31",
+      "hoursSource": "https://mojiko-retoro9.jp/"
     },
     {
       "name": "블루윙 모지",
-      "q": "블루윙 모지 모지코"
+      "q": "ブルーウィングもじ",
+      "address": "福岡県北九州市門司区港町4-1",
+      "hours": "다리 개방 10:00·11:00·13:00·14:00·15:00·16:00 / 20분 뒤 닫힘",
+      "hoursSource": "https://www.crossroadfukuoka.jp/spot/13074",
+      "hoursChecked": "2026-10-31"
     },
     {
       "name": "구 모지세관",
-      "q": "구 모지세관 모지코",
-      "note": "건물 뒤편 바다 방향 포토스팟"
+      "q": "旧門司税関",
+      "note": "건물 뒤편 바다 방향 포토스팟",
+      "address": "福岡県北九州市門司区東港町1-24",
+      "hours": "09:00~17:00 (일부 안내에 단축 10:00~17:00)",
+      "hoursSource": "https://kitakyushucity.guide/spots/detail/ca7bf998-c3f1-4ace-8201-f0381128775d",
+      "hoursChecked": "2026-10-31"
     },
     {
       "name": "모지코 레트로 전망대",
-      "q": "모지코 레트로 전망대 모지코"
+      "q": "門司港レトロ展望室",
+      "address": "福岡県北九州市門司区東港町1-32 門司港レトロハイマート 31F",
+      "hours": "10:00~22:00 (최종 입장 21:30; 단축 영업 재확인)",
+      "hoursChecked": "2026-10-31",
+      "hoursSource": "https://mojiko-retoro9.jp/spot/mojiko_retro_observation_room/"
     },
     {
       "type": "choice",
@@ -635,8 +715,10 @@
     },
     {
       "name": "JR 모지코 역",
-      "q": "모지코역",
-      "note": "이동"
+      "q": "JR 門司港駅",
+      "note": "이동",
+      "address": "福岡県北九州市門司区西海岸1丁目5-31",
+      "hoursSource": "https://www.jrkyushu.co.jp/railway/station/1191912_1601.html"
     },
     {
       "name": "쇼하치만 신사",
@@ -659,14 +741,22 @@
     },
     {
       "name": "아루아루 시티",
-      "q": "아루아루 시티 고쿠라",
+      "q": "あるあるCity 小倉",
       "time": "18:00",
-      "note": "피규어, 1층 사이제리야 저녁 또는 편의점"
+      "note": "피규어, 1층 사이제리야 저녁 또는 편의점",
+      "address": "福岡県北九州市小倉北区浅野2-14-5",
+      "hours": "11:00~20:00 (일부 점포 별도)",
+      "hoursChecked": "2026-10-31",
+      "hoursSource": "https://aruarucity.com/"
     },
     {
       "name": "코로나노유 온천",
-      "q": "코로나노유 온천 고쿠라",
-      "note": "1시간 정도, 시간 부족하면 생략 가능"
+      "q": "天然温泉コロナの湯 小倉店",
+      "note": "1시간 정도, 시간 부족하면 생략 가능",
+      "address": "福岡県北九州市小倉北区西港町27-5",
+      "hours": "09:00~익일 01:00 (정기 점검 휴관 가능)",
+      "hoursChecked": "2026-10-31",
+      "hoursSource": "https://www.korona.co.jp/onsen/basic/kok/598"
     },
     {
       "name": "코로나 월드",
@@ -680,19 +770,25 @@
     },
     {
       "name": "더 밀레니얼스 후쿠오카",
-      "q": "더 밀레니얼스 후쿠오카",
-      "note": "숙소 귀환, 근처 술집 후보"
+      "q": "The Millennials Fukuoka 中洲5丁目2-18",
+      "note": "숙소 귀환, 근처 술집 후보",
+      "address": "福岡県福岡市博多区中洲5-2-18",
+      "hoursSource": "https://www.livelyhotels.com/ja/themillennialsfukuoka/access/"
     },
     {
       "name": "더 밀레니얼스 후쿠오카",
-      "q": "더 밀레니얼스 후쿠오카",
-      "note": "출발, 유투어 버스투어/네이버 결제 메모"
+      "q": "The Millennials Fukuoka 中洲5丁目2-18",
+      "note": "출발, 유투어 버스투어/네이버 결제 메모",
+      "address": "福岡県福岡市博多区中洲5-2-18",
+      "hoursSource": "https://www.livelyhotels.com/ja/themillennialsfukuoka/access/"
     },
     {
-      "name": "하카타 역",
-      "q": "하카타역 하카타구치 버스터미널",
+      "name": "HEARTS 버스스테이션 하카타 (투어 집합)",
+      "q": "HEARTSバスステーション博多",
       "time": "07:45",
-      "note": "하카타구치 쪽 버스스테이션 집결"
+      "note": "07:45~07:55 집합, 08:00 출발. 1층 안내데스크 앞 (예약 상품 안내 기준).",
+      "address": "福岡県福岡市博多区博多駅前4-14-13 1F 案内デスク",
+      "hoursSource": "https://heartsgroup81.com/bs/facility/"
     },
     {
       "name": "버스투어 출발",
@@ -706,7 +802,11 @@
     },
     {
       "name": "유후인 플로랄 빌리지",
-      "q": "유후인 플로랄 빌리지 유후인"
+      "q": "湯布院フローラルヴィレッジ",
+      "address": "大分県由布市湯布院町川上1503-3",
+      "hours": "09:30~17:30",
+      "hoursSource": "https://floral-village.com/about",
+      "hoursChecked": "2026-10-31"
     },
     {
       "type": "choice",
@@ -732,7 +832,9 @@
     },
     {
       "name": "긴린 호수",
-      "q": "긴린코 호수 유후인"
+      "q": "金鱗湖",
+      "address": "大分県由布市湯布院町川上1561-1",
+      "hoursSource": "https://www.visit-oita.jp/spots/detail/4362"
     },
     {
       "name": "덴소 신사",
@@ -777,7 +879,11 @@
     },
     {
       "name": "유후인 미르히",
-      "q": "유후인 미르히 유후인"
+      "q": "由布院ミルヒ 本店",
+      "address": "大分県由布市湯布院町川上3015-1",
+      "hours": "10:30~17:30 (본점)",
+      "hoursSource": "https://www.milch-japan.co.jp/shops/",
+      "hoursChecked": "2026-10-31"
     },
     {
       "name": "세이키치 차야",
@@ -797,13 +903,17 @@
     },
     {
       "name": "더 밀레니얼스 후쿠오카",
-      "q": "더 밀레니얼스 후쿠오카",
-      "note": "숙소 귀환"
+      "q": "The Millennials Fukuoka 中洲5丁目2-18",
+      "note": "숙소 귀환",
+      "address": "福岡県福岡市博多区中洲5-2-18",
+      "hoursSource": "https://www.livelyhotels.com/ja/themillennialsfukuoka/access/"
     },
     {
       "name": "더 밀레니얼스 후쿠오카",
-      "q": "더 밀레니얼스 후쿠오카",
-      "note": "출발"
+      "q": "The Millennials Fukuoka 中洲5丁目2-18",
+      "note": "출발",
+      "address": "福岡県福岡市博多区中洲5-2-18",
+      "hoursSource": "https://www.livelyhotels.com/ja/themillennialsfukuoka/access/"
     },
     {
       "name": "덴진 중앙 공원",
@@ -812,24 +922,36 @@
     },
     {
       "name": "더 밀레니얼스 후쿠오카",
-      "q": "더 밀레니얼스 후쿠오카",
+      "q": "The Millennials Fukuoka 中洲5丁目2-18",
       "time": "10:00",
-      "note": "샤워, 체크아웃"
+      "note": "샤워, 체크아웃",
+      "address": "福岡県福岡市博多区中洲5-2-18",
+      "hoursSource": "https://www.livelyhotels.com/ja/themillennialsfukuoka/access/"
     },
     {
       "name": "호텔 WBF 그랑드 하카타",
-      "q": "호텔 WBF 그랑드 하카타",
+      "q": "ホテルWBFグランデ博多",
       "time": "15:00",
-      "note": "체크인 15시부터, 사전 짐 보관 가능 (원본 메모)"
+      "note": "체크인 15시부터, 사전 짐 보관 가능 (원본 메모)",
+      "address": "福岡県福岡市博多区博多駅南2-2-5",
+      "hoursSource": "https://www.ishinhotels.com/wbf/grande-hakata"
     },
     {
       "name": "캐널시티 하카타",
-      "q": "캐널시티 하카타"
+      "q": "キャナルシティ博多",
+      "address": "福岡県福岡市博多区住吉1-2",
+      "hours": "상점 10:00~21:00 (점포별 상이)",
+      "hoursChecked": "2026-10-31",
+      "hoursSource": "https://canalcity.co.jp/service/index"
     },
     {
       "name": "점프샵",
-      "q": "점프샵 후쿠오카",
-      "note": "캐널시티"
+      "q": "ジャンプショップ 福岡店 キャナルシティ博多",
+      "note": "캐널시티",
+      "address": "福岡県福岡市博多区住吉1-2 キャナルシティ博多 センターウォーク B1F",
+      "hours": "10:00~21:00",
+      "hoursChecked": "2026-10-31",
+      "hoursSource": "https://canalcity.co.jp/shop/detail/opa-0027"
     },
     {
       "type": "choice",
@@ -837,7 +959,11 @@
       "options": [
         {
           "name": "이치란 캐널시티 하카타 점",
-          "q": "이치란 캐널시티 하카타 점 후쿠오카"
+          "q": "一蘭 キャナルシティ博多店",
+          "address": "福岡県福岡市博多区住吉1-2-22 キャナルシティ博多 ノースビル B1F",
+          "hours": "09:30~23:00 (L.O.22:00)",
+          "hoursSource": "https://ichiran.com/shop/kyushu/canalcity/",
+          "hoursChecked": "2026-10-31"
         },
         {
           "name": "바쿠로 하카타 점",
@@ -861,23 +987,43 @@
     },
     {
       "name": "빔스 하카타 점",
-      "q": "빔스 하카타 점 후쿠오카"
+      "q": "ビームス博多",
+      "address": "福岡県福岡市博多区博多駅中央街1-1 JR博多シティ アミュプラザ博多 3F",
+      "hours": "10:00~20:00",
+      "hoursChecked": "2026-10-31",
+      "hoursSource": "https://www.beams.co.jp/shop/hkt/"
     },
     {
       "name": "하카타 한큐",
-      "q": "하카타 한큐 후쿠오카"
+      "q": "博多阪急",
+      "address": "福岡県福岡市博多区博多駅中央街1-1",
+      "hours": "10:00~20:00",
+      "hoursChecked": "2026-10-31",
+      "hoursSource": "https://www.hankyu-dept.co.jp/hakata/map/index.html"
     },
     {
       "name": "포켓몬 센터",
-      "q": "포켓몬 센터 후쿠오카"
+      "q": "ポケモンセンターフクオカ 博多マルイ 2F",
+      "address": "福岡県福岡市博多区博多駅中央街9-1 博多マルイ 2F",
+      "hours": "10:00~21:00",
+      "hoursChecked": "2026-10-31",
+      "hoursSource": "https://shop.pokemon.co.jp/ja/shop/pokemoncenter-fukuoka/"
     },
     {
       "name": "스루가야 하카타 마루이 점",
-      "q": "스루가야 하카타 마루이 점 후쿠오카"
+      "q": "駿河屋 博多マルイ店",
+      "address": "福岡県福岡市博多区博多駅中央街9-1 博多マルイ 6F",
+      "hours": "10:00~21:00",
+      "hoursChecked": "2026-10-31",
+      "hoursSource": "https://www.suruga-ya.jp/feature/realstore/hakata_marui/index.html"
     },
     {
       "name": "라신반 하카타 마루이 점",
-      "q": "라신반 하카타 마루이 점 후쿠오카"
+      "q": "らしんばん 博多マルイ店",
+      "address": "福岡県福岡市博多区博多駅中央街9-1 博多マルイ 7F",
+      "hours": "10:00~21:00",
+      "hoursChecked": "2026-10-31",
+      "hoursSource": "https://www.lashinbang.com/store/"
     },
     {
       "type": "choice",
@@ -885,8 +1031,12 @@
       "options": [
         {
           "name": "모츠나베 오오야마 키테 하카타 점",
-          "q": "모츠나베 오오야마 키테 하카타 점 후쿠오카",
-          "note": "원본 메모: 점심으로 고른 곳을 고려해서 정하기"
+          "q": "博多もつ鍋おおやま KITTE博多9階",
+          "note": "원본 메모: 점심으로 고른 곳을 고려해서 정하기",
+          "address": "福岡県福岡市博多区博多駅中央街9-1 KITTE博多 9F",
+          "hours": "11:00~23:00 (L.O.22:30)",
+          "hoursSource": "https://www.motu-ooyama.com/shop/kittehakata/",
+          "hoursChecked": "2026-10-31"
         },
         {
           "name": "하카타 라멘 신신 키테 하카타 점",
@@ -896,16 +1046,28 @@
       "multi": false
     },
     {
-      "name": "북오프 하카타 점",
-      "q": "북오프 하카타 점 후쿠오카"
+      "name": "북오프 후쿠오카 하카타구치점",
+      "q": "BOOKOFF 福岡博多口店",
+      "address": "福岡県福岡市博多区博多駅前3-2-8 住友生命ビル",
+      "hours": "10:00~22:00",
+      "hoursChecked": "2026-10-31",
+      "hoursSource": "https://www.bookoff.co.jp/shop/shop20314.html"
     },
     {
       "name": "로피아 하카타 요도바시 점",
-      "q": "로피아 하카타 요도바시 점 후쿠오카"
+      "q": "ロピア 博多ヨドバシ店",
+      "address": "福岡県福岡市博多区博多駅中央街6-12 ヨドバシ博多 4F",
+      "hours": "10:00~21:00",
+      "hoursChecked": "2026-10-31",
+      "hoursSource": "https://www.yodobashi-hakata.com/restaurant2/restaurant_lopi.html"
     },
     {
       "name": "요도바시 카메라 멀티미디어 하카타 점",
-      "q": "요도바시 카메라 멀티미디어 하카타 점 후쿠오카"
+      "q": "ヨドバシカメラ マルチメディア博多",
+      "address": "福岡県福岡市博多区博多駅中央街6-12",
+      "hours": "09:30~22:00",
+      "hoursChecked": "2026-10-31",
+      "hoursSource": "https://global.yodobashi/stores/yodobashi_camera/hakata/"
     },
     {
       "name": "야키토리 타다시 하카타 본점",
@@ -914,13 +1076,17 @@
     },
     {
       "name": "호텔 WBF 그랑드 하카타",
-      "q": "호텔 WBF 그랑드 하카타",
-      "note": "숙소 귀환"
+      "q": "ホテルWBFグランデ博多",
+      "note": "숙소 귀환",
+      "address": "福岡県福岡市博多区博多駅南2-2-5",
+      "hoursSource": "https://www.ishinhotels.com/wbf/grande-hakata"
     },
     {
       "name": "호텔 WBF 그랑드 하카타",
-      "q": "호텔 WBF 그랑드 하카타",
-      "note": "출발"
+      "q": "ホテルWBFグランデ博多",
+      "note": "출발",
+      "address": "福岡県福岡市博多区博多駅南2-2-5",
+      "hoursSource": "https://www.ishinhotels.com/wbf/grande-hakata"
     },
     {
       "name": "하카타 역",
@@ -933,13 +1099,21 @@
     },
     {
       "name": "오야마댐 진격의 거인 동상",
-      "q": "오야마댐 진격의 거인 동상 히타",
-      "note": "원본 메모: 중가와라 하차, 도보 30분, 그 언덕의 나무"
+      "q": "大山ダム エレン ミカサ アルミン 銅像",
+      "note": "원본 메모: 중가와라 하차, 도보 30분, 그 언덕의 나무",
+      "address": "大分県日田市大山町西大山2008-1 大山ダム下流広場",
+      "hours": "하류 광장 연중 개방 (댐 사무소는 평일 08:30~17:00)",
+      "hoursSource": "https://shingeki-hita.com/spot/001.html",
+      "hoursChecked": "2026-10-31"
     },
     {
       "name": "진격의 거인 박물관",
-      "q": "진격의 거인 박물관 히타",
-      "note": "본관"
+      "q": "進撃の巨人 in HITA ミュージアム 道の駅 水辺の郷おおやま",
+      "note": "본관",
+      "address": "大分県日田市大山町西大山4106 道の駅 水辺の郷おおやま内",
+      "hours": "평일 09:30~16:00 / 주말·공휴일 09:30~17:00",
+      "hoursChecked": "2026-10-31",
+      "hoursSource": "https://shingeki-hita.com/news_2026.html"
     },
     {
       "name": "삿포로 맥주 규슈 히타 공장",
@@ -948,7 +1122,11 @@
     },
     {
       "name": "진격의 거인 인 히타 뮤지엄 아넥스",
-      "q": "진격의 거인 인 히타 뮤지엄 아넥스 히타"
+      "q": "進撃の巨人 in HITA ミュージアム ANNEX",
+      "address": "大分県日田市大字高瀬6979 サッポロビール九州日田工場内",
+      "hours": "10:00~19:00",
+      "hoursChecked": "2026-10-31",
+      "hoursSource": "https://www.city.hita.oita.jp/site/hitanioideyo/2866.html"
     },
     {
       "type": "choice",
@@ -993,9 +1171,11 @@
     },
     {
       "name": "호텔 WBF 그랑드 하카타",
-      "q": "호텔 WBF 그랑드 하카타",
+      "q": "ホテルWBFグランデ博多",
       "time": "11:00",
-      "note": "체크아웃"
+      "note": "체크아웃",
+      "address": "福岡県福岡市博多区博多駅南2-2-5",
+      "hoursSource": "https://www.ishinhotels.com/wbf/grande-hakata"
     },
     {
       "name": "후쿠오카 공항",
@@ -1006,22 +1186,38 @@
     {
       "name": "카메라의 키타무라 미나 텐진점",
       "q": "カメラのキタムラ 福岡 ミーナ天神店",
-      "note": "중고 카메라·필름 카메라·렌즈 구경. 미나 텐진 2F(북오프 7F와 같은 건물). 영업 10:00~20:00. 원하는 기종 재고는 현장 확인."
+      "note": "중고 카메라·필름 카메라·렌즈 구경. 미나 텐진 2F(북오프 7F와 같은 건물). 영업 10:00~20:00. 원하는 기종 재고는 현장 확인.",
+      "address": "福岡県福岡市中央区天神4-3-8 ミーナ天神 2F",
+      "hours": "10:00~20:00",
+      "hoursChecked": "2026-10-31",
+      "hoursSource": "https://store.kitamura.jp/kitamura/detail/4548/"
     },
     {
       "name": "라신반 후쿠오카 텐진점",
-      "q": "らしんばん 福岡天神店",
-      "note": "중고 피규어·애니 굿즈. 나카무라야 제1빌딩 2F 판매층. 목요일 영업 10:00~21:00."
+      "q": "らしんばん福岡天神店",
+      "note": "중고 피규어·애니 굿즈. 나카무라야 제1빌딩 2F 판매층. 목요일 영업 10:00~21:00.",
+      "address": "福岡県福岡市中央区天神3-16-21 中村家第一ビル 2F（販売）",
+      "hours": "평일 10:00~21:00 / 주말·공휴일 10:00~19:30",
+      "hoursChecked": "2026-10-31",
+      "hoursSource": "https://www.lashinbang.com/store/"
     },
     {
       "name": "라신반 캐널시티 하카타점",
       "q": "らしんばん キャナルシティ博多店",
-      "note": "히로아카 등 피규어·캐릭터 굿즈. 캐널시티 센터워크 4F, 점프샵과 함께 둘러보기. 영업 10:00~21:00."
+      "note": "히로아카 등 피규어·캐릭터 굿즈. 캐널시티 센터워크 4F, 점프샵과 함께 둘러보기. 영업 10:00~21:00.",
+      "address": "福岡県福岡市博多区住吉1-2 キャナルシティ博多 センターウォーク4F",
+      "hours": "10:00~21:00",
+      "hoursChecked": "2026-10-31",
+      "hoursSource": "https://www.lashinbang.com/store/"
     },
     {
       "name": "카메라의 나니와 하카타 마루이점",
       "q": "カメラのナニワ 博多マルイ店",
-      "note": "중고 필름 카메라·렌즈 탐색. 하카타 마루이 5F(스루가야 6F·라신반 7F와 같은 건물). 영업 10:00~21:00. 모델별 재고 현장 확인."
+      "note": "중고 필름 카메라·렌즈 탐색. 하카타 마루이 5F(스루가야 6F·라신반 7F와 같은 건물). 영업 10:00~21:00. 모델별 재고 현장 확인.",
+      "address": "福岡県福岡市博多区博多駅中央街9-1 博多マルイ 5F",
+      "hours": "10:00~21:00",
+      "hoursChecked": "2026-10-31",
+      "hoursSource": "https://cameranonaniwa.jp/shop/pages/shop_list.aspx"
     }
   ]
 }
