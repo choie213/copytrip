@@ -11,7 +11,7 @@ const STAGED = 'trip-staged:' + SLUG;
 const DATA = ROOT + 'data/' + SLUG + '/';
 const WEATHER = DATA + 'weather.json';
 const FILES = [ROOT + 'app.js', ROOT + 'app.css', ROOT + 'config.js', DATA + 'plan.json', DATA + 'i18n.json'].concat(
-  ['index.html', 'manifest.webmanifest', 'icon.svg', 'icon-180.png', 'icon-192.png', 'icon-512.png', 'icon-maskable-512.png'].map((f) => SCOPE + f));
+  ['index.html', 'manifest.webmanifest', 'copytrip-icon-180.png', 'copytrip-icon-192.png', 'copytrip-icon-512.png', 'copytrip-icon-maskable-512.png'].map((f) => SCOPE + f));
 const TRACKED = FILES.concat([WEATHER]);
 // 이 파일이 바뀌면 새로고침을 물어봄. 날씨는 일정이 바뀔 때(plan, rain)만 물어봄
 const ASK = [SCOPE + 'index.html', ROOT + 'app.js', ROOT + 'app.css', ROOT + 'config.js', DATA + 'plan.json', DATA + 'i18n.json'];
