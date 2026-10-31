@@ -268,8 +268,10 @@
     return 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(s.q || s.name) + (s.pid ? '&query_place_id=' + s.pid : '');
   }
   function dirLink(fromName, from, toName, to, mode, via) {
-    var u = 'https://www.google.com/maps/dir/?api=1&origin=' + encodeURIComponent(fromName) + '&origin_place_id=' + from +
-      '&destination=' + encodeURIComponent(toName) + '&destination_place_id=' + to + '&travelmode=' + mode;
+    var u = 'https://www.google.com/maps/dir/?api=1&origin=' + encodeURIComponent(fromName) +
+      (from ? '&origin_place_id=' + encodeURIComponent(from) : '') +
+      '&destination=' + encodeURIComponent(toName) +
+      (to ? '&destination_place_id=' + encodeURIComponent(to) : '') + '&travelmode=' + mode;
     if (via) u += '&waypoints=' + encodeURIComponent(via.map(function (v) { return v.name; }).join('|')) +
       '&waypoint_place_ids=' + via.map(function (v) { return v.pid; }).join('|');
     return u;
@@ -281,6 +283,7 @@
       '&zoom=16&q=' + encodeURIComponent(q) : null;
   }
   function dirEmbed(from, to, mode, via) {
+    if (!from || !to) return null;
     var u = EMBED + 'directions?key=' + window.MAPS_KEY + '&language=' + LANG + '&origin=place_id:' + from + '&destination=place_id:' + to + '&mode=' + mode;
     if (via) u += '&waypoints=' + via.map(function (v) { return 'place_id:' + v.pid; }).join('|');
     return u;
