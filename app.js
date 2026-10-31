@@ -352,10 +352,10 @@
       var gAttrs = { class: 'pill g' };
       if (mapsUrl) { gAttrs.href = mapsUrl; gAttrs.target = '_blank'; gAttrs.rel = 'noopener'; }
       if (s.gChecked) gAttrs.title = s.gChecked + ' 조사한 구글 평점 (제3자 공개 자료) · 최신값은 Google 지도에서 확인';
-      box.appendChild(el(mapsUrl ? 'a' : 'span', gAttrs, [
-        T('구글 {n}', { n: s.g[0].toFixed(1) }),
-        el('small', { text: '(' + grouped(s.g[1] || 0) + ')' })
-      ]));
+      var googleParts = [T('구글 {n}', { n: s.g[0].toFixed(1) })];
+      if (typeof s.g[1] === 'number' && s.g[1] > 0)
+        googleParts.push(el('small', { text: '(' + grouped(s.g[1]) + ')' }));
+      box.appendChild(el(mapsUrl ? 'a' : 'span', gAttrs, googleParts));
     } else if (hasTabelog && mapsUrl) {
       // 확인되지 않은 구글 점수는 숫자를 만들어내지 않고, 지도에서 바로 확인.
       box.appendChild(el('a', { class: 'pill g missing', href: mapsUrl, target: '_blank',
@@ -367,10 +367,10 @@
         tAttrs.href = s.tbUrl; tAttrs.target = '_blank'; tAttrs.rel = 'noopener';
         if (s.ratingChecked) tAttrs.title = s.ratingChecked + ' 확인한 타베로그 평점 · 현재와 다를 수 있음';
       }
-      box.appendChild(el(tAttrs.href ? 'a' : 'span', tAttrs, [
-        T('타베로그 {n}', { n: s.tb[0].toFixed(2) }),
-        el('small', { text: '(' + grouped(s.tb[1] || 0) + ')' })
-      ]));
+      var tabelogParts = [T('타베로그 {n}', { n: s.tb[0].toFixed(2) })];
+      if (typeof s.tb[1] === 'number' && s.tb[1] > 0)
+        tabelogParts.push(el('small', { text: '(' + grouped(s.tb[1]) + ')' }));
+      box.appendChild(el(tAttrs.href ? 'a' : 'span', tAttrs, tabelogParts));
     }
     return box.childNodes.length ? box : null;
   }
