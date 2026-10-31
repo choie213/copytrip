@@ -401,12 +401,18 @@
       "options": [
         {
           "name": "이치란 본사 총본점",
-          "q": "一蘭 本社総本店 中洲5-3-2",
+          "q": "一蘭 本社総本店 福岡 中洲5-3-2",
           "note": "원본 메모: 이치란 & 원갈비",
           "address": "福岡県福岡市博多区中洲5-3-2",
           "hours": "24시간 (임시 변경 가능)",
           "hoursSource": "https://ichiran.com/shop/kyushu/sohonten/",
-          "hoursChecked": "2026-10-31"
+          "hoursChecked": "2026-10-31",
+          "tb": [
+            3.45,
+            1371
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400102/40000130/",
+          "ratingChecked": "2026-10-31"
         },
         {
           "name": "돈테키 부타야 쇼쿠도",
@@ -415,7 +421,18 @@
         },
         {
           "name": "돈카츠 와카바",
-          "q": "돈카츠 와카바 후쿠오카"
+          "q": "とんかつ わか葉 天神本店",
+          "tb": [
+            3.66,
+            879
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400103/40050758/",
+          "address": "福岡県福岡市中央区天神1-15-36 天神Aビル1F・2F",
+          "hours": "월~토 10:30~14:30 / 17:00~20:45, 일 10:30~14:30 / 17:00~19:45",
+          "detailNote": "저온 조리로 음식 제공까지 오래 걸릴 수 있음.",
+          "ratingChecked": "2026-10-31",
+          "hoursChecked": "2026-10-31",
+          "hoursSource": "https://tabelog.com/fukuoka/A4001/A400103/40050758/"
         }
       ],
       "multi": false,
@@ -431,7 +448,17 @@
     },
     {
       "name": "이나바쵸 잇케이",
-      "q": "이나바쵸 잇케이 후쿠오카"
+      "q": "因幡町 一慶 天神ビジネスセンター B2F",
+      "tb": [
+        3.35,
+        94
+      ],
+      "tbUrl": "https://tabelog.com/fukuoka/A4001/A400103/40060531/",
+      "ratingChecked": "2026-10-31",
+      "address": "福岡県福岡市中央区天神1-10-20 天神ビジネスセンターB2F",
+      "hours": "평일 11:00~15:00 / 17:00~23:00, 주말 11:00~23:00",
+      "hoursSource": "https://tabelog.com/fukuoka/A4001/A400103/40060531/",
+      "hoursChecked": "2026-10-31"
     },
     {
       "name": "나카스 포장마차 거리",
@@ -458,17 +485,43 @@
       "options": [
         {
           "name": "모스버거 하카타 나카스 점",
-          "q": "모스버거 하카타 나카스 점 후쿠오카"
+          "q": "モスバーガー 博多中洲店",
+          "address": "福岡県福岡市博多区中洲3-7-18",
+          "hours": "09:00~익일 02:00",
+          "hoursSource": "https://tabelog.com/fukuoka/A4001/A400102/40023792/",
+          "hoursChecked": "2026-10-31"
         },
         {
           "name": "가제마치",
-          "q": "가제마치 후쿠오카",
-          "note": "아침/카페 후보"
+          "q": "風街 喫茶 天神3-3-7",
+          "note": "아침/카페 후보",
+          "tb": [
+            3.48,
+            163
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400103/40004346/",
+          "address": "福岡県福岡市中央区天神3-3-7 応順ビル1・2F",
+          "hours": "10:00~18:00",
+          "hoursSource": "https://tabelog.com/fukuoka/A4001/A400103/40004346/",
+          "warning": "오전 9시 아침 일정과 충돌: 10시 개점.",
+          "ratingChecked": "2026-10-31",
+          "hoursChecked": "2026-10-31"
         },
         {
           "name": "신신라멘 텐진본점",
-          "q": "신신라멘 텐진본점 후쿠오카",
-          "note": "아침/식사 후보"
+          "q": "博多らーめん ShinShin 天神本店",
+          "note": "아침/식사 후보",
+          "tb": [
+            3.58,
+            2834
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400103/40004980/",
+          "address": "福岡県福岡市中央区天神3-2-19",
+          "hours": "11:00~익일 03:00 (수요일 휴무, L.O.02:30)",
+          "hoursSource": "https://tabelog.com/fukuoka/A4001/A400103/40004980/",
+          "warning": "오전 9시 아침 일정과 충돌: 11시 개점.",
+          "ratingChecked": "2026-10-31",
+          "hoursChecked": "2026-10-31"
         }
       ],
       "multi": false,
@@ -504,7 +557,9 @@
     },
     {
       "name": "꼼데가르송 후쿠오카 이와타야 점",
-      "q": "꼼데가르송 후쿠오카 이와타야 점 후쿠오카"
+      "q": "福岡岩田屋 Comme des Garçons 新館3F",
+      "address": "福岡県福岡市中央区天神2-5-35 岩田屋本店新館3F",
+      "hoursSource": "https://www.comme-des-garcons.com/stores/"
     },
     {
       "name": "아크테릭스 후쿠오카 덴진 브랜드 스토어",
@@ -535,7 +590,17 @@
       "options": [
         {
           "name": "멘야가가 텐진점",
-          "q": "멘야가가 텐진점 후쿠오카"
+          "q": "麺屋我ガ 天神店 今泉2-5-6",
+          "tb": [
+            3.51,
+            542
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400103/40061770/",
+          "address": "福岡県福岡市中央区今泉2-5-6 1F-B",
+          "hours": "11:00~24:00 (변동 가능)",
+          "hoursSource": "https://tabelog.com/fukuoka/A4001/A400103/40061770/",
+          "ratingChecked": "2026-10-31",
+          "hoursChecked": "2026-10-31"
         },
         {
           "name": "규카츠 모토무라 후쿠오카 텐진 니시도리 점",
@@ -543,7 +608,13 @@
           "address": "福岡県福岡市中央区大名1-14-5 有光ビル 1F",
           "hours": "11:00~22:00 (L.O.21:30)",
           "hoursSource": "https://www.gyukatsu-motomura.com/store/Fukuoka-Tenjin_Nishidori",
-          "hoursChecked": "2026-10-31"
+          "hoursChecked": "2026-10-31",
+          "tb": [
+            3.04,
+            66
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400103/40045609/",
+          "ratingChecked": "2026-10-31"
         }
       ],
       "multi": false,
@@ -580,8 +651,9 @@
       "options": [
         {
           "name": "와규 맛집",
-          "q": "후쿠오카 와규 맛집",
-          "note": "원본에 \"필수\" 메모가 있음. 가게 이름은 따로 정해야 함"
+          "q": null,
+          "note": "원본에 \"필수\" 메모가 있음. 가게 이름은 따로 정해야 함",
+          "warning": "정확한 매장명이 지정되지 않은 후보. 특정 매장 평점·영업시간은 표시하지 않음."
         },
         {
           "name": "규카츠 모토무라 후쿠오카 텐진 니시도리 점",
@@ -590,16 +662,42 @@
           "address": "福岡県福岡市中央区大名1-14-5 有光ビル 1F",
           "hours": "11:00~22:00 (L.O.21:30)",
           "hoursSource": "https://www.gyukatsu-motomura.com/store/Fukuoka-Tenjin_Nishidori",
-          "hoursChecked": "2026-10-31"
+          "hoursChecked": "2026-10-31",
+          "tb": [
+            3.04,
+            66
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400103/40045609/",
+          "ratingChecked": "2026-10-31"
         },
         {
           "name": "멘야가가 텐진점",
-          "q": "멘야가가 텐진점 후쿠오카",
-          "note": "점심 후보에도 있음"
+          "q": "麺屋我ガ 天神店 今泉2-5-6",
+          "note": "점심 후보에도 있음",
+          "tb": [
+            3.51,
+            542
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400103/40061770/",
+          "address": "福岡県福岡市中央区今泉2-5-6 1F-B",
+          "hours": "11:00~24:00 (변동 가능)",
+          "hoursSource": "https://tabelog.com/fukuoka/A4001/A400103/40061770/",
+          "ratingChecked": "2026-10-31",
+          "hoursChecked": "2026-10-31"
         },
         {
           "name": "키와미야 후쿠오카 파르코 점",
-          "q": "키와미야 후쿠오카 파르코 점 후쿠오카"
+          "q": "極味や 福岡パルコ店",
+          "tb": [
+            3.41,
+            388
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400103/40023392/",
+          "address": "福岡県福岡市中央区天神2-11-1 福岡PARCO 本館B1F",
+          "hours": "11:00~22:00 (접수 종료 대략 20:30, 대기 상황에 따라 변동)",
+          "hoursSource": "https://tabelog.com/fukuoka/A4001/A400103/40023392/",
+          "ratingChecked": "2026-10-31",
+          "hoursChecked": "2026-10-31"
         }
       ],
       "multi": false
@@ -615,7 +713,17 @@
       "options": [
         {
           "name": "토킨",
-          "q": "토킨 후쿠오카"
+          "q": "焼鳥 と金 今泉1-9-19",
+          "tb": [
+            3.32,
+            146
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400103/40051584/",
+          "address": "福岡県福岡市中央区今泉1-9-19 bulala 102",
+          "hours": "17:00~익일 05:00 (요리 L.O.03:45)",
+          "hoursSource": "https://tabelog.com/fukuoka/A4001/A400103/40051584/",
+          "ratingChecked": "2026-10-31",
+          "hoursChecked": "2026-10-31"
         },
         {
           "name": "타케토라 이마이즈미 점",
@@ -623,8 +731,12 @@
         },
         {
           "name": "우라텐진 노렌",
-          "q": "우라텐진 노렌 후쿠오카",
-          "note": "술집/맛집 후보"
+          "q": "和牛と串焼き うら天神のれん",
+          "note": "술집/맛집 후보",
+          "address": "福岡県福岡市中央区渡辺通5-1-11 1F",
+          "hours": "17:00~24:00 (요리 L.O.23:00)",
+          "hoursSource": "https://tabelog.com/fukuoka/A4001/A400103/40072349/",
+          "hoursChecked": "2026-10-31"
         }
       ],
       "multi": false,
@@ -719,11 +831,32 @@
       "options": [
         {
           "name": "코가네무시",
-          "q": "코가네무시 모지코"
+          "q": "こがねむし 門司港 東本町1-1-24",
+          "tb": [
+            3.58,
+            396
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4004/A400501/40004397/",
+          "address": "福岡県北九州市門司区東本町1-1-24",
+          "hours": "월·화·수·토·일 11:45~15:00 / 17:00~21:00",
+          "hoursSource": "https://tabelog.com/fukuoka/A4004/A400501/40004397/",
+          "warning": "11월 6일(금) 정기휴무. 방문 후보에서 제외하는 편이 안전.",
+          "ratingChecked": "2026-10-31",
+          "hoursChecked": "2026-10-31"
         },
         {
           "name": "커리 혼포 모지코 레트로 점",
-          "q": "커리 혼포 모지코 레트로 점 모지코"
+          "q": "伽哩本舗 門司港レトロ店",
+          "tb": [
+            3.56,
+            795
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4004/A400501/40006677/",
+          "address": "福岡県北九州市門司区港町9-1 阿波屋ビル2F",
+          "hours": "11:00~19:30 (부정기 휴무)",
+          "hoursSource": "https://tabelog.com/fukuoka/A4004/A400501/40006677/",
+          "ratingChecked": "2026-10-31",
+          "hoursChecked": "2026-10-31"
         }
       ],
       "multi": false,
@@ -731,8 +864,12 @@
     },
     {
       "name": "프린세스 피피",
-      "q": "프린세스 피피 모지코",
-      "note": "시간 여유가 있으면, 바나나맥주"
+      "q": "プリンセスピピ 門司港",
+      "note": "시간 여유가 있으면, 바나나맥주",
+      "address": "福岡県北九州市門司区西海岸1-4-7",
+      "hours": "11:00~15:00 (L.O.14:00), 18:00~22:00 (L.O.21:00), 화요일 휴무",
+      "hoursSource": "https://kitakyushucity.guide/gourmets/detail/482503fa-e456-4c75-90cc-322512682970",
+      "hoursChecked": "2026-10-31"
     },
     {
       "name": "JR 모지코 역",
@@ -752,13 +889,22 @@
     },
     {
       "name": "고쿠라 성",
-      "q": "고쿠라 성 기타큐슈"
+      "q": "고쿠라 성 기타큐슈",
+      "address": "福岡県北九州市小倉北区城内2-1",
+      "hours": "11~3월 09:00~19:00 (최종 입장 18:30, 내부 관람 시)",
+      "hoursSource": "https://kokura-castle.jp/schedule/",
+      "detailNote": "외관 사진 촬영만 하는 경우 내부 입장료와 무관.",
+      "hoursChecked": "2026-10-31"
     },
     {
       "name": "차차타운 고쿠라",
       "q": "차차타운 고쿠라 기타큐슈",
       "time": "17:30",
-      "note": "되도록 노을에 보기"
+      "note": "되도록 노을에 보기",
+      "address": "福岡県北九州市小倉北区砂津3-1-1",
+      "hours": "매장 대부분 10:00~20:00 (점포별 상이)",
+      "hoursSource": "https://www.chachatown.com/information/",
+      "hoursChecked": "2026-10-31"
     },
     {
       "name": "아루아루 시티",
@@ -839,18 +985,43 @@
       "options": [
         {
           "name": "코하루 우동",
-          "q": "코하루 우동 유후인",
-          "note": "식사 후보"
+          "q": "こはるうどん 湯布院町川上1476",
+          "note": "식사 후보",
+          "address": "大分県由布市湯布院町川上1476",
+          "hours": "11:00~14:30 (매장 변동 가능)",
+          "hoursSource": "https://tabelog.com/oita/A4402/A440201/44001656/",
+          "hoursChecked": "2026-10-31"
         },
         {
           "name": "멘이치",
-          "q": "멘이치 유후인",
-          "note": "식사 후보"
+          "q": "麺一 湯布院 川上2912-1",
+          "note": "식사 후보",
+          "tb": [
+            3.09,
+            26
+          ],
+          "tbUrl": "https://tabelog.com/oita/A4402/A440201/44005241/",
+          "address": "大分県由布市湯布院町川上2912-1",
+          "hours": "11:30~15:00 / 17:30~20:00 (화요일 휴무, 면 소진 시 마감)",
+          "hoursSource": "https://tabelog.com/oita/A4402/A440201/44005241/",
+          "ratingChecked": "2026-10-31",
+          "hoursChecked": "2026-10-31"
         },
         {
           "name": "유후 마부시 신 긴린코 본점",
-          "q": "유후 마부시 신 긴린코 본점 유후인",
-          "note": "아점 후보"
+          "q": "由布まぶし心 金鱗湖本店",
+          "note": "아점 후보",
+          "tb": [
+            3.49,
+            258
+          ],
+          "tbUrl": "https://tabelog.com/oita/A4402/A440201/44008761/",
+          "address": "大分県由布市湯布院町川上1492-1",
+          "hours": "10:30~17:30",
+          "hoursSource": "https://tabelog.com/oita/A4402/A440201/44008761/",
+          "detailNote": "긴린코 인근, 점심시간 대기 가능.",
+          "ratingChecked": "2026-10-31",
+          "hoursChecked": "2026-10-31"
         }
       ],
       "multi": false
@@ -875,37 +1046,64 @@
       "options": [
         {
           "name": "누루카와 온센",
-          "q": "누루카와 온센 유후인",
+          "q": "御宿ぬるかわ温泉 由布院 川上1490-1",
           "note": "남녀별 대욕장 2026-10-01부터 성인 800엔(원본 600엔은 구가격).",
           "cost": 800,
           "costSource": "https://hpdsp.jp/nurukawa/news/222966",
-          "costChecked": "2026-10-31"
+          "costChecked": "2026-10-31",
+          "address": "大分県由布市湯布院町川上1490-1",
+          "hours": "08:00~19:00 (화요일·둘째 수요일 휴무)",
+          "hoursSource": "https://yufuin.gr.jp/spot/spot-1288/",
+          "warning": "인근 긴린호수 도보 1분, 일부 시설은 현장 이용 조건 확인.",
+          "hoursChecked": "2026-10-31"
         },
         {
           "name": "유후인 이요토미",
-          "q": "유후인 이요토미 유후인",
-          "note": "공식 안내 2025년 800엔, 2026년 가을 요금 재개정 예정으로 방문 전 확인. 미확정 요금은 합계에서 제외."
+          "q": "由布院いよとみ 川南848",
+          "note": "공식 안내 2025년 800엔, 2026년 가을 요금 재개정 예정으로 방문 전 확인. 미확정 요금은 합계에서 제외.",
+          "address": "大分県由布市湯布院町川南848",
+          "hours": "당일입욕 10:00~15:00 (접수 14:00까지), 부정기휴무",
+          "hoursSource": "https://www.iyotomi.jp/information/3980/",
+          "warning": "2026년 가을 요금 변경 예정 공지. 현재 요금 재확인 전까지 합계 미포함.",
+          "hoursChecked": "2026-10-31"
         },
         {
           "name": "유후다케 온천",
-          "q": "유후다케 온천 유후인",
+          "q": "由布岳温泉 湯布院 川上2425-2",
           "note": "성인 일반 입욕료 600엔(2026년 확인, 변경 가능).",
           "cost": 600,
           "costSource": "https://yufuin.gr.jp/spot/spot-5582/",
-          "costChecked": "2026-10-31"
+          "costChecked": "2026-10-31",
+          "address": "大分県由布市湯布院町川上2425-2",
+          "hours": "11~3월 11:00~17:00, 부정기휴무",
+          "hoursSource": "https://yufuin.gr.jp/spot/spot-5582/",
+          "hoursChecked": "2026-10-31"
         },
         {
           "name": "누루카와",
-          "q": "누루카와 유후인",
+          "q": "御宿ぬるかわ温泉 由布院 川上1490-1",
           "note": "누루카와 대욕장 동일 매장. 성인 800엔(2026-10-01부터).",
           "cost": 800,
           "costSource": "https://hpdsp.jp/nurukawa/news/222966",
-          "costChecked": "2026-10-31"
+          "costChecked": "2026-10-31",
+          "address": "大分県由布市湯布院町川上1490-1",
+          "hours": "08:00~19:00 (화요일·둘째 수요일 휴무)",
+          "hoursSource": "https://yufuin.gr.jp/spot/spot-1288/",
+          "warning": "‘누루카와 온센’과 동일한 온천을 중복 등록한 후보. 한 곳만 선택.",
+          "hoursChecked": "2026-10-31"
         },
         {
           "name": "무소엔 온천",
-          "q": "무소엔 온천 유후인",
-          "note": "대절탕 등 이용 종류에 따라 요금 상이. 원본 메모 1,000엔은 공식 확인 전으로 합계 제외."
+          "q": "山のホテル夢想園 由布院",
+          "note": "성인 당일입욕 일반요금 1,000엔(공식 안내 기준). 대절탕 이용 여부/시설 청소 일정 확인.",
+          "address": "大分県由布市湯布院町川南1243",
+          "hours": "당일입욕 접수 10:00~14:00, 이용 14:30까지",
+          "hoursSource": "https://www.musouen.co.jp/higaeri/",
+          "warning": "14:00 이후 접수 불가. 토요일 혼잡 가능성.",
+          "hoursChecked": "2026-10-31",
+          "cost": 1000,
+          "costSource": "https://www.musouen.co.jp/higaeri/",
+          "costChecked": "2026-10-31"
         }
       ],
       "multi": false,
@@ -997,23 +1195,69 @@
           "address": "福岡県福岡市博多区住吉1-2-22 キャナルシティ博多 ノースビル B1F",
           "hours": "09:30~23:00 (L.O.22:00)",
           "hoursSource": "https://ichiran.com/shop/kyushu/canalcity/",
-          "hoursChecked": "2026-10-31"
+          "hoursChecked": "2026-10-31",
+          "tb": [
+            3.09,
+            339
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40000254/",
+          "ratingChecked": "2026-10-31"
         },
         {
           "name": "바쿠로 하카타 점",
-          "q": "바쿠로 하카타 점 후쿠오카"
+          "q": "やきにくのバクロ 博多店",
+          "tb": [
+            3.59,
+            225
+          ],
+          "tbUrl": "https://selection.tabelog.com/fukuoka/A4001/A400101/40045144/",
+          "address": "福岡県福岡市博多区住吉1-1-9 RJR博多ビル2F",
+          "hours": "11:30~14:30 (L.O.14:00) / 17:00~22:00 (L.O.21:30), 부정기 휴무",
+          "hoursSource": "https://selection.tabelog.com/fukuoka/A4001/A400101/40045144/",
+          "ratingChecked": "2026-10-31",
+          "hoursChecked": "2026-10-31"
         },
         {
           "name": "에비스야 우동",
-          "q": "에비스야 우동 후쿠오카"
+          "q": "えびすやうどん 博多 住吉2-4-7",
+          "tb": [
+            3.42,
+            110
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40064595/",
+          "address": "福岡県福岡市博多区住吉2-4-7",
+          "hours": "11:10~18:00 (L.O.17:40, 수요일 휴무)",
+          "hoursSource": "https://tabelog.com/fukuoka/A4001/A400101/40064595/",
+          "ratingChecked": "2026-10-31",
+          "hoursChecked": "2026-10-31"
         },
         {
           "name": "키와미야 하카타 점",
-          "q": "키와미야 하카타 점 후쿠오카"
+          "q": "極味や 博多店 博多バスターミナル1F",
+          "tb": [
+            3.42,
+            270
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40039167/",
+          "address": "福岡県福岡市博多区博多駅中央街2-1 博多バスターミナル1F",
+          "hours": "11:00~22:00 (대기 상황에 따라 20:00 전후 접수 종료)",
+          "hoursSource": "https://tabelog.com/fukuoka/A4001/A400101/40039167/",
+          "ratingChecked": "2026-10-31",
+          "hoursChecked": "2026-10-31"
         },
         {
           "name": "키와미야 하카타 역 지하상가 점",
-          "q": "키와미야 하카타 역 지하상가 점 후쿠오카"
+          "q": "極味や 博多駅地下街店",
+          "tb": [
+            3.19,
+            55
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40067994/",
+          "address": "福岡県福岡市博多区博多駅中央街1-1 博多駅地下街",
+          "hours": "11:00~22:00 (L.O.21:00, 혼잡 시 접수 조기 마감)",
+          "hoursSource": "https://www.e-ekichika.com/shop/kiwamiya",
+          "ratingChecked": "2026-10-31",
+          "hoursChecked": "2026-10-31"
         }
       ],
       "multi": false,
@@ -1065,16 +1309,33 @@
       "options": [
         {
           "name": "모츠나베 오오야마 키테 하카타 점",
-          "q": "博多もつ鍋おおやま KITTE博多9階",
+          "q": "博多もつ鍋おおやま KITTE博多9F",
           "note": "원본 메모: 점심으로 고른 곳을 고려해서 정하기",
           "address": "福岡県福岡市博多区博多駅中央街9-1 KITTE博多 9F",
           "hours": "11:00~23:00 (L.O.22:30)",
           "hoursSource": "https://www.motu-ooyama.com/shop/kittehakata/",
-          "hoursChecked": "2026-10-31"
+          "hoursChecked": "2026-10-31",
+          "tb": [
+            3.43,
+            484
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40042647/",
+          "detailNote": "15시 이후 별도 테이블 요금 400엔(매장 공식 안내).",
+          "ratingChecked": "2026-10-31"
         },
         {
           "name": "하카타 라멘 신신 키테 하카타 점",
-          "q": "하카타 라멘 신신 키테 하카타 점 후쿠오카"
+          "q": "博多らーめん ShinShin KITTE博多店",
+          "tb": [
+            3.49,
+            1313
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40042485/",
+          "address": "福岡県福岡市博多区博多駅中央街9-1 KITTE博多 B1F",
+          "hours": "11:00~23:00 (L.O.22:30)",
+          "hoursSource": "https://tabelog.com/fukuoka/A4001/A400101/40042485/",
+          "ratingChecked": "2026-10-31",
+          "hoursChecked": "2026-10-31"
         }
       ],
       "multi": false
@@ -1105,8 +1366,18 @@
     },
     {
       "name": "야키토리 타다시 하카타 본점",
-      "q": "야키토리 타다시 하카타 본점 후쿠오카",
-      "note": "근처 술집"
+      "q": "薫香炭火焼き 炊き餃子 焼鳥ただし 博多本店",
+      "note": "근처 술집",
+      "tb": [
+        3.37,
+        84
+      ],
+      "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40002372/",
+      "ratingChecked": "2026-10-31",
+      "address": "福岡県福岡市博多区博多駅東2-3-1",
+      "hours": "월·공휴일 17:00~24:00 / 화~토 17:00~익일01:00 (부정기휴무)",
+      "hoursSource": "https://tabelog.com/fukuoka/A4001/A400101/40002372/",
+      "hoursChecked": "2026-10-31"
     },
     {
       "name": "호텔 WBF 그랑드 하카타",
@@ -1155,7 +1426,12 @@
     {
       "name": "삿포로 맥주 규슈 히타 공장",
       "q": "삿포로 맥주 규슈 히타 공장 히타",
-      "note": "운영시간 확인 필요"
+      "note": "운영시간 확인 필요 · 공식 안내상 자유관람 무료, 최종 관람 접수 16:30.",
+      "address": "大分県日田市大字高瀬6979",
+      "hours": "10:00~17:00 (월·화 휴관, 공휴일은 대체휴관)",
+      "hoursSource": "https://www.sapporobeer.jp/brewery/kyushuhita/access/",
+      "hoursChecked": "2026-10-31",
+      "warning": "11월 9일(월)은 정기휴관일. 공장 자유관람은 불가. 같은 부지의 진격의 거인 아넥스 운영은 별도 확인."
     },
     {
       "name": "진격의 거인 인 히타 뮤지엄 아넥스",
@@ -1175,19 +1451,27 @@
       "options": [
         {
           "name": "Senraku Hot Spring",
-          "q": "Senraku Hot Spring 히타",
+          "q": "小ヶ瀬天然湯 せんらく温泉 日田",
           "note": "대욕장 성인 600엔(대절탕 제외).",
           "cost": 600,
           "costSource": "https://senrakuyu.com/access/",
-          "costChecked": "2026-10-31"
+          "costChecked": "2026-10-31",
+          "address": "大分県日田市小ヶ瀬町2750",
+          "hours": "월~금 11:00~24:00 (접수 23:00까지), 주말·공휴일 10:00~24:00",
+          "hoursSource": "https://senrakuyu.com/access/",
+          "hoursChecked": "2026-10-31"
         },
         {
           "name": "琴ひら温泉露天風呂",
-          "q": "琴ひら温泉露天風呂 히타",
+          "q": "琴ひら温泉 ゆめ山水 露天風呂 日田",
           "note": "일반 성인 노천탕 800엔(특별기간 별도).",
           "cost": 800,
           "costSource": "https://kotohira-onsen.com/air_bath/",
-          "costChecked": "2026-10-31"
+          "costChecked": "2026-10-31",
+          "address": "大分県日田市琴平町1571-1",
+          "hours": "평일 12:00~20:45 (접수 20:15까지), 주말·공휴일 11:00~21:00",
+          "hoursSource": "https://kotohira-onsen.com/air_bath/",
+          "hoursChecked": "2026-10-31"
         }
       ],
       "multi": false,
@@ -1199,12 +1483,26 @@
     },
     {
       "name": "히타마부시 센야",
-      "q": "히타마부시 센야 히타",
-      "note": "장어덮밥"
+      "q": "日田まぶし 千屋 豆田町4-14",
+      "note": "장어덮밥 · 개인 사전 예약 불가. 입장 번호는 09:30부터 발급, 14:30 이후 일부 상품 10% 할인.",
+      "address": "大分県日田市豆田町4-14",
+      "hours": "10:30~16:30 (L.O.15:30), 부정기휴무",
+      "hoursSource": "https://senya-hita.yorozuya-hita.com/",
+      "hoursChecked": "2026-10-31",
+      "tb": [
+        3.54,
+        395
+      ],
+      "tbUrl": "https://tabelog.com/oita/A4404/A440403/44000261/",
+      "ratingChecked": "2026-10-31"
     },
     {
       "name": "진격의 히타 카페",
-      "q": "진격의 히타 카페 히타"
+      "q": "進撃の日田カフェ 日田市中央1-1-16",
+      "address": "大分県日田市中央1丁目1-16",
+      "hours": "10:00~18:00 (부정기휴무, L.O.17:30)",
+      "hoursSource": "https://shingeki-hita.com/news.html",
+      "hoursChecked": "2026-10-31"
     },
     {
       "name": "히타 역",

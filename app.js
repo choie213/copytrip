@@ -274,7 +274,12 @@
       '&waypoint_place_ids=' + via.map(function (v) { return v.pid; }).join('|');
     return u;
   }
-  function placeEmbed(pid) { return EMBED + 'place?key=' + window.MAPS_KEY + '&language=' + LANG + '&zoom=16&q=place_id:' + pid; }
+  // place_id가 아직 없는 여행 텍스트 가져오기 장소도 검색어로 지도 미리보기 지원.
+  function placeEmbed(pid, query) {
+    var q = pid ? 'place_id:' + pid : (query || '');
+    return q ? EMBED + 'place?key=' + encodeURIComponent(window.MAPS_KEY) + '&language=' + LANG +
+      '&zoom=16&q=' + encodeURIComponent(q) : null;
+  }
   function dirEmbed(from, to, mode, via) {
     var u = EMBED + 'directions?key=' + window.MAPS_KEY + '&language=' + LANG + '&origin=place_id:' + from + '&destination=place_id:' + to + '&mode=' + mode;
     if (via) u += '&waypoints=' + via.map(function (v) { return 'place_id:' + v.pid; }).join('|');
@@ -323,15 +328,36 @@
       row.appendChild(b);
     }
     if (url) row.appendChild(el('a', { class: 'btn', href: url, target: '_blank', rel: 'noopener', text: T('상품 페이지') }));
-    if (officialUrl) row.appendChild(el('a', { class: 'btn', href: officialUrl, target: '_blank', rel: 'noopener', text: LANG === 'ja' ? '公式案内' : LANG === 'en' ? 'Official info' : '공식 안내' }));
+    if (officialUrl) {
+      var isThirdParty = /\/\/(?:[^/]*\.)?tabelog\.com\//.test(officialUrl);
+      var label = isThirdParty ? (LANG === 'ja' ? '店舗情報' : LANG === 'en' ? 'Place info' : '매장 정보') :
+        (LANG === 'ja' ? '公式案内' : LANG === 'en' ? 'Official info' : '공식 안내');
+      row.appendChild(el('a', { class: 'btn', href: officialUrl, target: '_blank', rel: 'noopener', text: label }));
+    }
     if (fareUrl && /^https:\/\//.test(fareUrl)) row.appendChild(el('a', { class: 'btn', href: fareUrl, target: '_blank', rel: 'noopener', text: LANG === 'ja' ? '料金出典' : LANG === 'en' ? 'Fare source' : '요금 출처' }));
     return row.childNodes.length ? row : null;
   }
 
   function pills(s) {
     var box = el('div', { class: 'pills' });
-    if (s.g) box.appendChild(el('span', { class: 'pill g' }, [T('구글 {n}', { n: s.g[0].toFixed(1) }), el('small', { text: '(' + grouped(s.g[1]) + ')' })]));
-    if (s.tb) box.appendChild(el('span', { class: 'pill t' }, [T('타베로그 {n}', { n: s.tb[0].toFixed(2) }), el('small', { text: '(' + grouped(s.tb[1]) + ')' })]));
+    // 서로 다른 사이트의 평점은 섞지 않는다. 검증된 정적 평점만 표기.
+    if (s.g && Array.isArray(s.g) && typeof s.g[0] === 'number') {
+      box.appendChild(el('span', { class: 'pill g' }, [
+        T('구글 {n}', { n: s.g[0].toFixed(1) }),
+        el('small', { text: '(' + grouped(s.g[1] || 0) + ')' })
+      ]));
+    }
+    if (s.tb && Array.isArray(s.tb) && typeof s.tb[0] === 'number') {
+      var tAttrs = { class: 'pill t' };
+      if (s.tbUrl && /^https:\/\//.test(s.tbUrl)) {
+        tAttrs.href = s.tbUrl; tAttrs.target = '_blank'; tAttrs.rel = 'noopener';
+        if (s.ratingChecked) tAttrs.title = s.ratingChecked + ' 확인한 타베로그 평점 · 현재와 다를 수 있음';
+      }
+      box.appendChild(el(tAttrs.href ? 'a' : 'span', tAttrs, [
+        T('타베로그 {n}', { n: s.tb[0].toFixed(2) }),
+        el('small', { text: '(' + grouped(s.tb[1] || 0) + ')' })
+      ]));
+    }
     return box.childNodes.length ? box : null;
   }
 
@@ -368,9 +394,11 @@
     var b = el('div', null, [t, pills(s)]);
     var hours = openingText(s); if (hours) b.appendChild(hours);
     if (s.note) b.appendChild(lines('note', s.note));
+    if (s.address && !s.tip) b.appendChild(el('div', { class: 'place-address-inline', text: s.address }));
     if (s.tip) b.appendChild(lines('tip', s.tip));
+    if (s.warning) b.appendChild(el('div', { class: 'choice-warning general-warning', text: s.warning }));
     var r = reviews(s); if (r) b.appendChild(r);
-    var a = s.pid || s.q || s.url || s.hoursSource || s.costSource ? acts(s.name, (s.pid || s.q) && placeLink(s), s.pid && placeEmbed(s.pid), s.url, sourceLink(s), s.costSource) : null;
+    var a = s.pid || s.q || s.url || s.hoursSource || s.costSource ? acts(s.name, (s.pid || s.q) && placeLink(s), (s.pid || s.q) && placeEmbed(s.pid, s.q), s.url, sourceLink(s), s.costSource) : null;
     if (a) b.appendChild(a);
     return b;
   }
@@ -383,6 +411,28 @@
 
   var CHECK = '<svg class="chk" viewBox="0 0 22 22"><circle cx="11" cy="11" r="10"/><path d="M6.5 11.2l3 3 6-6"/></svg>';
 
+  // 선택형 일정은 원작자 카드처럼 제목 아래에 평점, 주소, 영업시간,
+  // 메모를 같은 흐름으로 배치한다. 확인되지 않은 정보는 만들어 표시하지 않는다.
+  function choiceDetails(o) {
+    var rows = [];
+    if (o.address) rows.push({ text: o.address });
+    if (o.hours) rows.push({ text: (LANG === 'ja' ? '営業時間 ' : LANG === 'en' ? 'Hours ' : '영업시간 ') + o.hours });
+    if (o.note) rows.push({ text: o.note });
+    if (o.tip) rows.push({ text: o.tip });
+    if (o.detailNote) rows.push({ text: o.detailNote });
+    if (o.warning) rows.push({ text: o.warning, warning: true });
+    if (!rows.length) return null;
+    return el('div', { class: 'tip choice-detail' }, rows.map(function (r) {
+      return el('div', { class: r.warning ? 'choice-warning' : '', text: r.text });
+    }));
+  }
+  function choiceRatingNote(o) {
+    // 원본 데이터 중 확인되지 않은 평점에 숫자를 넣지 않는다.
+    if (o.g || o.tb || !o.q) return null;
+    var t = LANG === 'ja' ? '評価未確認 · 地図で確認' :
+      LANG === 'en' ? 'Rating not verified · check the map' : '평점 미확인 · 지도에서 확인';
+    return el('div', { class: 'rating-unverified', text: t });
+  }
   function choiceCard(c, key) {
     var chosen = (load(PICK_KEY) || {})[key] || [];
     var card = el('div', { class: 'card' }, [head(c), el('div', { class: 'choice-tag' }, [c.title, el('span', { class: 'choice-hint', text: T(c.multi ? '여러 곳 체크 가능' : '하나 고르기') })])]);
@@ -396,13 +446,21 @@
       // 고르지 않은 선택지는 이름 한 줄로 접어 두고, 꺾쇠로 펼쳐 볼 수 있게 함
       var more = el('button', { class: 'opt-more', type: 'button', 'aria-label': T('자세히 보기'), html: ICON.chev });
       var inner = el('div', null, [pills(o)]);
-      var optHours = openingText(o); if (optHours) inner.appendChild(optHours);
-      if (o.note) inner.appendChild(lines('note', o.note));
-      if (o.tip) inner.appendChild(lines('tip', o.tip));
+      var ratingNote = choiceRatingNote(o); if (ratingNote) inner.appendChild(ratingNote);
+    if (o.ratingChecked) inner.appendChild(el('div', { class: 'rating-snapshot',
+      text: (LANG === 'ja' ? '口コミ点数の確認日 ' : LANG === 'en' ? 'Rating checked ' : '평점 확인일 ') + o.ratingChecked }));
+      var detail = choiceDetails(o); if (detail) inner.appendChild(detail);
       var r = reviews(o); if (r) inner.appendChild(r);
-      var a = o.pid || o.q || o.hoursSource || o.costSource ? acts(o.name, (o.pid || o.q) && placeLink(o), o.pid && placeEmbed(o.pid), null, sourceLink(o), o.costSource) : null; if (a) inner.appendChild(a);
-      // 펼쳐 볼 내용이 없는 선택지(생략 등)는 꺾쇠를 달지 않음
-      var opt = el('div', { class: 'opt' + (on ? ' on' : '') + (inner.childNodes.length ? '' : ' bare') }, [el('div', { class: 'opt-row' }, [pick, more]), el('div', { class: 'opt-body' }, [inner])]);
+      var a = o.pid || o.q || o.hoursSource || o.costSource ? acts(o.name, (o.pid || o.q) && placeLink(o), (o.pid || o.q) && placeEmbed(o.pid, o.q), null, sourceLink(o), o.costSource) : null; if (a) inner.appendChild(a);
+      if (o.tbUrl && /^https:\/\//.test(o.tbUrl)) {
+        inner.appendChild(el('a', { class: 'review-source', href: o.tbUrl, target: '_blank', rel: 'noopener',
+          text: LANG === 'ja' ? '食べログ口コミを見る ›' : LANG === 'en' ? 'Read Tabelog reviews ›' : '타베로그 실제 후기 보기 ›' }));
+      }
+      // 원작자의 식사 카드처럼 처음 두 후보의 상세정보를 바로 노출.
+      // 나머지는 접어두되 개별 펼침 버튼으로 모두 확인할 수 있음.
+      var showFirst = !chosen.length && !c.multi && oi < 2 && ['아침', '점심', '저녁', '식사', '술집'].indexOf(c.title) !== -1;
+      var expanded = on || showFirst;
+      var opt = el('div', { class: 'opt' + (on ? ' on' : '') + (expanded ? ' peek' : '') + (inner.childNodes.length ? '' : ' bare') }, [el('div', { class: 'opt-row' }, [pick, more]), el('div', { class: 'opt-body' }, [inner])]);
       more.addEventListener('click', function () { opt.classList.toggle('peek'); });
       pick.addEventListener('click', function () {
         var st = load(PICK_KEY) || {};
@@ -413,7 +471,7 @@
         Array.prototype.forEach.call(box.children, function (n, j) {
           var on2 = cur.indexOf(j) !== -1;
           n.classList.toggle('on', on2);
-          n.classList.remove('peek');
+          n.classList.toggle('peek', on2);
           n.querySelector('.opt-pick').setAttribute('aria-pressed', on2 ? 'true' : 'false');
         });
         box.classList.toggle('picked', cur.length > 0);
