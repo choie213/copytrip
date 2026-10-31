@@ -905,7 +905,14 @@
           "hoursSource": "https://tabelog.com/fukuoka/A4004/A400501/40004397/",
           "warning": "11월 6일(금) 정기휴무. 방문 후보에서 제외하는 편이 안전.",
           "ratingChecked": "2026-10-31",
-          "hoursChecked": "2026-10-31"
+          "hoursChecked": "2026-10-31",
+          "g": [
+            4.7,
+            749
+          ],
+          "gSource": "https://ste-map.com/ranking/pref_fukuoka/restaurant?page=3",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary"
         },
         {
           "name": "커리 혼포 모지코 레트로 점",
@@ -1369,7 +1376,14 @@
           "hours": "11:00~22:00 (L.O.21:00, 혼잡 시 접수 조기 마감)",
           "hoursSource": "https://www.e-ekichika.com/shop/kiwamiya",
           "ratingChecked": "2026-10-31",
-          "hoursChecked": "2026-10-31"
+          "hoursChecked": "2026-10-31",
+          "g": [
+            4,
+            350
+          ],
+          "gSource": "https://restaurantguru.jp/Kiwamiya-Hamburg-Hakata-Station-Underground-Mall-Fukuoka",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary"
         }
       ],
       "multi": false,
