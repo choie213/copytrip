@@ -206,6 +206,14 @@ a { color: var(--blue); text-decoration: none; }
 .pill small { font-weight: 500; color: var(--ink2); margin-left: 3px; }
 .pill.g { color: var(--blue); }
 .pill.t { color: var(--orange); }
+/* 원작자의 선택형 카드: 평점 바로 아래 주소·시간·메모를 오렌지 안내선으로 표시. */
+.pill[href] { display: inline-flex; align-items: center; gap: 1px; color: var(--orange); text-decoration: none; cursor: pointer; }
+.pill[href]:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
+.choice-detail { font-size: 14px; line-height: 1.55; margin-top: 10px; }
+.choice-detail > div + div { margin-top: 5px; }
+.choice-warning { color: var(--orange); font-weight: 650; }
+.rating-unverified { color: var(--ink3); font-size: 12px; margin-top: 6px; }
+
 
 .acts { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
 .btn {
