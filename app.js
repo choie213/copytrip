@@ -254,7 +254,7 @@
 
   // 여러 정보가 한 줄에 몰리면 읽기 어려워서 문장 단위로 줄을 나눔
   function lines(cls, text) {
-    return el('div', { class: cls }, (text || '').split(/\.\s+|。/).filter(function (t) { return t.trim(); }).map(function (t) { return el('div', { text: t.replace(/\.$/, '') }); }));
+    return el('div', { class: cls }, (text || '').split(/\r?\n|\.\s+|。/).filter(function (t) { return t.trim(); }).map(function (t) { return el('div', { text: t.trim().replace(/\.$/, '') }); }));
   }
 
   var ICON = {
@@ -519,6 +519,10 @@
       var r = m.route;
       var a = acts(r.label || m.name, dirLink(r.fromName, r.from, r.toName, r.to, r.mode), dirEmbed(r.from, r.to, r.mode));
       if (a) card.appendChild(a);
+    }
+    if (m.officialUrl) {
+      var official = acts(m.name, null, null, null, m.officialUrl);
+      if (official) card.appendChild(official);
     }
     if (m.costSource) {
       var fare = acts(m.name, null, null, null, null, m.costSource);
