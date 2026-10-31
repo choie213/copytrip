@@ -512,12 +512,12 @@
           "address": "福岡県福岡市博多区下川端町2-1 博多座西銀ビル1F",
           "tb": [
             3.47,
-            183
+            null
           ],
           "tbUrl": "https://tabelog.com/fukuoka/A4001/A400102/40026105/",
           "g": [
             4.5,
-            1200
+            null
           ],
           "gSource": "https://restaurantguru.jp/steamed-fish-Fukuoka-m677",
           "hours": "11:30~15:00 / 17:00~21:00 (저녁 L.O.20:30)",
@@ -534,12 +534,12 @@
           "address": "福岡県福岡市中央区大名1-3-6 フラップスビル1F",
           "tb": [
             3.6,
-            739
+            null
           ],
           "tbUrl": "https://tabelog.com/fukuoka/A4001/A400104/40024061/",
           "g": [
             4.7,
-            2303
+            null
           ],
           "gSource": "https://restaurantguru.com/Motsunabe-Tashu-Fukuoka",
           "hours": "월~목 17:00~23:00 / 금~일 17:00~24:00",
@@ -555,7 +555,7 @@
           "q": "博多らーめん ShinShin 天神本店",
           "tb": [
             3.58,
-            2834
+            null
           ],
           "tbUrl": "https://tabelog.com/fukuoka/A4001/A400103/40004980/",
           "address": "福岡県福岡市中央区天神3-2-19",
@@ -565,7 +565,7 @@
           "hoursChecked": "2026-10-31",
           "g": [
             4.3,
-            7915
+            null
           ],
           "gSource": "https://wanderlog.com/ja/place/details/543368/%E5%8D%9A%E5%A4%9A%E3%82%89%E3%83%BC%E3%82%81%E3%82%93shinshin-%E5%A4%A9%E7%A5%9E%E6%9C%AC%E5%BA%97",
           "gChecked": "2026-10-31",
@@ -583,13 +583,13 @@
           "hoursChecked": "2026-10-31",
           "tb": [
             3.04,
-            66
+            null
           ],
           "tbUrl": "https://tabelog.com/fukuoka/A4001/A400103/40045609/",
           "ratingChecked": "2026-10-31",
           "g": [
             4.8,
-            13537
+            null
           ],
           "gSource": "https://wanderlog.com/ja/list/geoCategory/432290",
           "gChecked": "2026-10-31",
@@ -710,12 +710,12 @@
           "address": "福岡県福岡市博多区下川端町3-1 博多リバレイン",
           "tb": [
             3.52,
-            271
+            null
           ],
           "tbUrl": "https://tabelog.com/fukuoka/A4001/A400102/40033249/",
           "g": [
             4.3,
-            467
+            null
           ],
           "gSource": "https://restaurantguru.jp/coffeehouse-Fukuoka-t5/4",
           "hours": "08:00~16:30 (요일별 변동 확인)",
@@ -731,12 +731,12 @@
           "address": "福岡県福岡市中央区西中洲6-17",
           "tb": [
             3.64,
-            665
+            null
           ],
           "tbUrl": "https://tabelog.com/fukuoka/A4001/A400103/40052317/",
           "g": [
             4.1,
-            2012
+            null
           ],
           "gSource": "https://restaurantguru.jp/Pain-Stock-Tenjin-Fukuoka",
           "hours": "오전 영업 (정확한 개점·휴무는 공식 확인)",
@@ -752,12 +752,12 @@
           "address": "福岡県福岡市中央区天神4-3-8 ミーナ天神1F",
           "tb": [
             3.3,
-            47
+            null
           ],
           "tbUrl": "https://tabelog.com/fukuoka/A4001/A400103/40064089/",
           "g": [
             4.4,
-            225
+            null
           ],
           "gSource": "https://restaurantguru.jp/ONCA-COFFEE-%E3%82%AA%E3%83%B3%E3%82%AB%E3%82%B3%E3%83%BC%E3%83%92%E3%83%BC-%E3%83%9F%E3%83%BC%E3%83%8A%E5%A4%A9%E7%A5%9E%E5%BA%97-Fukuoka",
           "hours": "평일 07:00~20:00 / 토·일·공휴일 10:00~20:00",
@@ -774,12 +774,12 @@
           "address": "福岡県福岡市中央区天神2-2-20 警固神社 社務所ビル1F",
           "tb": [
             3.21,
-            197
+            null
           ],
           "tbUrl": "https://tabelog.com/fukuoka/A4001/A400103/40066618/",
           "g": [
             4.5,
-            1410
+            null
           ],
           "gSource": "https://restaurantguru.jp/Blue-Bottle-Coffee-Fukuoka",
           "hours": "08:00부터(최종 종료시간은 방문 전 확인)",
@@ -795,12 +795,12 @@
           "address": "福岡県福岡市中央区今泉1-18-3 1F",
           "tb": [
             3.48,
-            276
+            null
           ],
           "tbUrl": "https://tabelog.com/kr/fukuoka/A4001/A400104/40053685/",
           "g": [
             4.4,
-            907
+            null
           ],
           "gSource": "https://restaurantguru.jp/NOOICE-Tenjin-Fukuoka",
           "hours": "월~목 08:00~17:00 / 금~일 08:00~21:00",
@@ -927,12 +927,12 @@
           "address": "福岡県福岡市中央区今泉1-18-3 1F",
           "tb": [
             3.48,
-            276
+            null
           ],
           "tbUrl": "https://tabelog.com/kr/fukuoka/A4001/A400104/40053685/",
           "g": [
             4.4,
-            907
+            null
           ],
           "gSource": "https://restaurantguru.jp/NOOICE-Tenjin-Fukuoka",
           "hours": "월~목 08:00~17:00 / 금~일 08:00~21:00",
@@ -948,7 +948,7 @@
           "q": "博多らーめん ShinShin 天神本店",
           "tb": [
             3.58,
-            2834
+            null
           ],
           "tbUrl": "https://tabelog.com/fukuoka/A4001/A400103/40004980/",
           "address": "福岡県福岡市中央区天神3-2-19",
@@ -958,7 +958,7 @@
           "hoursChecked": "2026-10-31",
           "g": [
             4.3,
-            7915
+            null
           ],
           "gSource": "https://wanderlog.com/ja/place/details/543368/%E5%8D%9A%E5%A4%9A%E3%82%89%E3%83%BC%E3%82%81%E3%82%93shinshin-%E5%A4%A9%E7%A5%9E%E6%9C%AC%E5%BA%97",
           "gChecked": "2026-10-31",
@@ -972,7 +972,7 @@
           "q": "極味や 福岡パルコ店",
           "tb": [
             3.41,
-            388
+            null
           ],
           "tbUrl": "https://tabelog.com/fukuoka/A4001/A400103/40023392/",
           "address": "福岡県福岡市中央区天神2-11-1 福岡PARCO 本館B1F",
@@ -982,7 +982,7 @@
           "hoursChecked": "2026-10-31",
           "g": [
             4.3,
-            3337
+            null
           ],
           "gSource": "https://wanderlog.com/ja/list/geoCategory/1808698",
           "gChecked": "2026-10-31",
@@ -995,7 +995,7 @@
           "q": "とんかつ わか葉 天神本店",
           "tb": [
             3.66,
-            879
+            null
           ],
           "tbUrl": "https://tabelog.com/fukuoka/A4001/A400103/40050758/",
           "address": "福岡県福岡市中央区天神1-15-36 天神Aビル1F・2F",
@@ -1006,7 +1006,7 @@
           "hoursSource": "https://tabelog.com/fukuoka/A4001/A400103/40050758/",
           "g": [
             4.3,
-            1224
+            null
           ],
           "gSource": "https://ste-map.com/ranking/pref_fukuoka/city_401307/restaurant/tonkatsu",
           "gChecked": "2026-10-31",
@@ -1128,12 +1128,12 @@
           "address": "福岡県福岡市中央区大名1-3-6 フラップスビル1F",
           "tb": [
             3.6,
-            739
+            null
           ],
           "tbUrl": "https://tabelog.com/fukuoka/A4001/A400104/40024061/",
           "g": [
             4.7,
-            2303
+            null
           ],
           "gSource": "https://restaurantguru.com/Motsunabe-Tashu-Fukuoka",
           "hours": "월~목 17:00~23:00 / 금~일 17:00~24:00",
@@ -1150,12 +1150,12 @@
           "address": "福岡県福岡市博多区下川端町2-1 博多座西銀ビル1F",
           "tb": [
             3.47,
-            183
+            null
           ],
           "tbUrl": "https://tabelog.com/fukuoka/A4001/A400102/40026105/",
           "g": [
             4.5,
-            1200
+            null
           ],
           "gSource": "https://restaurantguru.jp/steamed-fish-Fukuoka-m677",
           "hours": "11:30~15:00 / 17:00~21:00 (저녁 L.O.20:30)",
@@ -1172,7 +1172,7 @@
           "note": "아침/식사 후보 / 다른 끼니의 기존 검증 음식점을 이 식사 선택지에 새로 연결.",
           "tb": [
             3.58,
-            2834
+            null
           ],
           "tbUrl": "https://tabelog.com/fukuoka/A4001/A400103/40004980/",
           "address": "福岡県福岡市中央区天神3-2-19",
@@ -1183,7 +1183,7 @@
           "hoursChecked": "2026-10-31",
           "g": [
             4.3,
-            7915
+            null
           ],
           "gSource": "https://wanderlog.com/ja/place/details/543368/%E5%8D%9A%E5%A4%9A%E3%82%89%E3%83%BC%E3%82%81%E3%82%93shinshin-%E5%A4%A9%E7%A5%9E%E6%9C%AC%E5%BA%97",
           "gChecked": "2026-10-31",
@@ -1195,7 +1195,7 @@
           "q": "とんかつ わか葉 天神本店",
           "tb": [
             3.66,
-            879
+            null
           ],
           "tbUrl": "https://tabelog.com/fukuoka/A4001/A400103/40050758/",
           "address": "福岡県福岡市中央区天神1-15-36 天神Aビル1F・2F",
@@ -1206,7 +1206,7 @@
           "hoursSource": "https://tabelog.com/fukuoka/A4001/A400103/40050758/",
           "g": [
             4.3,
-            1224
+            null
           ],
           "gSource": "https://ste-map.com/ranking/pref_fukuoka/city_401307/restaurant/tonkatsu",
           "gChecked": "2026-10-31",
@@ -1395,7 +1395,7 @@
           "address": "福岡県北九州市門司区西海岸1-4-7 門司港センタービル1F",
           "tb": [
             3.49,
-            582
+            null
           ],
           "tbUrl": "https://tabelog.com/fukuoka/A4004/A400501/40003315/",
           "g": [
@@ -1417,7 +1417,7 @@
           "address": "福岡県北九州市門司区西海岸1-4-7",
           "tb": [
             3.43,
-            291
+            null
           ],
           "tbUrl": "https://tabelog.com/fukuoka/A4004/A400501/40003136/",
           "g": [
@@ -1439,7 +1439,7 @@
           "address": "福岡県北九州市門司区港町9-4 バルク館1F",
           "tb": [
             3.38,
-            191
+            null
           ],
           "tbUrl": "https://tabelog.com/fukuoka/A4004/A400501/40025877/",
           "g": [
@@ -1645,12 +1645,12 @@
           "address": "大分県由布市湯布院町川北5-3 2F",
           "tb": [
             3.49,
-            425
+            null
           ],
           "tbUrl": "https://tabelog.com/oita/A4402/A440201/44005142/",
           "g": [
             4.1,
-            2900
+            null
           ],
           "gSource": "https://restaurantguru.jp/rice-Yufu-m14",
           "hours": "11:00~16:00 (L.O.15:30) / 17:30~21:00",
@@ -1667,12 +1667,12 @@
           "address": "大分県由布市湯布院町川上1561",
           "tb": [
             3.38,
-            103
+            null
           ],
           "tbUrl": "https://tabelog.com/oita/A4402/A440201/44000660/",
           "g": [
             4.3,
-            363
+            null
           ],
           "gSource": "https://restaurantguru.jp/yakiniku-Yufu-m8936",
           "hours": "11:00~14:30 (L.O.13:50), 화요일 휴무",
@@ -1689,12 +1689,12 @@
           "address": "大分県由布市湯布院町川上1592-1",
           "tb": [
             3.52,
-            291
+            null
           ],
           "tbUrl": "https://tabelog.com/oita/A4402/A440201/44000040/",
           "g": [
             4.3,
-            906
+            null
           ],
           "gSource": "https://restaurantguru.jp/Cafe-La-Ruche-Yufu",
           "hours": "09:00~16:30 (수 휴무)",
@@ -1989,12 +1989,12 @@
           "address": "福岡県福岡市博多区博多駅東3-1-6",
           "tb": [
             3.72,
-            5799
+            null
           ],
           "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40032701/",
           "g": [
             4,
-            6800
+            null
           ],
           "gSource": "https://restaurantguru.jp/pork-Fukuoka-m28",
           "hours": "11:00~24:00 (재료 소진·부정기 휴무 확인)",
@@ -2011,12 +2011,12 @@
           "address": "福岡県福岡市博多区博多駅中央街1-1 JR博多駅B1F",
           "tb": [
             3.49,
-            168
+            null
           ],
           "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40058853/",
           "g": [
             4.2,
-            1191
+            null
           ],
           "gSource": "https://restaurantguru.jp/fried-fish-Fukuoka-m237",
           "hours": "07:30부터 / 아침 07:30~10:00",
@@ -2033,12 +2033,12 @@
           "address": "福岡県福岡市博多区中洲2-8-27",
           "tb": [
             3.72,
-            2552
+            null
           ],
           "tbUrl": "https://tabelog.com/fukuoka/A4001/A400102/40000017/",
           "g": [
             4.4,
-            9000
+            null
           ],
           "gSource": "https://restaurantguru.jp/tapas-Fukuoka-m9527",
           "hours": "약 10:30~20:15 / 화·수 휴무(방문일 확인)",
@@ -2149,12 +2149,12 @@
           "address": "福岡県福岡市博多区博多駅東3-1-6",
           "tb": [
             3.72,
-            5799
+            null
           ],
           "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40032701/",
           "g": [
             4,
-            6800
+            null
           ],
           "gSource": "https://restaurantguru.jp/pork-Fukuoka-m28",
           "hours": "11:00~24:00 (재료 소진·부정기 휴무 확인)",
@@ -2170,7 +2170,7 @@
           "q": "極味や 博多店 博多バスターミナル1F",
           "tb": [
             3.42,
-            270
+            null
           ],
           "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40039167/",
           "address": "福岡県福岡市博多区博多駅中央街2-1 博多バスターミナル1F",
@@ -2180,7 +2180,7 @@
           "hoursChecked": "2026-10-31",
           "g": [
             4.2,
-            3323
+            null
           ],
           "gSource": "https://wanderlog.com/ja/place/details/2624480/%E6%A5%B5%E5%91%B3%E3%82%84-%E5%8D%9A%E5%A4%9A%E5%BA%97-%E3%83%8F%E3%83%B3%E3%83%90%E3%83%BC%E3%82%B0-%E3%82%B9%E3%83%86%E3%83%BC%E3%82%AD",
           "gChecked": "2026-10-31",
@@ -2193,7 +2193,7 @@
           "q": "極味や 博多駅地下街店",
           "tb": [
             3.19,
-            55
+            null
           ],
           "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40067994/",
           "address": "福岡県福岡市博多区博多駅中央街1-1 博多駅地下街",
@@ -2203,7 +2203,7 @@
           "hoursChecked": "2026-10-31",
           "g": [
             4,
-            350
+            null
           ],
           "gSource": "https://restaurantguru.jp/Kiwamiya-Hamburg-Hakata-Station-Underground-Mall-Fukuoka",
           "gChecked": "2026-10-31",
@@ -2220,13 +2220,13 @@
           "hoursChecked": "2026-10-31",
           "tb": [
             3.09,
-            339
+            null
           ],
           "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40000254/",
           "ratingChecked": "2026-10-31",
           "g": [
             4.1,
-            2170
+            null
           ],
           "gSource": "https://wanderlog.com/ja/place/details/548195/%E4%B8%80%E8%98%AD-%E3%82%AD%E3%83%A3%E3%83%8A%E3%83%AB%E3%82%B7%E3%83%86%E3%82%A3%E5%8D%9A%E5%A4%9A%E5%BA%97-%E5%92%8C%E9%A2%A8%E3%81%A8%E3%82%93%E3%81%93%E3%81%A4%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%B3",
           "gChecked": "2026-10-31",
@@ -2814,12 +2814,12 @@
           "address": "福岡県福岡市博多区下川端町3-1 博多リバレイン",
           "tb": [
             3.52,
-            271
+            null
           ],
           "tbUrl": "https://tabelog.com/fukuoka/A4001/A400102/40033249/",
           "g": [
             4.3,
-            467
+            null
           ],
           "gSource": "https://restaurantguru.jp/coffeehouse-Fukuoka-t5/4",
           "hours": "08:00~16:30 (요일별 변동 확인)",
@@ -2835,12 +2835,12 @@
           "address": "福岡県福岡市中央区西中洲6-17",
           "tb": [
             3.64,
-            665
+            null
           ],
           "tbUrl": "https://tabelog.com/fukuoka/A4001/A400103/40052317/",
           "g": [
             4.1,
-            2012
+            null
           ],
           "gSource": "https://restaurantguru.jp/Pain-Stock-Tenjin-Fukuoka",
           "hours": "오전 영업 (정확한 개점·휴무는 공식 확인)",
@@ -2857,12 +2857,12 @@
           "address": "福岡県福岡市博多区博多駅中央街1-1 JR博多駅 B1F",
           "tb": [
             3.49,
-            707
+            null
           ],
           "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40026439/",
           "g": [
             4.2,
-            1665
+            null
           ],
           "gSource": "https://restaurantguru.jp/Tanya-Fukuoka-2",
           "hours": "07:00~22:00 / 아침 정식 07:00~10:00",
@@ -2879,12 +2879,12 @@
           "address": "福岡県福岡市博多区博多駅前4-14-1 1F",
           "tb": [
             3.64,
-            1594
+            null
           ],
           "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40057205/",
           "g": [
             4.1,
-            2237
+            null
           ],
           "gSource": "https://restaurantguru.com/Dacomecca-Fukuoka",
           "hours": "07:00~20:00, 빵 소진 시 조기 종료",
@@ -2901,12 +2901,12 @@
           "address": "福岡県福岡市博多区博多駅中央街1-1 JR博多駅B1F",
           "tb": [
             3.49,
-            168
+            null
           ],
           "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40058853/",
           "g": [
             4.2,
-            1191
+            null
           ],
           "gSource": "https://restaurantguru.jp/fried-fish-Fukuoka-m237",
           "hours": "07:30부터 / 아침 07:30~10:00",
@@ -2927,13 +2927,13 @@
           "hoursChecked": "2026-10-31",
           "tb": [
             3.45,
-            1371
+            null
           ],
           "tbUrl": "https://tabelog.com/fukuoka/A4001/A400102/40000130/",
           "ratingChecked": "2026-10-31",
           "g": [
             4.2,
-            13337
+            null
           ],
           "gSource": "https://wanderlog.com/ja/place/details/422225/%E4%B8%80%E8%98%AD-%E6%9C%AC%E7%A4%BE%E7%B7%8F%E6%9C%AC%E5%BA%97",
           "gChecked": "2026-10-31",
@@ -2955,12 +2955,12 @@
           "address": "福岡県福岡市博多区博多駅東3-1-6",
           "tb": [
             3.72,
-            5799
+            null
           ],
           "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40032701/",
           "g": [
             4,
-            6800
+            null
           ],
           "gSource": "https://restaurantguru.jp/pork-Fukuoka-m28",
           "hours": "11:00~24:00 (재료 소진·부정기 휴무 확인)",
@@ -2981,14 +2981,14 @@
           "hoursChecked": "2026-10-31",
           "tb": [
             3.43,
-            484
+            null
           ],
           "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40042647/",
           "detailNote": "15시 이후 별도 테이블 요금 400엔(매장 공식 안내).",
           "ratingChecked": "2026-10-31",
           "g": [
             4.4,
-            3302
+            null
           ],
           "gSource": "https://wanderlog.com/ja/list/geoCategory/474517",
           "gChecked": "2026-10-31",
@@ -3000,7 +3000,7 @@
           "q": "博多らーめん ShinShin KITTE博多店",
           "tb": [
             3.49,
-            1313
+            null
           ],
           "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40042485/",
           "address": "福岡県福岡市博多区博多駅中央街9-1 KITTE博多 B1F",
@@ -3010,7 +3010,7 @@
           "hoursChecked": "2026-10-31",
           "g": [
             4.1,
-            2163
+            null
           ],
           "gSource": "https://wanderlog.com/ja/list/geoCategory/1508112/kyushu%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%81%AE%E6%9C%80%E9%AB%98%E3%81%AE%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%B3%E3%82%B9%E3%83%9D%E3%83%83%E3%83%88",
           "gChecked": "2026-10-31",
@@ -3023,7 +3023,7 @@
           "q": "極味や 博多店 博多バスターミナル1F",
           "tb": [
             3.42,
-            270
+            null
           ],
           "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40039167/",
           "address": "福岡県福岡市博多区博多駅中央街2-1 博多バスターミナル1F",
@@ -3033,7 +3033,7 @@
           "hoursChecked": "2026-10-31",
           "g": [
             4.2,
-            3323
+            null
           ],
           "gSource": "https://wanderlog.com/ja/place/details/2624480/%E6%A5%B5%E5%91%B3%E3%82%84-%E5%8D%9A%E5%A4%9A%E5%BA%97-%E3%83%8F%E3%83%B3%E3%83%90%E3%83%BC%E3%82%B0-%E3%82%B9%E3%83%86%E3%83%BC%E3%82%AD",
           "gChecked": "2026-10-31",
@@ -3046,7 +3046,7 @@
           "q": "極味や 博多駅地下街店",
           "tb": [
             3.19,
-            55
+            null
           ],
           "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40067994/",
           "address": "福岡県福岡市博多区博多駅中央街1-1 博多駅地下街",
@@ -3056,7 +3056,7 @@
           "hoursChecked": "2026-10-31",
           "g": [
             4,
-            350
+            null
           ],
           "gSource": "https://restaurantguru.jp/Kiwamiya-Hamburg-Hakata-Station-Underground-Mall-Fukuoka",
           "gChecked": "2026-10-31",
@@ -3074,13 +3074,13 @@
           "hoursChecked": "2026-10-31",
           "tb": [
             3.45,
-            1371
+            null
           ],
           "tbUrl": "https://tabelog.com/fukuoka/A4001/A400102/40000130/",
           "ratingChecked": "2026-10-31",
           "g": [
             4.2,
-            13337
+            null
           ],
           "gSource": "https://wanderlog.com/ja/place/details/422225/%E4%B8%80%E8%98%AD-%E6%9C%AC%E7%A4%BE%E7%B7%8F%E6%9C%AC%E5%BA%97",
           "gChecked": "2026-10-31",
@@ -3102,12 +3102,12 @@
           "address": "福岡県福岡市博多区博多駅中央街1-1 JR博多駅 B1F",
           "tb": [
             3.49,
-            707
+            null
           ],
           "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40026439/",
           "g": [
             4.2,
-            1665
+            null
           ],
           "gSource": "https://restaurantguru.jp/Tanya-Fukuoka-2",
           "hours": "07:00~22:00 / 아침 정식 07:00~10:00",
@@ -3125,12 +3125,12 @@
           "address": "福岡県福岡市博多区博多駅前4-14-1 1F",
           "tb": [
             3.64,
-            1594
+            null
           ],
           "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40057205/",
           "g": [
             4.1,
-            2237
+            null
           ],
           "gSource": "https://restaurantguru.com/Dacomecca-Fukuoka",
           "hours": "07:00~20:00, 빵 소진 시 조기 종료",
@@ -3152,13 +3152,13 @@
           "hoursChecked": "2026-10-31",
           "tb": [
             3.45,
-            1371
+            null
           ],
           "tbUrl": "https://tabelog.com/fukuoka/A4001/A400102/40000130/",
           "ratingChecked": "2026-10-31",
           "g": [
             4.2,
-            13337
+            null
           ],
           "gSource": "https://wanderlog.com/ja/place/details/422225/%E4%B8%80%E8%98%AD-%E6%9C%AC%E7%A4%BE%E7%B7%8F%E6%9C%AC%E5%BA%97",
           "gChecked": "2026-10-31",
@@ -3180,12 +3180,12 @@
           "address": "福岡県福岡市博多区博多駅東3-1-6",
           "tb": [
             3.72,
-            5799
+            null
           ],
           "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40032701/",
           "g": [
             4,
-            6800
+            null
           ],
           "gSource": "https://restaurantguru.jp/pork-Fukuoka-m28",
           "hours": "11:00~24:00 (재료 소진·부정기 휴무 확인)",
@@ -3202,12 +3202,12 @@
           "address": "福岡県福岡市博多区博多駅中央街1-1 JR博多駅B1F",
           "tb": [
             3.49,
-            168
+            null
           ],
           "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40058853/",
           "g": [
             4.2,
-            1191
+            null
           ],
           "gSource": "https://restaurantguru.jp/fried-fish-Fukuoka-m237",
           "hours": "07:30부터 / 아침 07:30~10:00",
@@ -3228,14 +3228,14 @@
           "hoursChecked": "2026-10-31",
           "tb": [
             3.43,
-            484
+            null
           ],
           "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40042647/",
           "detailNote": "15시 이후 별도 테이블 요금 400엔(매장 공식 안내).",
           "ratingChecked": "2026-10-31",
           "g": [
             4.4,
-            3302
+            null
           ],
           "gSource": "https://wanderlog.com/ja/list/geoCategory/474517",
           "gChecked": "2026-10-31",
@@ -3247,7 +3247,7 @@
           "q": "博多らーめん ShinShin KITTE博多店",
           "tb": [
             3.49,
-            1313
+            null
           ],
           "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40042485/",
           "address": "福岡県福岡市博多区博多駅中央街9-1 KITTE博多 B1F",
@@ -3257,7 +3257,7 @@
           "hoursChecked": "2026-10-31",
           "g": [
             4.1,
-            2163
+            null
           ],
           "gSource": "https://wanderlog.com/ja/list/geoCategory/1508112/kyushu%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%81%AE%E6%9C%80%E9%AB%98%E3%81%AE%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%B3%E3%82%B9%E3%83%9D%E3%83%83%E3%83%88",
           "gChecked": "2026-10-31",
@@ -3270,7 +3270,7 @@
           "q": "極味や 博多店 博多バスターミナル1F",
           "tb": [
             3.42,
-            270
+            null
           ],
           "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40039167/",
           "address": "福岡県福岡市博多区博多駅中央街2-1 博多バスターミナル1F",
@@ -3280,7 +3280,7 @@
           "hoursChecked": "2026-10-31",
           "g": [
             4.2,
-            3323
+            null
           ],
           "gSource": "https://wanderlog.com/ja/place/details/2624480/%E6%A5%B5%E5%91%B3%E3%82%84-%E5%8D%9A%E5%A4%9A%E5%BA%97-%E3%83%8F%E3%83%B3%E3%83%90%E3%83%BC%E3%82%B0-%E3%82%B9%E3%83%86%E3%83%BC%E3%82%AD",
           "gChecked": "2026-10-31",
@@ -3293,7 +3293,7 @@
           "q": "極味や 博多駅地下街店",
           "tb": [
             3.19,
-            55
+            null
           ],
           "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40067994/",
           "address": "福岡県福岡市博多区博多駅中央街1-1 博多駅地下街",
@@ -3303,7 +3303,7 @@
           "hoursChecked": "2026-10-31",
           "g": [
             4,
-            350
+            null
           ],
           "gSource": "https://restaurantguru.jp/Kiwamiya-Hamburg-Hakata-Station-Underground-Mall-Fukuoka",
           "gChecked": "2026-10-31",
@@ -3326,12 +3326,12 @@
           "address": "福岡県福岡市博多区下川端町3-1 博多リバレイン",
           "tb": [
             3.52,
-            271
+            null
           ],
           "tbUrl": "https://tabelog.com/fukuoka/A4001/A400102/40033249/",
           "g": [
             4.3,
-            467
+            null
           ],
           "gSource": "https://restaurantguru.jp/coffeehouse-Fukuoka-t5/4",
           "hours": "08:00~16:30 (요일별 변동 확인)",
@@ -3347,12 +3347,12 @@
           "address": "福岡県福岡市中央区西中洲6-17",
           "tb": [
             3.64,
-            665
+            null
           ],
           "tbUrl": "https://tabelog.com/fukuoka/A4001/A400103/40052317/",
           "g": [
             4.1,
-            2012
+            null
           ],
           "gSource": "https://restaurantguru.jp/Pain-Stock-Tenjin-Fukuoka",
           "hours": "오전 영업 (정확한 개점·휴무는 공식 확인)",
@@ -3369,12 +3369,12 @@
           "address": "福岡県福岡市中央区天神2-2-20 警固神社 社務所ビル1F",
           "tb": [
             3.21,
-            197
+            null
           ],
           "tbUrl": "https://tabelog.com/fukuoka/A4001/A400103/40066618/",
           "g": [
             4.5,
-            1410
+            null
           ],
           "gSource": "https://restaurantguru.jp/Blue-Bottle-Coffee-Fukuoka",
           "hours": "08:00부터(최종 종료시간은 방문 전 확인)",
@@ -3390,12 +3390,12 @@
           "address": "福岡県福岡市中央区今泉1-18-3 1F",
           "tb": [
             3.48,
-            276
+            null
           ],
           "tbUrl": "https://tabelog.com/kr/fukuoka/A4001/A400104/40053685/",
           "g": [
             4.4,
-            907
+            null
           ],
           "gSource": "https://restaurantguru.jp/NOOICE-Tenjin-Fukuoka",
           "hours": "월~목 08:00~17:00 / 금~일 08:00~21:00",
@@ -3416,13 +3416,13 @@
           "hoursChecked": "2026-10-31",
           "tb": [
             3.45,
-            1371
+            null
           ],
           "tbUrl": "https://tabelog.com/fukuoka/A4001/A400102/40000130/",
           "ratingChecked": "2026-10-31",
           "g": [
             4.2,
-            13337
+            null
           ],
           "gSource": "https://wanderlog.com/ja/place/details/422225/%E4%B8%80%E8%98%AD-%E6%9C%AC%E7%A4%BE%E7%B7%8F%E6%9C%AC%E5%BA%97",
           "gChecked": "2026-10-31",
@@ -3444,12 +3444,12 @@
           "address": "福岡県福岡市博多区博多駅中央街1-1 JR博多駅 B1F",
           "tb": [
             3.49,
-            707
+            null
           ],
           "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40026439/",
           "g": [
             4.2,
-            1665
+            null
           ],
           "gSource": "https://restaurantguru.jp/Tanya-Fukuoka-2",
           "hours": "07:00~22:00 / 아침 정식 07:00~10:00",
@@ -3466,12 +3466,12 @@
           "address": "福岡県福岡市博多区博多駅前4-14-1 1F",
           "tb": [
             3.64,
-            1594
+            null
           ],
           "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40057205/",
           "g": [
             4.1,
-            2237
+            null
           ],
           "gSource": "https://restaurantguru.com/Dacomecca-Fukuoka",
           "hours": "07:00~20:00, 빵 소진 시 조기 종료",
@@ -3488,12 +3488,12 @@
           "address": "福岡県福岡市博多区博多駅中央街1-1 JR博多駅B1F",
           "tb": [
             3.49,
-            168
+            null
           ],
           "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40058853/",
           "g": [
             4.2,
-            1191
+            null
           ],
           "gSource": "https://restaurantguru.jp/fried-fish-Fukuoka-m237",
           "hours": "07:30부터 / 아침 07:30~10:00",
@@ -3541,12 +3541,12 @@
           "address": "大分県日田市亀山町1-1",
           "tb": [
             3.55,
-            405
+            null
           ],
           "tbUrl": "https://tabelog.com/oita/A4404/A440403/44001476/",
           "g": [
             4.2,
-            1108
+            null
           ],
           "gSource": "https://tabelog.com/oita/A4404/A440403/44001476/dtlmenu/",
           "hours": "월요일 11:00~17:00 / 화요일 휴무",
@@ -3563,12 +3563,12 @@
           "address": "大分県日田市若宮町",
           "tb": [
             3.7,
-            627
+            null
           ],
           "tbUrl": "https://tabelog.com/oita/A4404/A440403/44000268/",
           "g": [
             4,
-            3054
+            null
           ],
           "gSource": "https://tabelog.com/oita/A4404/A440403/44000268/",
           "hours": "11:00~22:00 (변동 확인)",
@@ -3593,12 +3593,12 @@
           "address": "福岡県福岡市博多区博多駅東3-1-6",
           "tb": [
             3.72,
-            5799
+            null
           ],
           "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40032701/",
           "g": [
             4,
-            6800
+            null
           ],
           "gSource": "https://restaurantguru.jp/pork-Fukuoka-m28",
           "hours": "11:00~24:00 (재료 소진·부정기 휴무 확인)",
@@ -3619,14 +3619,14 @@
           "hoursChecked": "2026-10-31",
           "tb": [
             3.43,
-            484
+            null
           ],
           "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40042647/",
           "detailNote": "15시 이후 별도 테이블 요금 400엔(매장 공식 안내).",
           "ratingChecked": "2026-10-31",
           "g": [
             4.4,
-            3302
+            null
           ],
           "gSource": "https://wanderlog.com/ja/list/geoCategory/474517",
           "gChecked": "2026-10-31",
@@ -3638,7 +3638,7 @@
           "q": "博多らーめん ShinShin KITTE博多店",
           "tb": [
             3.49,
-            1313
+            null
           ],
           "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40042485/",
           "address": "福岡県福岡市博多区博多駅中央街9-1 KITTE博多 B1F",
@@ -3648,7 +3648,7 @@
           "hoursChecked": "2026-10-31",
           "g": [
             4.1,
-            2163
+            null
           ],
           "gSource": "https://wanderlog.com/ja/list/geoCategory/1508112/kyushu%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%81%AE%E6%9C%80%E9%AB%98%E3%81%AE%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%B3%E3%82%B9%E3%83%9D%E3%83%83%E3%83%88",
           "gChecked": "2026-10-31",
@@ -3661,7 +3661,7 @@
           "q": "極味や 博多店 博多バスターミナル1F",
           "tb": [
             3.42,
-            270
+            null
           ],
           "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40039167/",
           "address": "福岡県福岡市博多区博多駅中央街2-1 博多バスターミナル1F",
@@ -3671,7 +3671,7 @@
           "hoursChecked": "2026-10-31",
           "g": [
             4.2,
-            3323
+            null
           ],
           "gSource": "https://wanderlog.com/ja/place/details/2624480/%E6%A5%B5%E5%91%B3%E3%82%84-%E5%8D%9A%E5%A4%9A%E5%BA%97-%E3%83%8F%E3%83%B3%E3%83%90%E3%83%BC%E3%82%B0-%E3%82%B9%E3%83%86%E3%83%BC%E3%82%AD",
           "gChecked": "2026-10-31",
@@ -3684,7 +3684,7 @@
           "q": "極味や 博多駅地下街店",
           "tb": [
             3.19,
-            55
+            null
           ],
           "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40067994/",
           "address": "福岡県福岡市博多区博多駅中央街1-1 博多駅地下街",
@@ -3694,7 +3694,7 @@
           "hoursChecked": "2026-10-31",
           "g": [
             4,
-            350
+            null
           ],
           "gSource": "https://restaurantguru.jp/Kiwamiya-Hamburg-Hakata-Station-Underground-Mall-Fukuoka",
           "gChecked": "2026-10-31",
@@ -3712,13 +3712,13 @@
           "hoursChecked": "2026-10-31",
           "tb": [
             3.45,
-            1371
+            null
           ],
           "tbUrl": "https://tabelog.com/fukuoka/A4001/A400102/40000130/",
           "ratingChecked": "2026-10-31",
           "g": [
             4.2,
-            13337
+            null
           ],
           "gSource": "https://wanderlog.com/ja/place/details/422225/%E4%B8%80%E8%98%AD-%E6%9C%AC%E7%A4%BE%E7%B7%8F%E6%9C%AC%E5%BA%97",
           "gChecked": "2026-10-31",
@@ -3740,12 +3740,12 @@
           "address": "福岡県福岡市博多区博多駅中央街1-1 JR博多駅 B1F",
           "tb": [
             3.49,
-            707
+            null
           ],
           "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40026439/",
           "g": [
             4.2,
-            1665
+            null
           ],
           "gSource": "https://restaurantguru.jp/Tanya-Fukuoka-2",
           "hours": "07:00~22:00 / 아침 정식 07:00~10:00",
@@ -3762,12 +3762,12 @@
           "address": "福岡県福岡市博多区博多駅前4-14-1 1F",
           "tb": [
             3.64,
-            1594
+            null
           ],
           "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40057205/",
           "g": [
             4.1,
-            2237
+            null
           ],
           "gSource": "https://restaurantguru.com/Dacomecca-Fukuoka",
           "hours": "07:00~20:00, 빵 소진 시 조기 종료",
@@ -3784,12 +3784,12 @@
           "address": "福岡県福岡市博多区博多駅中央街1-1 JR博多駅B1F",
           "tb": [
             3.49,
-            168
+            null
           ],
           "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40058853/",
           "g": [
             4.2,
-            1191
+            null
           ],
           "gSource": "https://restaurantguru.jp/fried-fish-Fukuoka-m237",
           "hours": "07:30부터 / 아침 07:30~10:00",
