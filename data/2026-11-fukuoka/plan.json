@@ -159,6 +159,7 @@
           "sun": [
             26,
             27,
+            126,
             114,
             28,
             101,
@@ -186,12 +187,14 @@
             119,
             46,
             102,
+            127,
             120,
             47
           ],
           "rain": [
             26,
             27,
+            126,
             114,
             28,
             101,
@@ -219,6 +222,7 @@
             119,
             46,
             102,
+            127,
             120,
             47
           ]
@@ -236,6 +240,7 @@
           "weather": "yufuin",
           "sun": [
             48,
+            128,
             121,
             49,
             50,
@@ -250,11 +255,13 @@
             59,
             60,
             61,
+            129,
             122,
             62
           ],
           "rain": [
             48,
+            128,
             121,
             49,
             50,
@@ -269,6 +276,7 @@
             59,
             60,
             61,
+            129,
             122,
             62
           ]
@@ -287,6 +295,7 @@
           "sun": [
             63,
             64,
+            130,
             65,
             123,
             66,
@@ -310,6 +319,7 @@
           "rain": [
             63,
             64,
+            130,
             65,
             123,
             66,
@@ -344,6 +354,7 @@
           "weather": "hita",
           "sun": [
             81,
+            131,
             82,
             103,
             83,
@@ -356,14 +367,17 @@
             87,
             88,
             89,
+            132,
             90,
             91,
             92,
             106,
-            93
+            93,
+            133
           ],
           "rain": [
             81,
+            131,
             82,
             103,
             83,
@@ -376,11 +390,13 @@
             87,
             88,
             89,
+            132,
             90,
             91,
             92,
             106,
-            93
+            93,
+            133
           ]
         }
       }
@@ -395,12 +411,14 @@
           "title": "귀국",
           "weather": "fukuoka",
           "sun": [
+            134,
             94,
             107,
             125,
             95
           ],
           "rain": [
+            134,
             94,
             107,
             125,
@@ -455,12 +473,15 @@
           ],
           "gSource": "https://wanderlog.com/ja/place/details/422225/%E4%B8%80%E8%98%AD-%E6%9C%AC%E7%A4%BE%E7%B7%8F%E6%9C%AC%E5%BA%97",
           "gChecked": "2026-10-31",
-          "gSourceType": "secondary"
+          "gSourceType": "secondary",
+          "sourceStatus": "existing"
         },
         {
           "name": "돈테키 부타야 쇼쿠도",
           "q": "돈테키 부타야 쇼쿠도 후쿠오카",
-          "note": "돼지고기 스테이크"
+          "note": "돼지고기 스테이크",
+          "sourceStatus": "existing",
+          "warning": "기존 등록 후보: 타베로그 3.00·구글 4.00 기준 동시 충족 여부 미확인."
         },
         {
           "name": "돈카츠 와카바",
@@ -482,7 +503,98 @@
           ],
           "gSource": "https://ste-map.com/ranking/pref_fukuoka/city_401307/restaurant/tonkatsu",
           "gChecked": "2026-10-31",
+          "gSourceType": "secondary",
+          "sourceStatus": "existing"
+        },
+        {
+          "name": "히츠마부시 와쇼쿠 빈초 나카스카와바타",
+          "q": "ひつまぶし和食備長 中洲川端店",
+          "address": "福岡県福岡市博多区下川端町2-1 博多座西銀ビル1F",
+          "tb": [
+            3.47,
+            183
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400102/40026105/",
+          "g": [
+            4.5,
+            1200
+          ],
+          "gSource": "https://restaurantguru.jp/steamed-fish-Fukuoka-m677",
+          "hours": "11:30~15:00 / 17:00~21:00 (저녁 L.O.20:30)",
+          "hoursSource": "https://tabelog.com/fukuoka/A4001/A400102/40026105/",
+          "note": "나카스카와바타역 7번 출구 도보 약 1분. 장어덮밥, 비용 높음.",
+          "sourceStatus": "new",
+          "ratingChecked": "2026-10-31",
+          "gChecked": "2026-10-31",
           "gSourceType": "secondary"
+        },
+        {
+          "name": "모츠나베 타슈 후쿠오카 다이묘 본점",
+          "q": "もつ鍋 田しゅう 福岡大名本店",
+          "address": "福岡県福岡市中央区大名1-3-6 フラップスビル1F",
+          "tb": [
+            3.6,
+            739
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400104/40024061/",
+          "g": [
+            4.7,
+            2303
+          ],
+          "gSource": "https://restaurantguru.com/Motsunabe-Tashu-Fukuoka",
+          "hours": "월~목 17:00~23:00 / 금~일 17:00~24:00",
+          "hoursSource": "https://www.motsunabe-tashu.com/shop",
+          "note": "다이묘 쇼핑 동선 후 저녁. 1인 입장 및 예약 조건 확인.",
+          "sourceStatus": "new",
+          "ratingChecked": "2026-10-31",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary"
+        },
+        {
+          "name": "하카타 라멘 신신 키테 하카타 점",
+          "q": "博多らーめん ShinShin KITTE博多店",
+          "tb": [
+            3.49,
+            1313
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40042485/",
+          "address": "福岡県福岡市博多区博多駅中央街9-1 KITTE博多 B1F",
+          "hours": "11:00~23:00 (L.O.22:30)",
+          "hoursSource": "https://tabelog.com/fukuoka/A4001/A400101/40042485/",
+          "ratingChecked": "2026-10-31",
+          "hoursChecked": "2026-10-31",
+          "g": [
+            4.1,
+            2163
+          ],
+          "gSource": "https://wanderlog.com/ja/list/geoCategory/1508112/kyushu%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%81%AE%E6%9C%80%E9%AB%98%E3%81%AE%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%B3%E3%82%B9%E3%83%9D%E3%83%83%E3%83%88",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary",
+          "sourceStatus": "new",
+          "note": "다른 끼니의 기존 검증 음식점을 이 식사 선택지에 새로 연결."
+        },
+        {
+          "name": "규카츠 모토무라 후쿠오카 텐진 니시도리 점",
+          "q": "牛かつもと村 福岡天神西通り店",
+          "address": "福岡県福岡市中央区大名1-14-5 有光ビル 1F",
+          "hours": "11:00~22:00 (L.O.21:30)",
+          "hoursSource": "https://www.gyukatsu-motomura.com/store/Fukuoka-Tenjin_Nishidori",
+          "hoursChecked": "2026-10-31",
+          "tb": [
+            3.04,
+            66
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400103/40045609/",
+          "ratingChecked": "2026-10-31",
+          "g": [
+            4.8,
+            13537
+          ],
+          "gSource": "https://wanderlog.com/ja/list/geoCategory/432290",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary",
+          "sourceStatus": "new",
+          "note": "다른 끼니의 기존 검증 음식점을 이 식사 선택지에 새로 연결."
         }
       ],
       "multi": false,
@@ -539,7 +651,9 @@
           "address": "福岡県福岡市博多区中洲3-7-18",
           "hours": "09:00~익일 02:00",
           "hoursSource": "https://tabelog.com/fukuoka/A4001/A400102/40023792/",
-          "hoursChecked": "2026-10-31"
+          "hoursChecked": "2026-10-31",
+          "sourceStatus": "existing",
+          "warning": "기존 등록 후보: 타베로그 3.00·구글 4.00 기준 동시 충족 여부 미확인."
         },
         {
           "name": "가제마치",
@@ -553,7 +667,7 @@
           "address": "福岡県福岡市中央区天神3-3-7 応順ビル1・2F",
           "hours": "10:00~18:00",
           "hoursSource": "https://tabelog.com/fukuoka/A4001/A400103/40004346/",
-          "warning": "오전 9시 아침 일정과 충돌: 10시 개점.",
+          "warning": "오전 09:00 식사와 불일치: 확인된 개점 시각 10:00. 아침 9시 선택에서는 제외 권장.",
           "ratingChecked": "2026-10-31",
           "hoursChecked": "2026-10-31",
           "g": [
@@ -562,7 +676,8 @@
           ],
           "gSource": "https://tanotim.com/place/30492/",
           "gChecked": "2026-10-31",
-          "gSourceType": "secondary"
+          "gSourceType": "secondary",
+          "sourceStatus": "existing"
         },
         {
           "name": "신신라멘 텐진본점",
@@ -576,7 +691,7 @@
           "address": "福岡県福岡市中央区天神3-2-19",
           "hours": "11:00~익일 03:00 (수요일 휴무, L.O.02:30)",
           "hoursSource": "https://tabelog.com/fukuoka/A4001/A400103/40004980/",
-          "warning": "오전 9시 아침 일정과 충돌: 11시 개점.",
+          "warning": "오전 09:00 식사와 불일치: 11:00 개점. 점심·늦은 식사 후보로만 적절.",
           "ratingChecked": "2026-10-31",
           "hoursChecked": "2026-10-31",
           "g": [
@@ -584,6 +699,114 @@
             7915
           ],
           "gSource": "https://wanderlog.com/ja/place/details/543368/%E5%8D%9A%E5%A4%9A%E3%82%89%E3%83%BC%E3%82%81%E3%82%93shinshin-%E5%A4%A9%E7%A5%9E%E6%9C%AC%E5%BA%97",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary",
+          "sourceStatus": "existing"
+        },
+        {
+          "name": "산스이 미즈다시 커피(山水水出珈琲)",
+          "q": "山水水出珈琲 下川端町3-1 博多リバレイン",
+          "address": "福岡県福岡市博多区下川端町3-1 博多リバレイン",
+          "tb": [
+            3.52,
+            154
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400102/40033249/",
+          "g": [
+            4.3,
+            467
+          ],
+          "gSource": "https://restaurantguru.jp/coffeehouse-Fukuoka-t5/4",
+          "hours": "08:00~16:30 (요일별 변동 확인)",
+          "note": "나카스카와바타역 근처. 아침 커피·샌드위치 등 가벼운 식사.",
+          "sourceStatus": "new",
+          "ratingChecked": "2026-10-31",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary"
+        },
+        {
+          "name": "팽 스톡 텐진점(pain stock)",
+          "q": "パンストック天神店 西中洲6-17",
+          "address": "福岡県福岡市中央区西中洲6-17",
+          "tb": [
+            3.64,
+            665
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400103/40052317/",
+          "g": [
+            4.1,
+            2012
+          ],
+          "gSource": "https://restaurantguru.jp/Pain-Stock-Tenjin-Fukuoka",
+          "hours": "오전 영업 (정확한 개점·휴무는 공식 확인)",
+          "note": "나카스와 덴진 사이 베이커리. 이동 중 빵 구매·테이크아웃 적합. 대기 가능.",
+          "sourceStatus": "new",
+          "ratingChecked": "2026-10-31",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary"
+        },
+        {
+          "name": "ONCA COFFEE 미나 텐진",
+          "q": "ONCA COFFEE ミーナ天神店",
+          "address": "福岡県福岡市中央区天神4-3-8 ミーナ天神1F",
+          "tb": [
+            3.3,
+            47
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400103/40064089/",
+          "g": [
+            4.4,
+            225
+          ],
+          "gSource": "https://restaurantguru.jp/ONCA-COFFEE-%E3%82%AA%E3%83%B3%E3%82%AB%E3%82%B3%E3%83%BC%E3%83%92%E3%83%BC-%E3%83%9F%E3%83%BC%E3%83%8A%E5%A4%A9%E7%A5%9E%E5%BA%97-Fukuoka",
+          "hours": "평일 07:00~20:00 / 토·일·공휴일 10:00~20:00",
+          "hoursSource": "https://www.mina-tenjin.com/shop/detail.php?shopId=076",
+          "note": "평일 07~12시 미니 토스트 모닝. 쇼핑 동선 북쪽 미나 텐진 1층. 주말 오전 9시에는 영업하지 않음.",
+          "sourceStatus": "new",
+          "ratingChecked": "2026-10-31",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary"
+        },
+        {
+          "name": "블루보틀커피 후쿠오카 텐진",
+          "q": "ブルーボトルコーヒー 福岡天神カフェ",
+          "address": "福岡県福岡市中央区天神2-2-20 警固神社 社務所ビル1F",
+          "tb": [
+            3.21,
+            197
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400103/40066618/",
+          "g": [
+            4.5,
+            1410
+          ],
+          "gSource": "https://restaurantguru.jp/Blue-Bottle-Coffee-Fukuoka",
+          "hours": "08:00부터(최종 종료시간은 방문 전 확인)",
+          "note": "아침은 커피·토스트 등 간단한 메뉴. 덴진 남쪽 상점가 인근.",
+          "sourceStatus": "new",
+          "ratingChecked": "2026-10-31",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary"
+        },
+        {
+          "name": "NOOICE 텐진",
+          "q": "NOOICE tenjin 福岡 今泉1-18-3",
+          "address": "福岡県福岡市中央区今泉1-18-3 1F",
+          "tb": [
+            3.48,
+            276
+          ],
+          "tbUrl": "https://tabelog.com/kr/fukuoka/A4001/A400104/40053685/",
+          "g": [
+            4.4,
+            907
+          ],
+          "gSource": "https://restaurantguru.jp/NOOICE-Tenjin-Fukuoka",
+          "hours": "월~목 08:00~17:00 / 금~일 08:00~21:00",
+          "note": "모닝·브런치. 이마이즈미 구역, 텐진 남쪽에서 도보 이동.",
+          "hoursSource": "https://tabelog.com/kr/fukuoka/A4001/A400104/40053685/",
+          "sourceStatus": "new",
+          "ratingChecked": "2026-10-31",
           "gChecked": "2026-10-31",
           "gSourceType": "secondary"
         }
@@ -671,7 +894,8 @@
           ],
           "gSource": "https://chikaku-ranking.com/area.php?area=%E4%B8%AD%E5%A4%AE%E5%8C%BA&genre=ramen",
           "gChecked": "2026-10-31",
-          "gSourceType": "secondary"
+          "gSourceType": "secondary",
+          "sourceStatus": "existing"
         },
         {
           "name": "규카츠 모토무라 후쿠오카 텐진 니시도리 점",
@@ -692,7 +916,100 @@
           ],
           "gSource": "https://wanderlog.com/ja/list/geoCategory/432290",
           "gChecked": "2026-10-31",
+          "gSourceType": "secondary",
+          "sourceStatus": "existing"
+        },
+        {
+          "name": "NOOICE 텐진",
+          "q": "NOOICE tenjin 福岡 今泉1-18-3",
+          "address": "福岡県福岡市中央区今泉1-18-3 1F",
+          "tb": [
+            3.48,
+            276
+          ],
+          "tbUrl": "https://tabelog.com/kr/fukuoka/A4001/A400104/40053685/",
+          "g": [
+            4.4,
+            907
+          ],
+          "gSource": "https://restaurantguru.jp/NOOICE-Tenjin-Fukuoka",
+          "hours": "월~목 08:00~17:00 / 금~일 08:00~21:00",
+          "note": "모닝·브런치. 이마이즈미 구역, 텐진 남쪽에서 도보 이동.",
+          "hoursSource": "https://tabelog.com/kr/fukuoka/A4001/A400104/40053685/",
+          "sourceStatus": "new",
+          "ratingChecked": "2026-10-31",
+          "gChecked": "2026-10-31",
           "gSourceType": "secondary"
+        },
+        {
+          "name": "하카타 라멘 신신 키테 하카타 점",
+          "q": "博多らーめん ShinShin KITTE博多店",
+          "tb": [
+            3.49,
+            1313
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40042485/",
+          "address": "福岡県福岡市博多区博多駅中央街9-1 KITTE博多 B1F",
+          "hours": "11:00~23:00 (L.O.22:30)",
+          "hoursSource": "https://tabelog.com/fukuoka/A4001/A400101/40042485/",
+          "ratingChecked": "2026-10-31",
+          "hoursChecked": "2026-10-31",
+          "g": [
+            4.1,
+            2163
+          ],
+          "gSource": "https://wanderlog.com/ja/list/geoCategory/1508112/kyushu%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%81%AE%E6%9C%80%E9%AB%98%E3%81%AE%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%B3%E3%82%B9%E3%83%9D%E3%83%83%E3%83%88",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary",
+          "sourceStatus": "new",
+          "note": "다른 끼니의 기존 검증 음식점을 이 식사 선택지에 새로 연결."
+        },
+        {
+          "name": "키와미야 후쿠오카 파르코 점",
+          "q": "極味や 福岡パルコ店",
+          "tb": [
+            3.41,
+            388
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400103/40023392/",
+          "address": "福岡県福岡市中央区天神2-11-1 福岡PARCO 本館B1F",
+          "hours": "11:00~22:00 (접수 종료 대략 20:30, 대기 상황에 따라 변동)",
+          "hoursSource": "https://tabelog.com/fukuoka/A4001/A400103/40023392/",
+          "ratingChecked": "2026-10-31",
+          "hoursChecked": "2026-10-31",
+          "g": [
+            4.3,
+            3337
+          ],
+          "gSource": "https://wanderlog.com/ja/list/geoCategory/1808698",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary",
+          "sourceStatus": "new",
+          "note": "다른 끼니의 기존 검증 음식점을 이 식사 선택지에 새로 연결."
+        },
+        {
+          "name": "돈카츠 와카바",
+          "q": "とんかつ わか葉 天神本店",
+          "tb": [
+            3.66,
+            879
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400103/40050758/",
+          "address": "福岡県福岡市中央区天神1-15-36 天神Aビル1F・2F",
+          "hours": "월~토 10:30~14:30 / 17:00~20:45, 일 10:30~14:30 / 17:00~19:45",
+          "detailNote": "저온 조리로 음식 제공까지 오래 걸릴 수 있음.",
+          "ratingChecked": "2026-10-31",
+          "hoursChecked": "2026-10-31",
+          "hoursSource": "https://tabelog.com/fukuoka/A4001/A400103/40050758/",
+          "g": [
+            4.3,
+            1224
+          ],
+          "gSource": "https://ste-map.com/ranking/pref_fukuoka/city_401307/restaurant/tonkatsu",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary",
+          "sourceStatus": "new",
+          "note": "다른 끼니의 기존 검증 음식점을 이 식사 선택지에 새로 연결."
         }
       ],
       "multi": false,
@@ -731,7 +1048,8 @@
           "name": "와규 맛집",
           "q": null,
           "note": "원본에 \"필수\" 메모가 있음. 가게 이름은 따로 정해야 함",
-          "warning": "정확한 매장명이 지정되지 않은 후보. 특정 매장 평점·영업시간은 표시하지 않음."
+          "warning": "기존 등록 장소명만 존재하며 정확한 매장 및 두 평점 모두 검증되지 않음.",
+          "sourceStatus": "existing"
         },
         {
           "name": "규카츠 모토무라 후쿠오카 텐진 니시도리 점",
@@ -753,7 +1071,8 @@
           ],
           "gSource": "https://wanderlog.com/ja/list/geoCategory/432290",
           "gChecked": "2026-10-31",
-          "gSourceType": "secondary"
+          "gSourceType": "secondary",
+          "sourceStatus": "existing"
         },
         {
           "name": "멘야가가 텐진점",
@@ -775,7 +1094,8 @@
           ],
           "gSource": "https://chikaku-ranking.com/area.php?area=%E4%B8%AD%E5%A4%AE%E5%8C%BA&genre=ramen",
           "gChecked": "2026-10-31",
-          "gSourceType": "secondary"
+          "gSourceType": "secondary",
+          "sourceStatus": "existing"
         },
         {
           "name": "키와미야 후쿠오카 파르코 점",
@@ -796,7 +1116,100 @@
           ],
           "gSource": "https://wanderlog.com/ja/list/geoCategory/1808698",
           "gChecked": "2026-10-31",
+          "gSourceType": "secondary",
+          "sourceStatus": "existing"
+        },
+        {
+          "name": "모츠나베 타슈 후쿠오카 다이묘 본점",
+          "q": "もつ鍋 田しゅう 福岡大名本店",
+          "address": "福岡県福岡市中央区大名1-3-6 フラップスビル1F",
+          "tb": [
+            3.6,
+            739
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400104/40024061/",
+          "g": [
+            4.7,
+            2303
+          ],
+          "gSource": "https://restaurantguru.com/Motsunabe-Tashu-Fukuoka",
+          "hours": "월~목 17:00~23:00 / 금~일 17:00~24:00",
+          "hoursSource": "https://www.motsunabe-tashu.com/shop",
+          "note": "다이묘 쇼핑 동선 후 저녁. 1인 입장 및 예약 조건 확인.",
+          "sourceStatus": "new",
+          "ratingChecked": "2026-10-31",
+          "gChecked": "2026-10-31",
           "gSourceType": "secondary"
+        },
+        {
+          "name": "히츠마부시 와쇼쿠 빈초 나카스카와바타",
+          "q": "ひつまぶし和食備長 中洲川端店",
+          "address": "福岡県福岡市博多区下川端町2-1 博多座西銀ビル1F",
+          "tb": [
+            3.47,
+            183
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400102/40026105/",
+          "g": [
+            4.5,
+            1200
+          ],
+          "gSource": "https://restaurantguru.jp/steamed-fish-Fukuoka-m677",
+          "hours": "11:30~15:00 / 17:00~21:00 (저녁 L.O.20:30)",
+          "hoursSource": "https://tabelog.com/fukuoka/A4001/A400102/40026105/",
+          "note": "나카스카와바타역 7번 출구 도보 약 1분. 장어덮밥, 비용 높음.",
+          "sourceStatus": "new",
+          "ratingChecked": "2026-10-31",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary"
+        },
+        {
+          "name": "신신라멘 텐진본점",
+          "q": "博多らーめん ShinShin 天神本店",
+          "note": "아침/식사 후보 / 다른 끼니의 기존 검증 음식점을 이 식사 선택지에 새로 연결.",
+          "tb": [
+            3.58,
+            2834
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400103/40004980/",
+          "address": "福岡県福岡市中央区天神3-2-19",
+          "hours": "11:00~익일 03:00 (수요일 휴무, L.O.02:30)",
+          "hoursSource": "https://tabelog.com/fukuoka/A4001/A400103/40004980/",
+          "warning": "오전 9시 아침 일정과 충돌: 11시 개점.",
+          "ratingChecked": "2026-10-31",
+          "hoursChecked": "2026-10-31",
+          "g": [
+            4.3,
+            7915
+          ],
+          "gSource": "https://wanderlog.com/ja/place/details/543368/%E5%8D%9A%E5%A4%9A%E3%82%89%E3%83%BC%E3%82%81%E3%82%93shinshin-%E5%A4%A9%E7%A5%9E%E6%9C%AC%E5%BA%97",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary",
+          "sourceStatus": "new"
+        },
+        {
+          "name": "돈카츠 와카바",
+          "q": "とんかつ わか葉 天神本店",
+          "tb": [
+            3.66,
+            879
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400103/40050758/",
+          "address": "福岡県福岡市中央区天神1-15-36 天神Aビル1F・2F",
+          "hours": "월~토 10:30~14:30 / 17:00~20:45, 일 10:30~14:30 / 17:00~19:45",
+          "detailNote": "저온 조리로 음식 제공까지 오래 걸릴 수 있음.",
+          "ratingChecked": "2026-10-31",
+          "hoursChecked": "2026-10-31",
+          "hoursSource": "https://tabelog.com/fukuoka/A4001/A400103/40050758/",
+          "g": [
+            4.3,
+            1224
+          ],
+          "gSource": "https://ste-map.com/ranking/pref_fukuoka/city_401307/restaurant/tonkatsu",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary",
+          "sourceStatus": "new",
+          "note": "다른 끼니의 기존 검증 음식점을 이 식사 선택지에 새로 연결."
         }
       ],
       "multi": false
@@ -939,7 +1352,7 @@
           "address": "福岡県北九州市門司区東本町1-1-24",
           "hours": "월·화·수·토·일 11:45~15:00 / 17:00~21:00",
           "hoursSource": "https://tabelog.com/fukuoka/A4004/A400501/40004397/",
-          "warning": "11월 6일(금) 정기휴무. 방문 후보에서 제외하는 편이 안전.",
+          "warning": "11월 6일 금요일: 등록된 정기 영업 요일에 금요일이 없음. 방문 전 전화 확인, 휴무라면 다른 후보 선택.",
           "ratingChecked": "2026-10-31",
           "hoursChecked": "2026-10-31",
           "g": [
@@ -948,7 +1361,8 @@
           ],
           "gSource": "https://ste-map.com/ranking/pref_fukuoka/restaurant?page=3",
           "gChecked": "2026-10-31",
-          "gSourceType": "secondary"
+          "gSourceType": "secondary",
+          "sourceStatus": "existing"
         },
         {
           "name": "커리 혼포 모지코 레트로 점",
@@ -968,6 +1382,71 @@
             1988
           ],
           "gSource": "https://wanderlog.com/ja/list/geoCategory/29410",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary",
+          "sourceStatus": "existing"
+        },
+        {
+          "name": "BEAR FRUITS 모지코 본점",
+          "q": "BEAR FRUITS 門司港本店",
+          "address": "福岡県北九州市門司区西海岸1-4-7 門司港センタービル1F",
+          "tb": [
+            3.49,
+            545
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4004/A400501/40003315/",
+          "g": [
+            4.1,
+            null
+          ],
+          "gSource": "https://carolblog.tw/baked-curry/",
+          "hours": "11:00~21:00 전후 (영업 변동 확인)",
+          "note": "모지코역 도보권, 야키카레. 2026년 비교 자료의 구글 평점 참고.",
+          "gSourceType": "secondary",
+          "sourceStatus": "new",
+          "ratingChecked": "2026-10-31",
+          "gChecked": "2026-10-31"
+        },
+        {
+          "name": "프린세스 피피 모지코(야키카레)",
+          "q": "世界にひとつだけの焼きカレー プリンセスピピ門司港",
+          "address": "福岡県北九州市門司区西海岸1-4-7",
+          "tb": [
+            3.44,
+            286
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4004/A400501/40003136/",
+          "g": [
+            4.5,
+            null
+          ],
+          "gSource": "https://carolblog.tw/baked-curry/",
+          "hours": "점심·저녁 운영(영업시간 당일 확인)",
+          "note": "일정에 이미 관광 장소로도 등록된 프린세스 피피를 점심 선택지에 연결. 모지코역 인근.",
+          "gSourceType": "secondary",
+          "sourceStatus": "new",
+          "ratingChecked": "2026-10-31",
+          "gChecked": "2026-10-31"
+        },
+        {
+          "name": "오사마노 타마고 모지코(王様のたまご)",
+          "q": "門司港レトロ 王様のたまご",
+          "address": "福岡県北九州市門司区港町9-4 バルク館1F",
+          "tb": [
+            3.38,
+            191
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4004/A400501/40025877/",
+          "g": [
+            4.1,
+            null
+          ],
+          "gSource": "https://carolblog.tw/baked-curry/",
+          "hours": "11:00~20:00 (L.O.19:45)",
+          "hoursSource": "https://moji.dhs.fku.ed.jp/wp-content/uploads/moji_dhs/2026/03/23130501/%E3%81%8A%E3%81%99%E3%81%99%E3%82%81%E3%82%B9%E3%83%9D%E3%83%83%E3%83%88%E3%80%80%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%80%80%E7%99%BD%E3%81%AA%E3%81%97.pdf",
+          "note": "모지코 레트로 항구 바로 옆 오므라이스·야키카레. 구글 평점은 제3자 비교 기사.",
+          "sourceStatus": "new",
+          "ratingChecked": "2026-10-31",
           "gChecked": "2026-10-31",
           "gSourceType": "secondary"
         }
@@ -1104,7 +1583,9 @@
           "address": "大分県由布市湯布院町川上1476",
           "hours": "11:00~14:30 (매장 변동 가능)",
           "hoursSource": "https://tabelog.com/oita/A4402/A440201/44001656/",
-          "hoursChecked": "2026-10-31"
+          "hoursChecked": "2026-10-31",
+          "sourceStatus": "existing",
+          "warning": "기존 등록 후보: 타베로그 3.00·구글 4.00 기준 동시 충족 여부 미확인."
         },
         {
           "name": "멘이치",
@@ -1126,7 +1607,8 @@
           ],
           "gSource": "https://wanderlog.com/list/geoCategory/423106",
           "gChecked": "2026-10-31",
-          "gSourceType": "secondary"
+          "gSourceType": "secondary",
+          "sourceStatus": "existing"
         },
         {
           "name": "유후 마부시 신 긴린코 본점",
@@ -1148,6 +1630,72 @@
             2569
           ],
           "gSource": "https://wanderlog.com/ja/list/geoCategory/197730",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary",
+          "sourceStatus": "existing"
+        },
+        {
+          "name": "유후 마부시 신 유후인역 앞 지점",
+          "q": "由布まぶし 心 駅前支店 湯布院町川北5-3",
+          "address": "大分県由布市湯布院町川北5-3 2F",
+          "tb": [
+            3.49,
+            425
+          ],
+          "tbUrl": "https://tabelog.com/oita/A4402/A440201/44005142/",
+          "g": [
+            4.1,
+            2900
+          ],
+          "gSource": "https://restaurantguru.jp/rice-Yufu-m14",
+          "hours": "11:00~16:00 (L.O.15:30) / 17:30~21:00",
+          "hoursSource": "https://tabelog.com/oita/A4402/A440201/44005142/",
+          "note": "유후인역에서 도보 1분. 기존 긴린코 본점과 별개 매장. 투어 시작부 근처.",
+          "sourceStatus": "new",
+          "ratingChecked": "2026-10-31",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary"
+        },
+        {
+          "name": "레스토랑 란푸샤(洋灯舎)",
+          "q": "レストラン 洋灯舎 金鱗湖",
+          "address": "大分県由布市湯布院町川上1561",
+          "tb": [
+            3.51,
+            143
+          ],
+          "tbUrl": "https://tabelog.com/oita/A4402/A440201/44000235/",
+          "g": [
+            4.3,
+            363
+          ],
+          "gSource": "https://restaurantguru.jp/yakiniku-Yufu-m8936",
+          "hours": "점심 11:00~13:50 전후(방문 전 재확인)",
+          "note": "긴린호수 주변 서양식 식당. 호수 방문 전후 식사에 적합.",
+          "sourceStatus": "new",
+          "ratingChecked": "2026-10-31",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary"
+        },
+        {
+          "name": "카페 라 루슈(CAFE LA RUCHE)",
+          "q": "CAFE LA RUCHE 湯布院 金鱗湖",
+          "address": "大分県由布市湯布院町川上1592-1",
+          "tb": [
+            3.52,
+            291
+          ],
+          "tbUrl": "https://tabelog.com/oita/A4402/A440201/44000040/",
+          "g": [
+            4.3,
+            906
+          ],
+          "gSource": "https://restaurantguru.jp/Cafe-La-Ruche-Yufu",
+          "hours": "09:00~16:30 (수 휴무)",
+          "hoursSource": "https://tabelog.com/oita/A4402/A440201/44000040/",
+          "note": "긴린호수 바로 옆 베이커리 카페. 정식 한 끼보다 샌드위치·빵 등 가벼운 식사.",
+          "sourceStatus": "new",
+          "ratingChecked": "2026-10-31",
           "gChecked": "2026-10-31",
           "gSourceType": "secondary"
         }
@@ -1337,7 +1885,8 @@
           ],
           "gSource": "https://wanderlog.com/ja/place/details/548195/%E4%B8%80%E8%98%AD-%E3%82%AD%E3%83%A3%E3%83%8A%E3%83%AB%E3%82%B7%E3%83%86%E3%82%A3%E5%8D%9A%E5%A4%9A%E5%BA%97-%E5%92%8C%E9%A2%A8%E3%81%A8%E3%82%93%E3%81%93%E3%81%A4%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%B3",
           "gChecked": "2026-10-31",
-          "gSourceType": "secondary"
+          "gSourceType": "secondary",
+          "sourceStatus": "existing"
         },
         {
           "name": "바쿠로 하카타 점",
@@ -1358,7 +1907,8 @@
           ],
           "gSource": "https://www.taveri.jp/store/ChIJ_88FQb6RQTURqwmM_4dg7AI",
           "gChecked": "2026-10-31",
-          "gSourceType": "secondary"
+          "gSourceType": "secondary",
+          "sourceStatus": "existing"
         },
         {
           "name": "에비스야 우동",
@@ -1379,7 +1929,8 @@
           ],
           "gSource": "https://wanderlog.com/ja/list/geoCategory/474517",
           "gChecked": "2026-10-31",
-          "gSourceType": "secondary"
+          "gSourceType": "secondary",
+          "sourceStatus": "existing"
         },
         {
           "name": "키와미야 하카타 점",
@@ -1400,7 +1951,8 @@
           ],
           "gSource": "https://wanderlog.com/ja/place/details/2624480/%E6%A5%B5%E5%91%B3%E3%82%84-%E5%8D%9A%E5%A4%9A%E5%BA%97-%E3%83%8F%E3%83%B3%E3%83%90%E3%83%BC%E3%82%B0-%E3%82%B9%E3%83%86%E3%83%BC%E3%82%AD",
           "gChecked": "2026-10-31",
-          "gSourceType": "secondary"
+          "gSourceType": "secondary",
+          "sourceStatus": "existing"
         },
         {
           "name": "키와미야 하카타 역 지하상가 점",
@@ -1420,6 +1972,72 @@
             350
           ],
           "gSource": "https://restaurantguru.jp/Kiwamiya-Hamburg-Hakata-Station-Underground-Mall-Fukuoka",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary",
+          "sourceStatus": "existing"
+        },
+        {
+          "name": "하카타 잇소 하카타역 히가시 본점",
+          "q": "博多一双 博多駅東本店",
+          "address": "福岡県福岡市博多区博多駅東3-1-6",
+          "tb": [
+            3.72,
+            5799
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40032701/",
+          "g": [
+            4,
+            6800
+          ],
+          "gSource": "https://restaurantguru.jp/pork-Fukuoka-m28",
+          "hours": "11:00~24:00 (재료 소진·부정기 휴무 확인)",
+          "hoursSource": "https://tabelog.com/fukuoka/A4001/A400101/40032701/",
+          "note": "JR 하카타역 도보 약 6분. 대기 가능, 진한 돈코츠 라멘.",
+          "sourceStatus": "new",
+          "ratingChecked": "2026-10-31",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary"
+        },
+        {
+          "name": "기스이마루 하카타 1번가(해산물 아침 정식)",
+          "q": "博多の海鮮料理 喜水丸 博多一番街店",
+          "address": "福岡県福岡市博多区博多駅中央街1-1 JR博多駅B1F",
+          "tb": [
+            3.49,
+            168
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40058853/",
+          "g": [
+            4.2,
+            1191
+          ],
+          "gSource": "https://restaurantguru.jp/fried-fish-Fukuoka-m237",
+          "hours": "07:30부터 / 아침 07:30~10:00",
+          "hoursSource": "https://hakata-1bangai.com/morningmenu/",
+          "note": "하카타역 지하, 명란·생선 정식. 07:30 전 도착이면 이용 불가.",
+          "sourceStatus": "new",
+          "ratingChecked": "2026-10-31",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary"
+        },
+        {
+          "name": "요시즈카 우나기야 본점",
+          "q": "博多名代 吉塚うなぎ屋",
+          "address": "福岡県福岡市博多区中洲2-8-27",
+          "tb": [
+            3.72,
+            2552
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400102/40000017/",
+          "g": [
+            4.4,
+            9000
+          ],
+          "gSource": "https://restaurantguru.jp/tapas-Fukuoka-m9527",
+          "hours": "약 10:30~20:15 / 화·수 휴무(방문일 확인)",
+          "note": "나카스강 인근 장어 전문. 11/4 수요일에는 휴무로 추가하지 않음.",
+          "sourceStatus": "new",
+          "ratingChecked": "2026-10-31",
           "gChecked": "2026-10-31",
           "gSourceType": "secondary"
         }
@@ -1492,7 +2110,8 @@
           ],
           "gSource": "https://wanderlog.com/ja/list/geoCategory/474517",
           "gChecked": "2026-10-31",
-          "gSourceType": "secondary"
+          "gSourceType": "secondary",
+          "sourceStatus": "existing"
         },
         {
           "name": "하카타 라멘 신신 키테 하카타 점",
@@ -1513,7 +2132,99 @@
           ],
           "gSource": "https://wanderlog.com/ja/list/geoCategory/1508112/kyushu%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%81%AE%E6%9C%80%E9%AB%98%E3%81%AE%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%B3%E3%82%B9%E3%83%9D%E3%83%83%E3%83%88",
           "gChecked": "2026-10-31",
+          "gSourceType": "secondary",
+          "sourceStatus": "existing"
+        },
+        {
+          "name": "하카타 잇소 하카타역 히가시 본점",
+          "q": "博多一双 博多駅東本店",
+          "address": "福岡県福岡市博多区博多駅東3-1-6",
+          "tb": [
+            3.72,
+            5799
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40032701/",
+          "g": [
+            4,
+            6800
+          ],
+          "gSource": "https://restaurantguru.jp/pork-Fukuoka-m28",
+          "hours": "11:00~24:00 (재료 소진·부정기 휴무 확인)",
+          "hoursSource": "https://tabelog.com/fukuoka/A4001/A400101/40032701/",
+          "note": "JR 하카타역 도보 약 6분. 대기 가능, 진한 돈코츠 라멘.",
+          "sourceStatus": "new",
+          "ratingChecked": "2026-10-31",
+          "gChecked": "2026-10-31",
           "gSourceType": "secondary"
+        },
+        {
+          "name": "키와미야 하카타 점",
+          "q": "極味や 博多店 博多バスターミナル1F",
+          "tb": [
+            3.42,
+            270
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40039167/",
+          "address": "福岡県福岡市博多区博多駅中央街2-1 博多バスターミナル1F",
+          "hours": "11:00~22:00 (대기 상황에 따라 20:00 전후 접수 종료)",
+          "hoursSource": "https://tabelog.com/fukuoka/A4001/A400101/40039167/",
+          "ratingChecked": "2026-10-31",
+          "hoursChecked": "2026-10-31",
+          "g": [
+            4.2,
+            3323
+          ],
+          "gSource": "https://wanderlog.com/ja/place/details/2624480/%E6%A5%B5%E5%91%B3%E3%82%84-%E5%8D%9A%E5%A4%9A%E5%BA%97-%E3%83%8F%E3%83%B3%E3%83%90%E3%83%BC%E3%82%B0-%E3%82%B9%E3%83%86%E3%83%BC%E3%82%AD",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary",
+          "sourceStatus": "new",
+          "note": "다른 끼니의 기존 검증 음식점을 이 식사 선택지에 새로 연결."
+        },
+        {
+          "name": "키와미야 하카타 역 지하상가 점",
+          "q": "極味や 博多駅地下街店",
+          "tb": [
+            3.19,
+            55
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40067994/",
+          "address": "福岡県福岡市博多区博多駅中央街1-1 博多駅地下街",
+          "hours": "11:00~22:00 (L.O.21:00, 혼잡 시 접수 조기 마감)",
+          "hoursSource": "https://www.e-ekichika.com/shop/kiwamiya",
+          "ratingChecked": "2026-10-31",
+          "hoursChecked": "2026-10-31",
+          "g": [
+            4,
+            350
+          ],
+          "gSource": "https://restaurantguru.jp/Kiwamiya-Hamburg-Hakata-Station-Underground-Mall-Fukuoka",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary",
+          "sourceStatus": "new",
+          "note": "다른 끼니의 기존 검증 음식점을 이 식사 선택지에 새로 연결."
+        },
+        {
+          "name": "이치란 캐널시티 하카타 점",
+          "q": "一蘭 キャナルシティ博多店",
+          "address": "福岡県福岡市博多区住吉1-2-22 キャナルシティ博多 ノースビル B1F",
+          "hours": "09:30~23:00 (L.O.22:00)",
+          "hoursSource": "https://ichiran.com/shop/kyushu/canalcity/",
+          "hoursChecked": "2026-10-31",
+          "tb": [
+            3.09,
+            339
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40000254/",
+          "ratingChecked": "2026-10-31",
+          "g": [
+            4.1,
+            2170
+          ],
+          "gSource": "https://wanderlog.com/ja/place/details/548195/%E4%B8%80%E8%98%AD-%E3%82%AD%E3%83%A3%E3%83%8A%E3%83%AB%E3%82%B7%E3%83%86%E3%82%A3%E5%8D%9A%E5%A4%9A%E5%BA%97-%E5%92%8C%E9%A2%A8%E3%81%A8%E3%82%93%E3%81%93%E3%81%A4%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%B3",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary",
+          "sourceStatus": "new",
+          "note": "다른 끼니의 기존 검증 음식점을 이 식사 선택지에 새로 연결."
         }
       ],
       "multi": false
@@ -2081,6 +2792,1002 @@
       "note": "교통: 공항 무료 연락버스(노선번호 없음)\n승차: 지하철 후쿠오카공항역 연결 국내선 터미널 무료 셔틀버스 승차장\n방향: 국제선 터미널(国際線) 방면\n하차: 국제선 터미널 1층 → 3층 출국 수속장 이동\n버스 이동 약 10분 전후 + 대기·터미널 도보 별도.\n주의: 항공편 13:00 출발 전 체크인·보안검색에 충분한 여유가 필요.",
       "cost": 0,
       "officialUrl": "https://www.fukuoka-airport.jp/access/bus2.html"
+    },
+    {
+      "type": "choice",
+      "title": "아침",
+      "time": "07:40",
+      "note": "모지코행 JR 08:30 출발 전 짧은 식사. 나카스(이치란·산스이·팽 스톡) 또는 하카타역(탄야·다코메카·기스이마루) 중 한 곳만 선택, 선택한 위치에 맞춰 이동 순서 변경.",
+      "multi": false,
+      "options": [
+        {
+          "name": "산스이 미즈다시 커피(山水水出珈琲)",
+          "q": "山水水出珈琲 下川端町3-1 博多リバレイン",
+          "address": "福岡県福岡市博多区下川端町3-1 博多リバレイン",
+          "tb": [
+            3.52,
+            154
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400102/40033249/",
+          "g": [
+            4.3,
+            467
+          ],
+          "gSource": "https://restaurantguru.jp/coffeehouse-Fukuoka-t5/4",
+          "hours": "08:00~16:30 (요일별 변동 확인)",
+          "note": "나카스카와바타역 근처. 아침 커피·샌드위치 등 가벼운 식사.",
+          "sourceStatus": "new",
+          "ratingChecked": "2026-10-31",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary"
+        },
+        {
+          "name": "팽 스톡 텐진점(pain stock)",
+          "q": "パンストック天神店 西中洲6-17",
+          "address": "福岡県福岡市中央区西中洲6-17",
+          "tb": [
+            3.64,
+            665
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400103/40052317/",
+          "g": [
+            4.1,
+            2012
+          ],
+          "gSource": "https://restaurantguru.jp/Pain-Stock-Tenjin-Fukuoka",
+          "hours": "오전 영업 (정확한 개점·휴무는 공식 확인)",
+          "note": "나카스와 덴진 사이 베이커리. 이동 중 빵 구매·테이크아웃 적합. 대기 가능.",
+          "sourceStatus": "new",
+          "ratingChecked": "2026-10-31",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary"
+        },
+        {
+          "name": "탄야 HAKATA(우설 아침 정식)",
+          "q": "たんや HAKATA 博多駅 B1F",
+          "address": "福岡県福岡市博多区博多駅中央街1-1 JR博多駅 B1F",
+          "tb": [
+            3.49,
+            707
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40026439/",
+          "g": [
+            4.2,
+            1665
+          ],
+          "gSource": "https://restaurantguru.jp/Tanya-Fukuoka-2",
+          "hours": "07:00~22:00 / 아침 정식 07:00~10:00",
+          "hoursSource": "https://hakata-1bangai.com/morningmenu/",
+          "note": "하카타역 지하 1번가, JR·고속버스 탑승 전에 효율적인 아침 식사.",
+          "sourceStatus": "new",
+          "ratingChecked": "2026-10-31",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary"
+        },
+        {
+          "name": "DACOMECCA(다코메카)",
+          "q": "DACOMECCA 博多駅前4-14-1",
+          "address": "福岡県福岡市博多区博多駅前4-14-1 1F",
+          "tb": [
+            3.64,
+            1594
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40057205/",
+          "g": [
+            4.1,
+            2237
+          ],
+          "gSource": "https://restaurantguru.com/Dacomecca-Fukuoka",
+          "hours": "07:00~20:00, 빵 소진 시 조기 종료",
+          "hoursSource": "https://tabelog.com/fukuoka/A4001/A400101/40057205/",
+          "note": "하카타역 하카타구치 도보 약 3분. 인기 빵집으로 줄이 길 수 있음.",
+          "sourceStatus": "new",
+          "ratingChecked": "2026-10-31",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary"
+        },
+        {
+          "name": "기스이마루 하카타 1번가(해산물 아침 정식)",
+          "q": "博多の海鮮料理 喜水丸 博多一番街店",
+          "address": "福岡県福岡市博多区博多駅中央街1-1 JR博多駅B1F",
+          "tb": [
+            3.49,
+            168
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40058853/",
+          "g": [
+            4.2,
+            1191
+          ],
+          "gSource": "https://restaurantguru.jp/fried-fish-Fukuoka-m237",
+          "hours": "07:30부터 / 아침 07:30~10:00",
+          "hoursSource": "https://hakata-1bangai.com/morningmenu/",
+          "note": "하카타역 지하, 명란·생선 정식. 07:30 전 도착이면 이용 불가.",
+          "sourceStatus": "new",
+          "ratingChecked": "2026-10-31",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary"
+        },
+        {
+          "name": "이치란 본사 총본점",
+          "q": "一蘭 本社総本店 福岡 中洲5-3-2",
+          "note": "원본 메모: 이치란 & 원갈비 / 다른 끼니의 기존 검증 음식점을 이 식사 선택지에 새로 연결.",
+          "address": "福岡県福岡市博多区中洲5-3-2",
+          "hours": "24시간 (임시 변경 가능)",
+          "hoursSource": "https://ichiran.com/shop/kyushu/sohonten/",
+          "hoursChecked": "2026-10-31",
+          "tb": [
+            3.45,
+            1371
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400102/40000130/",
+          "ratingChecked": "2026-10-31",
+          "g": [
+            4.2,
+            13337
+          ],
+          "gSource": "https://wanderlog.com/ja/place/details/422225/%E4%B8%80%E8%98%AD-%E6%9C%AC%E7%A4%BE%E7%B7%8F%E6%9C%AC%E5%BA%97",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary",
+          "sourceStatus": "new"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "title": "저녁",
+      "time": null,
+      "note": "고쿠라에서 하카타로 돌아온 뒤 저녁. 늦은 귀환이면 영업 종료한 식당은 제외하고 라멘 등 야간 영업 선택. 이 식사는 이동 일정에 따라 생략 가능.",
+      "multi": false,
+      "options": [
+        {
+          "name": "하카타 잇소 하카타역 히가시 본점",
+          "q": "博多一双 博多駅東本店",
+          "address": "福岡県福岡市博多区博多駅東3-1-6",
+          "tb": [
+            3.72,
+            5799
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40032701/",
+          "g": [
+            4,
+            6800
+          ],
+          "gSource": "https://restaurantguru.jp/pork-Fukuoka-m28",
+          "hours": "11:00~24:00 (재료 소진·부정기 휴무 확인)",
+          "hoursSource": "https://tabelog.com/fukuoka/A4001/A400101/40032701/",
+          "note": "JR 하카타역 도보 약 6분. 대기 가능, 진한 돈코츠 라멘.",
+          "sourceStatus": "new",
+          "ratingChecked": "2026-10-31",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary"
+        },
+        {
+          "name": "모츠나베 오오야마 키테 하카타 점",
+          "q": "博多もつ鍋おおやま KITTE博多9F",
+          "note": "원본 메모: 점심으로 고른 곳을 고려해서 정하기 / 다른 끼니의 기존 검증 음식점을 이 식사 선택지에 새로 연결.",
+          "address": "福岡県福岡市博多区博多駅中央街9-1 KITTE博多 9F",
+          "hours": "11:00~23:00 (L.O.22:30)",
+          "hoursSource": "https://www.motu-ooyama.com/shop/kittehakata/",
+          "hoursChecked": "2026-10-31",
+          "tb": [
+            3.43,
+            484
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40042647/",
+          "detailNote": "15시 이후 별도 테이블 요금 400엔(매장 공식 안내).",
+          "ratingChecked": "2026-10-31",
+          "g": [
+            4.4,
+            3302
+          ],
+          "gSource": "https://wanderlog.com/ja/list/geoCategory/474517",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary",
+          "sourceStatus": "new"
+        },
+        {
+          "name": "하카타 라멘 신신 키테 하카타 점",
+          "q": "博多らーめん ShinShin KITTE博多店",
+          "tb": [
+            3.49,
+            1313
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40042485/",
+          "address": "福岡県福岡市博多区博多駅中央街9-1 KITTE博多 B1F",
+          "hours": "11:00~23:00 (L.O.22:30)",
+          "hoursSource": "https://tabelog.com/fukuoka/A4001/A400101/40042485/",
+          "ratingChecked": "2026-10-31",
+          "hoursChecked": "2026-10-31",
+          "g": [
+            4.1,
+            2163
+          ],
+          "gSource": "https://wanderlog.com/ja/list/geoCategory/1508112/kyushu%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%81%AE%E6%9C%80%E9%AB%98%E3%81%AE%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%B3%E3%82%B9%E3%83%9D%E3%83%83%E3%83%88",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary",
+          "sourceStatus": "new",
+          "note": "다른 끼니의 기존 검증 음식점을 이 식사 선택지에 새로 연결."
+        },
+        {
+          "name": "키와미야 하카타 점",
+          "q": "極味や 博多店 博多バスターミナル1F",
+          "tb": [
+            3.42,
+            270
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40039167/",
+          "address": "福岡県福岡市博多区博多駅中央街2-1 博多バスターミナル1F",
+          "hours": "11:00~22:00 (대기 상황에 따라 20:00 전후 접수 종료)",
+          "hoursSource": "https://tabelog.com/fukuoka/A4001/A400101/40039167/",
+          "ratingChecked": "2026-10-31",
+          "hoursChecked": "2026-10-31",
+          "g": [
+            4.2,
+            3323
+          ],
+          "gSource": "https://wanderlog.com/ja/place/details/2624480/%E6%A5%B5%E5%91%B3%E3%82%84-%E5%8D%9A%E5%A4%9A%E5%BA%97-%E3%83%8F%E3%83%B3%E3%83%90%E3%83%BC%E3%82%B0-%E3%82%B9%E3%83%86%E3%83%BC%E3%82%AD",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary",
+          "sourceStatus": "new",
+          "note": "다른 끼니의 기존 검증 음식점을 이 식사 선택지에 새로 연결."
+        },
+        {
+          "name": "키와미야 하카타 역 지하상가 점",
+          "q": "極味や 博多駅地下街店",
+          "tb": [
+            3.19,
+            55
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40067994/",
+          "address": "福岡県福岡市博多区博多駅中央街1-1 博多駅地下街",
+          "hours": "11:00~22:00 (L.O.21:00, 혼잡 시 접수 조기 마감)",
+          "hoursSource": "https://www.e-ekichika.com/shop/kiwamiya",
+          "ratingChecked": "2026-10-31",
+          "hoursChecked": "2026-10-31",
+          "g": [
+            4,
+            350
+          ],
+          "gSource": "https://restaurantguru.jp/Kiwamiya-Hamburg-Hakata-Station-Underground-Mall-Fukuoka",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary",
+          "sourceStatus": "new",
+          "note": "다른 끼니의 기존 검증 음식점을 이 식사 선택지에 새로 연결."
+        },
+        {
+          "name": "이치란 본사 총본점",
+          "q": "一蘭 本社総本店 福岡 中洲5-3-2",
+          "note": "원본 메모: 이치란 & 원갈비 / 다른 끼니의 기존 검증 음식점을 이 식사 선택지에 새로 연결.",
+          "address": "福岡県福岡市博多区中洲5-3-2",
+          "hours": "24시간 (임시 변경 가능)",
+          "hoursSource": "https://ichiran.com/shop/kyushu/sohonten/",
+          "hoursChecked": "2026-10-31",
+          "tb": [
+            3.45,
+            1371
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400102/40000130/",
+          "ratingChecked": "2026-10-31",
+          "g": [
+            4.2,
+            13337
+          ],
+          "gSource": "https://wanderlog.com/ja/place/details/422225/%E4%B8%80%E8%98%AD-%E6%9C%AC%E7%A4%BE%E7%B7%8F%E6%9C%AC%E5%BA%97",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary",
+          "sourceStatus": "new"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "title": "아침",
+      "time": "06:40",
+      "note": "07:45 HEARTS 버스투어 집합 우선! 06:40 전후 나카스 24시간 이치란 또는 07:00 하카타역 다코메카·탄야 중 빠른 테이크아웃을 선택. 줄이 길면 편의점 간편식(평점 비교 대상 아님)으로 대체.",
+      "multi": false,
+      "options": [
+        {
+          "name": "탄야 HAKATA(우설 아침 정식)",
+          "q": "たんや HAKATA 博多駅 B1F",
+          "address": "福岡県福岡市博多区博多駅中央街1-1 JR博多駅 B1F",
+          "tb": [
+            3.49,
+            707
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40026439/",
+          "g": [
+            4.2,
+            1665
+          ],
+          "gSource": "https://restaurantguru.jp/Tanya-Fukuoka-2",
+          "hours": "07:00~22:00 / 아침 정식 07:00~10:00",
+          "hoursSource": "https://hakata-1bangai.com/morningmenu/",
+          "note": "하카타역 지하 1번가, JR·고속버스 탑승 전에 효율적인 아침 식사.",
+          "sourceStatus": "new",
+          "ratingChecked": "2026-10-31",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary"
+        },
+        {
+          "name": "DACOMECCA(다코메카)",
+          "q": "DACOMECCA 博多駅前4-14-1",
+          "address": "福岡県福岡市博多区博多駅前4-14-1 1F",
+          "tb": [
+            3.64,
+            1594
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40057205/",
+          "g": [
+            4.1,
+            2237
+          ],
+          "gSource": "https://restaurantguru.com/Dacomecca-Fukuoka",
+          "hours": "07:00~20:00, 빵 소진 시 조기 종료",
+          "hoursSource": "https://tabelog.com/fukuoka/A4001/A400101/40057205/",
+          "note": "하카타역 하카타구치 도보 약 3분. 인기 빵집으로 줄이 길 수 있음.",
+          "sourceStatus": "new",
+          "ratingChecked": "2026-10-31",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary"
+        },
+        {
+          "name": "이치란 본사 총본점",
+          "q": "一蘭 本社総本店 福岡 中洲5-3-2",
+          "note": "원본 메모: 이치란 & 원갈비 / 다른 끼니의 기존 검증 음식점을 이 식사 선택지에 새로 연결.",
+          "address": "福岡県福岡市博多区中洲5-3-2",
+          "hours": "24시간 (임시 변경 가능)",
+          "hoursSource": "https://ichiran.com/shop/kyushu/sohonten/",
+          "hoursChecked": "2026-10-31",
+          "tb": [
+            3.45,
+            1371
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400102/40000130/",
+          "ratingChecked": "2026-10-31",
+          "g": [
+            4.2,
+            13337
+          ],
+          "gSource": "https://wanderlog.com/ja/place/details/422225/%E4%B8%80%E8%98%AD-%E6%9C%AC%E7%A4%BE%E7%B7%8F%E6%9C%AC%E5%BA%97",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary",
+          "sourceStatus": "new"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "title": "저녁",
+      "time": "18:15",
+      "note": "유후인 투어 하카타역 17:50 도착 후 바로 선택. 하카타역 주변 우선, 긴 대기 발생 시 숙소 이동으로 변경.",
+      "multi": false,
+      "options": [
+        {
+          "name": "하카타 잇소 하카타역 히가시 본점",
+          "q": "博多一双 博多駅東本店",
+          "address": "福岡県福岡市博多区博多駅東3-1-6",
+          "tb": [
+            3.72,
+            5799
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40032701/",
+          "g": [
+            4,
+            6800
+          ],
+          "gSource": "https://restaurantguru.jp/pork-Fukuoka-m28",
+          "hours": "11:00~24:00 (재료 소진·부정기 휴무 확인)",
+          "hoursSource": "https://tabelog.com/fukuoka/A4001/A400101/40032701/",
+          "note": "JR 하카타역 도보 약 6분. 대기 가능, 진한 돈코츠 라멘.",
+          "sourceStatus": "new",
+          "ratingChecked": "2026-10-31",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary"
+        },
+        {
+          "name": "기스이마루 하카타 1번가(해산물 아침 정식)",
+          "q": "博多の海鮮料理 喜水丸 博多一番街店",
+          "address": "福岡県福岡市博多区博多駅中央街1-1 JR博多駅B1F",
+          "tb": [
+            3.49,
+            168
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40058853/",
+          "g": [
+            4.2,
+            1191
+          ],
+          "gSource": "https://restaurantguru.jp/fried-fish-Fukuoka-m237",
+          "hours": "07:30부터 / 아침 07:30~10:00",
+          "hoursSource": "https://hakata-1bangai.com/morningmenu/",
+          "note": "하카타역 지하, 명란·생선 정식. 07:30 전 도착이면 이용 불가.",
+          "sourceStatus": "new",
+          "ratingChecked": "2026-10-31",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary"
+        },
+        {
+          "name": "모츠나베 오오야마 키테 하카타 점",
+          "q": "博多もつ鍋おおやま KITTE博多9F",
+          "note": "원본 메모: 점심으로 고른 곳을 고려해서 정하기 / 다른 끼니의 기존 검증 음식점을 이 식사 선택지에 새로 연결.",
+          "address": "福岡県福岡市博多区博多駅中央街9-1 KITTE博多 9F",
+          "hours": "11:00~23:00 (L.O.22:30)",
+          "hoursSource": "https://www.motu-ooyama.com/shop/kittehakata/",
+          "hoursChecked": "2026-10-31",
+          "tb": [
+            3.43,
+            484
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40042647/",
+          "detailNote": "15시 이후 별도 테이블 요금 400엔(매장 공식 안내).",
+          "ratingChecked": "2026-10-31",
+          "g": [
+            4.4,
+            3302
+          ],
+          "gSource": "https://wanderlog.com/ja/list/geoCategory/474517",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary",
+          "sourceStatus": "new"
+        },
+        {
+          "name": "하카타 라멘 신신 키테 하카타 점",
+          "q": "博多らーめん ShinShin KITTE博多店",
+          "tb": [
+            3.49,
+            1313
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40042485/",
+          "address": "福岡県福岡市博多区博多駅中央街9-1 KITTE博多 B1F",
+          "hours": "11:00~23:00 (L.O.22:30)",
+          "hoursSource": "https://tabelog.com/fukuoka/A4001/A400101/40042485/",
+          "ratingChecked": "2026-10-31",
+          "hoursChecked": "2026-10-31",
+          "g": [
+            4.1,
+            2163
+          ],
+          "gSource": "https://wanderlog.com/ja/list/geoCategory/1508112/kyushu%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%81%AE%E6%9C%80%E9%AB%98%E3%81%AE%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%B3%E3%82%B9%E3%83%9D%E3%83%83%E3%83%88",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary",
+          "sourceStatus": "new",
+          "note": "다른 끼니의 기존 검증 음식점을 이 식사 선택지에 새로 연결."
+        },
+        {
+          "name": "키와미야 하카타 점",
+          "q": "極味や 博多店 博多バスターミナル1F",
+          "tb": [
+            3.42,
+            270
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40039167/",
+          "address": "福岡県福岡市博多区博多駅中央街2-1 博多バスターミナル1F",
+          "hours": "11:00~22:00 (대기 상황에 따라 20:00 전후 접수 종료)",
+          "hoursSource": "https://tabelog.com/fukuoka/A4001/A400101/40039167/",
+          "ratingChecked": "2026-10-31",
+          "hoursChecked": "2026-10-31",
+          "g": [
+            4.2,
+            3323
+          ],
+          "gSource": "https://wanderlog.com/ja/place/details/2624480/%E6%A5%B5%E5%91%B3%E3%82%84-%E5%8D%9A%E5%A4%9A%E5%BA%97-%E3%83%8F%E3%83%B3%E3%83%90%E3%83%BC%E3%82%B0-%E3%82%B9%E3%83%86%E3%83%BC%E3%82%AD",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary",
+          "sourceStatus": "new",
+          "note": "다른 끼니의 기존 검증 음식점을 이 식사 선택지에 새로 연결."
+        },
+        {
+          "name": "키와미야 하카타 역 지하상가 점",
+          "q": "極味や 博多駅地下街店",
+          "tb": [
+            3.19,
+            55
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40067994/",
+          "address": "福岡県福岡市博多区博多駅中央街1-1 博多駅地下街",
+          "hours": "11:00~22:00 (L.O.21:00, 혼잡 시 접수 조기 마감)",
+          "hoursSource": "https://www.e-ekichika.com/shop/kiwamiya",
+          "ratingChecked": "2026-10-31",
+          "hoursChecked": "2026-10-31",
+          "g": [
+            4,
+            350
+          ],
+          "gSource": "https://restaurantguru.jp/Kiwamiya-Hamburg-Hakata-Station-Underground-Mall-Fukuoka",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary",
+          "sourceStatus": "new",
+          "note": "다른 끼니의 기존 검증 음식점을 이 식사 선택지에 새로 연결."
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "title": "아침",
+      "time": "08:15",
+      "note": "나카스 숙소 체크아웃 10:00 전에 가볍게 식사. 산스이·팽 스톡·이치란은 숙소와 가까움. 블루보틀·NOOICE는 덴진 남쪽으로 우회해 체크아웃 시간 확인 필수.",
+      "multi": false,
+      "options": [
+        {
+          "name": "산스이 미즈다시 커피(山水水出珈琲)",
+          "q": "山水水出珈琲 下川端町3-1 博多リバレイン",
+          "address": "福岡県福岡市博多区下川端町3-1 博多リバレイン",
+          "tb": [
+            3.52,
+            154
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400102/40033249/",
+          "g": [
+            4.3,
+            467
+          ],
+          "gSource": "https://restaurantguru.jp/coffeehouse-Fukuoka-t5/4",
+          "hours": "08:00~16:30 (요일별 변동 확인)",
+          "note": "나카스카와바타역 근처. 아침 커피·샌드위치 등 가벼운 식사.",
+          "sourceStatus": "new",
+          "ratingChecked": "2026-10-31",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary"
+        },
+        {
+          "name": "팽 스톡 텐진점(pain stock)",
+          "q": "パンストック天神店 西中洲6-17",
+          "address": "福岡県福岡市中央区西中洲6-17",
+          "tb": [
+            3.64,
+            665
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400103/40052317/",
+          "g": [
+            4.1,
+            2012
+          ],
+          "gSource": "https://restaurantguru.jp/Pain-Stock-Tenjin-Fukuoka",
+          "hours": "오전 영업 (정확한 개점·휴무는 공식 확인)",
+          "note": "나카스와 덴진 사이 베이커리. 이동 중 빵 구매·테이크아웃 적합. 대기 가능.",
+          "sourceStatus": "new",
+          "ratingChecked": "2026-10-31",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary"
+        },
+        {
+          "name": "블루보틀커피 후쿠오카 텐진",
+          "q": "ブルーボトルコーヒー 福岡天神カフェ",
+          "address": "福岡県福岡市中央区天神2-2-20 警固神社 社務所ビル1F",
+          "tb": [
+            3.21,
+            197
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400103/40066618/",
+          "g": [
+            4.5,
+            1410
+          ],
+          "gSource": "https://restaurantguru.jp/Blue-Bottle-Coffee-Fukuoka",
+          "hours": "08:00부터(최종 종료시간은 방문 전 확인)",
+          "note": "아침은 커피·토스트 등 간단한 메뉴. 덴진 남쪽 상점가 인근.",
+          "sourceStatus": "new",
+          "ratingChecked": "2026-10-31",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary"
+        },
+        {
+          "name": "NOOICE 텐진",
+          "q": "NOOICE tenjin 福岡 今泉1-18-3",
+          "address": "福岡県福岡市中央区今泉1-18-3 1F",
+          "tb": [
+            3.48,
+            276
+          ],
+          "tbUrl": "https://tabelog.com/kr/fukuoka/A4001/A400104/40053685/",
+          "g": [
+            4.4,
+            907
+          ],
+          "gSource": "https://restaurantguru.jp/NOOICE-Tenjin-Fukuoka",
+          "hours": "월~목 08:00~17:00 / 금~일 08:00~21:00",
+          "note": "모닝·브런치. 이마이즈미 구역, 텐진 남쪽에서 도보 이동.",
+          "hoursSource": "https://tabelog.com/kr/fukuoka/A4001/A400104/40053685/",
+          "sourceStatus": "new",
+          "ratingChecked": "2026-10-31",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary"
+        },
+        {
+          "name": "이치란 본사 총본점",
+          "q": "一蘭 本社総本店 福岡 中洲5-3-2",
+          "note": "원본 메모: 이치란 & 원갈비 / 다른 끼니의 기존 검증 음식점을 이 식사 선택지에 새로 연결.",
+          "address": "福岡県福岡市博多区中洲5-3-2",
+          "hours": "24시간 (임시 변경 가능)",
+          "hoursSource": "https://ichiran.com/shop/kyushu/sohonten/",
+          "hoursChecked": "2026-10-31",
+          "tb": [
+            3.45,
+            1371
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400102/40000130/",
+          "ratingChecked": "2026-10-31",
+          "g": [
+            4.2,
+            13337
+          ],
+          "gSource": "https://wanderlog.com/ja/place/details/422225/%E4%B8%80%E8%98%AD-%E6%9C%AC%E7%A4%BE%E7%B7%8F%E6%9C%AC%E5%BA%97",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary",
+          "sourceStatus": "new"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "title": "아침",
+      "time": "07:00",
+      "note": "히타행 버스 출발편과 충돌 주의. 06:31 버스 탑승 시 07:00 개점 식당 이용 불가: 숙소에서 미리 준비한 식사 필수. 07:46 이후 편이라면 하카타역 주변에서 간편식.",
+      "multi": false,
+      "options": [
+        {
+          "name": "탄야 HAKATA(우설 아침 정식)",
+          "q": "たんや HAKATA 博多駅 B1F",
+          "address": "福岡県福岡市博多区博多駅中央街1-1 JR博多駅 B1F",
+          "tb": [
+            3.49,
+            707
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40026439/",
+          "g": [
+            4.2,
+            1665
+          ],
+          "gSource": "https://restaurantguru.jp/Tanya-Fukuoka-2",
+          "hours": "07:00~22:00 / 아침 정식 07:00~10:00",
+          "hoursSource": "https://hakata-1bangai.com/morningmenu/",
+          "note": "하카타역 지하 1번가, JR·고속버스 탑승 전에 효율적인 아침 식사.",
+          "sourceStatus": "new",
+          "ratingChecked": "2026-10-31",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary"
+        },
+        {
+          "name": "DACOMECCA(다코메카)",
+          "q": "DACOMECCA 博多駅前4-14-1",
+          "address": "福岡県福岡市博多区博多駅前4-14-1 1F",
+          "tb": [
+            3.64,
+            1594
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40057205/",
+          "g": [
+            4.1,
+            2237
+          ],
+          "gSource": "https://restaurantguru.com/Dacomecca-Fukuoka",
+          "hours": "07:00~20:00, 빵 소진 시 조기 종료",
+          "hoursSource": "https://tabelog.com/fukuoka/A4001/A400101/40057205/",
+          "note": "하카타역 하카타구치 도보 약 3분. 인기 빵집으로 줄이 길 수 있음.",
+          "sourceStatus": "new",
+          "ratingChecked": "2026-10-31",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary"
+        },
+        {
+          "name": "기스이마루 하카타 1번가(해산물 아침 정식)",
+          "q": "博多の海鮮料理 喜水丸 博多一番街店",
+          "address": "福岡県福岡市博多区博多駅中央街1-1 JR博多駅B1F",
+          "tb": [
+            3.49,
+            168
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40058853/",
+          "g": [
+            4.2,
+            1191
+          ],
+          "gSource": "https://restaurantguru.jp/fried-fish-Fukuoka-m237",
+          "hours": "07:30부터 / 아침 07:30~10:00",
+          "hoursSource": "https://hakata-1bangai.com/morningmenu/",
+          "note": "하카타역 지하, 명란·생선 정식. 07:30 전 도착이면 이용 불가.",
+          "sourceStatus": "new",
+          "ratingChecked": "2026-10-31",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "title": "점심",
+      "time": "13:30",
+      "note": "오야마댐·진격의 거인 박물관에서 히타 시내 복귀 후 마메다마치 주변 점심. 센야는 바로 근처, 산큐는 히타역 방향, 소후렌 본점은 별도 우회. 버스 시각·대기·당일 접수 확인.",
+      "multi": false,
+      "options": [
+        {
+          "name": "히타마부시 센야(日田まぶし千屋)",
+          "q": "日田まぶし 千屋 豆田町4-14",
+          "address": "大分県日田市豆田町4-14",
+          "tb": [
+            3.54,
+            391
+          ],
+          "tbUrl": "https://tabelog.com/oita/A4404/A440403/44000261/",
+          "g": [
+            4.3,
+            1748
+          ],
+          "gSource": "https://japan.footinder.app/6541ba7547ebc19d09f22cc2/",
+          "hours": "월~금 11:00~16:00 전후 (재료 소진·접수 확인)",
+          "note": "기존 11/9 일정에 이미 장소로 등록된 히타마부시 센야를 점심 후보와 연결.",
+          "sourceStatus": "existing",
+          "ratingChecked": "2026-10-31",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary"
+        },
+        {
+          "name": "산큐(三久) 히타 야키소바",
+          "q": "三久 大分県日田市亀山町1-1",
+          "address": "大分県日田市亀山町",
+          "tb": [
+            3.55,
+            322
+          ],
+          "tbUrl": "https://tabelog.com/oita/A4404/A440403/44001476/",
+          "g": [
+            4.2,
+            1108
+          ],
+          "gSource": "https://tabelog.com/oita/A4404/A440403/44001476/dtlmenu/",
+          "hours": "월요일 11:00~17:00 / 화요일 휴무",
+          "hoursSource": "https://tabelog.com/oita/A4404/A440403/44001476/dtlmenu/",
+          "note": "히타역 도보 약 9분. 마메다마치에서 이동 추가 필요, 대기 가능.",
+          "sourceStatus": "new",
+          "ratingChecked": "2026-10-31",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary"
+        },
+        {
+          "name": "소후렌 본점(想夫恋 本店)",
+          "q": "想夫恋 本店 大分県日田市若宮町",
+          "address": "大分県日田市若宮町",
+          "tb": [
+            3.7,
+            627
+          ],
+          "tbUrl": "https://tabelog.com/oita/A4404/A440403/44000268/",
+          "g": [
+            4,
+            3054
+          ],
+          "gSource": "https://tabelog.com/oita/A4404/A440403/44000268/",
+          "hours": "11:00~22:00 (변동 확인)",
+          "note": "히타 야키소바 원조. 히타역에서 차량 약 5분, 마메다마치와 거리가 있어 동선 우회 후보.",
+          "sourceStatus": "new",
+          "ratingChecked": "2026-10-31",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "title": "저녁",
+      "time": null,
+      "note": "히타→하카타 고속버스 도착 뒤 하카타역 근처 저녁. 실제 버스 도착 시각과 최종 주문 시간을 확인해 한 곳만 선택.",
+      "multi": false,
+      "options": [
+        {
+          "name": "하카타 잇소 하카타역 히가시 본점",
+          "q": "博多一双 博多駅東本店",
+          "address": "福岡県福岡市博多区博多駅東3-1-6",
+          "tb": [
+            3.72,
+            5799
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40032701/",
+          "g": [
+            4,
+            6800
+          ],
+          "gSource": "https://restaurantguru.jp/pork-Fukuoka-m28",
+          "hours": "11:00~24:00 (재료 소진·부정기 휴무 확인)",
+          "hoursSource": "https://tabelog.com/fukuoka/A4001/A400101/40032701/",
+          "note": "JR 하카타역 도보 약 6분. 대기 가능, 진한 돈코츠 라멘.",
+          "sourceStatus": "new",
+          "ratingChecked": "2026-10-31",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary"
+        },
+        {
+          "name": "모츠나베 오오야마 키테 하카타 점",
+          "q": "博多もつ鍋おおやま KITTE博多9F",
+          "note": "원본 메모: 점심으로 고른 곳을 고려해서 정하기 / 다른 끼니의 기존 검증 음식점을 이 식사 선택지에 새로 연결.",
+          "address": "福岡県福岡市博多区博多駅中央街9-1 KITTE博多 9F",
+          "hours": "11:00~23:00 (L.O.22:30)",
+          "hoursSource": "https://www.motu-ooyama.com/shop/kittehakata/",
+          "hoursChecked": "2026-10-31",
+          "tb": [
+            3.43,
+            484
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40042647/",
+          "detailNote": "15시 이후 별도 테이블 요금 400엔(매장 공식 안내).",
+          "ratingChecked": "2026-10-31",
+          "g": [
+            4.4,
+            3302
+          ],
+          "gSource": "https://wanderlog.com/ja/list/geoCategory/474517",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary",
+          "sourceStatus": "new"
+        },
+        {
+          "name": "하카타 라멘 신신 키테 하카타 점",
+          "q": "博多らーめん ShinShin KITTE博多店",
+          "tb": [
+            3.49,
+            1313
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40042485/",
+          "address": "福岡県福岡市博多区博多駅中央街9-1 KITTE博多 B1F",
+          "hours": "11:00~23:00 (L.O.22:30)",
+          "hoursSource": "https://tabelog.com/fukuoka/A4001/A400101/40042485/",
+          "ratingChecked": "2026-10-31",
+          "hoursChecked": "2026-10-31",
+          "g": [
+            4.1,
+            2163
+          ],
+          "gSource": "https://wanderlog.com/ja/list/geoCategory/1508112/kyushu%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%81%AE%E6%9C%80%E9%AB%98%E3%81%AE%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%B3%E3%82%B9%E3%83%9D%E3%83%83%E3%83%88",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary",
+          "sourceStatus": "new",
+          "note": "다른 끼니의 기존 검증 음식점을 이 식사 선택지에 새로 연결."
+        },
+        {
+          "name": "키와미야 하카타 점",
+          "q": "極味や 博多店 博多バスターミナル1F",
+          "tb": [
+            3.42,
+            270
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40039167/",
+          "address": "福岡県福岡市博多区博多駅中央街2-1 博多バスターミナル1F",
+          "hours": "11:00~22:00 (대기 상황에 따라 20:00 전후 접수 종료)",
+          "hoursSource": "https://tabelog.com/fukuoka/A4001/A400101/40039167/",
+          "ratingChecked": "2026-10-31",
+          "hoursChecked": "2026-10-31",
+          "g": [
+            4.2,
+            3323
+          ],
+          "gSource": "https://wanderlog.com/ja/place/details/2624480/%E6%A5%B5%E5%91%B3%E3%82%84-%E5%8D%9A%E5%A4%9A%E5%BA%97-%E3%83%8F%E3%83%B3%E3%83%90%E3%83%BC%E3%82%B0-%E3%82%B9%E3%83%86%E3%83%BC%E3%82%AD",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary",
+          "sourceStatus": "new",
+          "note": "다른 끼니의 기존 검증 음식점을 이 식사 선택지에 새로 연결."
+        },
+        {
+          "name": "키와미야 하카타 역 지하상가 점",
+          "q": "極味や 博多駅地下街店",
+          "tb": [
+            3.19,
+            55
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40067994/",
+          "address": "福岡県福岡市博多区博多駅中央街1-1 博多駅地下街",
+          "hours": "11:00~22:00 (L.O.21:00, 혼잡 시 접수 조기 마감)",
+          "hoursSource": "https://www.e-ekichika.com/shop/kiwamiya",
+          "ratingChecked": "2026-10-31",
+          "hoursChecked": "2026-10-31",
+          "g": [
+            4,
+            350
+          ],
+          "gSource": "https://restaurantguru.jp/Kiwamiya-Hamburg-Hakata-Station-Underground-Mall-Fukuoka",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary",
+          "sourceStatus": "new",
+          "note": "다른 끼니의 기존 검증 음식점을 이 식사 선택지에 새로 연결."
+        },
+        {
+          "name": "이치란 본사 총본점",
+          "q": "一蘭 本社総本店 福岡 中洲5-3-2",
+          "note": "원본 메모: 이치란 & 원갈비 / 다른 끼니의 기존 검증 음식점을 이 식사 선택지에 새로 연결.",
+          "address": "福岡県福岡市博多区中洲5-3-2",
+          "hours": "24시간 (임시 변경 가능)",
+          "hoursSource": "https://ichiran.com/shop/kyushu/sohonten/",
+          "hoursChecked": "2026-10-31",
+          "tb": [
+            3.45,
+            1371
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400102/40000130/",
+          "ratingChecked": "2026-10-31",
+          "g": [
+            4.2,
+            13337
+          ],
+          "gSource": "https://wanderlog.com/ja/place/details/422225/%E4%B8%80%E8%98%AD-%E6%9C%AC%E7%A4%BE%E7%B7%8F%E6%9C%AC%E5%BA%97",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary",
+          "sourceStatus": "new"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "title": "아침",
+      "time": "08:00",
+      "note": "13:00 국제선 출발. 11:00 체크아웃 직후 공항으로 가면 수속 여유가 부족할 수 있으니 짐 정리와 공항 출발을 앞당길 것. 하카타역 일대의 07:00~08:00 개점 식당에서 간단히 선택.",
+      "multi": false,
+      "options": [
+        {
+          "name": "탄야 HAKATA(우설 아침 정식)",
+          "q": "たんや HAKATA 博多駅 B1F",
+          "address": "福岡県福岡市博多区博多駅中央街1-1 JR博多駅 B1F",
+          "tb": [
+            3.49,
+            707
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40026439/",
+          "g": [
+            4.2,
+            1665
+          ],
+          "gSource": "https://restaurantguru.jp/Tanya-Fukuoka-2",
+          "hours": "07:00~22:00 / 아침 정식 07:00~10:00",
+          "hoursSource": "https://hakata-1bangai.com/morningmenu/",
+          "note": "하카타역 지하 1번가, JR·고속버스 탑승 전에 효율적인 아침 식사.",
+          "sourceStatus": "new",
+          "ratingChecked": "2026-10-31",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary"
+        },
+        {
+          "name": "DACOMECCA(다코메카)",
+          "q": "DACOMECCA 博多駅前4-14-1",
+          "address": "福岡県福岡市博多区博多駅前4-14-1 1F",
+          "tb": [
+            3.64,
+            1594
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40057205/",
+          "g": [
+            4.1,
+            2237
+          ],
+          "gSource": "https://restaurantguru.com/Dacomecca-Fukuoka",
+          "hours": "07:00~20:00, 빵 소진 시 조기 종료",
+          "hoursSource": "https://tabelog.com/fukuoka/A4001/A400101/40057205/",
+          "note": "하카타역 하카타구치 도보 약 3분. 인기 빵집으로 줄이 길 수 있음.",
+          "sourceStatus": "new",
+          "ratingChecked": "2026-10-31",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary"
+        },
+        {
+          "name": "기스이마루 하카타 1번가(해산물 아침 정식)",
+          "q": "博多の海鮮料理 喜水丸 博多一番街店",
+          "address": "福岡県福岡市博多区博多駅中央街1-1 JR博多駅B1F",
+          "tb": [
+            3.49,
+            168
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40058853/",
+          "g": [
+            4.2,
+            1191
+          ],
+          "gSource": "https://restaurantguru.jp/fried-fish-Fukuoka-m237",
+          "hours": "07:30부터 / 아침 07:30~10:00",
+          "hoursSource": "https://hakata-1bangai.com/morningmenu/",
+          "note": "하카타역 지하, 명란·생선 정식. 07:30 전 도착이면 이용 불가.",
+          "sourceStatus": "new",
+          "ratingChecked": "2026-10-31",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary"
+        }
+      ]
     }
   ]
 }
