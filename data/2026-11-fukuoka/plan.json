@@ -499,7 +499,7 @@
           "q": "돈테키 부타야 쇼쿠도 후쿠오카",
           "note": "돼지고기 스테이크",
           "sourceStatus": "existing",
-          "warning": "기존 등록 후보: 타베로그 3.00·구글 4.00 기준 동시 충족 여부 미확인."
+          "warning": "동명의 텐진 'とんテキ豚屋'는 11:00~15:00 영업으로 11/4 18:30 저녁에 이용 불가. 등록된 '부타야 쇼쿠도'가 정확히 어느 지점인지는 미확인. 매장 확인 전 가격 정보 없음."
         },
         {
           "name": "돈카츠 와카바",
@@ -2126,7 +2126,19 @@
           "hoursSource": "https://tabelog.com/oita/A4402/A440201/44001656/",
           "hoursChecked": "2026-10-31",
           "sourceStatus": "existing",
-          "warning": "기존 등록 후보: 타베로그 3.00·구글 4.00 기준 동시 충족 여부 미확인."
+          "warning": "기존 등록 후보: 타베로그 3.00·구글 4.00 기준 동시 충족 여부 미확인.",
+          "tbUrl": "https://tabelog.com/oita/A4402/A440201/44001656/",
+          "priceBudget": {
+            "day": {
+              "range": [
+                0,
+                999
+              ],
+              "basis": "reviews"
+            },
+            "sourceUrl": "https://tabelog.com/oita/A4402/A440201/44001656/",
+            "checked": "2026-10-31"
+          }
         },
         {
           "name": "멘이치",
