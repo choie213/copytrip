@@ -431,6 +431,8 @@
     var rows = [];
     if (o.address) rows.push({ text: o.address });
     if (o.hours) rows.push({ text: (LANG === 'ja' ? '営業時間 ' : LANG === 'en' ? 'Hours ' : '영업시간 ') + o.hours });
+    if (o.loFood) rows.push({ text: (LANG === 'ja' ? '料理 L.O. ' : LANG === 'en' ? 'Food L.O. ' : '음식 라스트오더 ') + o.loFood });
+    if (o.loDrink) rows.push({ text: (LANG === 'ja' ? 'ドリンク L.O. ' : LANG === 'en' ? 'Drink L.O. ' : '음료 라스트오더 ') + o.loDrink });
     if (o.note) rows.push({ text: o.note });
     if (o.tip) rows.push({ text: o.tip });
     if (o.detailNote) rows.push({ text: o.detailNote });
@@ -451,7 +453,7 @@
   // brackets, not a mathematically computed average or guaranteed menu total.
   function mealPrice(o, title) {
     if (o.priceBudget) {
-      var k = title === '저녁' ? 'night' : 'day';
+      var k = title === '저녁' || title === '술집' ? 'night' : 'day';
       var b = o.priceBudget[k];
       if (b && b.range && typeof b.range[0] === 'number' && typeof b.range[1] === 'number') {
         return { kind: 'budget', band: b.range, basis: b.basis, source: o.priceBudget.sourceUrl, checked: o.priceBudget.checked };
@@ -513,7 +515,7 @@
         nameRow.appendChild(el('small', { class: 'opt-source ' + o.sourceStatus, text: statusText }));
       }
       info.appendChild(nameRow);
-      var isMealChoice = ['아침', '점심', '저녁', '식사'].indexOf(c.title) !== -1;
+      var isMealChoice = ['아침', '점심', '저녁', '식사', '술집'].indexOf(c.title) !== -1;
       var priceData = isMealChoice ? mealPrice(o, c.title) : null;
       var meta = el('span', { class: 'opt-meta' });
       if (isMealChoice) {
@@ -521,6 +523,14 @@
       }
       if (typeof o.cost === 'number') meta.appendChild(el('span', { class: 'opt-cost', text: price(grouped(o.cost)) }));
       if (meta.childNodes.length) info.appendChild(meta);
+      if (c.title === '술집') {
+        var hoursParts = [];
+        if (o.closeTime) hoursParts.push((LANG === 'ja' ? '閉店 ' : LANG === 'en' ? 'Closes ' : '영업 종료 ') + o.closeTime);
+        if (o.loFood) hoursParts.push((LANG === 'ja' ? '料理 L.O. ' : LANG === 'en' ? 'Food L.O. ' : '음식 L.O. ') + o.loFood);
+        if (o.loDrink) hoursParts.push((LANG === 'ja' ? '飲料 L.O. ' : LANG === 'en' ? 'Drink L.O. ' : '음료 L.O. ') + o.loDrink);
+        info.appendChild(el('span', { class: 'opt-bar-hours', text: hoursParts.length ? hoursParts.join(' · ') :
+          (LANG === 'ja' ? '営業時間・L.O. 未確認' : LANG === 'en' ? 'Closing time / L.O. unverified' : '영업 종료·라스트오더 미확인') }));
+      }
       pick.appendChild(info);
       // 고르지 않은 선택지는 이름 한 줄로 접어 두고, 꺾쇠로 펼쳐 볼 수 있게 함
       var more = el('button', { class: 'opt-more', type: 'button', 'aria-label': T('자세히 보기'), html: ICON.chev });
