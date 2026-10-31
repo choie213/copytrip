@@ -447,6 +447,54 @@
       LANG === 'en' ? 'Rating not verified · check the map' : '평점 미확인 · 지도에서 확인';
     return el('div', { class: 'rating-unverified', text: t });
   }
+  // Tabelog has separate day/night per-person budget bands. These are indicative
+  // brackets, not a mathematically computed average or guaranteed menu total.
+  function mealPrice(o, title) {
+    if (o.priceBudget) {
+      var k = title === '저녁' ? 'night' : 'day';
+      var b = o.priceBudget[k];
+      if (b && b.range && typeof b.range[0] === 'number' && typeof b.range[1] === 'number') {
+        return { kind: 'budget', band: b.range, basis: b.basis, source: o.priceBudget.sourceUrl, checked: o.priceBudget.checked };
+      }
+    }
+    if (o.priceMenuExample && typeof o.priceMenuExample.price === 'number')
+      return { kind: 'menu', example: o.priceMenuExample };
+    return null;
+  }
+  function mealPriceLabel(info) {
+    if (!info) return LANG === 'ja' ? '価格未確認' : LANG === 'en' ? 'Price unavailable' : '가격 미확인';
+    if (info.kind === 'menu') {
+      return (LANG === 'ja' ? '単品の一例 ' : LANG === 'en' ? 'Menu example ' : '단품 예시 ') + '¥' + grouped(info.example.price);
+    }
+    var lo = info.band[0], hi = info.band[1];
+    var amount = lo === 0 ? '¥' + grouped(hi) + (LANG === 'ja' ? '以下' : LANG === 'en' ? ' or less' : ' 이하') :
+      '¥' + grouped(lo) + '–' + grouped(hi);
+    return (LANG === 'ja' ? '1人 ' : LANG === 'en' ? 'Per person ' : '1인 예산 ') + amount;
+  }
+  function mealPriceDetails(info) {
+    if (!info) return null;
+    var wrap = el('div', { class: 'budget-details' });
+    if (info.kind === 'menu') {
+      wrap.appendChild(el('div', { text:
+        (LANG === 'ja' ? 'メニュー例: ' : LANG === 'en' ? 'Menu example: ' : '메뉴 예시: ') +
+        info.example.name + ' ¥' + grouped(info.example.price) +
+        (LANG === 'ja' ? '。食事総額・平均額ではありません。' : LANG === 'en' ? '. Not the total meal cost or an average.' : '. 한 끼 총액이나 평균 금액은 아님.') }));
+      if (info.example.sourceUrl) wrap.appendChild(el('a', { href: info.example.sourceUrl, target: '_blank', rel: 'noopener',
+        text: LANG === 'ja' ? '公式メニューを見る ›' : LANG === 'en' ? 'Official menu ›' : '공식 메뉴 보기 ›' }));
+    } else {
+      var basis = info.basis === 'reviews' ?
+        (LANG === 'ja' ? '食べログ口コミ予算の最多価格帯' : LANG === 'en' ? 'Tabelog most-reported review spend band' : '타베로그 후기 결제액의 최빈 구간') :
+        (LANG === 'ja' ? '食べログ掲載の予算帯' : LANG === 'en' ? 'Tabelog listed budget band' : '타베로그 등록 1인 예산대');
+      wrap.appendChild(el('div', { text: basis + (info.checked ? ' · ' + info.checked : '') }));
+      wrap.appendChild(el('div', { text: LANG === 'ja' ? '平均支払額ではありません。注文・時間帯で変わります。' :
+        LANG === 'en' ? 'Not a calculated average. Your bill depends on orders and time.' :
+        '실제 평균 결제액이 아니며 주문 메뉴·시간대에 따라 달라질 수 있음.' }));
+      if (info.source && /^https:\/\//.test(info.source))
+        wrap.appendChild(el('a', { href: info.source, target: '_blank', rel: 'noopener',
+          text: LANG === 'ja' ? '予算の根拠を見る ›' : LANG === 'en' ? 'Budget source ›' : '가격대 근거 보기 ›' }));
+    }
+    return wrap;
+  }
   function choiceCard(c, key) {
     var chosen = (load(PICK_KEY) || {})[key] || [];
     var card = el('div', { class: 'card' }, [head(c), el('div', { class: 'choice-tag' }, [c.title, el('span', { class: 'choice-hint', text: T(c.multi ? '여러 곳 체크 가능' : '하나 고르기') })])]);
@@ -455,15 +503,22 @@
     c.options.forEach(function (o, oi) {
       var on = chosen.indexOf(oi) !== -1;
       var pick = el('button', { class: 'opt-pick', type: 'button', 'aria-pressed': on ? 'true' : 'false', html: CHECK });
-      pick.appendChild(el('span', { class: 'title', text: o.name }));
-      // Fukuoka meal options explicitly distinguish previously saved selections from the newly researched additions.
+      var info = el('span', { class: 'opt-info' });
+      var nameRow = el('span', { class: 'opt-name' }, [el('span', { class: 'title', text: o.name })]);
+      // Preserve visible distinction between old selections and newly researched restaurants.
       if (o.sourceStatus === 'existing' || o.sourceStatus === 'new') {
         var statusText = o.sourceStatus === 'new' ?
           (LANG === 'ja' ? '新規追加' : LANG === 'en' ? 'New' : '새로 추가') :
           (LANG === 'ja' ? '以前から登録' : LANG === 'en' ? 'Existing' : '기존 등록');
-        pick.appendChild(el('small', { class: 'opt-source ' + o.sourceStatus, text: statusText }));
+        nameRow.appendChild(el('small', { class: 'opt-source ' + o.sourceStatus, text: statusText }));
       }
-      if (typeof o.cost === 'number') pick.appendChild(el('span', { class: 'opt-cost', text: price(grouped(o.cost)) }));
+      info.appendChild(nameRow);
+      var priceData = mealPrice(o, c.title);
+      var meta = el('span', { class: 'opt-meta' });
+      meta.appendChild(el('span', { class: 'opt-budget' + (priceData ? '' : ' unavailable'), text: mealPriceLabel(priceData) }));
+      if (typeof o.cost === 'number') meta.appendChild(el('span', { class: 'opt-cost', text: price(grouped(o.cost)) }));
+      info.appendChild(meta);
+      pick.appendChild(info);
       // 고르지 않은 선택지는 이름 한 줄로 접어 두고, 꺾쇠로 펼쳐 볼 수 있게 함
       var more = el('button', { class: 'opt-more', type: 'button', 'aria-label': T('자세히 보기'), html: ICON.chev });
       var inner = el('div', null, [pills(o)]);
@@ -471,6 +526,7 @@
     if (o.ratingChecked) inner.appendChild(el('div', { class: 'rating-snapshot',
       text: (LANG === 'ja' ? '口コミ点数の確認日 ' : LANG === 'en' ? 'Rating checked ' : '평점 확인일 ') + o.ratingChecked }));
       var detail = choiceDetails(o); if (detail) inner.appendChild(detail);
+      var priceDetail = mealPriceDetails(priceData); if (priceDetail) inner.appendChild(priceDetail);
       var r = reviews(o); if (r) inner.appendChild(r);
       var a = o.pid || o.q || o.hoursSource || o.costSource ? acts(o.name, (o.pid || o.q) && placeLink(o), (o.pid || o.q) && placeEmbed(o.pid, o.q), null, sourceLink(o), o.costSource) : null; if (a) inner.appendChild(a);
       if (o.tbUrl && /^https:\/\//.test(o.tbUrl)) {
