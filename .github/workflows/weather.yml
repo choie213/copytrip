@@ -1,14 +1,11 @@
 name: weather
 
+# All forecast writes go to weather-data, not the GitHub Pages deployment branch.
+# App commits never launch a competing weather workflow.
 on:
   schedule:
     - cron: "17 * * * *"
   workflow_dispatch:
-  # 배포(main 푸시) 때마다 날씨도 갱신. 이 작업이 GITHUB_TOKEN 으로 올린 커밋은 푸시 이벤트를 다시 만들지 않아 반복되지 않음
-  push:
-    branches: [main]
-    paths-ignore:
-      - data/*/weather.json
 
 permissions:
   contents: write
@@ -22,21 +19,42 @@ jobs:
       cancel-in-progress: false
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: python .github/scripts/weather.py
-      - name: commit
+      - name: Load last forecast snapshot from weather-data
+        shell: bash
         run: |
+          set -euo pipefail
+          git fetch origin weather-data
+          while IFS= read -r path; do
+            mkdir -p "$(dirname "$path")"
+            git show "origin/weather-data:$path" > "$path"
+          done < <(git ls-tree -r --name-only origin/weather-data -- data | grep '/weather.json$' || true)
+      - name: Calculate forecasts based on latest main plans
+        run: python .github/scripts/weather.py
+      - name: Publish forecasts only to weather-data branch
+        shell: bash
+        run: |
+          set -euo pipefail
+          git worktree add --detach "$RUNNER_TEMP/weather-data" origin/weather-data
+          while IFS= read -r -d '' path; do
+            mkdir -p "$RUNNER_TEMP/weather-data/$(dirname "$path")"
+            cp "$path" "$RUNNER_TEMP/weather-data/$path"
+          done < <(find data -type f -name 'weather.json' -print0)
+          cd "$RUNNER_TEMP/weather-data"
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/*/weather.json
-          git diff --cached --quiet || (git commit -m "날씨 갱신" && git pull --rebase && git push)
+          git add -- data
+          if ! git diff --cached --quiet; then
+            git commit -m "날씨 데이터 갱신"
+            git push origin HEAD:weather-data
+          fi
 
-  # GitHub 예약 실행은 몇 시간씩 건너뛰는 일이 잦아서, 실행이 끝나면 1시간 뒤 다음 실행을 직접 요청함
-  # 새 실행이 시작되면 이전 대기 작업은 취소되어 대기는 항상 하나만 남음.
-  # 예보를 받을 여행(trips.json 중 오늘부터 16일 안에 걸치는 여행, 현지 시간대 기준)이 없으면 멈춤.
-  # 멈춘 뒤에도 예약 실행이 이 작업을 다시 부르므로, 새 여행이 예보 범위에 들어오면 다시 이어짐
+  # Additional dispatch because cron can be delayed; only one pending run is kept.
   next:
     needs: update
     if: always()
