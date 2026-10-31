@@ -513,11 +513,14 @@
         nameRow.appendChild(el('small', { class: 'opt-source ' + o.sourceStatus, text: statusText }));
       }
       info.appendChild(nameRow);
-      var priceData = mealPrice(o, c.title);
+      var isMealChoice = ['아침', '점심', '저녁', '식사'].indexOf(c.title) !== -1;
+      var priceData = isMealChoice ? mealPrice(o, c.title) : null;
       var meta = el('span', { class: 'opt-meta' });
-      meta.appendChild(el('span', { class: 'opt-budget' + (priceData ? '' : ' unavailable'), text: mealPriceLabel(priceData) }));
+      if (isMealChoice) {
+        meta.appendChild(el('span', { class: 'opt-budget' + (priceData ? '' : ' unavailable'), text: mealPriceLabel(priceData) }));
+      }
       if (typeof o.cost === 'number') meta.appendChild(el('span', { class: 'opt-cost', text: price(grouped(o.cost)) }));
-      info.appendChild(meta);
+      if (meta.childNodes.length) info.appendChild(meta);
       pick.appendChild(info);
       // 고르지 않은 선택지는 이름 한 줄로 접어 두고, 꺾쇠로 펼쳐 볼 수 있게 함
       var more = el('button', { class: 'opt-more', type: 'button', 'aria-label': T('자세히 보기'), html: ICON.chev });
