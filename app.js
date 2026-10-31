@@ -710,7 +710,94 @@
   function item(s, key) {
     var kind = s.type === 'choice' ? 'choice' : s.type === 'run' ? 'run' : s.type === 'move' ? 'move' : s.type === 'sleep' ? 'sleep' : s.type === 'guide' ? 'guide' : 'place';
     var card = kind === 'choice' ? choiceCard(s, key) : kind === 'run' ? runCard(s) : kind === 'move' ? moveCard(s) : kind === 'sleep' ? sleepCard(s) : kind === 'guide' ? guideCard(s) : el('div', { class: 'card' }, [head(s), body(s)]);
-    return el('li', { class: 'it rv ' + kind, 'data-min': stopMin(s) == null ? '' : String(stopMin(s)) }, [el('span', { class: 'dot' }), card]);
+    var props = { class: 'it rv ' + kind, 'data-min': stopMin(s) == null ? '' : String(stopMin(s)) };
+    if (kind === 'choice') props['data-choice-key'] = key;
+    return el('li', props, [el('span', { class: 'dot' }), card]);
+  }
+
+  // Selected restaurant and activity venues guide the journey without changing
+  // the original route or inserting unselected alternatives as actual visits.
+  function routeName(s) {
+    return s && (s.q || s.address || s.name || s.title);
+  }
+  function choiceDirections(from, to) {
+    return 'https://www.google.com/maps/dir/?api=1&origin=' +
+      encodeURIComponent(routeName(from)) + '&destination=' + encodeURIComponent(routeName(to));
+  }
+  function chosenRouteCard(day) {
+    var picks = load(PICK_KEY) || {};
+    function chosen(s) {
+      if (!s || s.type !== 'choice') return [];
+      var key = day.date + ':' + day.key + ':' + (s._k || s.title || s.name);
+      var ids = picks[key] || [];
+      return s.options.filter(function (o) { return ids.indexOf(o.id) !== -1; });
+    }
+    function neighbor(i, dir) {
+      for (var j = i + dir; j >= 0 && j < day.stops.length; j += dir) {
+        var s = day.stops[j];
+        if (s.type === 'choice') {
+          var selected = chosen(s);
+          if (selected.length && routeName(selected[0])) return selected[0];
+          continue;
+        }
+        if (s.type === 'move' || s.type === 'run' || s.type === 'sleep' || s.type === 'guide') continue;
+        if (routeName(s)) return s;
+      }
+      return null;
+    }
+    var picksForDay = [];
+    day.stops.forEach(function (stop, i) {
+      if (stop.type !== 'choice') return;
+      var key = day.date + ':' + day.key + ':' + (stop._k || stop.title || stop.name);
+      chosen(stop).forEach(function (o) {
+        picksForDay.push({ key: key, slot: stop.title || stop.name, option: o,
+          before: neighbor(i, -1), after: neighbor(i, 1) });
+      });
+    });
+    var label = day.date === tripNow().date ? '오늘 선택한 장소 · 길찾기' : '선택한 장소 · 길찾기';
+    var panel = el('section', { class: 'chosen-route', 'aria-label': label });
+    panel.appendChild(el('div', { class: 'chosen-route-head' }, [
+      el('b', { text: label }), el('span', { text: picksForDay.length + '곳 선택' })
+    ]));
+    if (!picksForDay.length) {
+      panel.appendChild(el('p', { class: 'chosen-route-empty', text:
+        '아침·점심·저녁·술집·온천에서 장소를 고르면 확정 장소와 앞뒤 장소 길찾기가 여기 표시돼.' }));
+      return panel;
+    }
+    picksForDay.forEach(function (entry) {
+      var row = el('div', { class: 'chosen-route-item' });
+      row.appendChild(el('div', { class: 'chosen-route-name' }, [
+        el('small', { text: entry.slot }),
+        el('strong', { text: entry.option.name || entry.option.title })
+      ]));
+      var actions = el('div', { class: 'chosen-route-actions' });
+      if (entry.before) actions.appendChild(el('a', { class: 'chosen-route-link',
+        href: choiceDirections(entry.before, entry.option), target: '_blank', rel: 'noopener',
+        text: '이전 장소 → 여기' }));
+      if (entry.after) actions.appendChild(el('a', { class: 'chosen-route-link',
+        href: choiceDirections(entry.option, entry.after), target: '_blank', rel: 'noopener',
+        text: '여기 → 다음 장소' }));
+      var change = el('button', { class: 'chosen-route-change', type: 'button', text: '선택 변경' });
+      change.addEventListener('click', function () {
+        var cards = document.querySelectorAll('#day [data-choice-key]');
+        var target = Array.prototype.find.call(cards, function (n) {
+          return n.getAttribute('data-choice-key') === entry.key;
+        });
+        if (target) scrollUnderBar(target, false);
+      });
+      actions.appendChild(change);
+      row.appendChild(actions);
+      panel.appendChild(row);
+    });
+    panel.appendChild(el('p', { class: 'chosen-route-foot', text:
+      '일정 시간과 방문 순서는 자동 변경되지 않아. 실제 이동수단·소요시간은 구글 지도에서 확인해.' }));
+    return panel;
+  }
+  function refreshSelectedRoutes() {
+    var slot = document.querySelector('#day .selected-route-slot');
+    if (!slot || !plan || !plan.days[current]) return;
+    slot.textContent = '';
+    slot.appendChild(chosenRouteCard(view(plan.days[current])));
   }
 
   function notice(cls, icon, title, content) {
@@ -1022,6 +1109,9 @@
     }
     if (day.towel) main.appendChild(notice('towel', ICON.towel, T('수건 챙기기'), lines('', day.towel)));
 
+    var confirmed = el('div', { class: 'selected-route-slot' });
+    confirmed.appendChild(chosenRouteCard(day));
+    main.appendChild(confirmed);
     main.appendChild(el('div', { class: 'sec', text: T('일정') }));
     var wake = wakeItem(i, day.stops);
     main.appendChild(el('ol', { class: 'tl' }, (wake ? [wake] : []).concat(day.stops).map(function (s) {
