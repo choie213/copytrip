@@ -448,7 +448,17 @@
     },
     {
       "name": "이나바쵸 잇케이",
-      "q": "이나바쵸 잇케이 후쿠오카"
+      "q": "因幡町 一慶 天神ビジネスセンター B2F",
+      "tb": [
+        3.35,
+        94
+      ],
+      "tbUrl": "https://tabelog.com/fukuoka/A4001/A400103/40060531/",
+      "ratingChecked": "2026-10-31",
+      "address": "福岡県福岡市中央区天神1-10-20 天神ビジネスセンターB2F",
+      "hours": "평일 11:00~15:00 / 17:00~23:00, 주말 11:00~23:00",
+      "hoursSource": "https://tabelog.com/fukuoka/A4001/A400103/40060531/",
+      "hoursChecked": "2026-10-31"
     },
     {
       "name": "나카스 포장마차 거리",
@@ -1356,8 +1366,18 @@
     },
     {
       "name": "야키토리 타다시 하카타 본점",
-      "q": "야키토리 타다시 하카타 본점 후쿠오카",
-      "note": "근처 술집"
+      "q": "薫香炭火焼き 炊き餃子 焼鳥ただし 博多本店",
+      "note": "근처 술집",
+      "tb": [
+        3.37,
+        84
+      ],
+      "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40002372/",
+      "ratingChecked": "2026-10-31",
+      "address": "福岡県福岡市博多区博多駅東2-3-1",
+      "hours": "월·공휴일 17:00~24:00 / 화~토 17:00~익일01:00 (부정기휴무)",
+      "hoursSource": "https://tabelog.com/fukuoka/A4001/A400101/40002372/",
+      "hoursChecked": "2026-10-31"
     },
     {
       "name": "호텔 WBF 그랑드 하카타",
@@ -1468,7 +1488,13 @@
       "address": "大分県日田市豆田町4-14",
       "hours": "10:30~16:30 (L.O.15:30), 부정기휴무",
       "hoursSource": "https://senya-hita.yorozuya-hita.com/",
-      "hoursChecked": "2026-10-31"
+      "hoursChecked": "2026-10-31",
+      "tb": [
+        3.54,
+        395
+      ],
+      "tbUrl": "https://tabelog.com/oita/A4404/A440403/44000261/",
+      "ratingChecked": "2026-10-31"
     },
     {
       "name": "진격의 히타 카페",
