@@ -68,7 +68,7 @@
             3,
             4,
             5,
-            6,
+            135,
             7
           ],
           "rain": [
@@ -85,7 +85,7 @@
             3,
             4,
             5,
-            6,
+            135,
             7
           ]
         }
@@ -189,6 +189,7 @@
             102,
             127,
             120,
+            136,
             47
           ],
           "rain": [
@@ -224,6 +225,7 @@
             102,
             127,
             120,
+            136,
             47
           ]
         }
@@ -256,6 +258,7 @@
             60,
             61,
             129,
+            137,
             122,
             62
           ],
@@ -277,6 +280,7 @@
             60,
             61,
             129,
+            137,
             122,
             62
           ]
@@ -313,7 +317,7 @@
             76,
             77,
             78,
-            79,
+            138,
             80
           ],
           "rain": [
@@ -337,7 +341,7 @@
             76,
             77,
             78,
-            79,
+            138,
             80
           ]
         }
@@ -373,7 +377,8 @@
             92,
             106,
             93,
-            133
+            133,
+            139
           ],
           "rain": [
             81,
@@ -396,7 +401,8 @@
             92,
             106,
             93,
-            133
+            133,
+            139
           ]
         }
       }
@@ -1681,14 +1687,58 @@
           ],
           "tbUrl": "https://tabelog.com/fukuoka/A4001/A400103/40051584/",
           "address": "福岡県福岡市中央区今泉1-9-19 bulala 102",
-          "hours": "17:00~익일 05:00 (요리 L.O.03:45)",
-          "hoursSource": "https://tabelog.com/fukuoka/A4001/A400103/40051584/",
+          "hours": "매일 17:00~익일 05:00",
+          "hoursSource": "https://www.yakitori-tokin.com/",
           "ratingChecked": "2026-10-31",
-          "hoursChecked": "2026-10-31"
+          "hoursChecked": "2026-10-31",
+          "sourceStatus": "existing",
+          "g": [
+            4.5,
+            null
+          ],
+          "gSource": "https://www.google.com/maps/search/?api=1&query=%E7%84%BC%E9%B3%A5%20%E3%81%A8%E9%87%91%20%E4%BB%8A%E6%B3%891-9-19",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary",
+          "priceBudget": {
+            "night": {
+              "range": [
+                3000,
+                3999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400103/40051584/",
+            "checked": "2026-10-31"
+          },
+          "closeTime": "익일 05:00",
+          "loFood": "익일 03:45",
+          "loDrink": "익일 04:15",
+          "note": "기존 11/5 덴진 술집. 11/4·11/6 나카스 숙소 기준 도보 우회(약 15~25분) 가능."
         },
         {
-          "name": "타케토라 이마이즈미 점",
-          "q": "타케토라 이마이즈미 점 후쿠오카"
+          "name": "타케토라 이마이즈미점",
+          "q": "博多一口餃子たけとら 今泉店",
+          "address": "福岡県福岡市中央区今泉1-12-8 天神QRビル1F",
+          "sourceStatus": "existing",
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400103/40065668/",
+          "hours": "매일 15:00~익일 05:00",
+          "hoursSource": "https://taketoraimaizumi.owst.jp/",
+          "hoursChecked": "2026-10-31",
+          "closeTime": "익일 05:00",
+          "loFood": "익일 04:00",
+          "loDrink": "익일 04:30",
+          "priceBudget": {
+            "night": {
+              "range": [
+                2000,
+                2999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400103/40065668/",
+            "checked": "2026-10-31"
+          },
+          "note": "기존 등록된 만두 술집. 구글 평점은 검증되지 않아 숫자 표시 안 함."
         },
         {
           "name": "우라텐진 노렌",
@@ -1697,11 +1747,138 @@
           "address": "福岡県福岡市中央区渡辺通5-1-11 1F",
           "hours": "17:00~24:00 (요리 L.O.23:00)",
           "hoursSource": "https://tabelog.com/fukuoka/A4001/A400103/40072349/",
-          "hoursChecked": "2026-10-31"
+          "hoursChecked": "2026-10-31",
+          "sourceStatus": "existing",
+          "closeTime": "24:00",
+          "loFood": "23:00",
+          "loDrink": "미확인",
+          "priceBudget": {
+            "night": {
+              "range": [
+                3000,
+                3999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400103/40072349/",
+            "checked": "2026-10-31"
+          },
+          "warning": "구글 평점 및 음식·음료 중 음료 L.O. 미확인. 방문 전 매장 확인."
+        },
+        {
+          "name": "신지다이 후쿠오카 텐진점",
+          "q": "新時代 福岡天神店 福岡県福岡市中央区今泉1-19-18",
+          "address": "福岡県福岡市中央区今泉1-19-18",
+          "tb": [
+            3.38,
+            null
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400103/40061776/",
+          "g": [
+            4.4,
+            null
+          ],
+          "gSource": "https://www.google.com/maps/search/?api=1&query=%E6%96%B0%E6%99%82%E4%BB%A3%20%E7%A6%8F%E5%B2%A1%E5%A4%A9%E7%A5%9E%E5%BA%97%20%E7%A6%8F%E5%B2%A1%E7%9C%8C%E7%A6%8F%E5%B2%A1%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E4%BB%8A%E6%B3%891-19-18",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary",
+          "ratingChecked": "2026-10-31",
+          "sourceStatus": "new",
+          "priceBudget": {
+            "night": {
+              "range": [
+                2000,
+                2999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400103/40061776/",
+            "checked": "2026-10-31"
+          },
+          "hours": "11:30~익일 05:00 (공식 매장 안내) (방문일 11/5 기준 확인)",
+          "hoursSource": "https://shinjidai-fukuokatenjin.owst.jp/",
+          "hoursChecked": "2026-10-31",
+          "closeTime": "익일 05:00",
+          "loFood": "익일 04:00",
+          "loDrink": "익일 04:30",
+          "note": "이마이즈미·덴진 쇼핑 동선. 닭껍질 꼬치. 좌석 차지 ¥385 및 22시 이후 심야 10% 별도."
+        },
+        {
+          "name": "요테바 텐진점",
+          "q": "居酒屋革命 酔っ手羽 天神店 福岡県福岡市中央区大名1-12-58 パサージュビル1F",
+          "address": "福岡県福岡市中央区大名1-12-58 パサージュビル1F",
+          "tb": [
+            3.05,
+            null
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400103/40068965/",
+          "g": [
+            4.8,
+            null
+          ],
+          "gSource": "https://www.google.com/maps/search/?api=1&query=%E5%B1%85%E9%85%92%E5%B1%8B%E9%9D%A9%E5%91%BD%20%E9%85%94%E3%81%A3%E6%89%8B%E7%BE%BD%20%E5%A4%A9%E7%A5%9E%E5%BA%97%20%E7%A6%8F%E5%B2%A1%E7%9C%8C%E7%A6%8F%E5%B2%A1%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E5%A4%A7%E5%90%8D1-12-58%20%E3%83%91%E3%82%B5%E3%83%BC%E3%82%B8%E3%83%A5%E3%83%93%E3%83%AB1F",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary",
+          "ratingChecked": "2026-10-31",
+          "sourceStatus": "new",
+          "priceBudget": {
+            "night": {
+              "range": [
+                2000,
+                2999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400103/40068965/",
+            "checked": "2026-10-31"
+          },
+          "hours": "목요일 11:00~익일 08:00 (요일별 변경) (방문일 11/5 기준 확인)",
+          "hoursSource": "https://tabelog.com/fukuoka/A4001/A400103/40068965/",
+          "hoursChecked": "2026-10-31",
+          "closeTime": "익일 08:00 (목요일)",
+          "loFood": "미확인",
+          "loDrink": "미확인",
+          "note": "텐진·다이묘 쇼핑 동선. 손날개 튀김. 좌석 차지 ¥396 및 22시 이후 10% 추가 가능, 요일별 영업시간 확인."
+        },
+        {
+          "name": "요테바 텐진 니시도리점",
+          "q": "居酒屋革命 酔っ手羽 天神西通り店 福岡県福岡市中央区今泉1-19-21",
+          "address": "福岡県福岡市中央区今泉1-19-21",
+          "tb": [
+            3.01,
+            null
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400103/40073459/",
+          "g": [
+            4.9,
+            null
+          ],
+          "gSource": "https://www.google.com/maps/search/?api=1&query=%E5%B1%85%E9%85%92%E5%B1%8B%E9%9D%A9%E5%91%BD%20%E9%85%94%E3%81%A3%E6%89%8B%E7%BE%BD%20%E5%A4%A9%E7%A5%9E%E8%A5%BF%E9%80%9A%E3%82%8A%E5%BA%97%20%E7%A6%8F%E5%B2%A1%E7%9C%8C%E7%A6%8F%E5%B2%A1%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E4%BB%8A%E6%B3%891-19-21",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary",
+          "ratingChecked": "2026-10-31",
+          "sourceStatus": "new",
+          "priceBudget": {
+            "night": {
+              "range": [
+                3000,
+                3999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400103/40073459/",
+            "checked": "2026-10-31"
+          },
+          "hours": "목요일 11:00~익일 08:00 (요일별 변경) (방문일 11/5 기준 확인)",
+          "hoursSource": "https://tabelog.com/fukuoka/A4001/A400103/40073459/",
+          "hoursChecked": "2026-10-31",
+          "closeTime": "익일 08:00 (목요일)",
+          "loFood": "미확인",
+          "loDrink": "미확인",
+          "note": "이마이즈미·텐진 서쪽. 손날개 튀김. ¥396 차지 및 22시 이후 10% 심야 추가요금."
         }
       ],
       "multi": false,
-      "note": "술집 3곳 중 하나"
+      "note": "기존 3곳 + 새 추천 3곳. 텐진·이마이즈미·다이묘 동선에서 한 곳만 선택. 술값·안주·오토시·심야요금에 따라 실제 1인 결제액 변동."
     },
     {
       "name": "더 밀레니얼스 후쿠오카",
@@ -5392,6 +5569,1140 @@
             "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40058853/",
             "checked": "2026-10-31"
           }
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "title": "술집",
+      "time": "21:00",
+      "multi": false,
+      "note": "이나바쵸 잇케이(덴진) → 한 곳 선택 → 나카스 숙소. 텐진 가게는 먼저 방문, 나카스 가게는 이동 후 방문. 술집 후보 전체를 차례로 방문하는 일정이 아님.",
+      "options": [
+        {
+          "name": "나카스 포장마차 거리",
+          "q": "나카스 포장마차 거리 후쿠오카",
+          "sourceStatus": "existing",
+          "note": "기존 등록한 거리 자체이며 특정 점포가 아님. 점포별 영업·가격·라스트오더 확인 필요.",
+          "warning": "개별 점포를 특정하지 않아 평점·1인 예산 확인 불가. 방문 후 가게 직접 선택.",
+          "closeTime": "점포별 상이",
+          "loFood": "점포별 상이",
+          "loDrink": "점포별 상이"
+        },
+        {
+          "name": "토킨",
+          "q": "焼鳥 と金 今泉1-9-19",
+          "tb": [
+            3.32,
+            146
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400103/40051584/",
+          "address": "福岡県福岡市中央区今泉1-9-19 bulala 102",
+          "hours": "매일 17:00~익일 05:00",
+          "hoursSource": "https://www.yakitori-tokin.com/",
+          "ratingChecked": "2026-10-31",
+          "hoursChecked": "2026-10-31",
+          "sourceStatus": "existing",
+          "g": [
+            4.5,
+            null
+          ],
+          "gSource": "https://www.google.com/maps/search/?api=1&query=%E7%84%BC%E9%B3%A5%20%E3%81%A8%E9%87%91%20%E4%BB%8A%E6%B3%891-9-19",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary",
+          "priceBudget": {
+            "night": {
+              "range": [
+                3000,
+                3999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400103/40051584/",
+            "checked": "2026-10-31"
+          },
+          "closeTime": "익일 05:00",
+          "loFood": "익일 03:45",
+          "loDrink": "익일 04:15",
+          "note": "기존 11/5 덴진 술집. 11/4·11/6 나카스 숙소 기준 도보 우회(약 15~25분) 가능."
+        },
+        {
+          "name": "교자노 캇짱 나카스점",
+          "q": "餃子のかっちゃん 中洲店 福岡県福岡市博多区中洲5-1-2 MA中洲川端1,2F",
+          "address": "福岡県福岡市博多区中洲5-1-2 MA中洲川端1,2F",
+          "tb": [
+            3.03,
+            null
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400102/40068599/",
+          "g": [
+            4.4,
+            null
+          ],
+          "gSource": "https://www.google.com/maps/search/?api=1&query=%E9%A4%83%E5%AD%90%E3%81%AE%E3%81%8B%E3%81%A3%E3%81%A1%E3%82%83%E3%82%93%20%E4%B8%AD%E6%B4%B2%E5%BA%97%20%E7%A6%8F%E5%B2%A1%E7%9C%8C%E7%A6%8F%E5%B2%A1%E5%B8%82%E5%8D%9A%E5%A4%9A%E5%8C%BA%E4%B8%AD%E6%B4%B25-1-2%20MA%E4%B8%AD%E6%B4%B2%E5%B7%9D%E7%AB%AF1%2C2F",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary",
+          "ratingChecked": "2026-10-31",
+          "sourceStatus": "new",
+          "priceBudget": {
+            "night": {
+              "range": [
+                2000,
+                2999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400102/40068599/",
+            "checked": "2026-10-31"
+          },
+          "hours": "수 16:00~익일02:00 / 금 16:00~익일03:00 (방문일 11/4 기준 확인)",
+          "hoursSource": "https://nakasukacchan.owst.jp/",
+          "hoursChecked": "2026-10-31",
+          "closeTime": "익일 02:00 (수) / 익일 03:00 (금)",
+          "loFood": "수 익일 01:00 / 금 익일 02:00",
+          "loDrink": "수 익일 01:30 / 금 익일 02:30",
+          "note": "나카스카와바타역 근처 교자·이자카야. 22시 이후 입장 시 서비스료 10% 추가."
+        },
+        {
+          "name": "쿠시카츠 다나카 나카스카와바타점",
+          "q": "串カツ田中 中洲川端店 福岡県福岡市博多区中洲5-2-5",
+          "address": "福岡県福岡市博多区中洲5-2-5",
+          "tb": [
+            3.03,
+            null
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400102/40057053/",
+          "g": [
+            4.6,
+            null
+          ],
+          "gSource": "https://www.google.com/maps/search/?api=1&query=%E4%B8%B2%E3%82%AB%E3%83%84%E7%94%B0%E4%B8%AD%20%E4%B8%AD%E6%B4%B2%E5%B7%9D%E7%AB%AF%E5%BA%97%20%E7%A6%8F%E5%B2%A1%E7%9C%8C%E7%A6%8F%E5%B2%A1%E5%B8%82%E5%8D%9A%E5%A4%9A%E5%8C%BA%E4%B8%AD%E6%B4%B25-2-5",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary",
+          "ratingChecked": "2026-10-31",
+          "sourceStatus": "new",
+          "priceBudget": {
+            "night": {
+              "range": [
+                2000,
+                2999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400102/40057053/",
+            "checked": "2026-10-31"
+          },
+          "hours": "월~토 17:00~익일 01:00 · 일 12:00~익일 01:00 (방문일 11/4 기준 확인)",
+          "hoursSource": "https://restaurant.kushi-tanaka.com/detail/1221/",
+          "hoursChecked": "2026-10-31",
+          "closeTime": "익일 01:00",
+          "loFood": "미확인",
+          "loDrink": "미확인",
+          "note": "숙소와 가까움. 쿠시카츠 꼬치·하이볼. 음식·음료별 라스트오더는 매장 확인."
+        },
+        {
+          "name": "핫슈 나카스점",
+          "q": "九州素材 和食 個室 八州 中洲店 福岡県福岡市博多区中洲5-2-3 松居壱番館2F",
+          "address": "福岡県福岡市博多区中洲5-2-3 松居壱番館2F",
+          "tb": [
+            3.13,
+            null
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400102/40068818/",
+          "g": [
+            4.4,
+            null
+          ],
+          "gSource": "https://www.google.com/maps/search/?api=1&query=%E4%B9%9D%E5%B7%9E%E7%B4%A0%E6%9D%90%20%E5%92%8C%E9%A3%9F%20%E5%80%8B%E5%AE%A4%20%E5%85%AB%E5%B7%9E%20%E4%B8%AD%E6%B4%B2%E5%BA%97%20%E7%A6%8F%E5%B2%A1%E7%9C%8C%E7%A6%8F%E5%B2%A1%E5%B8%82%E5%8D%9A%E5%A4%9A%E5%8C%BA%E4%B8%AD%E6%B4%B25-2-3%20%E6%9D%BE%E5%B1%85%E5%A3%B1%E7%95%AA%E9%A4%A82F",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary",
+          "ratingChecked": "2026-10-31",
+          "sourceStatus": "new",
+          "priceBudget": {
+            "night": {
+              "range": [
+                3000,
+                3999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400102/40068818/",
+            "checked": "2026-10-31"
+          },
+          "hours": "수 17:00~익일01:00 / 금 16:00~익일01:00 (방문일 11/4 기준 확인)",
+          "hoursSource": "https://tabelog.com/fukuoka/A4001/A400102/40068818/",
+          "hoursChecked": "2026-10-31",
+          "closeTime": "익일 01:00",
+          "loFood": "익일 00:00",
+          "loDrink": "익일 00:30",
+          "note": "숙소 근처 규슈 요리. 자리 차지 등 추가 비용 가능."
+        },
+        {
+          "name": "신지다이 후쿠오카 텐진점",
+          "q": "新時代 福岡天神店 福岡県福岡市中央区今泉1-19-18",
+          "address": "福岡県福岡市中央区今泉1-19-18",
+          "tb": [
+            3.38,
+            null
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400103/40061776/",
+          "g": [
+            4.4,
+            null
+          ],
+          "gSource": "https://www.google.com/maps/search/?api=1&query=%E6%96%B0%E6%99%82%E4%BB%A3%20%E7%A6%8F%E5%B2%A1%E5%A4%A9%E7%A5%9E%E5%BA%97%20%E7%A6%8F%E5%B2%A1%E7%9C%8C%E7%A6%8F%E5%B2%A1%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E4%BB%8A%E6%B3%891-19-18",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary",
+          "ratingChecked": "2026-10-31",
+          "sourceStatus": "new",
+          "priceBudget": {
+            "night": {
+              "range": [
+                2000,
+                2999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400103/40061776/",
+            "checked": "2026-10-31"
+          },
+          "hours": "11:30~익일 05:00 (공식 매장 안내) (방문일 11/4 기준 확인)",
+          "hoursSource": "https://shinjidai-fukuokatenjin.owst.jp/",
+          "hoursChecked": "2026-10-31",
+          "closeTime": "익일 05:00",
+          "loFood": "익일 04:00",
+          "loDrink": "익일 04:30",
+          "note": "이마이즈미·덴진 쇼핑 동선. 닭껍질 꼬치. 좌석 차지 ¥385 및 22시 이후 심야 10% 별도. 이나바쵸 잇케이 방문 후 덴진에서 먼저 들를 수 있는 선택지."
+        },
+        {
+          "name": "요테바 텐진점",
+          "q": "居酒屋革命 酔っ手羽 天神店 福岡県福岡市中央区大名1-12-58 パサージュビル1F",
+          "address": "福岡県福岡市中央区大名1-12-58 パサージュビル1F",
+          "tb": [
+            3.05,
+            null
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400103/40068965/",
+          "g": [
+            4.8,
+            null
+          ],
+          "gSource": "https://www.google.com/maps/search/?api=1&query=%E5%B1%85%E9%85%92%E5%B1%8B%E9%9D%A9%E5%91%BD%20%E9%85%94%E3%81%A3%E6%89%8B%E7%BE%BD%20%E5%A4%A9%E7%A5%9E%E5%BA%97%20%E7%A6%8F%E5%B2%A1%E7%9C%8C%E7%A6%8F%E5%B2%A1%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E5%A4%A7%E5%90%8D1-12-58%20%E3%83%91%E3%82%B5%E3%83%BC%E3%82%B8%E3%83%A5%E3%83%93%E3%83%AB1F",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary",
+          "ratingChecked": "2026-10-31",
+          "sourceStatus": "new",
+          "priceBudget": {
+            "night": {
+              "range": [
+                2000,
+                2999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400103/40068965/",
+            "checked": "2026-10-31"
+          },
+          "hours": "목요일 11:00~익일 08:00 (요일별 변경) (방문일 11/4 기준 확인)",
+          "hoursSource": "https://tabelog.com/fukuoka/A4001/A400103/40068965/",
+          "hoursChecked": "2026-10-31",
+          "closeTime": "익일 08:00 (목요일)",
+          "loFood": "미확인",
+          "loDrink": "미확인",
+          "note": "텐진·다이묘 쇼핑 동선. 손날개 튀김. 좌석 차지 ¥396 및 22시 이후 10% 추가 가능, 요일별 영업시간 확인. 덴진·다이묘에서 먼저 한잔 후 나카스 숙소로 복귀 시 적합."
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "title": "술집",
+      "multi": false,
+      "note": "기타큐슈에서 복귀 후 숙소(나카스카와바타) 주변을 우선. 늦은 도착이면 라스트오더가 지난 곳은 제외; 덴진 후보는 추가 이동 필요.",
+      "options": [
+        {
+          "name": "나카스 포장마차 거리",
+          "q": "나카스 포장마차 거리 후쿠오카",
+          "sourceStatus": "existing",
+          "note": "기존 등록한 거리 자체이며 특정 점포가 아님. 점포별 영업·가격·라스트오더 확인 필요.",
+          "warning": "개별 점포를 특정하지 않아 평점·1인 예산 확인 불가. 방문 후 가게 직접 선택.",
+          "closeTime": "점포별 상이",
+          "loFood": "점포별 상이",
+          "loDrink": "점포별 상이"
+        },
+        {
+          "name": "토킨",
+          "q": "焼鳥 と金 今泉1-9-19",
+          "tb": [
+            3.32,
+            146
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400103/40051584/",
+          "address": "福岡県福岡市中央区今泉1-9-19 bulala 102",
+          "hours": "매일 17:00~익일 05:00",
+          "hoursSource": "https://www.yakitori-tokin.com/",
+          "ratingChecked": "2026-10-31",
+          "hoursChecked": "2026-10-31",
+          "sourceStatus": "existing",
+          "g": [
+            4.5,
+            null
+          ],
+          "gSource": "https://www.google.com/maps/search/?api=1&query=%E7%84%BC%E9%B3%A5%20%E3%81%A8%E9%87%91%20%E4%BB%8A%E6%B3%891-9-19",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary",
+          "priceBudget": {
+            "night": {
+              "range": [
+                3000,
+                3999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400103/40051584/",
+            "checked": "2026-10-31"
+          },
+          "closeTime": "익일 05:00",
+          "loFood": "익일 03:45",
+          "loDrink": "익일 04:15",
+          "note": "기존 11/5 덴진 술집. 11/4·11/6 나카스 숙소 기준 도보 우회(약 15~25분) 가능."
+        },
+        {
+          "name": "교자노 캇짱 나카스점",
+          "q": "餃子のかっちゃん 中洲店 福岡県福岡市博多区中洲5-1-2 MA中洲川端1,2F",
+          "address": "福岡県福岡市博多区中洲5-1-2 MA中洲川端1,2F",
+          "tb": [
+            3.03,
+            null
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400102/40068599/",
+          "g": [
+            4.4,
+            null
+          ],
+          "gSource": "https://www.google.com/maps/search/?api=1&query=%E9%A4%83%E5%AD%90%E3%81%AE%E3%81%8B%E3%81%A3%E3%81%A1%E3%82%83%E3%82%93%20%E4%B8%AD%E6%B4%B2%E5%BA%97%20%E7%A6%8F%E5%B2%A1%E7%9C%8C%E7%A6%8F%E5%B2%A1%E5%B8%82%E5%8D%9A%E5%A4%9A%E5%8C%BA%E4%B8%AD%E6%B4%B25-1-2%20MA%E4%B8%AD%E6%B4%B2%E5%B7%9D%E7%AB%AF1%2C2F",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary",
+          "ratingChecked": "2026-10-31",
+          "sourceStatus": "new",
+          "priceBudget": {
+            "night": {
+              "range": [
+                2000,
+                2999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400102/40068599/",
+            "checked": "2026-10-31"
+          },
+          "hours": "수 16:00~익일02:00 / 금 16:00~익일03:00 (방문일 11/6 기준 확인)",
+          "hoursSource": "https://nakasukacchan.owst.jp/",
+          "hoursChecked": "2026-10-31",
+          "closeTime": "익일 02:00 (수) / 익일 03:00 (금)",
+          "loFood": "수 익일 01:00 / 금 익일 02:00",
+          "loDrink": "수 익일 01:30 / 금 익일 02:30",
+          "note": "나카스카와바타역 근처 교자·이자카야. 22시 이후 입장 시 서비스료 10% 추가."
+        },
+        {
+          "name": "쿠시카츠 다나카 나카스카와바타점",
+          "q": "串カツ田中 中洲川端店 福岡県福岡市博多区中洲5-2-5",
+          "address": "福岡県福岡市博多区中洲5-2-5",
+          "tb": [
+            3.03,
+            null
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400102/40057053/",
+          "g": [
+            4.6,
+            null
+          ],
+          "gSource": "https://www.google.com/maps/search/?api=1&query=%E4%B8%B2%E3%82%AB%E3%83%84%E7%94%B0%E4%B8%AD%20%E4%B8%AD%E6%B4%B2%E5%B7%9D%E7%AB%AF%E5%BA%97%20%E7%A6%8F%E5%B2%A1%E7%9C%8C%E7%A6%8F%E5%B2%A1%E5%B8%82%E5%8D%9A%E5%A4%9A%E5%8C%BA%E4%B8%AD%E6%B4%B25-2-5",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary",
+          "ratingChecked": "2026-10-31",
+          "sourceStatus": "new",
+          "priceBudget": {
+            "night": {
+              "range": [
+                2000,
+                2999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400102/40057053/",
+            "checked": "2026-10-31"
+          },
+          "hours": "월~토 17:00~익일 01:00 · 일 12:00~익일 01:00 (방문일 11/6 기준 확인)",
+          "hoursSource": "https://restaurant.kushi-tanaka.com/detail/1221/",
+          "hoursChecked": "2026-10-31",
+          "closeTime": "익일 01:00",
+          "loFood": "미확인",
+          "loDrink": "미확인",
+          "note": "숙소와 가까움. 쿠시카츠 꼬치·하이볼. 음식·음료별 라스트오더는 매장 확인."
+        },
+        {
+          "name": "핫슈 나카스점",
+          "q": "九州素材 和食 個室 八州 中洲店 福岡県福岡市博多区中洲5-2-3 松居壱番館2F",
+          "address": "福岡県福岡市博多区中洲5-2-3 松居壱番館2F",
+          "tb": [
+            3.13,
+            null
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400102/40068818/",
+          "g": [
+            4.4,
+            null
+          ],
+          "gSource": "https://www.google.com/maps/search/?api=1&query=%E4%B9%9D%E5%B7%9E%E7%B4%A0%E6%9D%90%20%E5%92%8C%E9%A3%9F%20%E5%80%8B%E5%AE%A4%20%E5%85%AB%E5%B7%9E%20%E4%B8%AD%E6%B4%B2%E5%BA%97%20%E7%A6%8F%E5%B2%A1%E7%9C%8C%E7%A6%8F%E5%B2%A1%E5%B8%82%E5%8D%9A%E5%A4%9A%E5%8C%BA%E4%B8%AD%E6%B4%B25-2-3%20%E6%9D%BE%E5%B1%85%E5%A3%B1%E7%95%AA%E9%A4%A82F",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary",
+          "ratingChecked": "2026-10-31",
+          "sourceStatus": "new",
+          "priceBudget": {
+            "night": {
+              "range": [
+                3000,
+                3999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400102/40068818/",
+            "checked": "2026-10-31"
+          },
+          "hours": "수 17:00~익일01:00 / 금 16:00~익일01:00 (방문일 11/6 기준 확인)",
+          "hoursSource": "https://tabelog.com/fukuoka/A4001/A400102/40068818/",
+          "hoursChecked": "2026-10-31",
+          "closeTime": "익일 01:00",
+          "loFood": "익일 00:00",
+          "loDrink": "익일 00:30",
+          "note": "숙소 근처 규슈 요리. 자리 차지 등 추가 비용 가능."
+        },
+        {
+          "name": "신지다이 후쿠오카 텐진점",
+          "q": "新時代 福岡天神店 福岡県福岡市中央区今泉1-19-18",
+          "address": "福岡県福岡市中央区今泉1-19-18",
+          "tb": [
+            3.38,
+            null
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400103/40061776/",
+          "g": [
+            4.4,
+            null
+          ],
+          "gSource": "https://www.google.com/maps/search/?api=1&query=%E6%96%B0%E6%99%82%E4%BB%A3%20%E7%A6%8F%E5%B2%A1%E5%A4%A9%E7%A5%9E%E5%BA%97%20%E7%A6%8F%E5%B2%A1%E7%9C%8C%E7%A6%8F%E5%B2%A1%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E4%BB%8A%E6%B3%891-19-18",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary",
+          "ratingChecked": "2026-10-31",
+          "sourceStatus": "new",
+          "priceBudget": {
+            "night": {
+              "range": [
+                2000,
+                2999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400103/40061776/",
+            "checked": "2026-10-31"
+          },
+          "hours": "11:30~익일 05:00 (공식 매장 안내) (방문일 11/6 기준 확인)",
+          "hoursSource": "https://shinjidai-fukuokatenjin.owst.jp/",
+          "hoursChecked": "2026-10-31",
+          "closeTime": "익일 05:00",
+          "loFood": "익일 04:00",
+          "loDrink": "익일 04:30",
+          "note": "이마이즈미·덴진 쇼핑 동선. 닭껍질 꼬치. 좌석 차지 ¥385 및 22시 이후 심야 10% 별도. 나카스에서 덴진 방면으로 이동이 필요한 우회 후보."
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "title": "술집",
+      "multi": false,
+      "note": "유후인 투어 하카타 도착 → 저녁 → 하카타역 주변 술집 한 곳 → 나카스 숙소. 역 치쿠시구치(동쪽)와 하카타구치(서쪽)의 출구 차이 확인.",
+      "options": [
+        {
+          "name": "야키토리 타다시 하카타 본점",
+          "q": "薫香炭火焼き 炊き餃子 焼鳥ただし 博多本店",
+          "address": "福岡県福岡市博多区博多駅東2-3-1",
+          "tb": [
+            3.37,
+            null
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40002372/",
+          "g": [
+            4,
+            null
+          ],
+          "gSource": "https://ru.restaurantguru.com/%E7%84%BC%E9%B3%A5%E3%81%9F%E3%81%A0%E3%81%97-%E5%8D%9A%E5%A4%9A%E6%9C%AC%E5%BA%97-Fukuoka",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary",
+          "ratingChecked": "2026-10-31",
+          "sourceStatus": "existing",
+          "hours": "월·공휴일 17:00~24:00 / 화~토 17:00~익일01:00 (부정기휴무) (요일별 확인)",
+          "hoursSource": "https://tabelog.com/fukuoka/A4001/A400101/40002372/",
+          "hoursChecked": "2026-10-31",
+          "priceBudget": {
+            "night": {
+              "range": [
+                3000,
+                3999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40002372/",
+            "checked": "2026-10-31"
+          },
+          "closeTime": "익일 01:00",
+          "loFood": "미확인",
+          "loDrink": "미확인",
+          "note": "기존 11/8 하카타역 동쪽에 등록된 야키토리. 원래의 단독 장소에서 술집 선택지로 통합."
+        },
+        {
+          "name": "하카타 후도 본점",
+          "q": "はかた風土 本店 福岡県福岡市博多区博多駅東2-4-17 第六岡部ビル1F",
+          "address": "福岡県福岡市博多区博多駅東2-4-17 第六岡部ビル1F",
+          "tb": [
+            3.43,
+            null
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40001994/",
+          "g": [
+            4.5,
+            null
+          ],
+          "gSource": "https://www.google.com/maps/search/?api=1&query=%E3%81%AF%E3%81%8B%E3%81%9F%E9%A2%A8%E5%9C%9F%20%E6%9C%AC%E5%BA%97%20%E7%A6%8F%E5%B2%A1%E7%9C%8C%E7%A6%8F%E5%B2%A1%E5%B8%82%E5%8D%9A%E5%A4%9A%E5%8C%BA%E5%8D%9A%E5%A4%9A%E9%A7%85%E6%9D%B12-4-17%20%E7%AC%AC%E5%85%AD%E5%B2%A1%E9%83%A8%E3%83%93%E3%83%AB1F",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary",
+          "ratingChecked": "2026-10-31",
+          "sourceStatus": "new",
+          "priceBudget": {
+            "night": {
+              "range": [
+                3000,
+                3999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40001994/",
+            "checked": "2026-10-31"
+          },
+          "hours": "금·토 17:00~익일01:00 / 일·월 17:00~24:00 (방문일 11/7 기준 확인)",
+          "hoursSource": "https://hakata-food.owst.jp/",
+          "hoursChecked": "2026-10-31",
+          "closeTime": "토 익일 01:00 / 일·월 24:00",
+          "loFood": "토 익일 00:00 / 일·월 23:00",
+          "loDrink": "토 익일 00:30 / 일·월 23:30",
+          "note": "하카타역 치쿠시구치 도보 5분. 야키토리·모츠나베. 흡연점포로 20세 미만 입점 불가."
+        },
+        {
+          "name": "하카타 오엔타이 토리사카바",
+          "q": "博多応援隊 とり酒場 博多店 福岡県福岡市博多区博多駅東2-4-7",
+          "address": "福岡県福岡市博多区博多駅東2-4-7",
+          "tb": [
+            3.14,
+            null
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40068996/",
+          "g": [
+            4.5,
+            null
+          ],
+          "gSource": "https://www.google.com/maps/search/?api=1&query=%E5%8D%9A%E5%A4%9A%E5%BF%9C%E6%8F%B4%E9%9A%8A%20%E3%81%A8%E3%82%8A%E9%85%92%E5%A0%B4%20%E5%8D%9A%E5%A4%9A%E5%BA%97%20%E7%A6%8F%E5%B2%A1%E7%9C%8C%E7%A6%8F%E5%B2%A1%E5%B8%82%E5%8D%9A%E5%A4%9A%E5%8C%BA%E5%8D%9A%E5%A4%9A%E9%A7%85%E6%9D%B12-4-7",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary",
+          "ratingChecked": "2026-10-31",
+          "sourceStatus": "new",
+          "priceBudget": {
+            "night": {
+              "range": [
+                3000,
+                3999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40068996/",
+            "checked": "2026-10-31"
+          },
+          "hours": "토 12:00~익일01:00 / 일 12:00~24:00 / 월 17:00~익일01:00 (방문일 11/7 기준 확인)",
+          "hoursSource": "https://tabelog.com/fukuoka/A4001/A400101/40068996/",
+          "hoursChecked": "2026-10-31",
+          "closeTime": "토 익일 01:00 / 일 24:00 / 월 익일 01:00",
+          "loFood": "토·월 익일 00:00 / 일 23:00",
+          "loDrink": "토·월 익일 00:30 / 일 23:30",
+          "note": "하카타역 동쪽. 야키토리·모츠나베. 오토시(자리 음식) ¥418 추가."
+        },
+        {
+          "name": "야키토리 이오리",
+          "q": "焼とり家 庵 福岡県福岡市博多区博多駅前4-15-17",
+          "address": "福岡県福岡市博多区博多駅前4-15-17",
+          "tb": [
+            3.42,
+            null
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40030585/",
+          "g": [
+            5,
+            null
+          ],
+          "gSource": "https://www.google.com/maps/search/?api=1&query=%E7%84%BC%E3%81%A8%E3%82%8A%E5%AE%B6%20%E5%BA%B5%20%E7%A6%8F%E5%B2%A1%E7%9C%8C%E7%A6%8F%E5%B2%A1%E5%B8%82%E5%8D%9A%E5%A4%9A%E5%8C%BA%E5%8D%9A%E5%A4%9A%E9%A7%85%E5%89%8D4-15-17",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary",
+          "ratingChecked": "2026-10-31",
+          "sourceStatus": "new",
+          "priceBudget": {
+            "night": {
+              "range": [
+                3000,
+                3999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40030585/",
+            "checked": "2026-10-31"
+          },
+          "hours": "월~토 17:30~익일04:00 / 일 17:00~익일01:00 (방문일 11/7 기준 확인)",
+          "hoursSource": "https://iori-fukuoka.com/store_information/",
+          "hoursChecked": "2026-10-31",
+          "closeTime": "토·월 익일 04:00 / 일 익일 01:00",
+          "loFood": "토·월 익일 03:00 / 일 익일 00:00",
+          "loDrink": "토·월 익일 03:30 / 일 익일 00:30",
+          "note": "하카타역 하카타구치 도보 약 4분. 늦은 시간 야키토리. 공식 매장 페이지 음식·음료 L.O. 기준(서로 다른 안내가 있어 재확인)."
+        },
+        {
+          "name": "토리키조쿠 하카타 치쿠시구치점",
+          "q": "鳥貴族 博多筑紫口店 福岡県福岡市博多区博多駅東2-1-24 ギャラリーハカタB1F",
+          "address": "福岡県福岡市博多区博多駅東2-1-24 ギャラリーハカタB1F",
+          "tb": [
+            3.05,
+            null
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40062081/",
+          "g": [
+            4.2,
+            null
+          ],
+          "gSource": "https://www.google.com/maps/search/?api=1&query=%E9%B3%A5%E8%B2%B4%E6%97%8F%20%E5%8D%9A%E5%A4%9A%E7%AD%91%E7%B4%AB%E5%8F%A3%E5%BA%97%20%E7%A6%8F%E5%B2%A1%E7%9C%8C%E7%A6%8F%E5%B2%A1%E5%B8%82%E5%8D%9A%E5%A4%9A%E5%8C%BA%E5%8D%9A%E5%A4%9A%E9%A7%85%E6%9D%B12-1-24%20%E3%82%AE%E3%83%A3%E3%83%A9%E3%83%AA%E3%83%BC%E3%83%8F%E3%82%AB%E3%82%BFB1F",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary",
+          "ratingChecked": "2026-10-31",
+          "sourceStatus": "new",
+          "priceBudget": {
+            "night": {
+              "range": [
+                2000,
+                2999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40062081/",
+            "checked": "2026-10-31"
+          },
+          "hours": "매일 16:00~익일 04:00 (방문일 11/7 기준 확인)",
+          "hoursSource": "https://map.torikizoku.co.jp/detail/724/",
+          "hoursChecked": "2026-10-31",
+          "closeTime": "익일 04:00",
+          "loFood": "미확인",
+          "loDrink": "미확인",
+          "note": "하카타역 치쿠시구치 약 2분. 균일가 꼬치 이자카야. 음식·음료 L.O. 미확인."
+        },
+        {
+          "name": "친푼칸푼 하카타점",
+          "q": "ちんぷんかんぷん 博多店 福岡県福岡市博多区博多駅前4-38-10 ビエラ博多テラス",
+          "address": "福岡県福岡市博多区博多駅前4-38-10 ビエラ博多テラス",
+          "tb": [
+            3.05,
+            null
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40074568/",
+          "g": [
+            4.5,
+            null
+          ],
+          "gSource": "https://www.google.com/maps/search/?api=1&query=%E3%81%A1%E3%82%93%E3%81%B7%E3%82%93%E3%81%8B%E3%82%93%E3%81%B7%E3%82%93%20%E5%8D%9A%E5%A4%9A%E5%BA%97%20%E7%A6%8F%E5%B2%A1%E7%9C%8C%E7%A6%8F%E5%B2%A1%E5%B8%82%E5%8D%9A%E5%A4%9A%E5%8C%BA%E5%8D%9A%E5%A4%9A%E9%A7%85%E5%89%8D4-38-10%20%E3%83%93%E3%82%A8%E3%83%A9%E5%8D%9A%E5%A4%9A%E3%83%86%E3%83%A9%E3%82%B9",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary",
+          "ratingChecked": "2026-10-31",
+          "sourceStatus": "new",
+          "priceBudget": {
+            "night": {
+              "range": [
+                4000,
+                4999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40074568/",
+            "checked": "2026-10-31"
+          },
+          "hours": "매일 15:00~24:00 (방문일 11/7 기준 확인)",
+          "hoursSource": "https://tabelog.com/fukuoka/A4001/A400101/40074568/",
+          "hoursChecked": "2026-10-31",
+          "closeTime": "24:00",
+          "loFood": "23:00",
+          "loDrink": "23:30",
+          "note": "하카타역 하카타구치 남서쪽. 숯불구이·이자카야."
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "title": "술집",
+      "multi": false,
+      "note": "하카타역 주변 쇼핑·저녁 뒤 술집 한 곳. 기존 '야키토리 타다시'를 선택지에 포함. 호텔 WBF 그랑드 하카타까지 복귀 동선 고려.",
+      "options": [
+        {
+          "name": "야키토리 타다시 하카타 본점",
+          "q": "薫香炭火焼き 炊き餃子 焼鳥ただし 博多本店",
+          "address": "福岡県福岡市博多区博多駅東2-3-1",
+          "tb": [
+            3.37,
+            null
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40002372/",
+          "g": [
+            4,
+            null
+          ],
+          "gSource": "https://ru.restaurantguru.com/%E7%84%BC%E9%B3%A5%E3%81%9F%E3%81%A0%E3%81%97-%E5%8D%9A%E5%A4%9A%E6%9C%AC%E5%BA%97-Fukuoka",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary",
+          "ratingChecked": "2026-10-31",
+          "sourceStatus": "existing",
+          "hours": "월·공휴일 17:00~24:00 / 화~토 17:00~익일01:00 (부정기휴무) (요일별 확인)",
+          "hoursSource": "https://tabelog.com/fukuoka/A4001/A400101/40002372/",
+          "hoursChecked": "2026-10-31",
+          "priceBudget": {
+            "night": {
+              "range": [
+                3000,
+                3999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40002372/",
+            "checked": "2026-10-31"
+          },
+          "closeTime": "24:00",
+          "loFood": "미확인",
+          "loDrink": "미확인",
+          "note": "기존 11/8 하카타역 동쪽에 등록된 야키토리. 원래의 단독 장소에서 술집 선택지로 통합."
+        },
+        {
+          "name": "하카타 후도 본점",
+          "q": "はかた風土 本店 福岡県福岡市博多区博多駅東2-4-17 第六岡部ビル1F",
+          "address": "福岡県福岡市博多区博多駅東2-4-17 第六岡部ビル1F",
+          "tb": [
+            3.43,
+            null
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40001994/",
+          "g": [
+            4.5,
+            null
+          ],
+          "gSource": "https://www.google.com/maps/search/?api=1&query=%E3%81%AF%E3%81%8B%E3%81%9F%E9%A2%A8%E5%9C%9F%20%E6%9C%AC%E5%BA%97%20%E7%A6%8F%E5%B2%A1%E7%9C%8C%E7%A6%8F%E5%B2%A1%E5%B8%82%E5%8D%9A%E5%A4%9A%E5%8C%BA%E5%8D%9A%E5%A4%9A%E9%A7%85%E6%9D%B12-4-17%20%E7%AC%AC%E5%85%AD%E5%B2%A1%E9%83%A8%E3%83%93%E3%83%AB1F",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary",
+          "ratingChecked": "2026-10-31",
+          "sourceStatus": "new",
+          "priceBudget": {
+            "night": {
+              "range": [
+                3000,
+                3999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40001994/",
+            "checked": "2026-10-31"
+          },
+          "hours": "금·토 17:00~익일01:00 / 일·월 17:00~24:00 (방문일 11/8 기준 확인)",
+          "hoursSource": "https://hakata-food.owst.jp/",
+          "hoursChecked": "2026-10-31",
+          "closeTime": "토 익일 01:00 / 일·월 24:00",
+          "loFood": "토 익일 00:00 / 일·월 23:00",
+          "loDrink": "토 익일 00:30 / 일·월 23:30",
+          "note": "하카타역 치쿠시구치 도보 5분. 야키토리·모츠나베. 흡연점포로 20세 미만 입점 불가."
+        },
+        {
+          "name": "하카타 오엔타이 토리사카바",
+          "q": "博多応援隊 とり酒場 博多店 福岡県福岡市博多区博多駅東2-4-7",
+          "address": "福岡県福岡市博多区博多駅東2-4-7",
+          "tb": [
+            3.14,
+            null
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40068996/",
+          "g": [
+            4.5,
+            null
+          ],
+          "gSource": "https://www.google.com/maps/search/?api=1&query=%E5%8D%9A%E5%A4%9A%E5%BF%9C%E6%8F%B4%E9%9A%8A%20%E3%81%A8%E3%82%8A%E9%85%92%E5%A0%B4%20%E5%8D%9A%E5%A4%9A%E5%BA%97%20%E7%A6%8F%E5%B2%A1%E7%9C%8C%E7%A6%8F%E5%B2%A1%E5%B8%82%E5%8D%9A%E5%A4%9A%E5%8C%BA%E5%8D%9A%E5%A4%9A%E9%A7%85%E6%9D%B12-4-7",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary",
+          "ratingChecked": "2026-10-31",
+          "sourceStatus": "new",
+          "priceBudget": {
+            "night": {
+              "range": [
+                3000,
+                3999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40068996/",
+            "checked": "2026-10-31"
+          },
+          "hours": "토 12:00~익일01:00 / 일 12:00~24:00 / 월 17:00~익일01:00 (방문일 11/8 기준 확인)",
+          "hoursSource": "https://tabelog.com/fukuoka/A4001/A400101/40068996/",
+          "hoursChecked": "2026-10-31",
+          "closeTime": "토 익일 01:00 / 일 24:00 / 월 익일 01:00",
+          "loFood": "토·월 익일 00:00 / 일 23:00",
+          "loDrink": "토·월 익일 00:30 / 일 23:30",
+          "note": "하카타역 동쪽. 야키토리·모츠나베. 오토시(자리 음식) ¥418 추가."
+        },
+        {
+          "name": "야키토리 이오리",
+          "q": "焼とり家 庵 福岡県福岡市博多区博多駅前4-15-17",
+          "address": "福岡県福岡市博多区博多駅前4-15-17",
+          "tb": [
+            3.42,
+            null
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40030585/",
+          "g": [
+            5,
+            null
+          ],
+          "gSource": "https://www.google.com/maps/search/?api=1&query=%E7%84%BC%E3%81%A8%E3%82%8A%E5%AE%B6%20%E5%BA%B5%20%E7%A6%8F%E5%B2%A1%E7%9C%8C%E7%A6%8F%E5%B2%A1%E5%B8%82%E5%8D%9A%E5%A4%9A%E5%8C%BA%E5%8D%9A%E5%A4%9A%E9%A7%85%E5%89%8D4-15-17",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary",
+          "ratingChecked": "2026-10-31",
+          "sourceStatus": "new",
+          "priceBudget": {
+            "night": {
+              "range": [
+                3000,
+                3999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40030585/",
+            "checked": "2026-10-31"
+          },
+          "hours": "월~토 17:30~익일04:00 / 일 17:00~익일01:00 (방문일 11/8 기준 확인)",
+          "hoursSource": "https://iori-fukuoka.com/store_information/",
+          "hoursChecked": "2026-10-31",
+          "closeTime": "토·월 익일 04:00 / 일 익일 01:00",
+          "loFood": "토·월 익일 03:00 / 일 익일 00:00",
+          "loDrink": "토·월 익일 03:30 / 일 익일 00:30",
+          "note": "하카타역 하카타구치 도보 약 4분. 늦은 시간 야키토리. 공식 매장 페이지 음식·음료 L.O. 기준(서로 다른 안내가 있어 재확인)."
+        },
+        {
+          "name": "토리키조쿠 하카타 치쿠시구치점",
+          "q": "鳥貴族 博多筑紫口店 福岡県福岡市博多区博多駅東2-1-24 ギャラリーハカタB1F",
+          "address": "福岡県福岡市博多区博多駅東2-1-24 ギャラリーハカタB1F",
+          "tb": [
+            3.05,
+            null
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40062081/",
+          "g": [
+            4.2,
+            null
+          ],
+          "gSource": "https://www.google.com/maps/search/?api=1&query=%E9%B3%A5%E8%B2%B4%E6%97%8F%20%E5%8D%9A%E5%A4%9A%E7%AD%91%E7%B4%AB%E5%8F%A3%E5%BA%97%20%E7%A6%8F%E5%B2%A1%E7%9C%8C%E7%A6%8F%E5%B2%A1%E5%B8%82%E5%8D%9A%E5%A4%9A%E5%8C%BA%E5%8D%9A%E5%A4%9A%E9%A7%85%E6%9D%B12-1-24%20%E3%82%AE%E3%83%A3%E3%83%A9%E3%83%AA%E3%83%BC%E3%83%8F%E3%82%AB%E3%82%BFB1F",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary",
+          "ratingChecked": "2026-10-31",
+          "sourceStatus": "new",
+          "priceBudget": {
+            "night": {
+              "range": [
+                2000,
+                2999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40062081/",
+            "checked": "2026-10-31"
+          },
+          "hours": "매일 16:00~익일 04:00 (방문일 11/8 기준 확인)",
+          "hoursSource": "https://map.torikizoku.co.jp/detail/724/",
+          "hoursChecked": "2026-10-31",
+          "closeTime": "익일 04:00",
+          "loFood": "미확인",
+          "loDrink": "미확인",
+          "note": "하카타역 치쿠시구치 약 2분. 균일가 꼬치 이자카야. 음식·음료 L.O. 미확인."
+        },
+        {
+          "name": "친푼칸푼 하카타점",
+          "q": "ちんぷんかんぷん 博多店 福岡県福岡市博多区博多駅前4-38-10 ビエラ博多テラス",
+          "address": "福岡県福岡市博多区博多駅前4-38-10 ビエラ博多テラス",
+          "tb": [
+            3.05,
+            null
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40074568/",
+          "g": [
+            4.5,
+            null
+          ],
+          "gSource": "https://www.google.com/maps/search/?api=1&query=%E3%81%A1%E3%82%93%E3%81%B7%E3%82%93%E3%81%8B%E3%82%93%E3%81%B7%E3%82%93%20%E5%8D%9A%E5%A4%9A%E5%BA%97%20%E7%A6%8F%E5%B2%A1%E7%9C%8C%E7%A6%8F%E5%B2%A1%E5%B8%82%E5%8D%9A%E5%A4%9A%E5%8C%BA%E5%8D%9A%E5%A4%9A%E9%A7%85%E5%89%8D4-38-10%20%E3%83%93%E3%82%A8%E3%83%A9%E5%8D%9A%E5%A4%9A%E3%83%86%E3%83%A9%E3%82%B9",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary",
+          "ratingChecked": "2026-10-31",
+          "sourceStatus": "new",
+          "priceBudget": {
+            "night": {
+              "range": [
+                4000,
+                4999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40074568/",
+            "checked": "2026-10-31"
+          },
+          "hours": "매일 15:00~24:00 (방문일 11/8 기준 확인)",
+          "hoursSource": "https://tabelog.com/fukuoka/A4001/A400101/40074568/",
+          "hoursChecked": "2026-10-31",
+          "closeTime": "24:00",
+          "loFood": "23:00",
+          "loDrink": "23:30",
+          "note": "하카타역 하카타구치 남서쪽. 숯불구이·이자카야."
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "title": "술집",
+      "multi": false,
+      "note": "히타에서 하카타로 돌아온 뒤 저녁과 별도로 선택 가능한 술집. 버스 복귀가 늦으면 라스트오더 확인 후 생략. 11/10 출국 준비 시간 확보.",
+      "options": [
+        {
+          "name": "야키토리 타다시 하카타 본점",
+          "q": "薫香炭火焼き 炊き餃子 焼鳥ただし 博多本店",
+          "address": "福岡県福岡市博多区博多駅東2-3-1",
+          "tb": [
+            3.37,
+            null
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40002372/",
+          "g": [
+            4,
+            null
+          ],
+          "gSource": "https://ru.restaurantguru.com/%E7%84%BC%E9%B3%A5%E3%81%9F%E3%81%A0%E3%81%97-%E5%8D%9A%E5%A4%9A%E6%9C%AC%E5%BA%97-Fukuoka",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary",
+          "ratingChecked": "2026-10-31",
+          "sourceStatus": "existing",
+          "hours": "월·공휴일 17:00~24:00 / 화~토 17:00~익일01:00 (부정기휴무) (요일별 확인)",
+          "hoursSource": "https://tabelog.com/fukuoka/A4001/A400101/40002372/",
+          "hoursChecked": "2026-10-31",
+          "priceBudget": {
+            "night": {
+              "range": [
+                3000,
+                3999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40002372/",
+            "checked": "2026-10-31"
+          },
+          "closeTime": "익일 01:00",
+          "loFood": "미확인",
+          "loDrink": "미확인",
+          "note": "기존 11/8 하카타역 동쪽에 등록된 야키토리. 원래의 단독 장소에서 술집 선택지로 통합."
+        },
+        {
+          "name": "하카타 후도 본점",
+          "q": "はかた風土 本店 福岡県福岡市博多区博多駅東2-4-17 第六岡部ビル1F",
+          "address": "福岡県福岡市博多区博多駅東2-4-17 第六岡部ビル1F",
+          "tb": [
+            3.43,
+            null
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40001994/",
+          "g": [
+            4.5,
+            null
+          ],
+          "gSource": "https://www.google.com/maps/search/?api=1&query=%E3%81%AF%E3%81%8B%E3%81%9F%E9%A2%A8%E5%9C%9F%20%E6%9C%AC%E5%BA%97%20%E7%A6%8F%E5%B2%A1%E7%9C%8C%E7%A6%8F%E5%B2%A1%E5%B8%82%E5%8D%9A%E5%A4%9A%E5%8C%BA%E5%8D%9A%E5%A4%9A%E9%A7%85%E6%9D%B12-4-17%20%E7%AC%AC%E5%85%AD%E5%B2%A1%E9%83%A8%E3%83%93%E3%83%AB1F",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary",
+          "ratingChecked": "2026-10-31",
+          "sourceStatus": "new",
+          "priceBudget": {
+            "night": {
+              "range": [
+                3000,
+                3999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40001994/",
+            "checked": "2026-10-31"
+          },
+          "hours": "금·토 17:00~익일01:00 / 일·월 17:00~24:00 (방문일 11/9 기준 확인)",
+          "hoursSource": "https://hakata-food.owst.jp/",
+          "hoursChecked": "2026-10-31",
+          "closeTime": "토 익일 01:00 / 일·월 24:00",
+          "loFood": "토 익일 00:00 / 일·월 23:00",
+          "loDrink": "토 익일 00:30 / 일·월 23:30",
+          "note": "하카타역 치쿠시구치 도보 5분. 야키토리·모츠나베. 흡연점포로 20세 미만 입점 불가."
+        },
+        {
+          "name": "하카타 오엔타이 토리사카바",
+          "q": "博多応援隊 とり酒場 博多店 福岡県福岡市博多区博多駅東2-4-7",
+          "address": "福岡県福岡市博多区博多駅東2-4-7",
+          "tb": [
+            3.14,
+            null
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40068996/",
+          "g": [
+            4.5,
+            null
+          ],
+          "gSource": "https://www.google.com/maps/search/?api=1&query=%E5%8D%9A%E5%A4%9A%E5%BF%9C%E6%8F%B4%E9%9A%8A%20%E3%81%A8%E3%82%8A%E9%85%92%E5%A0%B4%20%E5%8D%9A%E5%A4%9A%E5%BA%97%20%E7%A6%8F%E5%B2%A1%E7%9C%8C%E7%A6%8F%E5%B2%A1%E5%B8%82%E5%8D%9A%E5%A4%9A%E5%8C%BA%E5%8D%9A%E5%A4%9A%E9%A7%85%E6%9D%B12-4-7",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary",
+          "ratingChecked": "2026-10-31",
+          "sourceStatus": "new",
+          "priceBudget": {
+            "night": {
+              "range": [
+                3000,
+                3999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40068996/",
+            "checked": "2026-10-31"
+          },
+          "hours": "토 12:00~익일01:00 / 일 12:00~24:00 / 월 17:00~익일01:00 (방문일 11/9 기준 확인)",
+          "hoursSource": "https://tabelog.com/fukuoka/A4001/A400101/40068996/",
+          "hoursChecked": "2026-10-31",
+          "closeTime": "토 익일 01:00 / 일 24:00 / 월 익일 01:00",
+          "loFood": "토·월 익일 00:00 / 일 23:00",
+          "loDrink": "토·월 익일 00:30 / 일 23:30",
+          "note": "하카타역 동쪽. 야키토리·모츠나베. 오토시(자리 음식) ¥418 추가."
+        },
+        {
+          "name": "야키토리 이오리",
+          "q": "焼とり家 庵 福岡県福岡市博多区博多駅前4-15-17",
+          "address": "福岡県福岡市博多区博多駅前4-15-17",
+          "tb": [
+            3.42,
+            null
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40030585/",
+          "g": [
+            5,
+            null
+          ],
+          "gSource": "https://www.google.com/maps/search/?api=1&query=%E7%84%BC%E3%81%A8%E3%82%8A%E5%AE%B6%20%E5%BA%B5%20%E7%A6%8F%E5%B2%A1%E7%9C%8C%E7%A6%8F%E5%B2%A1%E5%B8%82%E5%8D%9A%E5%A4%9A%E5%8C%BA%E5%8D%9A%E5%A4%9A%E9%A7%85%E5%89%8D4-15-17",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary",
+          "ratingChecked": "2026-10-31",
+          "sourceStatus": "new",
+          "priceBudget": {
+            "night": {
+              "range": [
+                3000,
+                3999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40030585/",
+            "checked": "2026-10-31"
+          },
+          "hours": "월~토 17:30~익일04:00 / 일 17:00~익일01:00 (방문일 11/9 기준 확인)",
+          "hoursSource": "https://iori-fukuoka.com/store_information/",
+          "hoursChecked": "2026-10-31",
+          "closeTime": "토·월 익일 04:00 / 일 익일 01:00",
+          "loFood": "토·월 익일 03:00 / 일 익일 00:00",
+          "loDrink": "토·월 익일 03:30 / 일 익일 00:30",
+          "note": "하카타역 하카타구치 도보 약 4분. 늦은 시간 야키토리. 공식 매장 페이지 음식·음료 L.O. 기준(서로 다른 안내가 있어 재확인)."
+        },
+        {
+          "name": "토리키조쿠 하카타 치쿠시구치점",
+          "q": "鳥貴族 博多筑紫口店 福岡県福岡市博多区博多駅東2-1-24 ギャラリーハカタB1F",
+          "address": "福岡県福岡市博多区博多駅東2-1-24 ギャラリーハカタB1F",
+          "tb": [
+            3.05,
+            null
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40062081/",
+          "g": [
+            4.2,
+            null
+          ],
+          "gSource": "https://www.google.com/maps/search/?api=1&query=%E9%B3%A5%E8%B2%B4%E6%97%8F%20%E5%8D%9A%E5%A4%9A%E7%AD%91%E7%B4%AB%E5%8F%A3%E5%BA%97%20%E7%A6%8F%E5%B2%A1%E7%9C%8C%E7%A6%8F%E5%B2%A1%E5%B8%82%E5%8D%9A%E5%A4%9A%E5%8C%BA%E5%8D%9A%E5%A4%9A%E9%A7%85%E6%9D%B12-1-24%20%E3%82%AE%E3%83%A3%E3%83%A9%E3%83%AA%E3%83%BC%E3%83%8F%E3%82%AB%E3%82%BFB1F",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary",
+          "ratingChecked": "2026-10-31",
+          "sourceStatus": "new",
+          "priceBudget": {
+            "night": {
+              "range": [
+                2000,
+                2999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40062081/",
+            "checked": "2026-10-31"
+          },
+          "hours": "매일 16:00~익일 04:00 (방문일 11/9 기준 확인)",
+          "hoursSource": "https://map.torikizoku.co.jp/detail/724/",
+          "hoursChecked": "2026-10-31",
+          "closeTime": "익일 04:00",
+          "loFood": "미확인",
+          "loDrink": "미확인",
+          "note": "하카타역 치쿠시구치 약 2분. 균일가 꼬치 이자카야. 음식·음료 L.O. 미확인."
+        },
+        {
+          "name": "친푼칸푼 하카타점",
+          "q": "ちんぷんかんぷん 博多店 福岡県福岡市博多区博多駅前4-38-10 ビエラ博多テラス",
+          "address": "福岡県福岡市博多区博多駅前4-38-10 ビエラ博多テラス",
+          "tb": [
+            3.05,
+            null
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40074568/",
+          "g": [
+            4.5,
+            null
+          ],
+          "gSource": "https://www.google.com/maps/search/?api=1&query=%E3%81%A1%E3%82%93%E3%81%B7%E3%82%93%E3%81%8B%E3%82%93%E3%81%B7%E3%82%93%20%E5%8D%9A%E5%A4%9A%E5%BA%97%20%E7%A6%8F%E5%B2%A1%E7%9C%8C%E7%A6%8F%E5%B2%A1%E5%B8%82%E5%8D%9A%E5%A4%9A%E5%8C%BA%E5%8D%9A%E5%A4%9A%E9%A7%85%E5%89%8D4-38-10%20%E3%83%93%E3%82%A8%E3%83%A9%E5%8D%9A%E5%A4%9A%E3%83%86%E3%83%A9%E3%82%B9",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary",
+          "ratingChecked": "2026-10-31",
+          "sourceStatus": "new",
+          "priceBudget": {
+            "night": {
+              "range": [
+                4000,
+                4999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40074568/",
+            "checked": "2026-10-31"
+          },
+          "hours": "매일 15:00~24:00 (방문일 11/9 기준 확인)",
+          "hoursSource": "https://tabelog.com/fukuoka/A4001/A400101/40074568/",
+          "hoursChecked": "2026-10-31",
+          "closeTime": "24:00",
+          "loFood": "23:00",
+          "loDrink": "23:30",
+          "note": "하카타역 하카타구치 남서쪽. 숯불구이·이자카야."
         }
       ]
     }
