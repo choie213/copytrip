@@ -456,6 +456,13 @@
       var on = chosen.indexOf(oi) !== -1;
       var pick = el('button', { class: 'opt-pick', type: 'button', 'aria-pressed': on ? 'true' : 'false', html: CHECK });
       pick.appendChild(el('span', { class: 'title', text: o.name }));
+      // Fukuoka meal options explicitly distinguish previously saved selections from the newly researched additions.
+      if (o.sourceStatus === 'existing' || o.sourceStatus === 'new') {
+        var statusText = o.sourceStatus === 'new' ?
+          (LANG === 'ja' ? '新規追加' : LANG === 'en' ? 'New' : '새로 추가') :
+          (LANG === 'ja' ? '以前から登録' : LANG === 'en' ? 'Existing' : '기존 등록');
+        pick.appendChild(el('small', { class: 'opt-source ' + o.sourceStatus, text: statusText }));
+      }
       if (typeof o.cost === 'number') pick.appendChild(el('span', { class: 'opt-cost', text: price(grouped(o.cost)) }));
       // 고르지 않은 선택지는 이름 한 줄로 접어 두고, 꺾쇠로 펼쳐 볼 수 있게 함
       var more = el('button', { class: 'opt-more', type: 'button', 'aria-label': T('자세히 보기'), html: ICON.chev });
