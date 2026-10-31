@@ -6040,7 +6040,7 @@
           "gSourceType": "secondary",
           "ratingChecked": "2026-10-31",
           "sourceStatus": "existing",
-          "hours": "월·공휴일 17:00~24:00 / 화~토 17:00~익일01:00 (부정기휴무) (요일별 확인)",
+          "hours": "월·일·공휴일 17:00~24:00 / 화~토 17:00~익일01:00 (토요일 기준 영업 종료 익일 01:00)",
           "hoursSource": "https://tabelog.com/fukuoka/A4001/A400101/40002372/",
           "hoursChecked": "2026-10-31",
           "priceBudget": {
@@ -6270,7 +6270,7 @@
           "gSourceType": "secondary",
           "ratingChecked": "2026-10-31",
           "sourceStatus": "existing",
-          "hours": "월·공휴일 17:00~24:00 / 화~토 17:00~익일01:00 (부정기휴무) (요일별 확인)",
+          "hours": "월·일·공휴일 17:00~24:00 / 화~토 17:00~익일01:00 (일요일 기준 영업 종료 24:00)",
           "hoursSource": "https://tabelog.com/fukuoka/A4001/A400101/40002372/",
           "hoursChecked": "2026-10-31",
           "priceBudget": {
@@ -6500,7 +6500,7 @@
           "gSourceType": "secondary",
           "ratingChecked": "2026-10-31",
           "sourceStatus": "existing",
-          "hours": "월·공휴일 17:00~24:00 / 화~토 17:00~익일01:00 (부정기휴무) (요일별 확인)",
+          "hours": "월·일·공휴일 17:00~24:00 / 화~토 17:00~익일01:00 (월요일 기준 영업 종료 24:00)",
           "hoursSource": "https://tabelog.com/fukuoka/A4001/A400101/40002372/",
           "hoursChecked": "2026-10-31",
           "priceBudget": {
@@ -6514,7 +6514,7 @@
             "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40002372/",
             "checked": "2026-10-31"
           },
-          "closeTime": "익일 01:00",
+          "closeTime": "24:00",
           "loFood": "미확인",
           "loDrink": "미확인",
           "note": "기존 11/8 하카타역 동쪽에 등록된 야키토리. 원래의 단독 장소에서 술집 선택지로 통합."
