@@ -1035,37 +1035,64 @@
       "options": [
         {
           "name": "누루카와 온센",
-          "q": "누루카와 온센 유후인",
+          "q": "御宿ぬるかわ温泉 由布院 川上1490-1",
           "note": "남녀별 대욕장 2026-10-01부터 성인 800엔(원본 600엔은 구가격).",
           "cost": 800,
           "costSource": "https://hpdsp.jp/nurukawa/news/222966",
-          "costChecked": "2026-10-31"
+          "costChecked": "2026-10-31",
+          "address": "大分県由布市湯布院町川上1490-1",
+          "hours": "08:00~19:00 (화요일·둘째 수요일 휴무)",
+          "hoursSource": "https://yufuin.gr.jp/spot/spot-1288/",
+          "warning": "인근 긴린호수 도보 1분, 일부 시설은 현장 이용 조건 확인.",
+          "hoursChecked": "2026-10-31"
         },
         {
           "name": "유후인 이요토미",
-          "q": "유후인 이요토미 유후인",
-          "note": "공식 안내 2025년 800엔, 2026년 가을 요금 재개정 예정으로 방문 전 확인. 미확정 요금은 합계에서 제외."
+          "q": "由布院いよとみ 川南848",
+          "note": "공식 안내 2025년 800엔, 2026년 가을 요금 재개정 예정으로 방문 전 확인. 미확정 요금은 합계에서 제외.",
+          "address": "大分県由布市湯布院町川南848",
+          "hours": "당일입욕 10:00~15:00 (접수 14:00까지), 부정기휴무",
+          "hoursSource": "https://www.iyotomi.jp/information/3980/",
+          "warning": "2026년 가을 요금 변경 예정 공지. 현재 요금 재확인 전까지 합계 미포함.",
+          "hoursChecked": "2026-10-31"
         },
         {
           "name": "유후다케 온천",
-          "q": "유후다케 온천 유후인",
+          "q": "由布岳温泉 湯布院 川上2425-2",
           "note": "성인 일반 입욕료 600엔(2026년 확인, 변경 가능).",
           "cost": 600,
           "costSource": "https://yufuin.gr.jp/spot/spot-5582/",
-          "costChecked": "2026-10-31"
+          "costChecked": "2026-10-31",
+          "address": "大分県由布市湯布院町川上2425-2",
+          "hours": "11~3월 11:00~17:00, 부정기휴무",
+          "hoursSource": "https://yufuin.gr.jp/spot/spot-5582/",
+          "hoursChecked": "2026-10-31"
         },
         {
           "name": "누루카와",
-          "q": "누루카와 유후인",
+          "q": "御宿ぬるかわ温泉 由布院 川上1490-1",
           "note": "누루카와 대욕장 동일 매장. 성인 800엔(2026-10-01부터).",
           "cost": 800,
           "costSource": "https://hpdsp.jp/nurukawa/news/222966",
-          "costChecked": "2026-10-31"
+          "costChecked": "2026-10-31",
+          "address": "大分県由布市湯布院町川上1490-1",
+          "hours": "08:00~19:00 (화요일·둘째 수요일 휴무)",
+          "hoursSource": "https://yufuin.gr.jp/spot/spot-1288/",
+          "warning": "‘누루카와 온센’과 동일한 온천을 중복 등록한 후보. 한 곳만 선택.",
+          "hoursChecked": "2026-10-31"
         },
         {
           "name": "무소엔 온천",
-          "q": "무소엔 온천 유후인",
-          "note": "대절탕 등 이용 종류에 따라 요금 상이. 원본 메모 1,000엔은 공식 확인 전으로 합계 제외."
+          "q": "山のホテル夢想園 由布院",
+          "note": "성인 당일입욕 일반요금 1,000엔(공식 안내 기준). 대절탕 이용 여부/시설 청소 일정 확인.",
+          "address": "大分県由布市湯布院町川南1243",
+          "hours": "당일입욕 접수 10:00~14:00, 이용 14:30까지",
+          "hoursSource": "https://www.musouen.co.jp/higaeri/",
+          "warning": "14:00 이후 접수 불가. 토요일 혼잡 가능성.",
+          "hoursChecked": "2026-10-31",
+          "cost": 1000,
+          "costSource": "https://www.musouen.co.jp/higaeri/",
+          "costChecked": "2026-10-31"
         }
       ],
       "multi": false,
@@ -1403,19 +1430,27 @@
       "options": [
         {
           "name": "Senraku Hot Spring",
-          "q": "Senraku Hot Spring 히타",
+          "q": "小ヶ瀬天然湯 せんらく温泉 日田",
           "note": "대욕장 성인 600엔(대절탕 제외).",
           "cost": 600,
           "costSource": "https://senrakuyu.com/access/",
-          "costChecked": "2026-10-31"
+          "costChecked": "2026-10-31",
+          "address": "大分県日田市小ヶ瀬町2750",
+          "hours": "월~금 11:00~24:00 (접수 23:00까지), 주말·공휴일 10:00~24:00",
+          "hoursSource": "https://senrakuyu.com/access/",
+          "hoursChecked": "2026-10-31"
         },
         {
           "name": "琴ひら温泉露天風呂",
-          "q": "琴ひら温泉露天風呂 히타",
+          "q": "琴ひら温泉 ゆめ山水 露天風呂 日田",
           "note": "일반 성인 노천탕 800엔(특별기간 별도).",
           "cost": 800,
           "costSource": "https://kotohira-onsen.com/air_bath/",
-          "costChecked": "2026-10-31"
+          "costChecked": "2026-10-31",
+          "address": "大分県日田市琴平町1571-1",
+          "hours": "평일 12:00~20:45 (접수 20:15까지), 주말·공휴일 11:00~21:00",
+          "hoursSource": "https://kotohira-onsen.com/air_bath/",
+          "hoursChecked": "2026-10-31"
         }
       ],
       "multi": false,
