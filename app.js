@@ -340,14 +340,25 @@
 
   function pills(s) {
     var box = el('div', { class: 'pills' });
-    // 서로 다른 사이트의 평점은 섞지 않는다. 검증된 정적 평점만 표기.
-    if (s.g && Array.isArray(s.g) && typeof s.g[0] === 'number') {
-      box.appendChild(el('span', { class: 'pill g' }, [
+    // 구글/타베로그는 별도의 리뷰 시스템. 수치는 조사 당시의 참고값이며 실시간 조회 아님.
+    // 기존 원작자의 두 평점 배지 배열과 선택 카드 구조는 유지한다.
+    var hasGoogle = s.g && Array.isArray(s.g) && typeof s.g[0] === 'number';
+    var hasTabelog = s.tb && Array.isArray(s.tb) && typeof s.tb[0] === 'number';
+    var mapsUrl = (s.pid || s.q) ? placeLink(s) : null;
+    if (hasGoogle) {
+      var gAttrs = { class: 'pill g' };
+      if (mapsUrl) { gAttrs.href = mapsUrl; gAttrs.target = '_blank'; gAttrs.rel = 'noopener'; }
+      if (s.gChecked) gAttrs.title = s.gChecked + ' 조사한 구글 평점 (제3자 공개 자료) · 최신값은 Google 지도에서 확인';
+      box.appendChild(el(mapsUrl ? 'a' : 'span', gAttrs, [
         T('구글 {n}', { n: s.g[0].toFixed(1) }),
         el('small', { text: '(' + grouped(s.g[1] || 0) + ')' })
       ]));
+    } else if (hasTabelog && mapsUrl) {
+      // 확인되지 않은 구글 점수는 숫자를 만들어내지 않고, 지도에서 바로 확인.
+      box.appendChild(el('a', { class: 'pill g missing', href: mapsUrl, target: '_blank',
+        rel: 'noopener', text: LANG === 'ja' ? 'Google評価を見る ↗' : LANG === 'en' ? 'Google rating ↗' : '구글 평점 보기 ↗' }));
     }
-    if (s.tb && Array.isArray(s.tb) && typeof s.tb[0] === 'number') {
+    if (hasTabelog) {
       var tAttrs = { class: 'pill t' };
       if (s.tbUrl && /^https:\/\//.test(s.tbUrl)) {
         tAttrs.href = s.tbUrl; tAttrs.target = '_blank'; tAttrs.rel = 'noopener';
@@ -455,6 +466,13 @@
       if (o.tbUrl && /^https:\/\//.test(o.tbUrl)) {
         inner.appendChild(el('a', { class: 'review-source', href: o.tbUrl, target: '_blank', rel: 'noopener',
           text: LANG === 'ja' ? '食べログ口コミを見る ›' : LANG === 'en' ? 'Read Tabelog reviews ›' : '타베로그 실제 후기 보기 ›' }));
+      }
+      if (o.gSource && o.gChecked && /^https:\/\//.test(o.gSource)) {
+        inner.appendChild(el('a', { class: 'rating-snapshot-source', href: o.gSource,
+          target: '_blank', rel: 'noopener',
+          text: LANG === 'ja' ? 'Google評価の参照元 (' + o.gChecked + ') ›' :
+            LANG === 'en' ? 'Google rating reference (' + o.gChecked + ') ›' :
+            '구글 평점 자료 (' + o.gChecked + ', 실시간 아님) ›' }));
       }
       // 원작자의 식사 카드처럼 처음 두 후보의 상세정보를 바로 노출.
       // 나머지는 접어두되 개별 펼침 버튼으로 모두 확인할 수 있음.
