@@ -208,6 +208,12 @@ a { color: var(--blue); text-decoration: none; }
 .pill.t { color: var(--orange); }
 /* 원작자의 선택형 카드: 평점 바로 아래 주소·시간·메모를 오렌지 안내선으로 표시. */
 .pill[href] { display: inline-flex; align-items: center; gap: 1px; color: var(--orange); text-decoration: none; cursor: pointer; }
+/* 별도 출처인 구글 평점은 파랑, 타베로그는 주황으로 구분한다. */
+.pill.g[href] { color: var(--blue); }
+.pill.g.missing { font-size: 11px; font-weight: 600; color: var(--blue); }
+.rating-snapshot-source { display: inline-block; margin-top: 6px; margin-right: 10px; font-size: 11px; color: var(--ink3); text-decoration: underline; text-underline-offset: 2px; }
+.rating-snapshot-source:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
+
 .pill[href]:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
 .choice-detail { font-size: 14px; line-height: 1.55; margin-top: 10px; }
 .choice-detail > div + div { margin-top: 5px; }
