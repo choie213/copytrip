@@ -638,9 +638,40 @@
     return { type: 'sleep', name: bed.name, time: '~ ' + first.time, _k: 'wake',
       next: T(bed.late ? '오늘 새벽 {a}부터 약 {h}시간 {m}분. {t} {n}부터 하루 시작' : '어젯밤 {a}부터 약 {h}시간 {m}분. {t} {n}부터 하루 시작', { a: bed.time, h: Math.floor(gap / 60), m: gap % 60, t: first.time, n: first.type === 'run' ? T('러닝') : (first.title || first.name) }) };
   }
+  // Departure guides are reference cards, not places or expenses. Text content uses
+  // textContent only; external official links are allowed only with HTTPS.
+  function guideCard(g) {
+    var card = el('div', { class: 'card guide-card' }, [head(g), el('div', { class: 'guide-title', text: g.name })]);
+    if (g.lead) card.appendChild(el('p', { class: 'guide-lead', text: g.lead }));
+    if (g.warning) card.appendChild(el('div', { class: 'guide-warning', text: g.warning }));
+    if (Array.isArray(g.steps) && g.steps.length) {
+      var list = el('ol', { class: 'guide-list' });
+      g.steps.forEach(function (step, i) {
+        var details = el('div', { class: 'guide-step-text' }, [el('b', { text: step.title })]);
+        if (step.text) details.appendChild(el('p', { text: step.text }));
+        list.appendChild(el('li', { class: 'guide-step' }, [
+          el('span', { class: 'guide-step-number', text: String(i + 1) }),
+          details
+        ]));
+      });
+      card.appendChild(list);
+    }
+    if (Array.isArray(g.links) && g.links.length) {
+      var sources = el('div', { class: 'guide-links' });
+      g.links.forEach(function (link) {
+        if (link.url && /^https:\/\//.test(link.url)) {
+          sources.appendChild(el('a', { class: 'btn', href: link.url, target: '_blank', rel: 'noopener', text: link.label }));
+        }
+      });
+      if (sources.childNodes.length) card.appendChild(sources);
+    }
+    if (g.checked) card.appendChild(el('div', { class: 'guide-checked', text: '공식 안내 확인: ' + g.checked + ' · 현장 절차는 변경될 수 있음' }));
+    return card;
+  }
+
   function item(s, key) {
-    var kind = s.type === 'choice' ? 'choice' : s.type === 'run' ? 'run' : s.type === 'move' ? 'move' : s.type === 'sleep' ? 'sleep' : 'place';
-    var card = kind === 'choice' ? choiceCard(s, key) : kind === 'run' ? runCard(s) : kind === 'move' ? moveCard(s) : kind === 'sleep' ? sleepCard(s) : el('div', { class: 'card' }, [head(s), body(s)]);
+    var kind = s.type === 'choice' ? 'choice' : s.type === 'run' ? 'run' : s.type === 'move' ? 'move' : s.type === 'sleep' ? 'sleep' : s.type === 'guide' ? 'guide' : 'place';
+    var card = kind === 'choice' ? choiceCard(s, key) : kind === 'run' ? runCard(s) : kind === 'move' ? moveCard(s) : kind === 'sleep' ? sleepCard(s) : kind === 'guide' ? guideCard(s) : el('div', { class: 'card' }, [head(s), body(s)]);
     return el('li', { class: 'it rv ' + kind, 'data-min': stopMin(s) == null ? '' : String(stopMin(s)) }, [el('span', { class: 'dot' }), card]);
   }
 
