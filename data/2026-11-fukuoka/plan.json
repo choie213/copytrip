@@ -11,13 +11,13 @@
     {
       "label": "가는 편",
       "date": "11/04 (수)",
-      "dep": "15:20 인천 T1",
+      "dep": "15:20 인천 T1 · 7C1405",
       "arr": "16:50 후쿠오카"
     },
     {
       "label": "오는 편",
       "date": "11/10 (화)",
-      "dep": "13:00 후쿠오카 (7C1405)",
+      "dep": "13:00 후쿠오카 · 7C1404",
       "arr": "14:30 인천"
     }
   ],
@@ -456,8 +456,8 @@
     {
       "name": "더 밀레니얼스 후쿠오카",
       "q": "The Millennials Fukuoka 中洲5丁目2-18",
-      "time": "18:10",
-      "note": "체크인",
+      "time": "18:40",
+      "note": "체크인 · 당초 18:10에서 30분 미룬 계획 시각. 입국 심사·무료 셔틀·지하철 소요에 따라 더 늦어질 수 있음.",
       "address": "福岡県福岡市博多区中洲5-2-18",
       "hoursSource": "https://www.livelyhotels.com/ja/themillennialsfukuoka/access/"
     },
@@ -504,14 +504,16 @@
             },
             "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400102/40000130/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-5cbb9fee"
         },
         {
           "name": "돈테키 부타야 쇼쿠도",
           "q": "돈테키 부타야 쇼쿠도 후쿠오카",
           "note": "돼지고기 스테이크",
           "sourceStatus": "existing",
-          "warning": "동명의 텐진 'とんテキ豚屋'는 11:00~15:00 영업으로 11/4 18:30 저녁에 이용 불가. 등록된 '부타야 쇼쿠도'가 정확히 어느 지점인지는 미확인. 매장 확인 전 가격 정보 없음."
+          "warning": "동명의 텐진 'とんテキ豚屋'는 11:00~15:00 영업으로 11/4 18:30 저녁에 이용 불가. 등록된 '부타야 쇼쿠도'가 정확히 어느 지점인지는 미확인. 매장 확인 전 가격 정보 없음.",
+          "id": "loc-23693892"
         },
         {
           "name": "돈카츠 와카바",
@@ -552,7 +554,8 @@
             },
             "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400103/40050758/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-db38f02c"
         },
         {
           "name": "히츠마부시 와쇼쿠 빈초 나카스카와바타",
@@ -592,7 +595,8 @@
             },
             "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400102/40026105/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-a4d30bca"
         },
         {
           "name": "모츠나베 타슈 후쿠오카 다이묘 본점",
@@ -625,7 +629,8 @@
             },
             "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400104/40024061/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-1c87cd75"
         },
         {
           "name": "신신라멘 텐진본점",
@@ -667,7 +672,8 @@
             },
             "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400103/40004980/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-b5297fc0"
         },
         {
           "name": "규카츠 모토무라 후쿠오카 텐진 니시도리 점",
@@ -708,11 +714,12 @@
             },
             "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400103/40045609/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-95b3f281"
         }
       ],
       "multi": false,
-      "time": "18:30"
+      "time": "19:00"
     },
     {
       "name": "덴진 지하상가",
@@ -773,7 +780,8 @@
             "name": "모스버거 단품",
             "sourceUrl": "https://www.mos.jp/menu/category/?c_id=1&page=2",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-8b9c63ab"
         },
         {
           "name": "가제마치",
@@ -815,7 +823,8 @@
             },
             "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400103/40004346/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-ade53758"
         },
         {
           "name": "신신라멘 텐진본점",
@@ -857,7 +866,8 @@
             },
             "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400103/40004980/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-b5297fc0"
         },
         {
           "name": "산스이 미즈다시 커피(山水水出珈琲)",
@@ -889,7 +899,8 @@
             },
             "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400102/40033249/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-61093517"
         },
         {
           "name": "팽 스톡 텐진점(pain stock)",
@@ -928,7 +939,8 @@
             },
             "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400103/40052317/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-0cf6a00d"
         },
         {
           "name": "ONCA COFFEE 미나 텐진",
@@ -961,7 +973,8 @@
             },
             "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400103/40064089/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-d2dacc62"
         },
         {
           "name": "블루보틀커피 후쿠오카 텐진",
@@ -1000,7 +1013,8 @@
             },
             "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400103/40066618/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-85767560"
         },
         {
           "name": "NOOICE 텐진",
@@ -1041,7 +1055,8 @@
             },
             "sourceUrl": "https://tabelog.com/kr/fukuoka/A4001/A400104/40053685/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-3c4f9745"
         }
       ],
       "multi": false,
@@ -1146,7 +1161,8 @@
             },
             "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400103/40061770/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-a1ed344e"
         },
         {
           "name": "규카츠 모토무라 후쿠오카 텐진 니시도리 점",
@@ -1186,7 +1202,8 @@
             },
             "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400103/40045609/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-95b3f281"
         },
         {
           "name": "NOOICE 텐진",
@@ -1226,7 +1243,8 @@
             },
             "sourceUrl": "https://tabelog.com/kr/fukuoka/A4001/A400104/40053685/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-3c4f9745"
         },
         {
           "name": "신신라멘 텐진본점",
@@ -1268,7 +1286,8 @@
             },
             "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400103/40004980/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-b5297fc0"
         },
         {
           "name": "키와미야 후쿠오카 파르코 점",
@@ -1309,7 +1328,8 @@
             },
             "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400103/40023392/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-c9576710"
         },
         {
           "name": "돈카츠 와카바",
@@ -1351,7 +1371,8 @@
             },
             "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400103/40050758/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-db38f02c"
         }
       ],
       "multi": false,
@@ -1425,7 +1446,8 @@
             },
             "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400103/40045609/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-95b3f281"
         },
         {
           "name": "멘야가가 텐진점",
@@ -1466,7 +1488,8 @@
             },
             "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400103/40061770/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-a1ed344e"
         },
         {
           "name": "키와미야 후쿠오카 파르코 점",
@@ -1506,7 +1529,8 @@
             },
             "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400103/40023392/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-c9576710"
         },
         {
           "name": "모츠나베 타슈 후쿠오카 다이묘 본점",
@@ -1539,7 +1563,8 @@
             },
             "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400104/40024061/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-1c87cd75"
         },
         {
           "name": "히츠마부시 와쇼쿠 빈초 나카스카와바타",
@@ -1579,7 +1604,8 @@
             },
             "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400102/40026105/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-a4d30bca"
         },
         {
           "name": "신신라멘 텐진본점",
@@ -1621,7 +1647,8 @@
             },
             "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400103/40004980/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-b5297fc0"
         },
         {
           "name": "돈카츠 와카바",
@@ -1663,7 +1690,8 @@
             },
             "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400103/40050758/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-db38f02c"
         }
       ],
       "multi": false
@@ -1712,7 +1740,8 @@
           "closeTime": "익일 05:00",
           "loFood": "익일 03:45",
           "loDrink": "익일 04:15",
-          "note": "기존 11/5 덴진 술집. 11/4·11/6 나카스 숙소 기준 도보 우회(약 15~25분) 가능."
+          "note": "기존 11/5 덴진 술집. 11/4·11/6 나카스 숙소 기준 도보 우회(약 15~25분) 가능.",
+          "id": "loc-0310542a"
         },
         {
           "name": "타케토라 이마이즈미점",
@@ -1737,7 +1766,8 @@
             "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400103/40065668/",
             "checked": "2026-10-31"
           },
-          "note": "기존 등록된 만두 술집. 구글 평점은 검증되지 않아 숫자 표시 안 함."
+          "note": "기존 등록된 만두 술집. 구글 평점은 검증되지 않아 숫자 표시 안 함.",
+          "id": "loc-93edcd20"
         },
         {
           "name": "우라텐진 노렌",
@@ -1762,7 +1792,8 @@
             "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400103/40072349/",
             "checked": "2026-10-31"
           },
-          "warning": "구글 평점 및 음식·음료 중 음료 L.O. 미확인. 방문 전 매장 확인."
+          "warning": "구글 평점 및 음식·음료 중 음료 L.O. 미확인. 방문 전 매장 확인.",
+          "id": "loc-7974ed9f"
         },
         {
           "name": "신지다이 후쿠오카 텐진점",
@@ -1799,7 +1830,8 @@
           "closeTime": "익일 05:00",
           "loFood": "익일 04:00",
           "loDrink": "익일 04:30",
-          "note": "이마이즈미·덴진 쇼핑 동선. 닭껍질 꼬치. 좌석 차지 ¥385 및 22시 이후 심야 10% 별도."
+          "note": "이마이즈미·덴진 쇼핑 동선. 닭껍질 꼬치. 좌석 차지 ¥385 및 22시 이후 심야 10% 별도.",
+          "id": "loc-81ddf764"
         },
         {
           "name": "요테바 텐진점",
@@ -1836,7 +1868,8 @@
           "closeTime": "익일 08:00 (목요일)",
           "loFood": "미확인",
           "loDrink": "미확인",
-          "note": "텐진·다이묘 쇼핑 동선. 손날개 튀김. 좌석 차지 ¥396 및 22시 이후 10% 추가 가능, 요일별 영업시간 확인."
+          "note": "텐진·다이묘 쇼핑 동선. 손날개 튀김. 좌석 차지 ¥396 및 22시 이후 10% 추가 가능, 요일별 영업시간 확인.",
+          "id": "loc-c7f2c301"
         },
         {
           "name": "요테바 텐진 니시도리점",
@@ -1873,7 +1906,8 @@
           "closeTime": "익일 08:00 (목요일)",
           "loFood": "미확인",
           "loDrink": "미확인",
-          "note": "이마이즈미·텐진 서쪽. 손날개 튀김. ¥396 차지 및 22시 이후 10% 심야 추가요금."
+          "note": "이마이즈미·텐진 서쪽. 손날개 튀김. ¥396 차지 및 22시 이후 10% 심야 추가요금.",
+          "id": "loc-a6f8f231"
         }
       ],
       "multi": false,
@@ -2005,7 +2039,8 @@
             },
             "sourceUrl": "https://tabelog.com/fukuoka/A4004/A400501/40004397/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-9d13f843"
         },
         {
           "name": "커리 혼포 모지코 레트로 점",
@@ -2045,7 +2080,8 @@
             },
             "sourceUrl": "https://tabelog.com/fukuoka/A4004/A400501/40006677/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-c158eece"
         },
         {
           "name": "BEAR FRUITS 모지코 본점",
@@ -2085,7 +2121,8 @@
             },
             "sourceUrl": "https://tabelog.com/fukuoka/A4004/A400501/40003315/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-acfe4cec"
         },
         {
           "name": "프린세스 피피 모지코(야키카레)",
@@ -2125,7 +2162,8 @@
             },
             "sourceUrl": "https://tabelog.com/fukuoka/A4004/A400501/40003136/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-6253715b"
         },
         {
           "name": "오사마노 타마고 모지코(王様のたまご)",
@@ -2165,7 +2203,8 @@
             },
             "sourceUrl": "https://tabelog.com/fukuoka/A4004/A400501/40025877/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-32edb133"
         }
       ],
       "multi": false,
@@ -2314,7 +2353,8 @@
             },
             "sourceUrl": "https://tabelog.com/oita/A4402/A440201/44001656/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-32fe2946"
         },
         {
           "name": "멘이치",
@@ -2355,7 +2395,8 @@
             },
             "sourceUrl": "https://tabelog.com/oita/A4402/A440201/44005241/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-61a6d146"
         },
         {
           "name": "유후 마부시 신 긴린코 본점",
@@ -2397,7 +2438,8 @@
             },
             "sourceUrl": "https://tabelog.com/oita/A4402/A440201/44008761/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-8321a43a"
         },
         {
           "name": "유후 마부시 신 유후인역 앞 지점",
@@ -2437,7 +2479,8 @@
             },
             "sourceUrl": "https://tabelog.com/oita/A4402/A440201/44005142/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-4b39c336"
         },
         {
           "name": "레스토랑 란푸샤(洋灯舎)",
@@ -2470,7 +2513,8 @@
             },
             "sourceUrl": "https://tabelog.com/oita/A4402/A440201/44000660/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-e09cf2a6"
         },
         {
           "name": "카페 라 루슈(CAFE LA RUCHE)",
@@ -2503,7 +2547,8 @@
             },
             "sourceUrl": "https://tabelog.com/oita/A4402/A440201/44000040/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-ec26c7e2"
         }
       ],
       "multi": false,
@@ -2538,7 +2583,8 @@
           "hours": "08:00~19:00 (화요일·둘째 수요일 휴무)",
           "hoursSource": "https://yufuin.gr.jp/spot/spot-1288/",
           "warning": "인근 긴린호수 도보 1분, 일부 시설은 현장 이용 조건 확인.",
-          "hoursChecked": "2026-10-31"
+          "hoursChecked": "2026-10-31",
+          "id": "loc-0f8062e2"
         },
         {
           "name": "유후인 이요토미",
@@ -2548,7 +2594,8 @@
           "hours": "당일입욕 10:00~15:00 (접수 14:00까지), 부정기휴무",
           "hoursSource": "https://www.iyotomi.jp/information/3980/",
           "warning": "2026년 가을 요금 변경 예정 공지. 현재 요금 재확인 전까지 합계 미포함.",
-          "hoursChecked": "2026-10-31"
+          "hoursChecked": "2026-10-31",
+          "id": "loc-56f3d51d"
         },
         {
           "name": "유후다케 온천",
@@ -2560,7 +2607,8 @@
           "address": "大分県由布市湯布院町川上2425-2",
           "hours": "11~3월 11:00~17:00, 부정기휴무",
           "hoursSource": "https://yufuin.gr.jp/spot/spot-5582/",
-          "hoursChecked": "2026-10-31"
+          "hoursChecked": "2026-10-31",
+          "id": "loc-890d4304"
         },
         {
           "name": "누루카와",
@@ -2573,7 +2621,8 @@
           "hours": "08:00~19:00 (화요일·둘째 수요일 휴무)",
           "hoursSource": "https://yufuin.gr.jp/spot/spot-1288/",
           "warning": "‘누루카와 온센’과 동일한 온천을 중복 등록한 후보. 한 곳만 선택.",
-          "hoursChecked": "2026-10-31"
+          "hoursChecked": "2026-10-31",
+          "id": "loc-78613712"
         },
         {
           "name": "무소엔 온천",
@@ -2586,7 +2635,8 @@
           "hoursChecked": "2026-10-31",
           "cost": 1000,
           "costSource": "https://www.musouen.co.jp/higaeri/",
-          "costChecked": "2026-10-31"
+          "costChecked": "2026-10-31",
+          "id": "loc-9536eabe"
         }
       ],
       "multi": false,
@@ -2711,7 +2761,8 @@
             },
             "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40000254/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-2f7ea04a"
         },
         {
           "name": "바쿠로 하카타 점",
@@ -2751,7 +2802,8 @@
             },
             "sourceUrl": "https://selection.tabelog.com/fukuoka/A4001/A400101/40045144/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-bdb88579"
         },
         {
           "name": "에비스야 우동",
@@ -2791,7 +2843,8 @@
             },
             "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40064595/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-ed0cfc46"
         },
         {
           "name": "키와미야 하카타 점",
@@ -2831,7 +2884,8 @@
             },
             "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40039167/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-c878fe97"
         },
         {
           "name": "키와미야 하카타 역 지하상가 점",
@@ -2871,7 +2925,8 @@
             },
             "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40067994/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-a15d37fe"
         },
         {
           "name": "하카타 잇소 하카타역 히가시 본점",
@@ -2911,7 +2966,8 @@
             },
             "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40032701/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-afd604e0"
         },
         {
           "name": "기스이마루 하카타 1번가(해산물 아침 정식)",
@@ -2951,7 +3007,8 @@
             },
             "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40058853/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-3036b69a"
         },
         {
           "name": "요시즈카 우나기야 본점",
@@ -2991,7 +3048,8 @@
             },
             "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400102/40000017/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-30f557be"
         }
       ],
       "multi": false,
@@ -3081,7 +3139,8 @@
             },
             "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40042647/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-0657ba10"
         },
         {
           "name": "하카타 라멘 신신 키테 하카타 점",
@@ -3121,7 +3180,8 @@
             },
             "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40042485/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-ae41d8ec"
         },
         {
           "name": "하카타 잇소 하카타역 히가시 본점",
@@ -3161,7 +3221,8 @@
             },
             "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40032701/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-afd604e0"
         },
         {
           "name": "키와미야 하카타 점",
@@ -3202,7 +3263,8 @@
             },
             "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40039167/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-c878fe97"
         },
         {
           "name": "키와미야 하카타 역 지하상가 점",
@@ -3243,7 +3305,8 @@
             },
             "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40067994/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-a15d37fe"
         },
         {
           "name": "이치란 캐널시티 하카타 점",
@@ -3284,7 +3347,8 @@
             },
             "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40000254/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-2f7ea04a"
         }
       ],
       "multi": false
@@ -3415,7 +3479,8 @@
           "address": "大分県日田市小ヶ瀬町2750",
           "hours": "월~금 11:00~24:00 (접수 23:00까지), 주말·공휴일 10:00~24:00",
           "hoursSource": "https://senrakuyu.com/access/",
-          "hoursChecked": "2026-10-31"
+          "hoursChecked": "2026-10-31",
+          "id": "loc-0461d5de"
         },
         {
           "name": "琴ひら温泉露天風呂",
@@ -3427,7 +3492,8 @@
           "address": "大分県日田市琴平町1571-1",
           "hours": "평일 12:00~20:45 (접수 20:15까지), 주말·공휴일 11:00~21:00",
           "hoursSource": "https://kotohira-onsen.com/air_bath/",
-          "hoursChecked": "2026-10-31"
+          "hoursChecked": "2026-10-31",
+          "id": "loc-42298fff"
         }
       ],
       "multi": false,
@@ -3489,7 +3555,7 @@
       "name": "후쿠오카 공항",
       "q": "후쿠오카 공항",
       "time": "13:00",
-      "note": "7C1405 출발, 14:30 인천 도착"
+      "note": "7C1404 출발, 14:30 인천 도착"
     },
     {
       "name": "카메라의 키타무라 미나 텐진점",
@@ -3859,7 +3925,7 @@
       "type": "choice",
       "title": "아침",
       "time": "07:40",
-      "note": "모지코행 JR 08:30 출발 전 아침 6곳 중 한 곳 선택. 기존 '뺑 스톡 텐진점'은 08:00 오픈으로 테이크아웃만 권장, 긴 대기 시 다른 선택지 선택. 나카스/하카타역 동선을 고려.",
+      "note": "모지코행 JR 08:30 출발 전 아침 6곳 중 한 곳 선택. 뺑 스톡은 08:00 개점, 대기줄이 없다는 가정으로 빠르게 구매·테이크아웃. 줄이 길면 다른 후보 선택. 하카타역 이동시간과 열차 탑승 우선.",
       "multi": false,
       "options": [
         {
@@ -3892,7 +3958,8 @@
             },
             "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400102/40033249/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-61093517"
         },
         {
           "name": "뺑 스톡 텐진점 (pain stock)",
@@ -3914,7 +3981,7 @@
           "ratingChecked": "2026-10-31",
           "gChecked": "2026-10-31",
           "gSourceType": "secondary",
-          "warning": "08:00 영업 시작. 모지코행 08:30 JR 탑승 전 30분밖에 없어 긴 대기·식사 여유는 없음.",
+          "warning": "08:00 개점. 대기줄이 없다는 가정으로 방문. 08:30 하카타역 JR 탑승 전 지하철 이동시간이 빠듯하므로 줄이 생기면 생략.",
           "priceBudget": {
             "day": {
               "range": [
@@ -3934,7 +4001,8 @@
             "checked": "2026-10-31"
           },
           "hoursSource": "https://tabelog.com/fukuoka/A4001/A400103/40052317/",
-          "hoursChecked": "2026-10-31"
+          "hoursChecked": "2026-10-31",
+          "id": "loc-0cf6a00d"
         },
         {
           "name": "탄야 HAKATA(우설 아침 정식)",
@@ -3974,7 +4042,8 @@
             },
             "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40026439/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-bc73b863"
         },
         {
           "name": "DACOMECCA(다코메카)",
@@ -4014,7 +4083,8 @@
             },
             "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40057205/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-63e922c4"
         },
         {
           "name": "기스이마루 하카타 1번가(해산물 아침 정식)",
@@ -4054,7 +4124,8 @@
             },
             "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40058853/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-3036b69a"
         },
         {
           "name": "이치란 본사 총본점",
@@ -4095,7 +4166,8 @@
             },
             "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400102/40000130/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-5cbb9fee"
         }
       ]
     },
@@ -4144,7 +4216,8 @@
             },
             "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40032701/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-afd604e0"
         },
         {
           "name": "모츠나베 오오야마 키테 하카타 점",
@@ -4186,7 +4259,8 @@
             },
             "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40042647/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-0657ba10"
         },
         {
           "name": "하카타 라멘 신신 키테 하카타 점",
@@ -4227,7 +4301,8 @@
             },
             "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40042485/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-ae41d8ec"
         },
         {
           "name": "키와미야 하카타 점",
@@ -4268,7 +4343,8 @@
             },
             "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40039167/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-c878fe97"
         },
         {
           "name": "키와미야 하카타 역 지하상가 점",
@@ -4309,7 +4385,8 @@
             },
             "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40067994/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-a15d37fe"
         },
         {
           "name": "이치란 본사 총본점",
@@ -4350,7 +4427,8 @@
             },
             "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400102/40000130/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-5cbb9fee"
         }
       ]
     },
@@ -4400,7 +4478,8 @@
             },
             "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40026439/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-bc73b863"
         },
         {
           "name": "DACOMECCA(다코메카)",
@@ -4441,7 +4520,8 @@
             },
             "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40057205/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-63e922c4"
         },
         {
           "name": "이치란 본사 총본점",
@@ -4482,7 +4562,8 @@
             },
             "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400102/40000130/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-5cbb9fee"
         }
       ]
     },
@@ -4531,7 +4612,8 @@
             },
             "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40032701/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-afd604e0"
         },
         {
           "name": "기스이마루 하카타 1번가(해산물 아침 정식)",
@@ -4571,7 +4653,8 @@
             },
             "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40058853/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-3036b69a"
         },
         {
           "name": "모츠나베 오오야마 키테 하카타 점",
@@ -4613,7 +4696,8 @@
             },
             "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40042647/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-0657ba10"
         },
         {
           "name": "하카타 라멘 신신 키테 하카타 점",
@@ -4654,7 +4738,8 @@
             },
             "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40042485/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-ae41d8ec"
         },
         {
           "name": "키와미야 하카타 점",
@@ -4695,7 +4780,8 @@
             },
             "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40039167/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-c878fe97"
         },
         {
           "name": "키와미야 하카타 역 지하상가 점",
@@ -4736,7 +4822,8 @@
             },
             "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40067994/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-a15d37fe"
         }
       ]
     },
@@ -4777,7 +4864,8 @@
             },
             "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400102/40033249/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-61093517"
         },
         {
           "name": "팽 스톡 텐진점(pain stock)",
@@ -4817,7 +4905,8 @@
             },
             "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400103/40052317/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-0cf6a00d"
         },
         {
           "name": "블루보틀커피 후쿠오카 텐진",
@@ -4856,7 +4945,8 @@
             },
             "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400103/40066618/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-85767560"
         },
         {
           "name": "NOOICE 텐진",
@@ -4896,7 +4986,8 @@
             },
             "sourceUrl": "https://tabelog.com/kr/fukuoka/A4001/A400104/40053685/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-3c4f9745"
         },
         {
           "name": "이치란 본사 총본점",
@@ -4937,7 +5028,8 @@
             },
             "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400102/40000130/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-5cbb9fee"
         }
       ]
     },
@@ -4986,7 +5078,8 @@
             },
             "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40026439/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-bc73b863"
         },
         {
           "name": "DACOMECCA(다코메카)",
@@ -5026,7 +5119,8 @@
             },
             "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40057205/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-63e922c4"
         },
         {
           "name": "기스이마루 하카타 1번가(해산물 아침 정식)",
@@ -5067,7 +5161,8 @@
             },
             "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40058853/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-3036b69a"
         }
       ]
     },
@@ -5108,7 +5203,8 @@
             },
             "sourceUrl": "https://tabelog.com/oita/A4404/A440403/44000261/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-db13c625"
         },
         {
           "name": "산큐(三久) 히타 야키소바",
@@ -5148,7 +5244,8 @@
             },
             "sourceUrl": "https://tabelog.com/oita/A4404/A440403/44001476/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-6a6ec45c"
         },
         {
           "name": "소후렌 본점(想夫恋 本店)",
@@ -5187,7 +5284,8 @@
             },
             "sourceUrl": "https://tabelog.com/oita/A4404/A440403/44000268/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-db027d04"
         }
       ]
     },
@@ -5236,7 +5334,8 @@
             },
             "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40032701/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-afd604e0"
         },
         {
           "name": "모츠나베 오오야마 키테 하카타 점",
@@ -5278,7 +5377,8 @@
             },
             "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40042647/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-0657ba10"
         },
         {
           "name": "하카타 라멘 신신 키테 하카타 점",
@@ -5319,7 +5419,8 @@
             },
             "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40042485/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-ae41d8ec"
         },
         {
           "name": "키와미야 하카타 점",
@@ -5360,7 +5461,8 @@
             },
             "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40039167/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-c878fe97"
         },
         {
           "name": "키와미야 하카타 역 지하상가 점",
@@ -5401,7 +5503,8 @@
             },
             "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40067994/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-a15d37fe"
         },
         {
           "name": "이치란 본사 총본점",
@@ -5442,7 +5545,8 @@
             },
             "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400102/40000130/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-5cbb9fee"
         }
       ]
     },
@@ -5491,7 +5595,8 @@
             },
             "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40026439/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-bc73b863"
         },
         {
           "name": "DACOMECCA(다코메카)",
@@ -5531,7 +5636,8 @@
             },
             "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40057205/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-63e922c4"
         },
         {
           "name": "기스이마루 하카타 1번가(해산물 아침 정식)",
@@ -5571,7 +5677,8 @@
             },
             "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40058853/",
             "checked": "2026-10-31"
-          }
+          },
+          "id": "loc-3036b69a"
         }
       ]
     },
@@ -5590,7 +5697,8 @@
           "warning": "개별 점포를 특정하지 않아 평점·1인 예산 확인 불가. 방문 후 가게 직접 선택.",
           "closeTime": "점포별 상이",
           "loFood": "점포별 상이",
-          "loDrink": "점포별 상이"
+          "loDrink": "점포별 상이",
+          "id": "loc-28e203cd"
         },
         {
           "name": "토킨",
@@ -5627,7 +5735,8 @@
           "closeTime": "익일 05:00",
           "loFood": "익일 03:45",
           "loDrink": "익일 04:15",
-          "note": "기존 11/5 덴진 술집. 11/4·11/6 나카스 숙소 기준 도보 우회(약 15~25분) 가능."
+          "note": "기존 11/5 덴진 술집. 11/4·11/6 나카스 숙소 기준 도보 우회(약 15~25분) 가능.",
+          "id": "loc-0310542a"
         },
         {
           "name": "교자노 캇짱 나카스점",
@@ -5664,7 +5773,8 @@
           "closeTime": "익일 02:00 (수) / 익일 03:00 (금)",
           "loFood": "수 익일 01:00 / 금 익일 02:00",
           "loDrink": "수 익일 01:30 / 금 익일 02:30",
-          "note": "나카스카와바타역 근처 교자·이자카야. 22시 이후 입장 시 서비스료 10% 추가."
+          "note": "나카스카와바타역 근처 교자·이자카야. 22시 이후 입장 시 서비스료 10% 추가.",
+          "id": "loc-0964f1bb"
         },
         {
           "name": "쿠시카츠 다나카 나카스카와바타점",
@@ -5701,7 +5811,8 @@
           "closeTime": "익일 01:00",
           "loFood": "미확인",
           "loDrink": "미확인",
-          "note": "숙소와 가까움. 쿠시카츠 꼬치·하이볼. 음식·음료별 라스트오더는 매장 확인."
+          "note": "숙소와 가까움. 쿠시카츠 꼬치·하이볼. 음식·음료별 라스트오더는 매장 확인.",
+          "id": "loc-dd4d12ba"
         },
         {
           "name": "핫슈 나카스점",
@@ -5738,7 +5849,8 @@
           "closeTime": "익일 01:00",
           "loFood": "익일 00:00",
           "loDrink": "익일 00:30",
-          "note": "숙소 근처 규슈 요리. 자리 차지 등 추가 비용 가능."
+          "note": "숙소 근처 규슈 요리. 자리 차지 등 추가 비용 가능.",
+          "id": "loc-b9a13113"
         },
         {
           "name": "신지다이 후쿠오카 텐진점",
@@ -5775,7 +5887,8 @@
           "closeTime": "익일 05:00",
           "loFood": "익일 04:00",
           "loDrink": "익일 04:30",
-          "note": "이마이즈미·덴진 쇼핑 동선. 닭껍질 꼬치. 좌석 차지 ¥385 및 22시 이후 심야 10% 별도. 이나바쵸 잇케이 방문 후 덴진에서 먼저 들를 수 있는 선택지."
+          "note": "이마이즈미·덴진 쇼핑 동선. 닭껍질 꼬치. 좌석 차지 ¥385 및 22시 이후 심야 10% 별도. 이나바쵸 잇케이 방문 후 덴진에서 먼저 들를 수 있는 선택지.",
+          "id": "loc-81ddf764"
         },
         {
           "name": "요테바 텐진점",
@@ -5812,7 +5925,8 @@
           "closeTime": "익일 08:00 (목요일)",
           "loFood": "미확인",
           "loDrink": "미확인",
-          "note": "텐진·다이묘 쇼핑 동선. 손날개 튀김. 좌석 차지 ¥396 및 22시 이후 10% 추가 가능, 요일별 영업시간 확인. 덴진·다이묘에서 먼저 한잔 후 나카스 숙소로 복귀 시 적합."
+          "note": "텐진·다이묘 쇼핑 동선. 손날개 튀김. 좌석 차지 ¥396 및 22시 이후 10% 추가 가능, 요일별 영업시간 확인. 덴진·다이묘에서 먼저 한잔 후 나카스 숙소로 복귀 시 적합.",
+          "id": "loc-c7f2c301"
         }
       ]
     },
@@ -5830,7 +5944,8 @@
           "warning": "개별 점포를 특정하지 않아 평점·1인 예산 확인 불가. 방문 후 가게 직접 선택.",
           "closeTime": "점포별 상이",
           "loFood": "점포별 상이",
-          "loDrink": "점포별 상이"
+          "loDrink": "점포별 상이",
+          "id": "loc-28e203cd"
         },
         {
           "name": "토킨",
@@ -5867,7 +5982,8 @@
           "closeTime": "익일 05:00",
           "loFood": "익일 03:45",
           "loDrink": "익일 04:15",
-          "note": "기존 11/5 덴진 술집. 11/4·11/6 나카스 숙소 기준 도보 우회(약 15~25분) 가능."
+          "note": "기존 11/5 덴진 술집. 11/4·11/6 나카스 숙소 기준 도보 우회(약 15~25분) 가능.",
+          "id": "loc-0310542a"
         },
         {
           "name": "교자노 캇짱 나카스점",
@@ -5904,7 +6020,8 @@
           "closeTime": "익일 02:00 (수) / 익일 03:00 (금)",
           "loFood": "수 익일 01:00 / 금 익일 02:00",
           "loDrink": "수 익일 01:30 / 금 익일 02:30",
-          "note": "나카스카와바타역 근처 교자·이자카야. 22시 이후 입장 시 서비스료 10% 추가."
+          "note": "나카스카와바타역 근처 교자·이자카야. 22시 이후 입장 시 서비스료 10% 추가.",
+          "id": "loc-0964f1bb"
         },
         {
           "name": "쿠시카츠 다나카 나카스카와바타점",
@@ -5941,7 +6058,8 @@
           "closeTime": "익일 01:00",
           "loFood": "미확인",
           "loDrink": "미확인",
-          "note": "숙소와 가까움. 쿠시카츠 꼬치·하이볼. 음식·음료별 라스트오더는 매장 확인."
+          "note": "숙소와 가까움. 쿠시카츠 꼬치·하이볼. 음식·음료별 라스트오더는 매장 확인.",
+          "id": "loc-dd4d12ba"
         },
         {
           "name": "핫슈 나카스점",
@@ -5978,7 +6096,8 @@
           "closeTime": "익일 01:00",
           "loFood": "익일 00:00",
           "loDrink": "익일 00:30",
-          "note": "숙소 근처 규슈 요리. 자리 차지 등 추가 비용 가능."
+          "note": "숙소 근처 규슈 요리. 자리 차지 등 추가 비용 가능.",
+          "id": "loc-b9a13113"
         },
         {
           "name": "신지다이 후쿠오카 텐진점",
@@ -6015,7 +6134,8 @@
           "closeTime": "익일 05:00",
           "loFood": "익일 04:00",
           "loDrink": "익일 04:30",
-          "note": "이마이즈미·덴진 쇼핑 동선. 닭껍질 꼬치. 좌석 차지 ¥385 및 22시 이후 심야 10% 별도. 나카스에서 덴진 방면으로 이동이 필요한 우회 후보."
+          "note": "이마이즈미·덴진 쇼핑 동선. 닭껍질 꼬치. 좌석 차지 ¥385 및 22시 이후 심야 10% 별도. 나카스에서 덴진 방면으로 이동이 필요한 우회 후보.",
+          "id": "loc-81ddf764"
         }
       ]
     },
@@ -6060,7 +6180,8 @@
           "closeTime": "익일 01:00",
           "loFood": "미확인",
           "loDrink": "미확인",
-          "note": "기존 11/8 하카타역 동쪽에 등록된 야키토리. 원래의 단독 장소에서 술집 선택지로 통합."
+          "note": "기존 11/8 하카타역 동쪽에 등록된 야키토리. 원래의 단독 장소에서 술집 선택지로 통합.",
+          "id": "loc-36018dc1"
         },
         {
           "name": "하카타 후도 본점",
@@ -6097,7 +6218,8 @@
           "closeTime": "토 익일 01:00 / 일·월 24:00",
           "loFood": "토 익일 00:00 / 일·월 23:00",
           "loDrink": "토 익일 00:30 / 일·월 23:30",
-          "note": "하카타역 치쿠시구치 도보 5분. 야키토리·모츠나베. 흡연점포로 20세 미만 입점 불가."
+          "note": "하카타역 치쿠시구치 도보 5분. 야키토리·모츠나베. 흡연점포로 20세 미만 입점 불가.",
+          "id": "loc-8a4e7282"
         },
         {
           "name": "하카타 오엔타이 토리사카바",
@@ -6134,7 +6256,8 @@
           "closeTime": "토 익일 01:00 / 일 24:00 / 월 익일 01:00",
           "loFood": "토·월 익일 00:00 / 일 23:00",
           "loDrink": "토·월 익일 00:30 / 일 23:30",
-          "note": "하카타역 동쪽. 야키토리·모츠나베. 오토시(자리 음식) ¥418 추가."
+          "note": "하카타역 동쪽. 야키토리·모츠나베. 오토시(자리 음식) ¥418 추가.",
+          "id": "loc-9a9b5ba9"
         },
         {
           "name": "야키토리 이오리",
@@ -6171,7 +6294,8 @@
           "closeTime": "토·월 익일 04:00 / 일 익일 01:00",
           "loFood": "토·월 익일 03:00 / 일 익일 00:00",
           "loDrink": "토·월 익일 03:30 / 일 익일 00:30",
-          "note": "하카타역 하카타구치 도보 약 4분. 늦은 시간 야키토리. 공식 매장 페이지 음식·음료 L.O. 기준(서로 다른 안내가 있어 재확인)."
+          "note": "하카타역 하카타구치 도보 약 4분. 늦은 시간 야키토리. 공식 매장 페이지 음식·음료 L.O. 기준(서로 다른 안내가 있어 재확인).",
+          "id": "loc-5fb8ad44"
         },
         {
           "name": "토리키조쿠 하카타 치쿠시구치점",
@@ -6208,7 +6332,8 @@
           "closeTime": "익일 04:00",
           "loFood": "미확인",
           "loDrink": "미확인",
-          "note": "하카타역 치쿠시구치 약 2분. 균일가 꼬치 이자카야. 음식·음료 L.O. 미확인."
+          "note": "하카타역 치쿠시구치 약 2분. 균일가 꼬치 이자카야. 음식·음료 L.O. 미확인.",
+          "id": "loc-2789f6d2"
         },
         {
           "name": "친푼칸푼 하카타점",
@@ -6245,7 +6370,8 @@
           "closeTime": "24:00",
           "loFood": "23:00",
           "loDrink": "23:30",
-          "note": "하카타역 하카타구치 남서쪽. 숯불구이·이자카야."
+          "note": "하카타역 하카타구치 남서쪽. 숯불구이·이자카야.",
+          "id": "loc-fa049627"
         }
       ]
     },
@@ -6290,7 +6416,8 @@
           "closeTime": "24:00",
           "loFood": "미확인",
           "loDrink": "미확인",
-          "note": "기존 11/8 하카타역 동쪽에 등록된 야키토리. 원래의 단독 장소에서 술집 선택지로 통합."
+          "note": "기존 11/8 하카타역 동쪽에 등록된 야키토리. 원래의 단독 장소에서 술집 선택지로 통합.",
+          "id": "loc-36018dc1"
         },
         {
           "name": "하카타 후도 본점",
@@ -6327,7 +6454,8 @@
           "closeTime": "토 익일 01:00 / 일·월 24:00",
           "loFood": "토 익일 00:00 / 일·월 23:00",
           "loDrink": "토 익일 00:30 / 일·월 23:30",
-          "note": "하카타역 치쿠시구치 도보 5분. 야키토리·모츠나베. 흡연점포로 20세 미만 입점 불가."
+          "note": "하카타역 치쿠시구치 도보 5분. 야키토리·모츠나베. 흡연점포로 20세 미만 입점 불가.",
+          "id": "loc-8a4e7282"
         },
         {
           "name": "하카타 오엔타이 토리사카바",
@@ -6364,7 +6492,8 @@
           "closeTime": "토 익일 01:00 / 일 24:00 / 월 익일 01:00",
           "loFood": "토·월 익일 00:00 / 일 23:00",
           "loDrink": "토·월 익일 00:30 / 일 23:30",
-          "note": "하카타역 동쪽. 야키토리·모츠나베. 오토시(자리 음식) ¥418 추가."
+          "note": "하카타역 동쪽. 야키토리·모츠나베. 오토시(자리 음식) ¥418 추가.",
+          "id": "loc-9a9b5ba9"
         },
         {
           "name": "야키토리 이오리",
@@ -6401,7 +6530,8 @@
           "closeTime": "토·월 익일 04:00 / 일 익일 01:00",
           "loFood": "토·월 익일 03:00 / 일 익일 00:00",
           "loDrink": "토·월 익일 03:30 / 일 익일 00:30",
-          "note": "하카타역 하카타구치 도보 약 4분. 늦은 시간 야키토리. 공식 매장 페이지 음식·음료 L.O. 기준(서로 다른 안내가 있어 재확인)."
+          "note": "하카타역 하카타구치 도보 약 4분. 늦은 시간 야키토리. 공식 매장 페이지 음식·음료 L.O. 기준(서로 다른 안내가 있어 재확인).",
+          "id": "loc-5fb8ad44"
         },
         {
           "name": "토리키조쿠 하카타 치쿠시구치점",
@@ -6438,7 +6568,8 @@
           "closeTime": "익일 04:00",
           "loFood": "미확인",
           "loDrink": "미확인",
-          "note": "하카타역 치쿠시구치 약 2분. 균일가 꼬치 이자카야. 음식·음료 L.O. 미확인."
+          "note": "하카타역 치쿠시구치 약 2분. 균일가 꼬치 이자카야. 음식·음료 L.O. 미확인.",
+          "id": "loc-2789f6d2"
         },
         {
           "name": "친푼칸푼 하카타점",
@@ -6475,7 +6606,8 @@
           "closeTime": "24:00",
           "loFood": "23:00",
           "loDrink": "23:30",
-          "note": "하카타역 하카타구치 남서쪽. 숯불구이·이자카야."
+          "note": "하카타역 하카타구치 남서쪽. 숯불구이·이자카야.",
+          "id": "loc-fa049627"
         }
       ]
     },
@@ -6520,7 +6652,8 @@
           "closeTime": "24:00",
           "loFood": "미확인",
           "loDrink": "미확인",
-          "note": "기존 11/8 하카타역 동쪽에 등록된 야키토리. 원래의 단독 장소에서 술집 선택지로 통합."
+          "note": "기존 11/8 하카타역 동쪽에 등록된 야키토리. 원래의 단독 장소에서 술집 선택지로 통합.",
+          "id": "loc-36018dc1"
         },
         {
           "name": "하카타 후도 본점",
@@ -6557,7 +6690,8 @@
           "closeTime": "토 익일 01:00 / 일·월 24:00",
           "loFood": "토 익일 00:00 / 일·월 23:00",
           "loDrink": "토 익일 00:30 / 일·월 23:30",
-          "note": "하카타역 치쿠시구치 도보 5분. 야키토리·모츠나베. 흡연점포로 20세 미만 입점 불가."
+          "note": "하카타역 치쿠시구치 도보 5분. 야키토리·모츠나베. 흡연점포로 20세 미만 입점 불가.",
+          "id": "loc-8a4e7282"
         },
         {
           "name": "하카타 오엔타이 토리사카바",
@@ -6594,7 +6728,8 @@
           "closeTime": "토 익일 01:00 / 일 24:00 / 월 익일 01:00",
           "loFood": "토·월 익일 00:00 / 일 23:00",
           "loDrink": "토·월 익일 00:30 / 일 23:30",
-          "note": "하카타역 동쪽. 야키토리·모츠나베. 오토시(자리 음식) ¥418 추가."
+          "note": "하카타역 동쪽. 야키토리·모츠나베. 오토시(자리 음식) ¥418 추가.",
+          "id": "loc-9a9b5ba9"
         },
         {
           "name": "야키토리 이오리",
@@ -6631,7 +6766,8 @@
           "closeTime": "토·월 익일 04:00 / 일 익일 01:00",
           "loFood": "토·월 익일 03:00 / 일 익일 00:00",
           "loDrink": "토·월 익일 03:30 / 일 익일 00:30",
-          "note": "하카타역 하카타구치 도보 약 4분. 늦은 시간 야키토리. 공식 매장 페이지 음식·음료 L.O. 기준(서로 다른 안내가 있어 재확인)."
+          "note": "하카타역 하카타구치 도보 약 4분. 늦은 시간 야키토리. 공식 매장 페이지 음식·음료 L.O. 기준(서로 다른 안내가 있어 재확인).",
+          "id": "loc-5fb8ad44"
         },
         {
           "name": "토리키조쿠 하카타 치쿠시구치점",
@@ -6668,7 +6804,8 @@
           "closeTime": "익일 04:00",
           "loFood": "미확인",
           "loDrink": "미확인",
-          "note": "하카타역 치쿠시구치 약 2분. 균일가 꼬치 이자카야. 음식·음료 L.O. 미확인."
+          "note": "하카타역 치쿠시구치 약 2분. 균일가 꼬치 이자카야. 음식·음료 L.O. 미확인.",
+          "id": "loc-2789f6d2"
         },
         {
           "name": "친푼칸푼 하카타점",
@@ -6705,7 +6842,8 @@
           "closeTime": "24:00",
           "loFood": "23:00",
           "loDrink": "23:30",
-          "note": "하카타역 하카타구치 남서쪽. 숯불구이·이자카야."
+          "note": "하카타역 하카타구치 남서쪽. 숯불구이·이자카야.",
+          "id": "loc-fa049627"
         }
       ]
     },
