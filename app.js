@@ -1328,12 +1328,40 @@
     });
   }
 
-  // 날씨는 저장소의 공유 파일 하나를 모두가 같이 읽음. no-cache 라 매번 서버에 변경 여부를 묻고, 그대로면 304 로 내용 없이 끝남
-  function loadWeather() {
-    return fetch(WEATHER_URL, { cache: 'no-cache' }).then(function (r) {
-      if (!r.ok) throw new Error('HTTP ' + r.status);
+  // Dynamic forecasts are stored in weather-data, not the Pages deployment branch.
+  // Preserve a bundled snapshot plus a last-good on-device copy as offline fallbacks.
+  function weatherRequest(url) {
+    return fetch(url, { cache: 'no-store' }).then(function (r) {
+      if (!r.ok) throw new Error('Weather HTTP ' + r.status);
       return r.json();
-    }).then(function (j) { weather = j; });
+    }).then(function (data) {
+      if (!data || !data.updatedAt || !data.data) throw new Error('Invalid weather payload');
+      return data;
+    });
+  }
+  function loadWeather() {
+    return weatherRequest(LIVE_WEATHER_URL + '?v=' + Date.now())
+      .catch(function () { return weatherRequest(WEATHER_URL); })
+      .catch(function (err) {
+        var lastGood = load(WEATHER_CACHE_KEY);
+        if (lastGood && lastGood.data) return lastGood;
+        throw err;
+      })
+      .then(function (data) {
+        weather = data; save(WEATHER_CACHE_KEY, data); return data;
+      });
+  }
+  var lastWeatherRefresh = 0;
+  function refreshVisibleWeather() {
+    if (!plan || !navigator.onLine || Date.now() - lastWeatherRefresh < 5 * 60000) return;
+    lastWeatherRefresh = Date.now();
+    var old = weather && weather.updatedAt;
+    loadWeather().then(function (newWeather) {
+      if (old !== newWeather.updatedAt) {
+        renderDay(current, 0, true, true);
+        rainModal();
+      }
+    }).catch(function () {});
   }
 
   // 상단 제목, 기간, 문서 제목은 plan.json의 trip 값으로 채움
@@ -1644,8 +1672,11 @@
     if (document.visibilityState !== 'visible' || !plan) return;
     markNow(false);
     checkUpdate();
+    refreshVisibleWeather();
   });
-  setInterval(function () { if (document.visibilityState === 'visible') checkUpdate(); }, 15 * 60000);
+  setInterval(function () {
+    if (document.visibilityState === 'visible') { checkUpdate(); refreshVisibleWeather(); }
+  }, 15 * 60000);
 
   if ('serviceWorker' in navigator) {
     // 공용 sw.js 하나를 여행 폴더 범위로 따로 등록해 여행마다 보관본을 나눔
