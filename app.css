@@ -270,6 +270,7 @@ a { color: var(--blue); text-decoration: none; }
 .opt-meta { display:flex; flex-wrap:wrap; align-items:baseline; gap:6px 12px; }
 .opt-budget { color:var(--ink2); font-size:12px; line-height:1.35; font-weight:650; font-variant-numeric:tabular-nums; }
 .opt-budget.unavailable { color:var(--ink3); font-weight:400; }
+.opt-bar-hours { font-size:12px; line-height:1.45; color:var(--ink2); overflow-wrap:anywhere; }
 .budget-details { display:grid; gap:4px; color:var(--ink2); font-size:12px; line-height:1.5; margin-top:9px; }
 .budget-details a { color:var(--blue); width:fit-content; text-decoration:underline; text-underline-offset:2px; }
 @media (max-width: 360px) { .opt-pick { flex-wrap: wrap; } }
