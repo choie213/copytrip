@@ -213,6 +213,11 @@ a { color: var(--blue); text-decoration: none; }
 .choice-detail > div + div { margin-top: 5px; }
 .choice-warning { color: var(--orange); font-weight: 650; }
 .rating-unverified { color: var(--ink3); font-size: 12px; margin-top: 6px; }
+.rating-snapshot { color: var(--ink3); font-size: 11px; margin-top: 6px; }
+.review-source { display: inline-block; margin-top: 8px; color: var(--blue); font-size: 13px; font-weight: 600; text-decoration: none; }
+.review-source:focus-visible { outline: 2px solid var(--blue); outline-offset: 3px; }
+.place-address-inline { color: var(--ink3); font-size: 13px; margin-top: 5px; overflow-wrap: anywhere; }
+.general-warning { margin-top: 7px; font-size: 13px; line-height: 1.5; }
 
 
 .acts { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
