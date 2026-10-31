@@ -459,3 +459,17 @@ html:not(.motion) .wx-m .a-gust { opacity: 1; stroke-dasharray: none; }
 .guide-step-text p { margin: 3px 0 0; color: var(--ink2); overflow-wrap: anywhere; }
 .guide-links { margin-top: 12px; display: flex; flex-wrap: wrap; gap: 7px; }
 .guide-checked { font-size: 11px; line-height: 1.45; color: var(--ink3); margin-top: 10px; }
+
+/* Compact chosen-route summary; the full timeline remains immediately below. */
+.chosen-route { margin-top: 14px; background: var(--card); border: 1px solid var(--sep); border-radius: 14px; padding: 13px 14px; }
+.chosen-route-head { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.chosen-route-head b { font-size: 15px; font-weight: 700; }
+.chosen-route-head span { color: var(--ink3); font-size: 12px; white-space: nowrap; }
+.chosen-route-empty { margin: 9px 0 0; color: var(--ink2); font-size: 13px; line-height: 1.55; }
+.chosen-route-item { display: flex; gap: 8px; flex-direction: column; padding-top: 11px; margin-top: 11px; border-top: 1px solid var(--sep); }
+.chosen-route-name { min-width: 0; display: flex; flex-direction: column; gap: 3px; }
+.chosen-route-name small { font-size: 12px; color: var(--ink3); }
+.chosen-route-name strong { font-size: 14px; line-height: 1.4; font-weight: 650; overflow-wrap: anywhere; }
+.chosen-route-actions { display: flex; flex-wrap: wrap; gap: 6px; }
+.chosen-route-link, .chosen-route-change { display: inline-flex; align-items: center; background: var(--fill); border: 0; border-radius: 8px; color: var(--blue); cursor: pointer; font: inherit; font-size: 12px; font-weight: 600; padding: 7px 9px; text-decoration: none; }
+.chosen-route-foot { margin: 11px 0 0; font-size: 11px; line-height: 1.5; color: var(--ink3); }
