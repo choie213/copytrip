@@ -474,7 +474,25 @@
           "gSource": "https://wanderlog.com/ja/place/details/422225/%E4%B8%80%E8%98%AD-%E6%9C%AC%E7%A4%BE%E7%B7%8F%E6%9C%AC%E5%BA%97",
           "gChecked": "2026-10-31",
           "gSourceType": "secondary",
-          "sourceStatus": "existing"
+          "sourceStatus": "existing",
+          "priceBudget": {
+            "day": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "listing"
+            },
+            "night": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400102/40000130/",
+            "checked": "2026-10-31"
+          }
         },
         {
           "name": "돈테키 부타야 쇼쿠도",
@@ -504,7 +522,25 @@
           "gSource": "https://ste-map.com/ranking/pref_fukuoka/city_401307/restaurant/tonkatsu",
           "gChecked": "2026-10-31",
           "gSourceType": "secondary",
-          "sourceStatus": "existing"
+          "sourceStatus": "existing",
+          "priceBudget": {
+            "day": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "listing"
+            },
+            "night": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400103/40050758/",
+            "checked": "2026-10-31"
+          }
         },
         {
           "name": "히츠마부시 와쇼쿠 빈초 나카스카와바타",
@@ -526,7 +562,25 @@
           "sourceStatus": "new",
           "ratingChecked": "2026-10-31",
           "gChecked": "2026-10-31",
-          "gSourceType": "secondary"
+          "gSourceType": "secondary",
+          "priceBudget": {
+            "day": {
+              "range": [
+                3000,
+                3999
+              ],
+              "basis": "listing"
+            },
+            "night": {
+              "range": [
+                5000,
+                5999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400102/40026105/",
+            "checked": "2026-10-31"
+          }
         },
         {
           "name": "모츠나베 타슈 후쿠오카 다이묘 본점",
@@ -548,7 +602,18 @@
           "sourceStatus": "new",
           "ratingChecked": "2026-10-31",
           "gChecked": "2026-10-31",
-          "gSourceType": "secondary"
+          "gSourceType": "secondary",
+          "priceBudget": {
+            "night": {
+              "range": [
+                4000,
+                4999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400104/40024061/",
+            "checked": "2026-10-31"
+          }
         },
         {
           "name": "신신라멘 텐진본점",
@@ -572,7 +637,25 @@
           "gSourceType": "secondary",
           "sourceStatus": "new",
           "note": "기존 다른 끼니의 검증된 텐진 본점 후보를 이 식사 선택지에 신규 연결. 텐진 쇼핑 동선에 위치.",
-          "warning": "오전 09:00 식사와 불일치: 11:00 개점. 점심·늦은 식사 후보로만 적절."
+          "warning": "오전 09:00 식사와 불일치: 11:00 개점. 점심·늦은 식사 후보로만 적절.",
+          "priceBudget": {
+            "day": {
+              "range": [
+                0,
+                999
+              ],
+              "basis": "listing"
+            },
+            "night": {
+              "range": [
+                0,
+                999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400103/40004980/",
+            "checked": "2026-10-31"
+          }
         },
         {
           "name": "규카츠 모토무라 후쿠오카 텐진 니시도리 점",
@@ -595,7 +678,25 @@
           "gChecked": "2026-10-31",
           "gSourceType": "secondary",
           "sourceStatus": "new",
-          "note": "다른 끼니의 기존 검증 음식점을 이 식사 선택지에 새로 연결."
+          "note": "다른 끼니의 기존 검증 음식점을 이 식사 선택지에 새로 연결.",
+          "priceBudget": {
+            "day": {
+              "range": [
+                2000,
+                2999
+              ],
+              "basis": "listing"
+            },
+            "night": {
+              "range": [
+                2000,
+                2999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400103/40045609/",
+            "checked": "2026-10-31"
+          }
         }
       ],
       "multi": false,
@@ -654,7 +755,13 @@
           "hoursSource": "https://tabelog.com/fukuoka/A4001/A400102/40023792/",
           "hoursChecked": "2026-10-31",
           "sourceStatus": "existing",
-          "warning": "기존 등록 후보: 타베로그 3.00·구글 4.00 기준 동시 충족 여부 미확인."
+          "warning": "기존 등록 후보: 타베로그 3.00·구글 4.00 기준 동시 충족 여부 미확인.",
+          "priceMenuExample": {
+            "price": 500,
+            "name": "모스버거 단품",
+            "sourceUrl": "https://www.mos.jp/menu/category/?c_id=1&page=2",
+            "checked": "2026-10-31"
+          }
         },
         {
           "name": "가제마치",
@@ -678,7 +785,25 @@
           "gSource": "https://tanotim.com/place/30492/",
           "gChecked": "2026-10-31",
           "gSourceType": "secondary",
-          "sourceStatus": "existing"
+          "sourceStatus": "existing",
+          "priceBudget": {
+            "day": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "listing"
+            },
+            "night": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400103/40004346/",
+            "checked": "2026-10-31"
+          }
         },
         {
           "name": "신신라멘 텐진본점",
@@ -702,7 +827,25 @@
           "gSource": "https://wanderlog.com/ja/place/details/543368/%E5%8D%9A%E5%A4%9A%E3%82%89%E3%83%BC%E3%82%81%E3%82%93shinshin-%E5%A4%A9%E7%A5%9E%E6%9C%AC%E5%BA%97",
           "gChecked": "2026-10-31",
           "gSourceType": "secondary",
-          "sourceStatus": "existing"
+          "sourceStatus": "existing",
+          "priceBudget": {
+            "day": {
+              "range": [
+                0,
+                999
+              ],
+              "basis": "listing"
+            },
+            "night": {
+              "range": [
+                0,
+                999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400103/40004980/",
+            "checked": "2026-10-31"
+          }
         },
         {
           "name": "산스이 미즈다시 커피(山水水出珈琲)",
@@ -723,7 +866,18 @@
           "sourceStatus": "new",
           "ratingChecked": "2026-10-31",
           "gChecked": "2026-10-31",
-          "gSourceType": "secondary"
+          "gSourceType": "secondary",
+          "priceBudget": {
+            "day": {
+              "range": [
+                0,
+                999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400102/40033249/",
+            "checked": "2026-10-31"
+          }
         },
         {
           "name": "팽 스톡 텐진점(pain stock)",
@@ -744,7 +898,25 @@
           "sourceStatus": "new",
           "ratingChecked": "2026-10-31",
           "gChecked": "2026-10-31",
-          "gSourceType": "secondary"
+          "gSourceType": "secondary",
+          "priceBudget": {
+            "day": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "reviews"
+            },
+            "night": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "reviews"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400103/40052317/",
+            "checked": "2026-10-31"
+          }
         },
         {
           "name": "ONCA COFFEE 미나 텐진",
@@ -766,7 +938,18 @@
           "sourceStatus": "new",
           "ratingChecked": "2026-10-31",
           "gChecked": "2026-10-31",
-          "gSourceType": "secondary"
+          "gSourceType": "secondary",
+          "priceBudget": {
+            "day": {
+              "range": [
+                0,
+                999
+              ],
+              "basis": "reviews"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400103/40064089/",
+            "checked": "2026-10-31"
+          }
         },
         {
           "name": "블루보틀커피 후쿠오카 텐진",
@@ -787,7 +970,25 @@
           "sourceStatus": "new",
           "ratingChecked": "2026-10-31",
           "gChecked": "2026-10-31",
-          "gSourceType": "secondary"
+          "gSourceType": "secondary",
+          "priceBudget": {
+            "day": {
+              "range": [
+                0,
+                999
+              ],
+              "basis": "listing"
+            },
+            "night": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400103/40066618/",
+            "checked": "2026-10-31"
+          }
         },
         {
           "name": "NOOICE 텐진",
@@ -810,7 +1011,25 @@
           "ratingChecked": "2026-10-31",
           "gChecked": "2026-10-31",
           "gSourceType": "secondary",
-          "warning": "09:00에 영업하지만 나카스 숙소→텐진 남쪽 이마이즈미까지 도보 우회가 있음."
+          "warning": "09:00에 영업하지만 나카스 숙소→텐진 남쪽 이마이즈미까지 도보 우회가 있음.",
+          "priceBudget": {
+            "day": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "listing"
+            },
+            "night": {
+              "range": [
+                3000,
+                3999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/kr/fukuoka/A4001/A400104/40053685/",
+            "checked": "2026-10-31"
+          }
         }
       ],
       "multi": false,
@@ -897,7 +1116,25 @@
           "gSource": "https://chikaku-ranking.com/area.php?area=%E4%B8%AD%E5%A4%AE%E5%8C%BA&genre=ramen",
           "gChecked": "2026-10-31",
           "gSourceType": "secondary",
-          "sourceStatus": "existing"
+          "sourceStatus": "existing",
+          "priceBudget": {
+            "day": {
+              "range": [
+                0,
+                999
+              ],
+              "basis": "listing"
+            },
+            "night": {
+              "range": [
+                0,
+                999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400103/40061770/",
+            "checked": "2026-10-31"
+          }
         },
         {
           "name": "규카츠 모토무라 후쿠오카 텐진 니시도리 점",
@@ -919,7 +1156,25 @@
           "gSource": "https://wanderlog.com/ja/list/geoCategory/432290",
           "gChecked": "2026-10-31",
           "gSourceType": "secondary",
-          "sourceStatus": "existing"
+          "sourceStatus": "existing",
+          "priceBudget": {
+            "day": {
+              "range": [
+                2000,
+                2999
+              ],
+              "basis": "listing"
+            },
+            "night": {
+              "range": [
+                2000,
+                2999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400103/40045609/",
+            "checked": "2026-10-31"
+          }
         },
         {
           "name": "NOOICE 텐진",
@@ -941,7 +1196,25 @@
           "sourceStatus": "new",
           "ratingChecked": "2026-10-31",
           "gChecked": "2026-10-31",
-          "gSourceType": "secondary"
+          "gSourceType": "secondary",
+          "priceBudget": {
+            "day": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "listing"
+            },
+            "night": {
+              "range": [
+                3000,
+                3999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/kr/fukuoka/A4001/A400104/40053685/",
+            "checked": "2026-10-31"
+          }
         },
         {
           "name": "신신라멘 텐진본점",
@@ -965,7 +1238,25 @@
           "gSourceType": "secondary",
           "sourceStatus": "new",
           "note": "기존 다른 끼니의 검증된 텐진 본점 후보를 이 식사 선택지에 신규 연결. 텐진 쇼핑 동선에 위치.",
-          "warning": "오전 09:00 식사와 불일치: 11:00 개점. 점심·늦은 식사 후보로만 적절."
+          "warning": "오전 09:00 식사와 불일치: 11:00 개점. 점심·늦은 식사 후보로만 적절.",
+          "priceBudget": {
+            "day": {
+              "range": [
+                0,
+                999
+              ],
+              "basis": "listing"
+            },
+            "night": {
+              "range": [
+                0,
+                999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400103/40004980/",
+            "checked": "2026-10-31"
+          }
         },
         {
           "name": "키와미야 후쿠오카 파르코 점",
@@ -988,7 +1279,25 @@
           "gChecked": "2026-10-31",
           "gSourceType": "secondary",
           "sourceStatus": "new",
-          "note": "다른 끼니의 기존 검증 음식점을 이 식사 선택지에 새로 연결."
+          "note": "다른 끼니의 기존 검증 음식점을 이 식사 선택지에 새로 연결.",
+          "priceBudget": {
+            "day": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "listing"
+            },
+            "night": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400103/40023392/",
+            "checked": "2026-10-31"
+          }
         },
         {
           "name": "돈카츠 와카바",
@@ -1012,7 +1321,25 @@
           "gChecked": "2026-10-31",
           "gSourceType": "secondary",
           "sourceStatus": "new",
-          "note": "다른 끼니의 기존 검증 음식점을 이 식사 선택지에 새로 연결."
+          "note": "다른 끼니의 기존 검증 음식점을 이 식사 선택지에 새로 연결.",
+          "priceBudget": {
+            "day": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "listing"
+            },
+            "night": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400103/40050758/",
+            "checked": "2026-10-31"
+          }
         }
       ],
       "multi": false,
@@ -1075,7 +1402,25 @@
           "gSource": "https://wanderlog.com/ja/list/geoCategory/432290",
           "gChecked": "2026-10-31",
           "gSourceType": "secondary",
-          "sourceStatus": "existing"
+          "sourceStatus": "existing",
+          "priceBudget": {
+            "day": {
+              "range": [
+                2000,
+                2999
+              ],
+              "basis": "listing"
+            },
+            "night": {
+              "range": [
+                2000,
+                2999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400103/40045609/",
+            "checked": "2026-10-31"
+          }
         },
         {
           "name": "멘야가가 텐진점",
@@ -1098,7 +1443,25 @@
           "gSource": "https://chikaku-ranking.com/area.php?area=%E4%B8%AD%E5%A4%AE%E5%8C%BA&genre=ramen",
           "gChecked": "2026-10-31",
           "gSourceType": "secondary",
-          "sourceStatus": "existing"
+          "sourceStatus": "existing",
+          "priceBudget": {
+            "day": {
+              "range": [
+                0,
+                999
+              ],
+              "basis": "listing"
+            },
+            "night": {
+              "range": [
+                0,
+                999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400103/40061770/",
+            "checked": "2026-10-31"
+          }
         },
         {
           "name": "키와미야 후쿠오카 파르코 점",
@@ -1120,7 +1483,25 @@
           "gSource": "https://wanderlog.com/ja/list/geoCategory/1808698",
           "gChecked": "2026-10-31",
           "gSourceType": "secondary",
-          "sourceStatus": "existing"
+          "sourceStatus": "existing",
+          "priceBudget": {
+            "day": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "listing"
+            },
+            "night": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400103/40023392/",
+            "checked": "2026-10-31"
+          }
         },
         {
           "name": "모츠나베 타슈 후쿠오카 다이묘 본점",
@@ -1142,7 +1523,18 @@
           "sourceStatus": "new",
           "ratingChecked": "2026-10-31",
           "gChecked": "2026-10-31",
-          "gSourceType": "secondary"
+          "gSourceType": "secondary",
+          "priceBudget": {
+            "night": {
+              "range": [
+                4000,
+                4999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400104/40024061/",
+            "checked": "2026-10-31"
+          }
         },
         {
           "name": "히츠마부시 와쇼쿠 빈초 나카스카와바타",
@@ -1164,7 +1556,25 @@
           "sourceStatus": "new",
           "ratingChecked": "2026-10-31",
           "gChecked": "2026-10-31",
-          "gSourceType": "secondary"
+          "gSourceType": "secondary",
+          "priceBudget": {
+            "day": {
+              "range": [
+                3000,
+                3999
+              ],
+              "basis": "listing"
+            },
+            "night": {
+              "range": [
+                5000,
+                5999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400102/40026105/",
+            "checked": "2026-10-31"
+          }
         },
         {
           "name": "신신라멘 텐진본점",
@@ -1188,7 +1598,25 @@
           "gSource": "https://wanderlog.com/ja/place/details/543368/%E5%8D%9A%E5%A4%9A%E3%82%89%E3%83%BC%E3%82%81%E3%82%93shinshin-%E5%A4%A9%E7%A5%9E%E6%9C%AC%E5%BA%97",
           "gChecked": "2026-10-31",
           "gSourceType": "secondary",
-          "sourceStatus": "new"
+          "sourceStatus": "new",
+          "priceBudget": {
+            "day": {
+              "range": [
+                0,
+                999
+              ],
+              "basis": "listing"
+            },
+            "night": {
+              "range": [
+                0,
+                999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400103/40004980/",
+            "checked": "2026-10-31"
+          }
         },
         {
           "name": "돈카츠 와카바",
@@ -1212,7 +1640,25 @@
           "gChecked": "2026-10-31",
           "gSourceType": "secondary",
           "sourceStatus": "new",
-          "note": "다른 끼니의 기존 검증 음식점을 이 식사 선택지에 새로 연결."
+          "note": "다른 끼니의 기존 검증 음식점을 이 식사 선택지에 새로 연결.",
+          "priceBudget": {
+            "day": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "listing"
+            },
+            "night": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400103/40050758/",
+            "checked": "2026-10-31"
+          }
         }
       ],
       "multi": false
@@ -1365,7 +1811,25 @@
           "gSource": "https://ste-map.com/ranking/pref_fukuoka/restaurant?page=3",
           "gChecked": "2026-10-31",
           "gSourceType": "secondary",
-          "sourceStatus": "existing"
+          "sourceStatus": "existing",
+          "priceBudget": {
+            "day": {
+              "range": [
+                0,
+                999
+              ],
+              "basis": "reviews"
+            },
+            "night": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "reviews"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4004/A400501/40004397/",
+            "checked": "2026-10-31"
+          }
         },
         {
           "name": "커리 혼포 모지코 레트로 점",
@@ -1387,7 +1851,25 @@
           "gSource": "https://wanderlog.com/ja/list/geoCategory/29410",
           "gChecked": "2026-10-31",
           "gSourceType": "secondary",
-          "sourceStatus": "existing"
+          "sourceStatus": "existing",
+          "priceBudget": {
+            "day": {
+              "range": [
+                0,
+                999
+              ],
+              "basis": "listing"
+            },
+            "night": {
+              "range": [
+                0,
+                999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4004/A400501/40006677/",
+            "checked": "2026-10-31"
+          }
         },
         {
           "name": "BEAR FRUITS 모지코 본점",
@@ -1409,7 +1891,25 @@
           "sourceStatus": "new",
           "ratingChecked": "2026-10-31",
           "gChecked": "2026-10-31",
-          "hoursSource": "https://tabelog.com/fukuoka/A4004/A400501/40003315/"
+          "hoursSource": "https://tabelog.com/fukuoka/A4004/A400501/40003315/",
+          "priceBudget": {
+            "day": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "listing"
+            },
+            "night": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4004/A400501/40003315/",
+            "checked": "2026-10-31"
+          }
         },
         {
           "name": "프린세스 피피 모지코(야키카레)",
@@ -1431,7 +1931,25 @@
           "sourceStatus": "new",
           "ratingChecked": "2026-10-31",
           "gChecked": "2026-10-31",
-          "hoursSource": "https://tabelog.com/fukuoka/A4004/A400501/40003136/"
+          "hoursSource": "https://tabelog.com/fukuoka/A4004/A400501/40003136/",
+          "priceBudget": {
+            "day": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "listing"
+            },
+            "night": {
+              "range": [
+                2000,
+                2999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4004/A400501/40003136/",
+            "checked": "2026-10-31"
+          }
         },
         {
           "name": "오사마노 타마고 모지코(王様のたまご)",
@@ -1453,7 +1971,25 @@
           "sourceStatus": "new",
           "ratingChecked": "2026-10-31",
           "gChecked": "2026-10-31",
-          "gSourceType": "secondary"
+          "gSourceType": "secondary",
+          "priceBudget": {
+            "day": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "listing"
+            },
+            "night": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4004/A400501/40025877/",
+            "checked": "2026-10-31"
+          }
         }
       ],
       "multi": false,
@@ -1613,7 +2149,25 @@
           "gSource": "https://wanderlog.com/list/geoCategory/423106",
           "gChecked": "2026-10-31",
           "gSourceType": "secondary",
-          "sourceStatus": "existing"
+          "sourceStatus": "existing",
+          "priceBudget": {
+            "day": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "listing"
+            },
+            "night": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/oita/A4402/A440201/44005241/",
+            "checked": "2026-10-31"
+          }
         },
         {
           "name": "유후 마부시 신 긴린코 본점",
@@ -1637,7 +2191,25 @@
           "gSource": "https://wanderlog.com/ja/list/geoCategory/197730",
           "gChecked": "2026-10-31",
           "gSourceType": "secondary",
-          "sourceStatus": "existing"
+          "sourceStatus": "existing",
+          "priceBudget": {
+            "day": {
+              "range": [
+                2000,
+                2999
+              ],
+              "basis": "listing"
+            },
+            "night": {
+              "range": [
+                2000,
+                2999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/oita/A4402/A440201/44008761/",
+            "checked": "2026-10-31"
+          }
         },
         {
           "name": "유후 마부시 신 유후인역 앞 지점",
@@ -1659,7 +2231,25 @@
           "sourceStatus": "new",
           "ratingChecked": "2026-10-31",
           "gChecked": "2026-10-31",
-          "gSourceType": "secondary"
+          "gSourceType": "secondary",
+          "priceBudget": {
+            "day": {
+              "range": [
+                2000,
+                2999
+              ],
+              "basis": "listing"
+            },
+            "night": {
+              "range": [
+                3000,
+                3999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/oita/A4402/A440201/44005142/",
+            "checked": "2026-10-31"
+          }
         },
         {
           "name": "레스토랑 란푸샤(洋灯舎)",
@@ -1681,7 +2271,18 @@
           "ratingChecked": "2026-10-31",
           "gChecked": "2026-10-31",
           "gSourceType": "secondary",
-          "hoursSource": "https://tabelog.com/oita/A4402/A440201/44000660/"
+          "hoursSource": "https://tabelog.com/oita/A4402/A440201/44000660/",
+          "priceBudget": {
+            "day": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "reviews"
+            },
+            "sourceUrl": "https://tabelog.com/oita/A4402/A440201/44000660/",
+            "checked": "2026-10-31"
+          }
         },
         {
           "name": "카페 라 루슈(CAFE LA RUCHE)",
@@ -1703,7 +2304,18 @@
           "sourceStatus": "new",
           "ratingChecked": "2026-10-31",
           "gChecked": "2026-10-31",
-          "gSourceType": "secondary"
+          "gSourceType": "secondary",
+          "priceBudget": {
+            "day": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/oita/A4402/A440201/44000040/",
+            "checked": "2026-10-31"
+          }
         }
       ],
       "multi": false,
@@ -1893,7 +2505,25 @@
           "gSource": "https://wanderlog.com/ja/place/details/548195/%E4%B8%80%E8%98%AD-%E3%82%AD%E3%83%A3%E3%83%8A%E3%83%AB%E3%82%B7%E3%83%86%E3%82%A3%E5%8D%9A%E5%A4%9A%E5%BA%97-%E5%92%8C%E9%A2%A8%E3%81%A8%E3%82%93%E3%81%93%E3%81%A4%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%B3",
           "gChecked": "2026-10-31",
           "gSourceType": "secondary",
-          "sourceStatus": "existing"
+          "sourceStatus": "existing",
+          "priceBudget": {
+            "day": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "listing"
+            },
+            "night": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40000254/",
+            "checked": "2026-10-31"
+          }
         },
         {
           "name": "바쿠로 하카타 점",
@@ -1915,7 +2545,25 @@
           "gSource": "https://www.taveri.jp/store/ChIJ_88FQb6RQTURqwmM_4dg7AI",
           "gChecked": "2026-10-31",
           "gSourceType": "secondary",
-          "sourceStatus": "existing"
+          "sourceStatus": "existing",
+          "priceBudget": {
+            "day": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "listing"
+            },
+            "night": {
+              "range": [
+                6000,
+                7999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://selection.tabelog.com/fukuoka/A4001/A400101/40045144/",
+            "checked": "2026-10-31"
+          }
         },
         {
           "name": "에비스야 우동",
@@ -1937,7 +2585,25 @@
           "gSource": "https://wanderlog.com/ja/list/geoCategory/474517",
           "gChecked": "2026-10-31",
           "gSourceType": "secondary",
-          "sourceStatus": "existing"
+          "sourceStatus": "existing",
+          "priceBudget": {
+            "day": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "listing"
+            },
+            "night": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40064595/",
+            "checked": "2026-10-31"
+          }
         },
         {
           "name": "키와미야 하카타 점",
@@ -1959,7 +2625,25 @@
           "gSource": "https://wanderlog.com/ja/place/details/2624480/%E6%A5%B5%E5%91%B3%E3%82%84-%E5%8D%9A%E5%A4%9A%E5%BA%97-%E3%83%8F%E3%83%B3%E3%83%90%E3%83%BC%E3%82%B0-%E3%82%B9%E3%83%86%E3%83%BC%E3%82%AD",
           "gChecked": "2026-10-31",
           "gSourceType": "secondary",
-          "sourceStatus": "existing"
+          "sourceStatus": "existing",
+          "priceBudget": {
+            "day": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "listing"
+            },
+            "night": {
+              "range": [
+                2000,
+                2999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40039167/",
+            "checked": "2026-10-31"
+          }
         },
         {
           "name": "키와미야 하카타 역 지하상가 점",
@@ -1981,7 +2665,25 @@
           "gSource": "https://restaurantguru.jp/Kiwamiya-Hamburg-Hakata-Station-Underground-Mall-Fukuoka",
           "gChecked": "2026-10-31",
           "gSourceType": "secondary",
-          "sourceStatus": "existing"
+          "sourceStatus": "existing",
+          "priceBudget": {
+            "day": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "listing"
+            },
+            "night": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40067994/",
+            "checked": "2026-10-31"
+          }
         },
         {
           "name": "하카타 잇소 하카타역 히가시 본점",
@@ -2003,7 +2705,25 @@
           "sourceStatus": "new",
           "ratingChecked": "2026-10-31",
           "gChecked": "2026-10-31",
-          "gSourceType": "secondary"
+          "gSourceType": "secondary",
+          "priceBudget": {
+            "day": {
+              "range": [
+                0,
+                999
+              ],
+              "basis": "listing"
+            },
+            "night": {
+              "range": [
+                0,
+                999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40032701/",
+            "checked": "2026-10-31"
+          }
         },
         {
           "name": "기스이마루 하카타 1번가(해산물 아침 정식)",
@@ -2025,7 +2745,25 @@
           "sourceStatus": "new",
           "ratingChecked": "2026-10-31",
           "gChecked": "2026-10-31",
-          "gSourceType": "secondary"
+          "gSourceType": "secondary",
+          "priceBudget": {
+            "day": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "listing"
+            },
+            "night": {
+              "range": [
+                2000,
+                2999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40058853/",
+            "checked": "2026-10-31"
+          }
         },
         {
           "name": "요시즈카 우나기야 본점",
@@ -2047,7 +2785,25 @@
           "ratingChecked": "2026-10-31",
           "gChecked": "2026-10-31",
           "gSourceType": "secondary",
-          "warning": "11월 8일(일) 이용 가능 여부 및 대기시간 확인. 캐널시티 구역에서 나카스 방향으로 도보 이동 필요."
+          "warning": "11월 8일(일) 이용 가능 여부 및 대기시간 확인. 캐널시티 구역에서 나카스 방향으로 도보 이동 필요.",
+          "priceBudget": {
+            "day": {
+              "range": [
+                3000,
+                3999
+              ],
+              "basis": "listing"
+            },
+            "night": {
+              "range": [
+                3000,
+                3999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400102/40000017/",
+            "checked": "2026-10-31"
+          }
         }
       ],
       "multi": false,
@@ -2119,7 +2875,25 @@
           "gSource": "https://wanderlog.com/ja/list/geoCategory/474517",
           "gChecked": "2026-10-31",
           "gSourceType": "secondary",
-          "sourceStatus": "existing"
+          "sourceStatus": "existing",
+          "priceBudget": {
+            "day": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "listing"
+            },
+            "night": {
+              "range": [
+                2000,
+                2999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40042647/",
+            "checked": "2026-10-31"
+          }
         },
         {
           "name": "하카타 라멘 신신 키테 하카타 점",
@@ -2141,7 +2915,25 @@
           "gSource": "https://wanderlog.com/ja/list/geoCategory/1508112/kyushu%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%81%AE%E6%9C%80%E9%AB%98%E3%81%AE%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%B3%E3%82%B9%E3%83%9D%E3%83%83%E3%83%88",
           "gChecked": "2026-10-31",
           "gSourceType": "secondary",
-          "sourceStatus": "existing"
+          "sourceStatus": "existing",
+          "priceBudget": {
+            "day": {
+              "range": [
+                0,
+                999
+              ],
+              "basis": "listing"
+            },
+            "night": {
+              "range": [
+                0,
+                999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40042485/",
+            "checked": "2026-10-31"
+          }
         },
         {
           "name": "하카타 잇소 하카타역 히가시 본점",
@@ -2163,7 +2955,25 @@
           "sourceStatus": "new",
           "ratingChecked": "2026-10-31",
           "gChecked": "2026-10-31",
-          "gSourceType": "secondary"
+          "gSourceType": "secondary",
+          "priceBudget": {
+            "day": {
+              "range": [
+                0,
+                999
+              ],
+              "basis": "listing"
+            },
+            "night": {
+              "range": [
+                0,
+                999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40032701/",
+            "checked": "2026-10-31"
+          }
         },
         {
           "name": "키와미야 하카타 점",
@@ -2186,7 +2996,25 @@
           "gChecked": "2026-10-31",
           "gSourceType": "secondary",
           "sourceStatus": "new",
-          "note": "다른 끼니의 기존 검증 음식점을 이 식사 선택지에 새로 연결."
+          "note": "다른 끼니의 기존 검증 음식점을 이 식사 선택지에 새로 연결.",
+          "priceBudget": {
+            "day": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "listing"
+            },
+            "night": {
+              "range": [
+                2000,
+                2999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40039167/",
+            "checked": "2026-10-31"
+          }
         },
         {
           "name": "키와미야 하카타 역 지하상가 점",
@@ -2209,7 +3037,25 @@
           "gChecked": "2026-10-31",
           "gSourceType": "secondary",
           "sourceStatus": "new",
-          "note": "다른 끼니의 기존 검증 음식점을 이 식사 선택지에 새로 연결."
+          "note": "다른 끼니의 기존 검증 음식점을 이 식사 선택지에 새로 연결.",
+          "priceBudget": {
+            "day": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "listing"
+            },
+            "night": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40067994/",
+            "checked": "2026-10-31"
+          }
         },
         {
           "name": "이치란 캐널시티 하카타 점",
@@ -2232,7 +3078,25 @@
           "gChecked": "2026-10-31",
           "gSourceType": "secondary",
           "sourceStatus": "new",
-          "note": "다른 끼니의 기존 검증 음식점을 이 식사 선택지에 새로 연결."
+          "note": "다른 끼니의 기존 검증 음식점을 이 식사 선택지에 새로 연결.",
+          "priceBudget": {
+            "day": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "listing"
+            },
+            "night": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40000254/",
+            "checked": "2026-10-31"
+          }
         }
       ],
       "multi": false
@@ -2827,7 +3691,18 @@
           "sourceStatus": "new",
           "ratingChecked": "2026-10-31",
           "gChecked": "2026-10-31",
-          "gSourceType": "secondary"
+          "gSourceType": "secondary",
+          "priceBudget": {
+            "day": {
+              "range": [
+                0,
+                999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400102/40033249/",
+            "checked": "2026-10-31"
+          }
         },
         {
           "name": "팽 스톡 텐진점(pain stock)",
@@ -2849,7 +3724,25 @@
           "ratingChecked": "2026-10-31",
           "gChecked": "2026-10-31",
           "gSourceType": "secondary",
-          "warning": "정확한 오전 개점 시각 미확인. 당일 영업 정보 확인 후 선택, 출발 전 여유시간 부족 주의."
+          "warning": "정확한 오전 개점 시각 미확인. 당일 영업 정보 확인 후 선택, 출발 전 여유시간 부족 주의.",
+          "priceBudget": {
+            "day": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "reviews"
+            },
+            "night": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "reviews"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400103/40052317/",
+            "checked": "2026-10-31"
+          }
         },
         {
           "name": "탄야 HAKATA(우설 아침 정식)",
@@ -2871,7 +3764,25 @@
           "sourceStatus": "new",
           "ratingChecked": "2026-10-31",
           "gChecked": "2026-10-31",
-          "gSourceType": "secondary"
+          "gSourceType": "secondary",
+          "priceBudget": {
+            "day": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "listing"
+            },
+            "night": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40026439/",
+            "checked": "2026-10-31"
+          }
         },
         {
           "name": "DACOMECCA(다코메카)",
@@ -2893,7 +3804,25 @@
           "sourceStatus": "new",
           "ratingChecked": "2026-10-31",
           "gChecked": "2026-10-31",
-          "gSourceType": "secondary"
+          "gSourceType": "secondary",
+          "priceBudget": {
+            "day": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "reviews"
+            },
+            "night": {
+              "range": [
+                2000,
+                2999
+              ],
+              "basis": "reviews"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40057205/",
+            "checked": "2026-10-31"
+          }
         },
         {
           "name": "기스이마루 하카타 1번가(해산물 아침 정식)",
@@ -2915,7 +3844,25 @@
           "sourceStatus": "new",
           "ratingChecked": "2026-10-31",
           "gChecked": "2026-10-31",
-          "gSourceType": "secondary"
+          "gSourceType": "secondary",
+          "priceBudget": {
+            "day": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "listing"
+            },
+            "night": {
+              "range": [
+                2000,
+                2999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40058853/",
+            "checked": "2026-10-31"
+          }
         },
         {
           "name": "이치란 본사 총본점",
@@ -2938,7 +3885,25 @@
           "gSource": "https://wanderlog.com/ja/place/details/422225/%E4%B8%80%E8%98%AD-%E6%9C%AC%E7%A4%BE%E7%B7%8F%E6%9C%AC%E5%BA%97",
           "gChecked": "2026-10-31",
           "gSourceType": "secondary",
-          "sourceStatus": "new"
+          "sourceStatus": "new",
+          "priceBudget": {
+            "day": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "listing"
+            },
+            "night": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400102/40000130/",
+            "checked": "2026-10-31"
+          }
         }
       ]
     },
@@ -2969,7 +3934,25 @@
           "sourceStatus": "new",
           "ratingChecked": "2026-10-31",
           "gChecked": "2026-10-31",
-          "gSourceType": "secondary"
+          "gSourceType": "secondary",
+          "priceBudget": {
+            "day": {
+              "range": [
+                0,
+                999
+              ],
+              "basis": "listing"
+            },
+            "night": {
+              "range": [
+                0,
+                999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40032701/",
+            "checked": "2026-10-31"
+          }
         },
         {
           "name": "모츠나베 오오야마 키테 하카타 점",
@@ -2993,7 +3976,25 @@
           "gSource": "https://wanderlog.com/ja/list/geoCategory/474517",
           "gChecked": "2026-10-31",
           "gSourceType": "secondary",
-          "sourceStatus": "new"
+          "sourceStatus": "new",
+          "priceBudget": {
+            "day": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "listing"
+            },
+            "night": {
+              "range": [
+                2000,
+                2999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40042647/",
+            "checked": "2026-10-31"
+          }
         },
         {
           "name": "하카타 라멘 신신 키테 하카타 점",
@@ -3016,7 +4017,25 @@
           "gChecked": "2026-10-31",
           "gSourceType": "secondary",
           "sourceStatus": "new",
-          "note": "다른 끼니의 기존 검증 음식점을 이 식사 선택지에 새로 연결."
+          "note": "다른 끼니의 기존 검증 음식점을 이 식사 선택지에 새로 연결.",
+          "priceBudget": {
+            "day": {
+              "range": [
+                0,
+                999
+              ],
+              "basis": "listing"
+            },
+            "night": {
+              "range": [
+                0,
+                999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40042485/",
+            "checked": "2026-10-31"
+          }
         },
         {
           "name": "키와미야 하카타 점",
@@ -3039,7 +4058,25 @@
           "gChecked": "2026-10-31",
           "gSourceType": "secondary",
           "sourceStatus": "new",
-          "note": "다른 끼니의 기존 검증 음식점을 이 식사 선택지에 새로 연결."
+          "note": "다른 끼니의 기존 검증 음식점을 이 식사 선택지에 새로 연결.",
+          "priceBudget": {
+            "day": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "listing"
+            },
+            "night": {
+              "range": [
+                2000,
+                2999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40039167/",
+            "checked": "2026-10-31"
+          }
         },
         {
           "name": "키와미야 하카타 역 지하상가 점",
@@ -3062,7 +4099,25 @@
           "gChecked": "2026-10-31",
           "gSourceType": "secondary",
           "sourceStatus": "new",
-          "note": "다른 끼니의 기존 검증 음식점을 이 식사 선택지에 새로 연결."
+          "note": "다른 끼니의 기존 검증 음식점을 이 식사 선택지에 새로 연결.",
+          "priceBudget": {
+            "day": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "listing"
+            },
+            "night": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40067994/",
+            "checked": "2026-10-31"
+          }
         },
         {
           "name": "이치란 본사 총본점",
@@ -3085,7 +4140,25 @@
           "gSource": "https://wanderlog.com/ja/place/details/422225/%E4%B8%80%E8%98%AD-%E6%9C%AC%E7%A4%BE%E7%B7%8F%E6%9C%AC%E5%BA%97",
           "gChecked": "2026-10-31",
           "gSourceType": "secondary",
-          "sourceStatus": "new"
+          "sourceStatus": "new",
+          "priceBudget": {
+            "day": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "listing"
+            },
+            "night": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400102/40000130/",
+            "checked": "2026-10-31"
+          }
         }
       ]
     },
@@ -3117,7 +4190,25 @@
           "ratingChecked": "2026-10-31",
           "gChecked": "2026-10-31",
           "gSourceType": "secondary",
-          "warning": "07:00 개점. 07:45 투어 집합 전에 식사·환승·도보가 가능할 때만 선택."
+          "warning": "07:00 개점. 07:45 투어 집합 전에 식사·환승·도보가 가능할 때만 선택.",
+          "priceBudget": {
+            "day": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "listing"
+            },
+            "night": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40026439/",
+            "checked": "2026-10-31"
+          }
         },
         {
           "name": "DACOMECCA(다코메카)",
@@ -3140,7 +4231,25 @@
           "ratingChecked": "2026-10-31",
           "gChecked": "2026-10-31",
           "gSourceType": "secondary",
-          "warning": "07:00 개점. 07:45 투어 집합 전에 식사·환승·도보가 가능할 때만 선택."
+          "warning": "07:00 개점. 07:45 투어 집합 전에 식사·환승·도보가 가능할 때만 선택.",
+          "priceBudget": {
+            "day": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "reviews"
+            },
+            "night": {
+              "range": [
+                2000,
+                2999
+              ],
+              "basis": "reviews"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40057205/",
+            "checked": "2026-10-31"
+          }
         },
         {
           "name": "이치란 본사 총본점",
@@ -3163,7 +4272,25 @@
           "gSource": "https://wanderlog.com/ja/place/details/422225/%E4%B8%80%E8%98%AD-%E6%9C%AC%E7%A4%BE%E7%B7%8F%E6%9C%AC%E5%BA%97",
           "gChecked": "2026-10-31",
           "gSourceType": "secondary",
-          "sourceStatus": "new"
+          "sourceStatus": "new",
+          "priceBudget": {
+            "day": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "listing"
+            },
+            "night": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400102/40000130/",
+            "checked": "2026-10-31"
+          }
         }
       ]
     },
@@ -3194,7 +4321,25 @@
           "sourceStatus": "new",
           "ratingChecked": "2026-10-31",
           "gChecked": "2026-10-31",
-          "gSourceType": "secondary"
+          "gSourceType": "secondary",
+          "priceBudget": {
+            "day": {
+              "range": [
+                0,
+                999
+              ],
+              "basis": "listing"
+            },
+            "night": {
+              "range": [
+                0,
+                999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40032701/",
+            "checked": "2026-10-31"
+          }
         },
         {
           "name": "기스이마루 하카타 1번가(해산물 아침 정식)",
@@ -3216,7 +4361,25 @@
           "sourceStatus": "new",
           "ratingChecked": "2026-10-31",
           "gChecked": "2026-10-31",
-          "gSourceType": "secondary"
+          "gSourceType": "secondary",
+          "priceBudget": {
+            "day": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "listing"
+            },
+            "night": {
+              "range": [
+                2000,
+                2999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40058853/",
+            "checked": "2026-10-31"
+          }
         },
         {
           "name": "모츠나베 오오야마 키테 하카타 점",
@@ -3240,7 +4403,25 @@
           "gSource": "https://wanderlog.com/ja/list/geoCategory/474517",
           "gChecked": "2026-10-31",
           "gSourceType": "secondary",
-          "sourceStatus": "new"
+          "sourceStatus": "new",
+          "priceBudget": {
+            "day": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "listing"
+            },
+            "night": {
+              "range": [
+                2000,
+                2999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40042647/",
+            "checked": "2026-10-31"
+          }
         },
         {
           "name": "하카타 라멘 신신 키테 하카타 점",
@@ -3263,7 +4444,25 @@
           "gChecked": "2026-10-31",
           "gSourceType": "secondary",
           "sourceStatus": "new",
-          "note": "다른 끼니의 기존 검증 음식점을 이 식사 선택지에 새로 연결."
+          "note": "다른 끼니의 기존 검증 음식점을 이 식사 선택지에 새로 연결.",
+          "priceBudget": {
+            "day": {
+              "range": [
+                0,
+                999
+              ],
+              "basis": "listing"
+            },
+            "night": {
+              "range": [
+                0,
+                999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40042485/",
+            "checked": "2026-10-31"
+          }
         },
         {
           "name": "키와미야 하카타 점",
@@ -3286,7 +4485,25 @@
           "gChecked": "2026-10-31",
           "gSourceType": "secondary",
           "sourceStatus": "new",
-          "note": "다른 끼니의 기존 검증 음식점을 이 식사 선택지에 새로 연결."
+          "note": "다른 끼니의 기존 검증 음식점을 이 식사 선택지에 새로 연결.",
+          "priceBudget": {
+            "day": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "listing"
+            },
+            "night": {
+              "range": [
+                2000,
+                2999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40039167/",
+            "checked": "2026-10-31"
+          }
         },
         {
           "name": "키와미야 하카타 역 지하상가 점",
@@ -3309,7 +4526,25 @@
           "gChecked": "2026-10-31",
           "gSourceType": "secondary",
           "sourceStatus": "new",
-          "note": "다른 끼니의 기존 검증 음식점을 이 식사 선택지에 새로 연결."
+          "note": "다른 끼니의 기존 검증 음식점을 이 식사 선택지에 새로 연결.",
+          "priceBudget": {
+            "day": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "listing"
+            },
+            "night": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40067994/",
+            "checked": "2026-10-31"
+          }
         }
       ]
     },
@@ -3339,7 +4574,18 @@
           "sourceStatus": "new",
           "ratingChecked": "2026-10-31",
           "gChecked": "2026-10-31",
-          "gSourceType": "secondary"
+          "gSourceType": "secondary",
+          "priceBudget": {
+            "day": {
+              "range": [
+                0,
+                999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400102/40033249/",
+            "checked": "2026-10-31"
+          }
         },
         {
           "name": "팽 스톡 텐진점(pain stock)",
@@ -3361,7 +4607,25 @@
           "ratingChecked": "2026-10-31",
           "gChecked": "2026-10-31",
           "gSourceType": "secondary",
-          "warning": "정확한 오전 개점 시각 미확인. 당일 영업 정보 확인 후 선택, 출발 전 여유시간 부족 주의."
+          "warning": "정확한 오전 개점 시각 미확인. 당일 영업 정보 확인 후 선택, 출발 전 여유시간 부족 주의.",
+          "priceBudget": {
+            "day": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "reviews"
+            },
+            "night": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "reviews"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400103/40052317/",
+            "checked": "2026-10-31"
+          }
         },
         {
           "name": "블루보틀커피 후쿠오카 텐진",
@@ -3382,7 +4646,25 @@
           "sourceStatus": "new",
           "ratingChecked": "2026-10-31",
           "gChecked": "2026-10-31",
-          "gSourceType": "secondary"
+          "gSourceType": "secondary",
+          "priceBudget": {
+            "day": {
+              "range": [
+                0,
+                999
+              ],
+              "basis": "listing"
+            },
+            "night": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400103/40066618/",
+            "checked": "2026-10-31"
+          }
         },
         {
           "name": "NOOICE 텐진",
@@ -3404,7 +4686,25 @@
           "sourceStatus": "new",
           "ratingChecked": "2026-10-31",
           "gChecked": "2026-10-31",
-          "gSourceType": "secondary"
+          "gSourceType": "secondary",
+          "priceBudget": {
+            "day": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "listing"
+            },
+            "night": {
+              "range": [
+                3000,
+                3999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/kr/fukuoka/A4001/A400104/40053685/",
+            "checked": "2026-10-31"
+          }
         },
         {
           "name": "이치란 본사 총본점",
@@ -3427,7 +4727,25 @@
           "gSource": "https://wanderlog.com/ja/place/details/422225/%E4%B8%80%E8%98%AD-%E6%9C%AC%E7%A4%BE%E7%B7%8F%E6%9C%AC%E5%BA%97",
           "gChecked": "2026-10-31",
           "gSourceType": "secondary",
-          "sourceStatus": "new"
+          "sourceStatus": "new",
+          "priceBudget": {
+            "day": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "listing"
+            },
+            "night": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400102/40000130/",
+            "checked": "2026-10-31"
+          }
         }
       ]
     },
@@ -3458,7 +4776,25 @@
           "sourceStatus": "new",
           "ratingChecked": "2026-10-31",
           "gChecked": "2026-10-31",
-          "gSourceType": "secondary"
+          "gSourceType": "secondary",
+          "priceBudget": {
+            "day": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "listing"
+            },
+            "night": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40026439/",
+            "checked": "2026-10-31"
+          }
         },
         {
           "name": "DACOMECCA(다코메카)",
@@ -3480,7 +4816,25 @@
           "sourceStatus": "new",
           "ratingChecked": "2026-10-31",
           "gChecked": "2026-10-31",
-          "gSourceType": "secondary"
+          "gSourceType": "secondary",
+          "priceBudget": {
+            "day": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "reviews"
+            },
+            "night": {
+              "range": [
+                2000,
+                2999
+              ],
+              "basis": "reviews"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40057205/",
+            "checked": "2026-10-31"
+          }
         },
         {
           "name": "기스이마루 하카타 1번가(해산물 아침 정식)",
@@ -3503,7 +4857,25 @@
           "ratingChecked": "2026-10-31",
           "gChecked": "2026-10-31",
           "gSourceType": "secondary",
-          "warning": "07:30 개점. 히타행 07:46 버스에 맞추기는 어려움."
+          "warning": "07:30 개점. 히타행 07:46 버스에 맞추기는 어려움.",
+          "priceBudget": {
+            "day": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "listing"
+            },
+            "night": {
+              "range": [
+                2000,
+                2999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40058853/",
+            "checked": "2026-10-31"
+          }
         }
       ]
     },
@@ -3533,7 +4905,18 @@
           "sourceStatus": "existing",
           "ratingChecked": "2026-10-31",
           "gChecked": "2026-10-31",
-          "gSourceType": "secondary"
+          "gSourceType": "secondary",
+          "priceBudget": {
+            "day": {
+              "range": [
+                3000,
+                3999
+              ],
+              "basis": "reviews"
+            },
+            "sourceUrl": "https://tabelog.com/oita/A4404/A440403/44000261/",
+            "checked": "2026-10-31"
+          }
         },
         {
           "name": "산큐(三久) 히타 야키소바",
@@ -3555,7 +4938,25 @@
           "sourceStatus": "new",
           "ratingChecked": "2026-10-31",
           "gChecked": "2026-10-31",
-          "gSourceType": "secondary"
+          "gSourceType": "secondary",
+          "priceBudget": {
+            "day": {
+              "range": [
+                0,
+                999
+              ],
+              "basis": "listing"
+            },
+            "night": {
+              "range": [
+                0,
+                999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/oita/A4404/A440403/44001476/",
+            "checked": "2026-10-31"
+          }
         },
         {
           "name": "소후렌 본점(想夫恋 本店)",
@@ -3576,7 +4977,25 @@
           "sourceStatus": "new",
           "ratingChecked": "2026-10-31",
           "gChecked": "2026-10-31",
-          "gSourceType": "secondary"
+          "gSourceType": "secondary",
+          "priceBudget": {
+            "day": {
+              "range": [
+                0,
+                999
+              ],
+              "basis": "listing"
+            },
+            "night": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/oita/A4404/A440403/44000268/",
+            "checked": "2026-10-31"
+          }
         }
       ]
     },
@@ -3607,7 +5026,25 @@
           "sourceStatus": "new",
           "ratingChecked": "2026-10-31",
           "gChecked": "2026-10-31",
-          "gSourceType": "secondary"
+          "gSourceType": "secondary",
+          "priceBudget": {
+            "day": {
+              "range": [
+                0,
+                999
+              ],
+              "basis": "listing"
+            },
+            "night": {
+              "range": [
+                0,
+                999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40032701/",
+            "checked": "2026-10-31"
+          }
         },
         {
           "name": "모츠나베 오오야마 키테 하카타 점",
@@ -3631,7 +5068,25 @@
           "gSource": "https://wanderlog.com/ja/list/geoCategory/474517",
           "gChecked": "2026-10-31",
           "gSourceType": "secondary",
-          "sourceStatus": "new"
+          "sourceStatus": "new",
+          "priceBudget": {
+            "day": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "listing"
+            },
+            "night": {
+              "range": [
+                2000,
+                2999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40042647/",
+            "checked": "2026-10-31"
+          }
         },
         {
           "name": "하카타 라멘 신신 키테 하카타 점",
@@ -3654,7 +5109,25 @@
           "gChecked": "2026-10-31",
           "gSourceType": "secondary",
           "sourceStatus": "new",
-          "note": "다른 끼니의 기존 검증 음식점을 이 식사 선택지에 새로 연결."
+          "note": "다른 끼니의 기존 검증 음식점을 이 식사 선택지에 새로 연결.",
+          "priceBudget": {
+            "day": {
+              "range": [
+                0,
+                999
+              ],
+              "basis": "listing"
+            },
+            "night": {
+              "range": [
+                0,
+                999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40042485/",
+            "checked": "2026-10-31"
+          }
         },
         {
           "name": "키와미야 하카타 점",
@@ -3677,7 +5150,25 @@
           "gChecked": "2026-10-31",
           "gSourceType": "secondary",
           "sourceStatus": "new",
-          "note": "다른 끼니의 기존 검증 음식점을 이 식사 선택지에 새로 연결."
+          "note": "다른 끼니의 기존 검증 음식점을 이 식사 선택지에 새로 연결.",
+          "priceBudget": {
+            "day": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "listing"
+            },
+            "night": {
+              "range": [
+                2000,
+                2999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40039167/",
+            "checked": "2026-10-31"
+          }
         },
         {
           "name": "키와미야 하카타 역 지하상가 점",
@@ -3700,7 +5191,25 @@
           "gChecked": "2026-10-31",
           "gSourceType": "secondary",
           "sourceStatus": "new",
-          "note": "다른 끼니의 기존 검증 음식점을 이 식사 선택지에 새로 연결."
+          "note": "다른 끼니의 기존 검증 음식점을 이 식사 선택지에 새로 연결.",
+          "priceBudget": {
+            "day": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "listing"
+            },
+            "night": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40067994/",
+            "checked": "2026-10-31"
+          }
         },
         {
           "name": "이치란 본사 총본점",
@@ -3723,7 +5232,25 @@
           "gSource": "https://wanderlog.com/ja/place/details/422225/%E4%B8%80%E8%98%AD-%E6%9C%AC%E7%A4%BE%E7%B7%8F%E6%9C%AC%E5%BA%97",
           "gChecked": "2026-10-31",
           "gSourceType": "secondary",
-          "sourceStatus": "new"
+          "sourceStatus": "new",
+          "priceBudget": {
+            "day": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "listing"
+            },
+            "night": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400102/40000130/",
+            "checked": "2026-10-31"
+          }
         }
       ]
     },
@@ -3754,7 +5281,25 @@
           "sourceStatus": "new",
           "ratingChecked": "2026-10-31",
           "gChecked": "2026-10-31",
-          "gSourceType": "secondary"
+          "gSourceType": "secondary",
+          "priceBudget": {
+            "day": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "listing"
+            },
+            "night": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40026439/",
+            "checked": "2026-10-31"
+          }
         },
         {
           "name": "DACOMECCA(다코메카)",
@@ -3776,7 +5321,25 @@
           "sourceStatus": "new",
           "ratingChecked": "2026-10-31",
           "gChecked": "2026-10-31",
-          "gSourceType": "secondary"
+          "gSourceType": "secondary",
+          "priceBudget": {
+            "day": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "reviews"
+            },
+            "night": {
+              "range": [
+                2000,
+                2999
+              ],
+              "basis": "reviews"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40057205/",
+            "checked": "2026-10-31"
+          }
         },
         {
           "name": "기스이마루 하카타 1번가(해산물 아침 정식)",
@@ -3798,7 +5361,25 @@
           "sourceStatus": "new",
           "ratingChecked": "2026-10-31",
           "gChecked": "2026-10-31",
-          "gSourceType": "secondary"
+          "gSourceType": "secondary",
+          "priceBudget": {
+            "day": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "listing"
+            },
+            "night": {
+              "range": [
+                2000,
+                2999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40058853/",
+            "checked": "2026-10-31"
+          }
         }
       ]
     }
