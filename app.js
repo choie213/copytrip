@@ -274,7 +274,12 @@
       '&waypoint_place_ids=' + via.map(function (v) { return v.pid; }).join('|');
     return u;
   }
-  function placeEmbed(pid) { return EMBED + 'place?key=' + window.MAPS_KEY + '&language=' + LANG + '&zoom=16&q=place_id:' + pid; }
+  // place_id가 아직 없는 여행 텍스트 가져오기 장소도 검색어로 지도 미리보기 지원.
+  function placeEmbed(pid, query) {
+    var q = pid ? 'place_id:' + pid : (query || '');
+    return q ? EMBED + 'place?key=' + encodeURIComponent(window.MAPS_KEY) + '&language=' + LANG +
+      '&zoom=16&q=' + encodeURIComponent(q) : null;
+  }
   function dirEmbed(from, to, mode, via) {
     var u = EMBED + 'directions?key=' + window.MAPS_KEY + '&language=' + LANG + '&origin=place_id:' + from + '&destination=place_id:' + to + '&mode=' + mode;
     if (via) u += '&waypoints=' + via.map(function (v) { return 'place_id:' + v.pid; }).join('|');
@@ -389,9 +394,11 @@
     var b = el('div', null, [t, pills(s)]);
     var hours = openingText(s); if (hours) b.appendChild(hours);
     if (s.note) b.appendChild(lines('note', s.note));
+    if (s.address && !s.tip) b.appendChild(el('div', { class: 'place-address-inline', text: s.address }));
     if (s.tip) b.appendChild(lines('tip', s.tip));
+    if (s.warning) b.appendChild(el('div', { class: 'choice-warning general-warning', text: s.warning }));
     var r = reviews(s); if (r) b.appendChild(r);
-    var a = s.pid || s.q || s.url || s.hoursSource || s.costSource ? acts(s.name, (s.pid || s.q) && placeLink(s), s.pid && placeEmbed(s.pid), s.url, sourceLink(s), s.costSource) : null;
+    var a = s.pid || s.q || s.url || s.hoursSource || s.costSource ? acts(s.name, (s.pid || s.q) && placeLink(s), (s.pid || s.q) && placeEmbed(s.pid, s.q), s.url, sourceLink(s), s.costSource) : null;
     if (a) b.appendChild(a);
     return b;
   }
@@ -440,9 +447,15 @@
       var more = el('button', { class: 'opt-more', type: 'button', 'aria-label': T('자세히 보기'), html: ICON.chev });
       var inner = el('div', null, [pills(o)]);
       var ratingNote = choiceRatingNote(o); if (ratingNote) inner.appendChild(ratingNote);
+    if (o.ratingChecked) inner.appendChild(el('div', { class: 'rating-snapshot',
+      text: (LANG === 'ja' ? '口コミ点数の確認日 ' : LANG === 'en' ? 'Rating checked ' : '평점 확인일 ') + o.ratingChecked }));
       var detail = choiceDetails(o); if (detail) inner.appendChild(detail);
       var r = reviews(o); if (r) inner.appendChild(r);
-      var a = o.pid || o.q || o.hoursSource || o.costSource ? acts(o.name, (o.pid || o.q) && placeLink(o), o.pid && placeEmbed(o.pid), null, sourceLink(o), o.costSource) : null; if (a) inner.appendChild(a);
+      var a = o.pid || o.q || o.hoursSource || o.costSource ? acts(o.name, (o.pid || o.q) && placeLink(o), (o.pid || o.q) && placeEmbed(o.pid, o.q), null, sourceLink(o), o.costSource) : null; if (a) inner.appendChild(a);
+      if (o.tbUrl && /^https:\/\//.test(o.tbUrl)) {
+        inner.appendChild(el('a', { class: 'review-source', href: o.tbUrl, target: '_blank', rel: 'noopener',
+          text: LANG === 'ja' ? '食べログ口コミを見る ›' : LANG === 'en' ? 'Read Tabelog reviews ›' : '타베로그 실제 후기 보기 ›' }));
+      }
       // 원작자의 식사 카드처럼 처음 두 후보의 상세정보를 바로 노출.
       // 나머지는 접어두되 개별 펼침 버튼으로 모두 확인할 수 있음.
       var showFirst = !chosen.length && !c.multi && oi < 2 && ['아침', '점심', '저녁', '식사', '술집'].indexOf(c.title) !== -1;
