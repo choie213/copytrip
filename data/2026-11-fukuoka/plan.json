@@ -431,7 +431,8 @@
           "hours": "월~토 10:30~14:30 / 17:00~20:45, 일 10:30~14:30 / 17:00~19:45",
           "detailNote": "저온 조리로 음식 제공까지 오래 걸릴 수 있음.",
           "ratingChecked": "2026-10-31",
-          "hoursChecked": "2026-10-31"
+          "hoursChecked": "2026-10-31",
+          "hoursSource": "https://tabelog.com/fukuoka/A4001/A400103/40050758/"
         }
       ],
       "multi": false,
