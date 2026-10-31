@@ -98,10 +98,15 @@
   ].join('\n'));
 
   var MOTION_KEY = 'trip-motion';
-  var PICK_KEY = 'trip-pick-v2';
+  var LEGACY_PICK_KEY = 'trip-pick-v2';
   var EMBED = 'https://www.google.com/maps/embed/v1/';
   // 여행 폴더 이름이 슬러그이고, 그 여행의 일정, 번역, 날씨는 data/<슬러그>/ 에 있음
   var SLUG = new URL('./', location.href).pathname.split('/').filter(Boolean).pop();
+  // Stable per-trip selection values; leave trip-pick-v2 untouched.
+  var PICK_KEY = 'trip-pick-v3:' + SLUG;
+  var WEATHER_CACHE_KEY = 'trip-weather-latest:' + SLUG;
+  var LIVE_WEATHER_URL = 'https://raw.githubusercontent.com/choie213/copytrip/weather-data/data/' +
+    encodeURIComponent(SLUG) + '/weather.json';
   var DATA = '../data/' + SLUG + '/';
   // 같은 사이트의 날씨 파일을 읽음 (비공개 저장소에서도 동작)
   var WEATHER_URL = DATA + 'weather.json';
@@ -122,7 +127,7 @@
   }
   var I18N = null, rawPlan = null;
   // 장소 ID, 검색어처럼 지도에 넘기는 값은 번역하지 않음
-  var KEEP = { pid: 1, q: 1, home: 1, from: 1, to: 1, timezone: 1, url: 1, address: 1, hours: 1, hoursSource: 1, hoursChecked: 1 };
+  var KEEP = { id: 1, pid: 1, q: 1, home: 1, from: 1, to: 1, timezone: 1, url: 1, address: 1, hours: 1, hoursSource: 1, hoursChecked: 1 };
   function localize(o, k) {
     if (typeof o === 'string') return KEEP[k] || LANG === 'ko' || !I18N || !I18N[LANG] ? o : (I18N[LANG][o] || o);
     if (Array.isArray(o)) return o.map(function (x) { return localize(x, k); });
@@ -210,6 +215,38 @@
   function itemsOf(ids) { return ids.map(function (i) { return plan.items[i]; }); }
   function idOf(s) { return s.pid || s.title || s.name; }
 
+  // One-time best-effort migration: original index-based v2 data is NOT removed.
+  // Existing v3 picks (including explicit empty selections) are never overwritten.
+  function migrateLegacyPicks() {
+    var legacy = load(LEGACY_PICK_KEY);
+    if (!legacy || typeof legacy !== 'object') return;
+    var state = load(PICK_KEY) || {};
+    var changed = false;
+    plan.days.forEach(function (day) {
+      Object.keys(day.plans).forEach(function (planName) {
+        ['sun', 'rain'].forEach(function (variant) {
+          (day.plans[planName][variant] || []).forEach(function (id) {
+            var s = plan.items[id];
+            if (!s || s.type !== 'choice' || !Array.isArray(s.options)) return;
+            var key = day.date + ':' + planName + ':' + (s._k || s.title || s.name);
+            if (Object.prototype.hasOwnProperty.call(state, key) || !Array.isArray(legacy[key])) return;
+            var ids = legacy[key].map(function (ix) {
+              return Number.isInteger(ix) && s.options[ix] ? s.options[ix].id : null;
+            }).filter(Boolean);
+            ids = ids.filter(function (id, i) { return ids.indexOf(id) === i; });
+            state[key] = s.multi ? ids : ids.slice(0, 1);
+            changed = true;
+          });
+        });
+      });
+    });
+    if (changed) save(PICK_KEY, state);
+  }
+  function selectedFor(s, key) {
+    var ids = (load(PICK_KEY) || {})[key];
+    return Array.isArray(ids) ? ids : [];
+  }
+
   // 그날 실제로 보여줄 일정. 비 오는 날은 일정 전체가 비 버전으로 바뀌고, 빠진 장소를 따로 모아 안내에 씀
   function view(day) {
     var key = planKey(day), pl = day.plans[key], rainy = isRainy(day);
@@ -235,8 +272,8 @@
       if (s.type === 'choice' && s.options) {
         var code = date + ':' + key + ':' + (s._k || s.title || s.name);
         var chosen = saved[code] || [];
-        chosen.forEach(function (i) {
-          var option = s.options[i];
+        chosen.forEach(function (id) {
+          var option = s.options.find(function (o) { return o.id === id; });
           if (option && typeof option.cost === 'number') sum += option.cost;
         });
       }
@@ -498,12 +535,12 @@
     return wrap;
   }
   function choiceCard(c, key) {
-    var chosen = (load(PICK_KEY) || {})[key] || [];
+    var chosen = selectedFor(c, key);
     var card = el('div', { class: 'card' }, [head(c), el('div', { class: 'choice-tag' }, [c.title, el('span', { class: 'choice-hint', text: T(c.multi ? '여러 곳 체크 가능' : '하나 고르기') })])]);
     if (c.note) card.appendChild(lines('note', c.note));
     var box = el('div', { class: 'opts' + (c.multi ? ' multi' : '') + (chosen.length ? ' picked' : '') });
     c.options.forEach(function (o, oi) {
-      var on = chosen.indexOf(oi) !== -1;
+      var on = chosen.indexOf(o.id) !== -1;
       var pick = el('button', { class: 'opt-pick', type: 'button', 'aria-pressed': on ? 'true' : 'false', html: CHECK });
       var info = el('span', { class: 'opt-info' });
       var nameRow = el('span', { class: 'opt-name' }, [el('span', { class: 'title', text: o.name })]);
@@ -562,17 +599,18 @@
       pick.addEventListener('click', function () {
         var st = load(PICK_KEY) || {};
         var cur = st[key] || [];
-        var at = cur.indexOf(oi);
-        if (c.multi) { if (at === -1) cur.push(oi); else cur.splice(at, 1); } else { cur = at === -1 ? [oi] : []; }
+        var at = cur.indexOf(o.id);
+        if (c.multi) { if (at === -1) cur.push(o.id); else cur.splice(at, 1); } else { cur = at === -1 ? [o.id] : []; }
         st[key] = cur; save(PICK_KEY, st);
         Array.prototype.forEach.call(box.children, function (n, j) {
-          var on2 = cur.indexOf(j) !== -1;
+          var on2 = cur.indexOf(c.options[j].id) !== -1;
           n.classList.toggle('on', on2);
           n.classList.toggle('peek', on2);
           n.querySelector('.opt-pick').setAttribute('aria-pressed', on2 ? 'true' : 'false');
         });
         box.classList.toggle('picked', cur.length > 0);
         refreshDayCost();
+        refreshSelectedRoutes();
       });
       box.appendChild(opt);
     });
@@ -1217,6 +1255,7 @@
 
   function init(p) {
     plan = p;
+    migrateLegacyPicks();
     renderTrip();
     renderFlights();
     var tabs = document.getElementById('tabs');
