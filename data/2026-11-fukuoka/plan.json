@@ -412,7 +412,14 @@
             1371
           ],
           "tbUrl": "https://tabelog.com/fukuoka/A4001/A400102/40000130/",
-          "ratingChecked": "2026-10-31"
+          "ratingChecked": "2026-10-31",
+          "g": [
+            4.2,
+            13337
+          ],
+          "gSource": "https://wanderlog.com/ja/place/details/422225/%E4%B8%80%E8%98%AD-%E6%9C%AC%E7%A4%BE%E7%B7%8F%E6%9C%AC%E5%BA%97",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary"
         },
         {
           "name": "돈테키 부타야 쇼쿠도",
@@ -432,7 +439,14 @@
           "detailNote": "저온 조리로 음식 제공까지 오래 걸릴 수 있음.",
           "ratingChecked": "2026-10-31",
           "hoursChecked": "2026-10-31",
-          "hoursSource": "https://tabelog.com/fukuoka/A4001/A400103/40050758/"
+          "hoursSource": "https://tabelog.com/fukuoka/A4001/A400103/40050758/",
+          "g": [
+            4.3,
+            1224
+          ],
+          "gSource": "https://ste-map.com/ranking/pref_fukuoka/city_401307/restaurant/tonkatsu",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary"
         }
       ],
       "multi": false,
@@ -505,7 +519,14 @@
           "hoursSource": "https://tabelog.com/fukuoka/A4001/A400103/40004346/",
           "warning": "오전 9시 아침 일정과 충돌: 10시 개점.",
           "ratingChecked": "2026-10-31",
-          "hoursChecked": "2026-10-31"
+          "hoursChecked": "2026-10-31",
+          "g": [
+            4.2,
+            386
+          ],
+          "gSource": "https://tanotim.com/place/30492/",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary"
         },
         {
           "name": "신신라멘 텐진본점",
@@ -521,7 +542,14 @@
           "hoursSource": "https://tabelog.com/fukuoka/A4001/A400103/40004980/",
           "warning": "오전 9시 아침 일정과 충돌: 11시 개점.",
           "ratingChecked": "2026-10-31",
-          "hoursChecked": "2026-10-31"
+          "hoursChecked": "2026-10-31",
+          "g": [
+            4.3,
+            7915
+          ],
+          "gSource": "https://wanderlog.com/ja/place/details/543368/%E5%8D%9A%E5%A4%9A%E3%82%89%E3%83%BC%E3%82%81%E3%82%93shinshin-%E5%A4%A9%E7%A5%9E%E6%9C%AC%E5%BA%97",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary"
         }
       ],
       "multi": false,
@@ -600,7 +628,14 @@
           "hours": "11:00~24:00 (변동 가능)",
           "hoursSource": "https://tabelog.com/fukuoka/A4001/A400103/40061770/",
           "ratingChecked": "2026-10-31",
-          "hoursChecked": "2026-10-31"
+          "hoursChecked": "2026-10-31",
+          "g": [
+            4.4,
+            1403
+          ],
+          "gSource": "https://chikaku-ranking.com/area.php?area=%E4%B8%AD%E5%A4%AE%E5%8C%BA&genre=ramen",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary"
         },
         {
           "name": "규카츠 모토무라 후쿠오카 텐진 니시도리 점",
@@ -614,7 +649,14 @@
             66
           ],
           "tbUrl": "https://tabelog.com/fukuoka/A4001/A400103/40045609/",
-          "ratingChecked": "2026-10-31"
+          "ratingChecked": "2026-10-31",
+          "g": [
+            4.8,
+            13537
+          ],
+          "gSource": "https://wanderlog.com/ja/list/geoCategory/432290",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary"
         }
       ],
       "multi": false,
@@ -668,7 +710,14 @@
             66
           ],
           "tbUrl": "https://tabelog.com/fukuoka/A4001/A400103/40045609/",
-          "ratingChecked": "2026-10-31"
+          "ratingChecked": "2026-10-31",
+          "g": [
+            4.8,
+            13537
+          ],
+          "gSource": "https://wanderlog.com/ja/list/geoCategory/432290",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary"
         },
         {
           "name": "멘야가가 텐진점",
@@ -683,7 +732,14 @@
           "hours": "11:00~24:00 (변동 가능)",
           "hoursSource": "https://tabelog.com/fukuoka/A4001/A400103/40061770/",
           "ratingChecked": "2026-10-31",
-          "hoursChecked": "2026-10-31"
+          "hoursChecked": "2026-10-31",
+          "g": [
+            4.4,
+            1403
+          ],
+          "gSource": "https://chikaku-ranking.com/area.php?area=%E4%B8%AD%E5%A4%AE%E5%8C%BA&genre=ramen",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary"
         },
         {
           "name": "키와미야 후쿠오카 파르코 점",
@@ -697,7 +753,14 @@
           "hours": "11:00~22:00 (접수 종료 대략 20:30, 대기 상황에 따라 변동)",
           "hoursSource": "https://tabelog.com/fukuoka/A4001/A400103/40023392/",
           "ratingChecked": "2026-10-31",
-          "hoursChecked": "2026-10-31"
+          "hoursChecked": "2026-10-31",
+          "g": [
+            4.3,
+            3337
+          ],
+          "gSource": "https://wanderlog.com/ja/list/geoCategory/1808698",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary"
         }
       ],
       "multi": false
@@ -842,7 +905,14 @@
           "hoursSource": "https://tabelog.com/fukuoka/A4004/A400501/40004397/",
           "warning": "11월 6일(금) 정기휴무. 방문 후보에서 제외하는 편이 안전.",
           "ratingChecked": "2026-10-31",
-          "hoursChecked": "2026-10-31"
+          "hoursChecked": "2026-10-31",
+          "g": [
+            4.7,
+            749
+          ],
+          "gSource": "https://ste-map.com/ranking/pref_fukuoka/restaurant?page=3",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary"
         },
         {
           "name": "커리 혼포 모지코 레트로 점",
@@ -856,7 +926,14 @@
           "hours": "11:00~19:30 (부정기 휴무)",
           "hoursSource": "https://tabelog.com/fukuoka/A4004/A400501/40006677/",
           "ratingChecked": "2026-10-31",
-          "hoursChecked": "2026-10-31"
+          "hoursChecked": "2026-10-31",
+          "g": [
+            4.4,
+            1988
+          ],
+          "gSource": "https://wanderlog.com/ja/list/geoCategory/29410",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary"
         }
       ],
       "multi": false,
@@ -1005,7 +1082,14 @@
           "hours": "11:30~15:00 / 17:30~20:00 (화요일 휴무, 면 소진 시 마감)",
           "hoursSource": "https://tabelog.com/oita/A4402/A440201/44005241/",
           "ratingChecked": "2026-10-31",
-          "hoursChecked": "2026-10-31"
+          "hoursChecked": "2026-10-31",
+          "g": [
+            4.2,
+            261
+          ],
+          "gSource": "https://wanderlog.com/list/geoCategory/423106",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary"
         },
         {
           "name": "유후 마부시 신 긴린코 본점",
@@ -1021,7 +1105,14 @@
           "hoursSource": "https://tabelog.com/oita/A4402/A440201/44008761/",
           "detailNote": "긴린코 인근, 점심시간 대기 가능.",
           "ratingChecked": "2026-10-31",
-          "hoursChecked": "2026-10-31"
+          "hoursChecked": "2026-10-31",
+          "g": [
+            4.1,
+            2569
+          ],
+          "gSource": "https://wanderlog.com/ja/list/geoCategory/197730",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary"
         }
       ],
       "multi": false
@@ -1201,7 +1292,14 @@
             339
           ],
           "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40000254/",
-          "ratingChecked": "2026-10-31"
+          "ratingChecked": "2026-10-31",
+          "g": [
+            4.1,
+            2170
+          ],
+          "gSource": "https://wanderlog.com/ja/place/details/548195/%E4%B8%80%E8%98%AD-%E3%82%AD%E3%83%A3%E3%83%8A%E3%83%AB%E3%82%B7%E3%83%86%E3%82%A3%E5%8D%9A%E5%A4%9A%E5%BA%97-%E5%92%8C%E9%A2%A8%E3%81%A8%E3%82%93%E3%81%93%E3%81%A4%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%B3",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary"
         },
         {
           "name": "바쿠로 하카타 점",
@@ -1215,7 +1313,14 @@
           "hours": "11:30~14:30 (L.O.14:00) / 17:00~22:00 (L.O.21:30), 부정기 휴무",
           "hoursSource": "https://selection.tabelog.com/fukuoka/A4001/A400101/40045144/",
           "ratingChecked": "2026-10-31",
-          "hoursChecked": "2026-10-31"
+          "hoursChecked": "2026-10-31",
+          "g": [
+            4.4,
+            1136
+          ],
+          "gSource": "https://www.taveri.jp/store/ChIJ_88FQb6RQTURqwmM_4dg7AI",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary"
         },
         {
           "name": "에비스야 우동",
@@ -1229,7 +1334,14 @@
           "hours": "11:10~18:00 (L.O.17:40, 수요일 휴무)",
           "hoursSource": "https://tabelog.com/fukuoka/A4001/A400101/40064595/",
           "ratingChecked": "2026-10-31",
-          "hoursChecked": "2026-10-31"
+          "hoursChecked": "2026-10-31",
+          "g": [
+            4.4,
+            1804
+          ],
+          "gSource": "https://wanderlog.com/ja/list/geoCategory/474517",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary"
         },
         {
           "name": "키와미야 하카타 점",
@@ -1243,7 +1355,14 @@
           "hours": "11:00~22:00 (대기 상황에 따라 20:00 전후 접수 종료)",
           "hoursSource": "https://tabelog.com/fukuoka/A4001/A400101/40039167/",
           "ratingChecked": "2026-10-31",
-          "hoursChecked": "2026-10-31"
+          "hoursChecked": "2026-10-31",
+          "g": [
+            4.2,
+            3323
+          ],
+          "gSource": "https://wanderlog.com/ja/place/details/2624480/%E6%A5%B5%E5%91%B3%E3%82%84-%E5%8D%9A%E5%A4%9A%E5%BA%97-%E3%83%8F%E3%83%B3%E3%83%90%E3%83%BC%E3%82%B0-%E3%82%B9%E3%83%86%E3%83%BC%E3%82%AD",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary"
         },
         {
           "name": "키와미야 하카타 역 지하상가 점",
@@ -1257,7 +1376,14 @@
           "hours": "11:00~22:00 (L.O.21:00, 혼잡 시 접수 조기 마감)",
           "hoursSource": "https://www.e-ekichika.com/shop/kiwamiya",
           "ratingChecked": "2026-10-31",
-          "hoursChecked": "2026-10-31"
+          "hoursChecked": "2026-10-31",
+          "g": [
+            4,
+            350
+          ],
+          "gSource": "https://restaurantguru.jp/Kiwamiya-Hamburg-Hakata-Station-Underground-Mall-Fukuoka",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary"
         }
       ],
       "multi": false,
@@ -1321,7 +1447,14 @@
           ],
           "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40042647/",
           "detailNote": "15시 이후 별도 테이블 요금 400엔(매장 공식 안내).",
-          "ratingChecked": "2026-10-31"
+          "ratingChecked": "2026-10-31",
+          "g": [
+            4.4,
+            3302
+          ],
+          "gSource": "https://wanderlog.com/ja/list/geoCategory/474517",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary"
         },
         {
           "name": "하카타 라멘 신신 키테 하카타 점",
@@ -1335,7 +1468,14 @@
           "hours": "11:00~23:00 (L.O.22:30)",
           "hoursSource": "https://tabelog.com/fukuoka/A4001/A400101/40042485/",
           "ratingChecked": "2026-10-31",
-          "hoursChecked": "2026-10-31"
+          "hoursChecked": "2026-10-31",
+          "g": [
+            4.1,
+            2163
+          ],
+          "gSource": "https://wanderlog.com/ja/list/geoCategory/1508112/kyushu%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%81%AE%E6%9C%80%E9%AB%98%E3%81%AE%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%B3%E3%82%B9%E3%83%9D%E3%83%83%E3%83%88",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary"
         }
       ],
       "multi": false
@@ -1377,7 +1517,14 @@
       "address": "福岡県福岡市博多区博多駅東2-3-1",
       "hours": "월·공휴일 17:00~24:00 / 화~토 17:00~익일01:00 (부정기휴무)",
       "hoursSource": "https://tabelog.com/fukuoka/A4001/A400101/40002372/",
-      "hoursChecked": "2026-10-31"
+      "hoursChecked": "2026-10-31",
+      "g": [
+        4,
+        348
+      ],
+      "gSource": "https://ru.restaurantguru.com/%E7%84%BC%E9%B3%A5%E3%81%9F%E3%81%A0%E3%81%97-%E5%8D%9A%E5%A4%9A%E6%9C%AC%E5%BA%97-Fukuoka",
+      "gChecked": "2026-10-31",
+      "gSourceType": "secondary"
     },
     {
       "name": "호텔 WBF 그랑드 하카타",
@@ -1494,7 +1641,14 @@
         395
       ],
       "tbUrl": "https://tabelog.com/oita/A4404/A440403/44000261/",
-      "ratingChecked": "2026-10-31"
+      "ratingChecked": "2026-10-31",
+      "g": [
+        4.4,
+        2562
+      ],
+      "gSource": "https://footinder.app/places/6541ba7547ebc19d09f22cc2",
+      "gChecked": "2026-10-31",
+      "gSourceType": "secondary"
     },
     {
       "name": "진격의 히타 카페",
