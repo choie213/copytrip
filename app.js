@@ -75,6 +75,15 @@
     '  </div>',
     '</div>',
     '',
+    "<div class=\"sheet\" id=\"packing-sheet\" aria-hidden=\"true\">",
+    "  <div class=\"scrim\" data-close></div>",
+    "  <div class=\"panel packing-panel\" role=\"dialog\" aria-modal=\"true\" aria-labelledby=\"packing-title\">",
+    "    <div class=\"grab\"></div>",
+    "    <div class=\"panel-head\"><b id=\"packing-title\">여행 준비 체크리스트</b><button class=\"btn\" type=\"button\" data-close>완료</button></div>",
+    "    <div id=\"packing-body\"></div>",
+    "  </div>",
+    "</div>",
+    "",
     '<div class="sheet" id="upd-sheet" aria-hidden="true">',
     '  <div class="scrim"></div>',
     '  <div class="panel" role="dialog" aria-modal="true" aria-labelledby="upd-title">',
@@ -105,6 +114,7 @@
   // Stable per-trip selection values; leave trip-pick-v2 untouched.
   var PICK_KEY = 'trip-pick-v3:' + SLUG;
   var WEATHER_CACHE_KEY = 'trip-weather-latest:' + SLUG;
+  var PACKING_KEY = 'trip-packing-v1:' + SLUG;
   var LIVE_WEATHER_URL = 'https://raw.githubusercontent.com/choie213/copytrip/weather-data/data/' +
     encodeURIComponent(SLUG) + '/weather.json';
   var DATA = '../data/' + SLUG + '/';
@@ -172,6 +182,182 @@
   // 사생활 보호 모드처럼 저장소가 막혀도 페이지는 동작해야 함
   function load(k) { try { return JSON.parse(localStorage.getItem(k)); } catch (e) { return null; } }
   function save(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }
+
+  // Travel checklist data comes from this trip's plan. Stable item IDs survive
+  // reorderings; completion and user edits remain local to this device and trip.
+  var packingPendingOnly = false;
+  function packingGroups() {
+    return plan && plan.packingChecklist && Array.isArray(plan.packingChecklist.groups) ?
+      plan.packingChecklist.groups : [];
+  }
+  function packingState() {
+    var x = load(PACKING_KEY);
+    x = x && typeof x === 'object' && !Array.isArray(x) ? x : {};
+    return {
+      done: x.done && typeof x.done === 'object' && !Array.isArray(x.done) ? x.done : {},
+      hidden: x.hidden && typeof x.hidden === 'object' && !Array.isArray(x.hidden) ? x.hidden : {},
+      custom: Array.isArray(x.custom) ? x.custom.filter(function (v) {
+        return v && typeof v.id === 'string' && typeof v.groupId === 'string' &&
+          typeof v.text === 'string' && !!v.text.trim();
+      }) : []
+    };
+  }
+  function packingSave(data) {
+    try {
+      localStorage.setItem(PACKING_KEY, JSON.stringify(data));
+      return true;
+    } catch (e) {
+      alert('체크리스트를 저장하지 못했어. 기기 저장 공간이나 개인정보 보호 모드를 확인해 줘.');
+      return false;
+    }
+  }
+  function packingItems(group, state) {
+    var defaults = (group.items || []).map(function (o) {
+      return { id: o.id, text: o.text, important: !!o.important };
+    });
+    var custom = state.custom.filter(function (o) { return o.groupId === group.id; })
+      .map(function (o) { return { id: o.id, text: o.text, important: false }; });
+    return defaults.concat(custom).filter(function (o) { return !state.hidden[o.id]; });
+  }
+  function packingCounts(state) {
+    var sum = { done: 0, total: 0 };
+    packingGroups().forEach(function (group) {
+      packingItems(group, state).forEach(function (o) {
+        sum.total++;
+        if (state.done[o.id]) sum.done++;
+      });
+    });
+    return sum;
+  }
+  function packingRefreshTrigger() {
+    if (!packingGroups().length) return;
+    var c = packingCounts(packingState());
+    Array.prototype.forEach.call(document.querySelectorAll('.packing-trigger-count'), function (e) {
+      e.textContent = c.done + '/' + c.total;
+    });
+  }
+  function packingOpen() {
+    if (!packingGroups().length) return;
+    packingRender();
+    openSheet('packing-sheet');
+  }
+  function packingRender() {
+    var container = document.getElementById('packing-body');
+    if (!container || !packingGroups().length) return;
+    var scroll = container.scrollTop;
+    var state = packingState(), c = packingCounts(state);
+    container.textContent = '';
+    var top = el('div', { class: 'packing-summary' });
+    top.appendChild(el('div', { class: 'packing-progress-label' }, [
+      el('span', { text: '여행 준비 진행률' }),
+      el('strong', { text: c.done + ' / ' + c.total + ' 완료' })
+    ]));
+    var progress = el('div', { class: 'packing-progress-bar', role: 'progressbar',
+      'aria-label': '여행 준비 완료율', 'aria-valuemin': '0',
+      'aria-valuemax': String(c.total), 'aria-valuenow': String(c.done) });
+    var fill = el('div', { class: 'packing-progress-fill' });
+    fill.style.width = (c.total ? 100 * c.done / c.total : 100) + '%';
+    progress.appendChild(fill);
+    top.appendChild(progress);
+    top.appendChild(el('p', { class: 'packing-disclaimer', text:
+      '체크 기록은 이 아이폰의 브라우저에 저장돼. 다른 기기와 자동 동기화되지는 않아.' }));
+    var filter = el('button', { type: 'button', class: 'packing-filter',
+      'aria-pressed': packingPendingOnly ? 'true' : 'false',
+      text: packingPendingOnly ? '전체 항목 보기' : '미완료 항목만 보기' });
+    filter.addEventListener('click', function () {
+      packingPendingOnly = !packingPendingOnly;
+      packingRender();
+    });
+    top.appendChild(filter);
+    container.appendChild(top);
+
+    var shown = 0;
+    packingGroups().forEach(function (group) {
+      var all = packingItems(group, state);
+      if (!all.length) return;
+      var visible = packingPendingOnly ?
+        all.filter(function (o) { return !state.done[o.id]; }) : all;
+      if (!visible.length) return;
+      shown += visible.length;
+      var completed = all.filter(function (o) { return state.done[o.id]; }).length;
+      var section = el('section', { class: 'packing-group' });
+      section.appendChild(el('div', { class: 'packing-group-heading' }, [
+        el('h3', { text: group.title }),
+        el('span', { text: completed + '/' + all.length })
+      ]));
+      visible.forEach(function (item) {
+        var row = el('div', { class: 'packing-row' + (state.done[item.id] ? ' is-done' : '') });
+        var label = el('label', { class: 'packing-label' });
+        var check = el('input', { type: 'checkbox', 'aria-label': item.text });
+        check.checked = !!state.done[item.id];
+        check.addEventListener('change', function () {
+          var update = packingState();
+          if (check.checked) update.done[item.id] = true;
+          else delete update.done[item.id];
+          if (packingSave(update)) { packingRender(); packingRefreshTrigger(); }
+          else check.checked = !check.checked;
+        });
+        label.appendChild(check);
+        var name = el('span', { class: 'packing-item-text', text: item.text });
+        if (item.important) name.appendChild(el('small', { text: '필수 확인' }));
+        label.appendChild(name);
+        row.appendChild(label);
+        var remove = el('button', { type: 'button', class: 'packing-delete',
+          'aria-label': item.text + ' 삭제', text: '삭제' });
+        remove.addEventListener('click', function () {
+          var update = packingState();
+          update.hidden[item.id] = true;
+          if (packingSave(update)) { packingRender(); packingRefreshTrigger(); }
+        });
+        row.appendChild(remove);
+        section.appendChild(row);
+      });
+      container.appendChild(section);
+    });
+
+    if (shown === 0) container.appendChild(el('p', { class: 'packing-empty', text:
+      packingPendingOnly ? '모든 준비물 확인을 마쳤어.' : '표시할 항목이 없어. 아래에서 추가할 수 있어.' }));
+
+    var form = el('form', { class: 'packing-add-form' });
+    form.appendChild(el('h3', { text: '직접 준비물 추가' }));
+    var field = el('input', { type: 'text', maxlength: '80', required: 'required',
+      placeholder: '예: 목베개, 손수건', 'aria-label': '새 준비물 이름' });
+    var select = el('select', { 'aria-label': '준비물 분류' });
+    packingGroups().forEach(function (group) {
+      select.appendChild(el('option', { value: group.id, text: group.title }));
+    });
+    form.appendChild(field);
+    var controls = el('div', { class: 'packing-add-controls' });
+    controls.appendChild(select);
+    controls.appendChild(el('button', { type: 'submit', text: '추가' }));
+    form.appendChild(controls);
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+      var text = field.value.replace(/\s+/g, ' ').trim();
+      if (!text) return;
+      var update = packingState();
+      if (update.custom.length >= 100) {
+        alert('추가 준비물은 최대 100개까지 가능해.');
+        return;
+      }
+      var id = 'custom-' + Date.now().toString(36) + '-' + Math.random().toString(36).slice(2, 10);
+      update.custom.push({ id: id, groupId: select.value, text: text.slice(0, 80) });
+      if (packingSave(update)) { packingRender(); packingRefreshTrigger(); }
+    });
+    container.appendChild(form);
+
+    if (Object.keys(state.hidden).some(function (id) { return state.hidden[id]; })) {
+      var restore = el('button', { type: 'button', class: 'packing-restore',
+        text: '삭제한 항목 복원' });
+      restore.addEventListener('click', function () {
+        var update = packingState();
+        update.hidden = {};
+        if (packingSave(update)) { packingRender(); packingRefreshTrigger(); }
+      });
+      container.appendChild(restore);
+    }
+    container.scrollTop = scroll;
+  }
 
   function motionOn() { return document.documentElement.classList.contains('motion'); }
   function applyMotion(on) {
@@ -1083,7 +1269,23 @@
   // 그날 화면 내용을 주어진 상자에 채움 (본 화면과 스와이프 때 옆에 보이는 미리보기가 같은 모습이 되도록 공용)
   function fillDay(main, i) {
     var day = view(plan.days[i]);
-    var hero = el('div', { class: 'day-hero rv' }, [el('div', { class: 'eyebrow', text: day.full }), el('h2', { text: day.title })]);
+    var heroText = el('div', { class: 'day-hero-text' }, [
+      el('div', { class: 'eyebrow', text: day.full }), el('h2', { text: day.title })
+    ]);
+    var heroRow = el('div', { class: 'day-hero-row' }, [heroText]);
+    if (packingGroups().length) {
+      var counts = packingCounts(packingState());
+      var button = el('button', { type: 'button', class: 'packing-trigger',
+        'aria-label': '여행 준비물 체크리스트 열기' });
+      button.appendChild(el('span', { class: 'packing-trigger-icon', 'aria-hidden': 'true',
+        html: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3.5" width="16" height="17" rx="3"/><path d="m8 9 1.5 1.5L12 8M14 9h3m-9 7 1.5 1.5L12 15m2 1h3"/></svg>' }));
+      button.appendChild(el('span', { class: 'packing-trigger-label', text: '준비물' }));
+      button.appendChild(el('span', { class: 'packing-trigger-count',
+        text: counts.done + '/' + counts.total }));
+      button.addEventListener('click', packingOpen);
+      heroRow.appendChild(button);
+    }
+    var hero = el('div', { class: 'day-hero rv' }, [heroRow]);
     if (day.point) hero.appendChild(el('span', { class: 'point', text: day.point }));
     main.appendChild(hero);
 
@@ -1482,7 +1684,7 @@
     var y0 = null, x0 = 0, dy = 0, lock = null, t0 = 0;
     var reset = function () { panel.style.transition = ''; scrim.style.transition = ''; panel.style.transform = ''; scrim.style.opacity = ''; };
     panel.addEventListener('touchstart', function (e) {
-      var sc = e.target.closest('#wx-body');
+      var sc = e.target.closest('#wx-body, #packing-body');
       if (e.touches.length !== 1 || (sc && sc.scrollTop > 0)) { y0 = null; return; }
       y0 = e.touches[0].clientY; x0 = e.touches[0].clientX; dy = 0; lock = null; t0 = Date.now();
     }, { passive: true });
