@@ -6964,5 +6964,189 @@
       ],
       "checked": "2026-10-31"
     }
-  ]
+  ],
+  "packingChecklist": {
+    "version": 1,
+    "groups": [
+      {
+        "id": "docs",
+        "title": "필수 서류·예약",
+        "items": [
+          {
+            "id": "docs-passport",
+            "text": "여권 원본 및 유효기간 확인",
+            "important": true
+          },
+          {
+            "id": "docs-flights",
+            "text": "제주항공 왕복 항공권·예약번호 확인",
+            "important": true
+          },
+          {
+            "id": "docs-lodging",
+            "text": "텐진·하카타 숙소 예약 확인",
+            "important": true
+          },
+          {
+            "id": "docs-tour",
+            "text": "유후인 버스투어 예약증·집합 위치 확인",
+            "important": true
+          },
+          {
+            "id": "docs-visitjapan",
+            "text": "Visit Japan Web 입국 정보 등록"
+          },
+          {
+            "id": "docs-insurance",
+            "text": "여행자보험 가입 여부 확인"
+          }
+        ]
+      },
+      {
+        "id": "devices",
+        "title": "전자기기·촬영",
+        "items": [
+          {
+            "id": "devices-iphone",
+            "text": "아이폰 및 충전 케이블",
+            "important": true
+          },
+          {
+            "id": "devices-powerbank",
+            "text": "보조배터리 용량·단락 방지 확인",
+            "important": true
+          },
+          {
+            "id": "devices-plug",
+            "text": "일본 콘센트 변환 플러그(A형)"
+          },
+          {
+            "id": "devices-esim",
+            "text": "eSIM 설치 및 일본 데이터 연결 확인",
+            "important": true
+          },
+          {
+            "id": "devices-camera",
+            "text": "카메라·배터리·메모리카드 또는 필름"
+          },
+          {
+            "id": "devices-strap",
+            "text": "카메라 스트랩·렌즈 닦는 천"
+          }
+        ]
+      },
+      {
+        "id": "clothes",
+        "title": "의류·생활용품",
+        "items": [
+          {
+            "id": "clothes-outfits",
+            "text": "7일 일정에 맞는 옷·속옷·양말"
+          },
+          {
+            "id": "clothes-shoes",
+            "text": "걷기 편한 신발",
+            "important": true
+          },
+          {
+            "id": "clothes-jacket",
+            "text": "쌀쌀한 날씨 대비 겉옷"
+          },
+          {
+            "id": "clothes-umbrella",
+            "text": "접이식 우산·가벼운 방수 용품"
+          },
+          {
+            "id": "clothes-toiletries",
+            "text": "세면도구·스킨케어·헤어 제품"
+          },
+          {
+            "id": "clothes-meds",
+            "text": "상비약·개인 처방약"
+          },
+          {
+            "id": "clothes-eyewear",
+            "text": "안경·렌즈·렌즈 관리용품(해당 시)"
+          }
+        ]
+      },
+      {
+        "id": "local",
+        "title": "결제·교통·현지 일정",
+        "items": [
+          {
+            "id": "local-cash",
+            "text": "일본 엔화 현금 및 잔돈"
+          },
+          {
+            "id": "local-card",
+            "text": "해외 결제 카드·해외 사용 설정",
+            "important": true
+          },
+          {
+            "id": "local-iccard",
+            "text": "교통 IC카드 또는 교통비 준비"
+          },
+          {
+            "id": "local-maps",
+            "text": "구글 지도와 주요 장소 저장"
+          },
+          {
+            "id": "local-tourmeeting",
+            "text": "11/7 유후인 투어 집합 시간 재확인",
+            "important": true
+          },
+          {
+            "id": "local-dam-bus",
+            "text": "11/9 히타·오야마댐 버스 왕복 시간표 저장",
+            "important": true
+          },
+          {
+            "id": "local-dam-supplies",
+            "text": "오야마댐 도보 이동용 물·간식 준비"
+          }
+        ]
+      },
+      {
+        "id": "departure",
+        "title": "출국 당일·귀국",
+        "items": [
+          {
+            "id": "departure-airportout",
+            "text": "11/4 인천공항 터미널·체크인 확인",
+            "important": true
+          },
+          {
+            "id": "departure-carryon",
+            "text": "보조배터리·여권을 기내 가방에 넣기",
+            "important": true
+          },
+          {
+            "id": "departure-tax-goods",
+            "text": "11/10 일본 면세품·구매내역 준비",
+            "important": true
+          },
+          {
+            "id": "departure-tax-customs",
+            "text": "면세품 위탁 전 일본 세관 반출 확인",
+            "important": true
+          },
+          {
+            "id": "departure-tax-refund",
+            "text": "일본 소비세 환급 수단·신청 상태 확인"
+          },
+          {
+            "id": "departure-korea-customs",
+            "text": "한국 입국 시 세관 신고 대상 확인",
+            "important": true
+          },
+          {
+            "id": "departure-hotel-check",
+            "text": "숙소 퇴실 전 충전기·귀중품 재확인",
+            "important": true
+          }
+        ]
+      }
+    ]
+  }
 }
