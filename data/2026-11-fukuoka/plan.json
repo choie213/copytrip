@@ -6993,7 +6993,7 @@
           },
           {
             "id": "docs-tour",
-            "text": "유후인 버스투어 예약증·집합 위치 확인",
+            "text": "유후인 버스투어 예약증·집합 시간·장소 확인",
             "important": true
           },
           {
@@ -7170,11 +7170,6 @@
           {
             "id": "local-maps",
             "text": "구글 지도와 주요 장소 저장"
-          },
-          {
-            "id": "local-tourmeeting",
-            "text": "유후인 투어 집합 시간 재확인",
-            "important": true
           },
           {
             "id": "local-dam-bus",
