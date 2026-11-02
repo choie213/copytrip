@@ -1541,16 +1541,31 @@
       return data;
     });
   }
+  // Use the newest valid forecast even when the live branch is temporarily
+  // unavailable. Never overwrite a fresh on-device forecast with the older
+  // bundled Pages snapshot.
+  function newestWeather(a, b) {
+    var aTime = a && a.updatedAt && a.data ? Date.parse(a.updatedAt) : NaN;
+    var bTime = b && b.updatedAt && b.data ? Date.parse(b.updatedAt) : NaN;
+    if (!Number.isFinite(aTime)) return Number.isFinite(bTime) ? b : null;
+    if (!Number.isFinite(bTime)) return a;
+    return aTime >= bTime ? a : b;
+  }
   function loadWeather() {
+    var lastGood = load(WEATHER_CACHE_KEY);
     return weatherRequest(LIVE_WEATHER_URL + '?v=' + Date.now())
-      .catch(function () { return weatherRequest(WEATHER_URL); })
-      .catch(function (err) {
-        var lastGood = load(WEATHER_CACHE_KEY);
-        if (lastGood && lastGood.data) return lastGood;
-        throw err;
+      .catch(function () {
+        return weatherRequest(WEATHER_URL).then(function (snapshot) {
+          return newestWeather(snapshot, lastGood);
+        }).catch(function (err) {
+          if (newestWeather(null, lastGood)) return lastGood;
+          throw err;
+        });
       })
       .then(function (data) {
-        weather = data; save(WEATHER_CACHE_KEY, data); return data;
+        var latest = newestWeather(data, lastGood);
+        if (!latest) throw new Error('No valid weather forecast');
+        weather = latest; save(WEATHER_CACHE_KEY, latest); return latest;
       });
   }
   var lastWeatherRefresh = 0;
