@@ -1621,7 +1621,7 @@
     r.classList.add('past');
     if (sum) return;
     sum = el('button', { class: 'past-sum', type: 'button', 'aria-label': T('지난 일정 펼치기') }, [
-      el('span', { class: 'time', text: r.querySelector('.time').firstChild.textContent }),
+      el('span', { class: 'time', text: (r.querySelector('.time') && r.querySelector('.time').textContent) || '' }),
       el('span', { class: 't', text: labelOf(r) }),
       el('span', { class: 'done', text: T('완료') }),
       el('span', { class: 'chev', html: ICON.chev })
