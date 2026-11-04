@@ -533,18 +533,43 @@ html:not(.motion) .wx-m .a-gust { opacity: 1; stroke-dasharray: none; }
 .outfit-summary strong { font-weight:750; }
 .outfit-summary span { font-size:13px; font-weight:700; color:var(--ink2); font-variant-numeric:tabular-nums; }
 .outfit-tip { margin:7px 0 13px; font-size:12px; line-height:1.5; color:var(--ink2); }
-.outfit-row { display:flex; align-items:flex-start; gap:12px; padding:14px 12px; margin:8px 0;
-  border:1px solid var(--sep); border-radius:14px; cursor:pointer; color:var(--ink); }
-.outfit-row.is-current { border-color:var(--blue); }
-.outfit-row.is-done { background:var(--fill); }
-.outfit-row input { width:20px; height:20px; margin:2px 0 0; flex:0 0 auto; accent-color:var(--blue); }
+.outfit-card { margin:8px 0; border:1px solid var(--sep); border-radius:14px;
+  color:var(--ink); overflow:hidden; }
+.outfit-card.is-current { border-color:var(--blue); }
+.outfit-card.is-done { background:var(--fill); }
+.outfit-row { display:flex; align-items:flex-start; gap:10px; padding:14px 12px; }
+.outfit-check-label { display:flex; flex:0 0 auto; padding:2px 4px 5px 0; cursor:pointer; }
+.outfit-check-label input { width:20px; height:20px; margin:0; accent-color:var(--blue); }
+.outfit-edit-button { flex:0 0 auto; font-size:12px; font-weight:700; border:1px solid var(--sep);
+  border-radius:9px; background:var(--bg); color:var(--ink); padding:7px 10px; cursor:pointer; }
 .outfit-content { flex:1; min-width:0; display:flex; flex-direction:column; gap:6px; }
 .outfit-row-head { display:flex; flex-wrap:wrap; align-items:center; gap:7px; }
 .outfit-row-head b { font-size:15px; line-height:1.4; font-weight:750; }
 .outfit-row-head em { font-style:normal; font-size:13px; }
 .outfit-row-head small { font-size:10px; font-weight:650; color:var(--blue); }
 .outfit-pieces { font-size:14px; line-height:1.65; overflow-wrap:anywhere; color:var(--ink2); }
-.outfit-row input:focus-visible, .outfit-trigger:focus-visible { outline:2px solid var(--blue); outline-offset:3px; }
+.outfit-row input:focus-visible, .outfit-trigger:focus-visible,
+.outfit-edit-button:focus-visible, .outfit-edit-form button:focus-visible,
+.outfit-edit-field input:focus-visible, .outfit-edit-field textarea:focus-visible
+{ outline:2px solid var(--blue); outline-offset:3px; }
+.outfit-edit-form { display:grid; gap:12px; padding:0 14px 16px; }
+.outfit-edit-field { display:grid; gap:6px; font-size:12px; font-weight:700; color:var(--ink2); }
+.outfit-edit-field input, .outfit-edit-field textarea {
+  display:block; width:100%; border:1px solid var(--sep); border-radius:10px;
+  padding:11px 12px; color:var(--ink); background:var(--bg); font-family:inherit;
+  font-size:15px; line-height:1.5; box-sizing:border-box;
+}
+.outfit-edit-field textarea { resize:vertical; min-height:106px; }
+.outfit-important-label { display:flex; align-items:center; gap:8px;
+  font-size:13px; font-weight:600; cursor:pointer; }
+.outfit-important-label input { width:18px; height:18px; accent-color:var(--blue); }
+.outfit-edit-actions { display:flex; align-items:center; gap:7px; flex-wrap:wrap; }
+.outfit-edit-actions button { border-radius:10px; padding:10px 13px; font-size:13px;
+  font-weight:700; cursor:pointer; }
+.outfit-save-button { background:var(--blue); border:1px solid var(--blue); color:white; }
+.outfit-cancel-button { background:var(--bg); border:1px solid var(--sep); color:var(--ink); }
+.outfit-reset-button { margin-left:auto; background:transparent; border:1px solid var(--sep);
+  color:var(--ink2); }
 @media(max-width:359px) {
   .day-hero-actions { gap:4px; }
   .day-hero-actions .packing-trigger { width:56px; }
