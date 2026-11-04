@@ -163,7 +163,20 @@ a { color: var(--blue); text-decoration: none; }
 .it.past:not(.open) .card { display: none; }
 .past-sum { all: unset; display: none; align-items: baseline; gap: 10px; padding: 6px 4px; cursor: pointer; width: calc(100% - 8px); }
 .it.past:not(.open) .past-sum { display: flex; }
-.it.past:not(.open) { margin-bottom: 4px; }
+.it.past:not(.open) {
+  /* A collapsed past event must still reserve space for its check marker.
+     Without this, the check can overlap the next event's hollow dot on iOS. */
+  min-height: 40px;
+  margin-bottom: 14px;
+}
+.it.past:not(.open) .past-sum {
+  min-height: 38px;
+  box-sizing: border-box;
+  align-items: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.it.past:not(.open) .dot { top: 12px; }
 .past-sum .time { color: var(--ink3); min-width: 38px; }
 .past-sum .t { font-size: 15px; font-weight: 500; color: var(--ink3); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .past-sum .done { font-size: 11px; font-weight: 700; color: var(--green); white-space: nowrap; }
