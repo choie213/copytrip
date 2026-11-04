@@ -1589,7 +1589,13 @@
     var cap = document.getElementById('nowcap');
     if (capIo) capIo.disconnect();
     // 지난 날짜는 일정 전체를 완료로 접고, 진행 선도 끝까지 채움
-    var over = day.date < now.date && (!rows.length || hit === rows.length - 1);
+    // Keep a cross-midnight sleep active until its planned wake time; only then
+    // collapse yesterday's timeline as completed.
+    var lastStop = view(day).stops.slice(-1)[0];
+    var wakeCutoff = lastStop && lastStop.type === 'sleep' && toMin(lastStop.wakeTime) != null ?
+      24 * 60 + toMin(lastStop.wakeTime) : null;
+    var over = day.date < now.date &&
+      (!rows.length || (hit === rows.length - 1 && (wakeCutoff == null || elapsed >= wakeCutoff)));
     if (over) hit = -1;
     Array.prototype.forEach.call(rows, function (r, j) { setPast(r, over || j < hit); });
     if (hit === -1) {
@@ -1740,8 +1746,20 @@
   function toDayTop() { scrollUnderBar(document.getElementById('day'), false); }
 
   function todayIndex() {
-    var d = tripNow().date;
-    for (var i = 0; i < plan.days.length; i++) if (plan.days[i].date === d) return i;
+    var now = tripNow();
+    for (var i = 0; i < plan.days.length; i++) {
+      if (plan.days[i].date !== now.date) continue;
+      // Between midnight and the planned wake time, the previous day's
+      // overnight sleep is still the current itinerary event.
+      if (i > 0) {
+        var previous = view(plan.days[i - 1]);
+        var lastStop = previous.stops.slice(-1)[0];
+        if (lastStop && lastStop.type === 'sleep' &&
+            toMin(lastStop.wakeTime) != null && now.min < toMin(lastStop.wakeTime))
+          return i - 1;
+      }
+      return i;
+    }
     return 0;
   }
 
