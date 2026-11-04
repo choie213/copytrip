@@ -1109,6 +1109,9 @@
     var card = kind === 'choice' ? choiceCard(s, key) : kind === 'run' ? runCard(s) : kind === 'move' ? moveCard(s) : kind === 'sleep' ? sleepCard(s) : kind === 'guide' ? guideCard(s) : el('div', { class: 'card' }, [head(s), body(s)]);
     var props = { class: 'it rv ' + kind, 'data-min': stopMin(s) == null ? '' : String(stopMin(s)) };
     if (kind === 'choice') props['data-choice-key'] = key;
+    // Explicitly reported completion takes priority over the generic time-based
+    // current-stop marker, even before the next planned stop starts.
+    if (s.completed === true) props['data-done'] = 'true';
     return el('li', props, [el('span', { class: 'dot' }), card]);
   }
 
@@ -1626,6 +1629,18 @@
     cap.querySelector('.a').textContent = T('지금  {t}', { t: t.firstChild.textContent });
     var nt = next && (next.querySelector('.choice-tag') || next.querySelector('.title'));
     cap.querySelector('.b').textContent = next ? T('다음  {a}  {t}', { a: next.getAttribute('data-min').replace(/^(\d+)$/, function (m) { return String(Math.floor(m / 60)).padStart(2, '0') + ':' + String(m % 60).padStart(2, '0'); }), t: nt.firstChild.textContent }) : T('오늘 마지막 일정');
+    if (cur.getAttribute('data-done') === 'true') {
+      // A confirmed finished stop is DONE immediately. Do not label it '지금'
+      // until the next scheduled event as ordinary inferred timeline stops do.
+      cur.classList.remove('now', 'reached');
+      var chip = cur.querySelector('.now-chip'); if (chip) chip.remove();
+      setPast(cur, true);
+      cap.querySelector('.a').textContent = T('완료') + '  ' + labelOf(cur);
+      cap.classList.add('show');
+      progress(cur);
+      cap.onclick = function () { scrollUnderBar(next || cur, motionOn(), 12); };
+      return;
+    }
     // 현재 일정이 화면에 보이는 동안은 캡슐을 숨기고, 스크롤해서 벗어나면 보여줌 (상단 날짜 바에 가려진 부분은 안 보이는 것으로 봄)
     if ('IntersectionObserver' in window) {
       capIo = new IntersectionObserver(function (es) {
