@@ -132,6 +132,7 @@
             23,
             24,
             158,
+            166,
             25
           ],
           "rain": [
@@ -164,6 +165,7 @@
             23,
             24,
             158,
+            166,
             25
           ]
         }
@@ -335,7 +337,6 @@
             78,
             154,
             138,
-            166,
             161,
             80
           ],
@@ -364,7 +365,6 @@
             78,
             154,
             138,
-            166,
             161,
             80
           ]
@@ -391,11 +391,10 @@
             124,
             85,
             105,
-            86,
-            87,
-            89,
             132,
             90,
+            87,
+            89,
             91,
             92,
             106,
@@ -415,11 +414,10 @@
             124,
             85,
             105,
-            86,
-            87,
-            89,
             132,
             90,
+            87,
+            89,
             91,
             92,
             106,
@@ -471,13 +469,17 @@
       "name": "인천 국제공항 제1여객터미널",
       "q": "인천국제공항 제1여객터미널",
       "time": "15:20",
-      "note": "출발"
+      "note": "출발",
+      "estimated": false,
+      "plannedMinutes": 20
     },
     {
       "name": "후쿠오카 공항",
       "q": "후쿠오카 공항",
       "time": "16:50",
-      "note": "도착, 수속 대략 1시간"
+      "note": "도착, 수속 대략 1시간",
+      "estimated": false,
+      "plannedMinutes": 20
     },
     {
       "name": "더 밀레니얼스 후쿠오카",
@@ -485,7 +487,9 @@
       "time": "18:40",
       "note": "체크인 · 당초 18:10에서 30분 미룬 계획 시각. 입국 심사·무료 셔틀·지하철 소요에 따라 더 늦어질 수 있음.",
       "address": "福岡県福岡市博多区中洲5-2-18",
-      "hoursSource": "https://www.livelyhotels.com/ja/themillennialsfukuoka/access/"
+      "hoursSource": "https://www.livelyhotels.com/ja/themillennialsfukuoka/access/",
+      "estimated": true,
+      "plannedMinutes": 20
     },
     {
       "type": "choice",
@@ -737,7 +741,9 @@
         }
       ],
       "multi": false,
-      "time": "19:00"
+      "time": "19:00",
+      "estimated": true,
+      "plannedMinutes": 55
     },
     {
       "name": "덴진 지하상가",
@@ -745,7 +751,11 @@
       "address": "福岡県福岡市中央区天神（天神駅・天神南駅直結）",
       "hours": "상점 10:00~20:00 / 음식점 ~21:00 (점포별 상이)",
       "hoursSource": "https://www.tenchika.com/service/",
-      "hoursChecked": "2026-10-31"
+      "hoursChecked": "2026-10-31",
+      "time": "20:10",
+      "estimated": true,
+      "plannedMinutes": 20,
+      "note": " / 일반 매장 20:00 종료가 많아 20:10 방문은 지하통로 산책만 가능할 수 있음. 쇼핑은 11/5 권장."
     },
     {
       "name": "이나바쵸 잇케이",
@@ -771,14 +781,20 @@
       "q": "The Millennials Fukuoka 中洲5丁目2-18",
       "note": "숙소 귀환",
       "address": "福岡県福岡市博多区中洲5-2-18",
-      "hoursSource": "https://www.livelyhotels.com/ja/themillennialsfukuoka/access/"
+      "hoursSource": "https://www.livelyhotels.com/ja/themillennialsfukuoka/access/",
+      "time": "23:40",
+      "estimated": true,
+      "plannedMinutes": 20
     },
     {
       "name": "더 밀레니얼스 후쿠오카",
       "q": "The Millennials Fukuoka 中洲5丁目2-18",
       "note": "출발",
       "address": "福岡県福岡市博多区中洲5-2-18",
-      "hoursSource": "https://www.livelyhotels.com/ja/themillennialsfukuoka/access/"
+      "hoursSource": "https://www.livelyhotels.com/ja/themillennialsfukuoka/access/",
+      "time": "08:40",
+      "estimated": true,
+      "plannedMinutes": 20
     },
     {
       "type": "choice",
@@ -1090,7 +1106,9 @@
       ],
       "multi": false,
       "time": "09:00",
-      "note": "아침 3곳 중 하나"
+      "note": "아침 3곳 중 하나",
+      "estimated": true,
+      "plannedMinutes": 35
     },
     {
       "name": "북오프 수퍼 바자르 미나 덴진 점",
@@ -1099,7 +1117,10 @@
       "address": "福岡県福岡市中央区天神4-3-8 ミーナ天神 7F",
       "hours": "10:00~21:00",
       "hoursChecked": "2026-10-31",
-      "hoursSource": "https://www.bookoff.co.jp/shop/shop20529.html"
+      "hoursSource": "https://www.bookoff.co.jp/shop/shop20529.html",
+      "time": "11:15",
+      "estimated": true,
+      "plannedMinutes": 20
     },
     {
       "name": "애니메이트 라시크 후쿠오카 텐진",
@@ -1108,7 +1129,10 @@
       "hours": "10:00~20:00",
       "hoursChecked": "2026-10-31",
       "hoursSource": "https://www.animate.co.jp/en/news/51885/",
-      "note": "2026-10-24 기존 PARCO점에서 이전. PARCO 8F는 별도 ANNEX 매장(11/2 오픈)."
+      "note": "2026-10-24 기존 PARCO점에서 이전. PARCO 8F는 별도 ANNEX 매장(11/2 오픈).",
+      "time": "12:05",
+      "estimated": true,
+      "plannedMinutes": 20
     },
     {
       "name": "Royal Flash",
@@ -1117,20 +1141,29 @@
       "address": "福岡県福岡市中央区天神2-10-3 VIORO 4F",
       "hours": "10:00~20:00",
       "hoursChecked": "2026-10-31",
-      "hoursSource": "https://vioro.jp/shop/royalflash/"
+      "hoursSource": "https://vioro.jp/shop/royalflash/",
+      "time": "12:30",
+      "estimated": true,
+      "plannedMinutes": 20
     },
     {
       "name": "꼼데가르송 후쿠오카 이와타야 점",
       "q": "福岡岩田屋 Comme des Garçons 新館3F",
       "address": "福岡県福岡市中央区天神2-5-35 岩田屋本店新館3F",
-      "hoursSource": "https://www.comme-des-garcons.com/stores/"
+      "hoursSource": "https://www.comme-des-garcons.com/stores/",
+      "time": "12:55",
+      "estimated": true,
+      "plannedMinutes": 20
     },
     {
       "name": "아크테릭스 후쿠오카 덴진 브랜드 스토어",
       "q": "アークテリクス 福岡 天神ブランドストア",
       "address": "福岡県福岡市中央区大名1-12-62",
       "hoursSource": "https://arcteryx.jp/pages/storelist",
-      "note": "영업 종료 시각이 공식 사이트 간 다름(19:00/20:00). 방문 전 지도·매장 확인."
+      "note": "영업 종료 시각이 공식 사이트 간 다름(19:00/20:00). 방문 전 지도·매장 확인.",
+      "time": "16:40",
+      "estimated": true,
+      "plannedMinutes": 20
     },
     {
       "name": "휴먼 메이드 후쿠오카 점",
@@ -1138,7 +1171,10 @@
       "address": "福岡県福岡市中央区大名2-1-13",
       "hours": "11:00~19:00",
       "hoursChecked": "2026-10-31",
-      "hoursSource": "https://www.humanmade.jp/ko/news/human-made-season-29-launch-2025-jan.html"
+      "hoursSource": "https://www.humanmade.jp/ko/news/human-made-season-29-launch-2025-jan.html",
+      "time": "16:15",
+      "estimated": true,
+      "plannedMinutes": 20
     },
     {
       "name": "만다라케 후쿠오카 점",
@@ -1146,7 +1182,10 @@
       "address": "福岡県福岡市中央区大名2-9-5 グランドビル",
       "hours": "12:00~20:00",
       "hoursChecked": "2026-10-31",
-      "hoursSource": "https://www.mandarake.co.jp/dir/fko/"
+      "hoursSource": "https://www.mandarake.co.jp/dir/fko/",
+      "time": "15:45",
+      "estimated": true,
+      "plannedMinutes": 20
     },
     {
       "type": "choice",
@@ -1405,16 +1444,24 @@
         }
       ],
       "multi": false,
-      "time": "12:00",
-      "note": "점심 2곳 중 하나"
+      "time": "13:45",
+      "note": "점심 2곳 중 하나",
+      "estimated": true,
+      "plannedMinutes": 50
     },
     {
       "name": "하이타임즈 빈티지",
-      "q": "하이타임즈 빈티지 후쿠오카"
+      "q": "하이타임즈 빈티지 후쿠오카",
+      "time": "17:30",
+      "estimated": true,
+      "plannedMinutes": 20
     },
     {
       "name": "후즈",
-      "q": "후즈 후쿠오카"
+      "q": "후즈 후쿠오카",
+      "time": "17:55",
+      "estimated": true,
+      "plannedMinutes": 20
     },
     {
       "name": "베이프 후쿠오카",
@@ -1422,7 +1469,10 @@
       "address": "福岡県福岡市中央区大名1-11-28",
       "hours": "11:00~19:00",
       "hoursChecked": "2026-10-31",
-      "hoursSource": "https://www.fashion-press.net/maps/10497/"
+      "hoursSource": "https://www.fashion-press.net/maps/10497/",
+      "time": "18:20",
+      "estimated": true,
+      "plannedMinutes": 20
     },
     {
       "name": "캐피탈 후쿠오카 점",
@@ -1430,7 +1480,10 @@
       "address": "福岡県福岡市中央区大名1-3-42 ローズマンション大名1F",
       "hours": "11:00~20:00",
       "hoursChecked": "2026-10-31",
-      "hoursSource": "https://www.kapital.jp/shop/detail/14.html"
+      "hoursSource": "https://www.kapital.jp/shop/detail/14.html",
+      "time": "18:45",
+      "estimated": true,
+      "plannedMinutes": 20
     },
     {
       "type": "choice",
@@ -1723,12 +1776,18 @@
           "id": "loc-db38f02c"
         }
       ],
-      "multi": false
+      "multi": false,
+      "time": "19:45",
+      "estimated": true,
+      "plannedMinutes": 55
     },
     {
       "name": "마이즈루 공원",
       "q": "마이즈루 공원 후쿠오카",
-      "note": "팀랩/마츠노 축제 (원본 메모), 18:30~22:00 · 팀랩 등 유료 체험권은 가격·예약 확인 전이므로 교통·입장료 합계에서 제외."
+      "note": "팀랩/마츠노 축제 (원본 메모), 18:30~22:00 · 팀랩 등 유료 체험권은 가격·예약 확인 전이므로 교통·입장료 합계에서 제외.",
+      "time": "21:15",
+      "estimated": true,
+      "plannedMinutes": 40
     },
     {
       "type": "choice",
@@ -1940,21 +1999,30 @@
         }
       ],
       "multi": false,
-      "note": "기존 3곳 + 새 추천 3곳. 텐진·이마이즈미·다이묘 동선에서 한 곳만 선택. 술값·안주·오토시·심야요금에 따라 실제 1인 결제액 변동."
+      "note": "기존 3곳 + 새 추천 3곳. 텐진·이마이즈미·다이묘 동선에서 한 곳만 선택. 술값·안주·오토시·심야요금에 따라 실제 1인 결제액 변동.",
+      "time": "22:05",
+      "estimated": true,
+      "plannedMinutes": 40
     },
     {
       "name": "더 밀레니얼스 후쿠오카",
       "q": "The Millennials Fukuoka 中洲5丁目2-18",
       "note": "숙소 귀환",
       "address": "福岡県福岡市博多区中洲5-2-18",
-      "hoursSource": "https://www.livelyhotels.com/ja/themillennialsfukuoka/access/"
+      "hoursSource": "https://www.livelyhotels.com/ja/themillennialsfukuoka/access/",
+      "time": "23:58",
+      "estimated": true,
+      "plannedMinutes": 20
     },
     {
       "name": "더 밀레니얼스 후쿠오카",
       "q": "The Millennials Fukuoka 中洲5丁目2-18",
       "note": "출발",
       "address": "福岡県福岡市博多区中洲5-2-18",
-      "hoursSource": "https://www.livelyhotels.com/ja/themillennialsfukuoka/access/"
+      "hoursSource": "https://www.livelyhotels.com/ja/themillennialsfukuoka/access/",
+      "time": "07:10",
+      "estimated": true,
+      "plannedMinutes": 20
     },
     {
       "name": "뺑 스톡",
@@ -1965,15 +2033,20 @@
     {
       "name": "하카타 역",
       "q": "하카타역",
-      "time": "08:30",
-      "note": "출발"
+      "time": "08:20",
+      "note": "출발",
+      "estimated": true,
+      "plannedMinutes": 20
     },
     {
       "name": "JR 모지코 역",
       "q": "JR 門司港駅",
       "note": "원본 메모: 1시간 45분 소요",
       "address": "福岡県北九州市門司区西海岸1丁目5-31",
-      "hoursSource": "https://www.jrkyushu.co.jp/railway/station/1191912_1601.html"
+      "hoursSource": "https://www.jrkyushu.co.jp/railway/station/1191912_1601.html",
+      "time": "10:10",
+      "estimated": true,
+      "plannedMinutes": 10
     },
     {
       "name": "미츠이 클럽",
@@ -1982,11 +2055,17 @@
       "address": "福岡県北九州市門司区港町7-1",
       "hours": "09:00~17:00 (건물 관람)",
       "hoursSource": "https://www.crossroadfukuoka.jp/spot/13190",
-      "hoursChecked": "2026-10-31"
+      "hoursChecked": "2026-10-31",
+      "time": "10:20",
+      "estimated": true,
+      "plannedMinutes": 20
     },
     {
       "name": "모지코 레트로",
-      "q": "모지코 레트로 모지코"
+      "q": "모지코 레트로 모지코",
+      "time": "10:45",
+      "estimated": true,
+      "plannedMinutes": 20
     },
     {
       "name": "구 오사카 상선",
@@ -1994,7 +2073,10 @@
       "address": "福岡県北九州市門司区港町7-18",
       "hours": "09:00~17:00 (건물 내부)",
       "hoursChecked": "2026-10-31",
-      "hoursSource": "https://mojiko-retoro9.jp/"
+      "hoursSource": "https://mojiko-retoro9.jp/",
+      "time": "11:10",
+      "estimated": true,
+      "plannedMinutes": 15
     },
     {
       "name": "블루윙 모지",
@@ -2002,7 +2084,10 @@
       "address": "福岡県北九州市門司区港町4-1",
       "hours": "다리 개방 10:00·11:00·13:00·14:00·15:00·16:00 / 20분 뒤 닫힘",
       "hoursSource": "https://www.crossroadfukuoka.jp/spot/13074",
-      "hoursChecked": "2026-10-31"
+      "hoursChecked": "2026-10-31",
+      "time": "11:30",
+      "estimated": true,
+      "plannedMinutes": 20
     },
     {
       "name": "구 모지세관",
@@ -2011,7 +2096,10 @@
       "address": "福岡県北九州市門司区東港町1-24",
       "hours": "09:00~17:00 (일부 안내에 단축 10:00~17:00)",
       "hoursSource": "https://kitakyushucity.guide/spots/detail/ca7bf998-c3f1-4ace-8201-f0381128775d",
-      "hoursChecked": "2026-10-31"
+      "hoursChecked": "2026-10-31",
+      "time": "11:55",
+      "estimated": true,
+      "plannedMinutes": 20
     },
     {
       "name": "모지코 레트로 전망대",
@@ -2023,7 +2111,10 @@
       "cost": 600,
       "costSource": "https://mojiko-retoro9.jp/spot/mojiko_retro_observation_room/",
       "costChecked": "2026-10-31",
-      "note": "성인 입장료, 2026년 4월 개정 기준."
+      "note": "성인 입장료, 2026년 4월 개정 기준.",
+      "time": "12:20",
+      "estimated": true,
+      "plannedMinutes": 25
     },
     {
       "type": "choice",
@@ -2237,7 +2328,10 @@
         }
       ],
       "multi": false,
-      "note": "점심 2곳 중 하나"
+      "note": "점심 2곳 중 하나",
+      "time": "13:00",
+      "estimated": true,
+      "plannedMinutes": 35
     },
     {
       "name": "프린세스 피피",
@@ -2246,24 +2340,36 @@
       "address": "福岡県北九州市門司区西海岸1-4-7",
       "hours": "11:00~15:00 (L.O.14:00), 18:00~22:00 (L.O.21:00), 화요일 휴무",
       "hoursSource": "https://kitakyushucity.guide/gourmets/detail/482503fa-e456-4c75-90cc-322512682970",
-      "hoursChecked": "2026-10-31"
+      "hoursChecked": "2026-10-31",
+      "time": "13:35",
+      "estimated": true,
+      "plannedMinutes": 15
     },
     {
       "name": "JR 모지코 역",
       "q": "JR 門司港駅",
       "note": "이동",
       "address": "福岡県北九州市門司区西海岸1丁目5-31",
-      "hoursSource": "https://www.jrkyushu.co.jp/railway/station/1191912_1601.html"
+      "hoursSource": "https://www.jrkyushu.co.jp/railway/station/1191912_1601.html",
+      "time": "14:00",
+      "estimated": true,
+      "plannedMinutes": 10
     },
     {
       "name": "쇼하치만 신사",
       "q": "荘八幡神社 福岡県北九州市小倉南区中貫本町3-1",
       "note": "기존 메모: 모지코에서 1시간 30분, 고쿠라까지 1시간.\n확인된 장소는 '쇼하치만 신사(荘八幡神社)'이며 고쿠라 남쪽 고쿠라미나미구에 위치하여 모지코→고쿠라 구간에서 상당히 우회함.\nJR 닛포본선 시모소네(下曽根)역에서 도보 약 25~30분 또는 현지 버스 이용. 가까운 버스 정류장은 야요이가오카 영업소(弥生が丘営業所).\n정확한 버스 노선·출발 시각은 방문 시점에 재확인. 기존 여행 순서는 유지함.",
-      "address": "福岡県北九州市小倉南区中貫本町3-1"
+      "address": "福岡県北九州市小倉南区中貫本町3-1",
+      "time": "15:10",
+      "estimated": true,
+      "plannedMinutes": 30
     },
     {
       "name": "고쿠라 역",
-      "q": "고쿠라역"
+      "q": "고쿠라역",
+      "time": "16:20",
+      "estimated": true,
+      "plannedMinutes": 20
     },
     {
       "name": "고쿠라 성",
@@ -2272,7 +2378,10 @@
       "hours": "11~3월 09:00~19:00 (최종 입장 18:30, 내부 관람 시)",
       "hoursSource": "https://kokura-castle.jp/schedule/",
       "detailNote": "외관 사진 촬영만 하는 경우 내부 입장료와 무관.",
-      "hoursChecked": "2026-10-31"
+      "hoursChecked": "2026-10-31",
+      "time": "16:35",
+      "estimated": true,
+      "plannedMinutes": 40
     },
     {
       "name": "차차타운 고쿠라",
@@ -2282,7 +2391,9 @@
       "address": "福岡県北九州市小倉北区砂津3-1-1",
       "hours": "매장 대부분 10:00~20:00 (점포별 상이)",
       "hoursSource": "https://www.chachatown.com/information/",
-      "hoursChecked": "2026-10-31"
+      "hoursChecked": "2026-10-31",
+      "estimated": true,
+      "plannedMinutes": 20
     },
     {
       "name": "아루아루 시티",
@@ -2292,7 +2403,9 @@
       "address": "福岡県北九州市小倉北区浅野2-14-5",
       "hours": "11:00~20:00 (일부 점포 별도)",
       "hoursChecked": "2026-10-31",
-      "hoursSource": "https://aruarucity.com/"
+      "hoursSource": "https://aruarucity.com/",
+      "estimated": true,
+      "plannedMinutes": 20
     },
     {
       "name": "코로나노유 온천",
@@ -2314,21 +2427,30 @@
     {
       "name": "고쿠라 역",
       "q": "고쿠라역",
-      "note": "원본 메모: 숙소까지 1시간 30분"
+      "note": "원본 메모: 숙소까지 1시간 30분",
+      "time": "19:00",
+      "estimated": true,
+      "plannedMinutes": 10
     },
     {
       "name": "더 밀레니얼스 후쿠오카",
       "q": "The Millennials Fukuoka 中洲5丁目2-18",
       "note": "숙소 귀환, 근처 술집 후보",
       "address": "福岡県福岡市博多区中洲5-2-18",
-      "hoursSource": "https://www.livelyhotels.com/ja/themillennialsfukuoka/access/"
+      "hoursSource": "https://www.livelyhotels.com/ja/themillennialsfukuoka/access/",
+      "time": "23:40",
+      "estimated": true,
+      "plannedMinutes": 10
     },
     {
       "name": "더 밀레니얼스 후쿠오카",
       "q": "The Millennials Fukuoka 中洲5丁目2-18",
       "note": "출발, 유투어 버스투어/네이버 결제 메모",
       "address": "福岡県福岡市博多区中洲5-2-18",
-      "hoursSource": "https://www.livelyhotels.com/ja/themillennialsfukuoka/access/"
+      "hoursSource": "https://www.livelyhotels.com/ja/themillennialsfukuoka/access/",
+      "time": "06:25",
+      "estimated": true,
+      "plannedMinutes": 20
     },
     {
       "name": "HEARTS 버스스테이션 하카타 (투어 집합)",
@@ -2336,18 +2458,24 @@
       "time": "07:45",
       "note": "07:45~07:55 집합, 08:00 출발. 1층 안내데스크 앞 (예약 상품 안내 기준).",
       "address": "福岡県福岡市博多区博多駅前4-14-13 1F 案内デスク",
-      "hoursSource": "https://heartsgroup81.com/bs/facility/"
+      "hoursSource": "https://heartsgroup81.com/bs/facility/",
+      "estimated": false,
+      "plannedMinutes": 15
     },
     {
       "name": "버스투어 출발",
       "time": "08:00",
-      "note": "교통수단: 예약된 단체 관광버스(일반 노선번호 없음)\n승차: HEARTS 버스스테이션 하카타 집합(07:45), 08:00 출발\n방향/하차: 예약한 유후인 관광투어 코스·안내에 따름\n예약 상품의 집합 장소·순서·승차 차량을 당일 확인."
+      "note": "교통수단: 예약된 단체 관광버스(일반 노선번호 없음)\n승차: HEARTS 버스스테이션 하카타 집합(07:45), 08:00 출발\n방향/하차: 예약한 유후인 관광투어 코스·안내에 따름\n예약 상품의 집합 장소·순서·승차 차량을 당일 확인.",
+      "estimated": false,
+      "plannedMinutes": 20
     },
     {
       "name": "유후인",
       "q": "유후인역",
       "time": "10:05",
-      "note": "원본 메모: 6시간 자유"
+      "note": "원본 메모: 6시간 자유",
+      "estimated": false,
+      "plannedMinutes": 20
     },
     {
       "name": "유후인 플로랄 빌리지",
@@ -2355,7 +2483,10 @@
       "address": "大分県由布市湯布院町川上1503-3",
       "hours": "09:30~17:30",
       "hoursSource": "https://floral-village.com/about",
-      "hoursChecked": "2026-10-31"
+      "hoursChecked": "2026-10-31",
+      "time": "10:30",
+      "estimated": true,
+      "plannedMinutes": 25
     },
     {
       "type": "choice",
@@ -2581,21 +2712,34 @@
         }
       ],
       "multi": false,
-      "note": "유후인 자유 관광 중 점심 선택지. 긴린호수 부근과 역 앞 가게는 서로 떨어져 있으므로 관광 순서에 맞는 한 곳만 선택."
+      "note": "유후인 자유 관광 중 점심 선택지. 긴린호수 부근과 역 앞 가게는 서로 떨어져 있으므로 관광 순서에 맞는 한 곳만 선택.",
+      "time": "11:20",
+      "estimated": true,
+      "plannedMinutes": 45
     },
     {
       "name": "긴린 호수",
       "q": "金鱗湖",
       "address": "大分県由布市湯布院町川上1561-1",
-      "hoursSource": "https://www.visit-oita.jp/spots/detail/4362"
+      "hoursSource": "https://www.visit-oita.jp/spots/detail/4362",
+      "time": "12:20",
+      "estimated": true,
+      "plannedMinutes": 25
     },
     {
       "name": "덴소 신사",
-      "q": "덴소 신사 유후인"
+      "q": "덴소 신사 유후인",
+      "time": "13:00",
+      "estimated": true,
+      "plannedMinutes": 20
     },
     {
       "name": "사기리다이 전망대",
-      "q": "사기리다이 전망대 유후인"
+      "q": "사기리다이 전망대 유후인",
+      "time": "13:40",
+      "estimated": true,
+      "plannedMinutes": 30,
+      "note": " | 유후인 중심에서 전망대는 멀어 택시 등 차량 필요. 투어 집결 시간 맞추기 어려우면 생략 권장."
     },
     {
       "type": "choice",
@@ -2677,43 +2821,61 @@
       "address": "大分県由布市湯布院町川上3015-1",
       "hours": "10:30~17:30 (본점)",
       "hoursSource": "https://www.milch-japan.co.jp/shops/",
-      "hoursChecked": "2026-10-31"
+      "hoursChecked": "2026-10-31",
+      "time": "15:20",
+      "estimated": true,
+      "plannedMinutes": 20
     },
     {
       "name": "세이키치 차야",
       "q": "세이키치 차야 유후인",
       "time": "16:05",
-      "note": "앞에서 버스투어 집결"
+      "note": "앞에서 버스투어 집결",
+      "estimated": false,
+      "plannedMinutes": 5
     },
     {
       "name": "버스투어 출발",
       "time": "16:10",
-      "note": "교통수단: 예약 관광버스(노선번호 없음)\n16:05 집합지에서 16:10 출발 예정(저장된 일정 기준)\n방향: 후쿠오카·하카타 방면\n하차: 투어 안내에 지정된 하카타 도착지. 실제 시간은 가이드 확인."
+      "note": "교통수단: 예약 관광버스(노선번호 없음)\n16:05 집합지에서 16:10 출발 예정(저장된 일정 기준)\n방향: 후쿠오카·하카타 방면\n하차: 투어 안내에 지정된 하카타 도착지. 실제 시간은 가이드 확인.",
+      "estimated": false,
+      "plannedMinutes": 20
     },
     {
       "name": "하카타 역",
       "q": "하카타역",
       "time": "17:50",
-      "note": "도착"
+      "note": "도착",
+      "estimated": false,
+      "plannedMinutes": 20
     },
     {
       "name": "더 밀레니얼스 후쿠오카",
       "q": "The Millennials Fukuoka 中洲5丁目2-18",
       "note": "숙소 귀환",
       "address": "福岡県福岡市博多区中洲5-2-18",
-      "hoursSource": "https://www.livelyhotels.com/ja/themillennialsfukuoka/access/"
+      "hoursSource": "https://www.livelyhotels.com/ja/themillennialsfukuoka/access/",
+      "time": "22:30",
+      "estimated": true,
+      "plannedMinutes": 20
     },
     {
       "name": "더 밀레니얼스 후쿠오카",
       "q": "The Millennials Fukuoka 中洲5丁目2-18",
       "note": "출발",
       "address": "福岡県福岡市博多区中洲5-2-18",
-      "hoursSource": "https://www.livelyhotels.com/ja/themillennialsfukuoka/access/"
+      "hoursSource": "https://www.livelyhotels.com/ja/themillennialsfukuoka/access/",
+      "time": "07:45",
+      "estimated": true,
+      "plannedMinutes": 15
     },
     {
       "name": "덴진 중앙 공원",
       "q": "덴진 중앙 공원 후쿠오카",
-      "note": "가볍게 러닝, 생략 가능"
+      "note": "가볍게 러닝, 생략 가능",
+      "time": "08:00",
+      "estimated": true,
+      "plannedMinutes": 20
     },
     {
       "name": "더 밀레니얼스 후쿠오카",
@@ -2721,15 +2883,19 @@
       "time": "10:00",
       "note": "샤워, 체크아웃",
       "address": "福岡県福岡市博多区中洲5-2-18",
-      "hoursSource": "https://www.livelyhotels.com/ja/themillennialsfukuoka/access/"
+      "hoursSource": "https://www.livelyhotels.com/ja/themillennialsfukuoka/access/",
+      "estimated": true,
+      "plannedMinutes": 25
     },
     {
-      "name": "호텔 WBF 그랑드 하카타",
+      "name": "호텔 WBF 그랑드 하카타 (짐 보관)",
       "q": "ホテルWBFグランデ博多",
-      "time": "15:00",
-      "note": "체크인 15시부터, 사전 짐 보관 가능 (원본 메모)",
+      "time": "11:00",
+      "note": "11:00 숙소에 짐만 맡기는 계획(가능 여부 현장 확인). 객실 체크인은 15:00 이후. 실제 체크인은 밤 숙소 귀환 시 진행할 계획.",
       "address": "福岡県福岡市博多区博多駅南2-2-5",
-      "hoursSource": "https://www.ishinhotels.com/wbf/grande-hakata"
+      "hoursSource": "https://www.ishinhotels.com/wbf/grande-hakata",
+      "estimated": true,
+      "plannedMinutes": 20
     },
     {
       "name": "캐널시티 하카타",
@@ -2737,7 +2903,10 @@
       "address": "福岡県福岡市博多区住吉1-2",
       "hours": "상점 10:00~21:00 (점포별 상이)",
       "hoursChecked": "2026-10-31",
-      "hoursSource": "https://canalcity.co.jp/service/index"
+      "hoursSource": "https://canalcity.co.jp/service/index",
+      "time": "11:40",
+      "estimated": true,
+      "plannedMinutes": 20
     },
     {
       "name": "점프샵",
@@ -2746,7 +2915,10 @@
       "address": "福岡県福岡市博多区住吉1-2 キャナルシティ博多 センターウォーク B1F",
       "hours": "10:00~21:00",
       "hoursChecked": "2026-10-31",
-      "hoursSource": "https://canalcity.co.jp/shop/detail/opa-0027"
+      "hoursSource": "https://canalcity.co.jp/shop/detail/opa-0027",
+      "time": "12:30",
+      "estimated": true,
+      "plannedMinutes": 20
     },
     {
       "type": "choice",
@@ -3082,7 +3254,10 @@
         }
       ],
       "multi": false,
-      "note": "점심 5곳 중 하나"
+      "note": "점심 5곳 중 하나",
+      "time": "13:20",
+      "estimated": true,
+      "plannedMinutes": 50
     },
     {
       "name": "빔스 하카타 점",
@@ -3090,7 +3265,10 @@
       "address": "福岡県福岡市博多区博多駅中央街1-1 JR博多シティ アミュプラザ博多 3F",
       "hours": "10:00~20:00",
       "hoursChecked": "2026-10-31",
-      "hoursSource": "https://www.beams.co.jp/shop/hkt/"
+      "hoursSource": "https://www.beams.co.jp/shop/hkt/",
+      "time": "14:20",
+      "estimated": true,
+      "plannedMinutes": 20
     },
     {
       "name": "하카타 한큐",
@@ -3098,7 +3276,10 @@
       "address": "福岡県福岡市博多区博多駅中央街1-1",
       "hours": "10:00~20:00",
       "hoursChecked": "2026-10-31",
-      "hoursSource": "https://www.hankyu-dept.co.jp/hakata/map/index.html"
+      "hoursSource": "https://www.hankyu-dept.co.jp/hakata/map/index.html",
+      "time": "14:45",
+      "estimated": true,
+      "plannedMinutes": 20
     },
     {
       "name": "포켓몬 센터",
@@ -3106,7 +3287,10 @@
       "address": "福岡県福岡市博多区博多駅中央街9-1 博多マルイ 2F",
       "hours": "10:00~21:00",
       "hoursChecked": "2026-10-31",
-      "hoursSource": "https://shop.pokemon.co.jp/ja/shop/pokemoncenter-fukuoka/"
+      "hoursSource": "https://shop.pokemon.co.jp/ja/shop/pokemoncenter-fukuoka/",
+      "time": "15:35",
+      "estimated": true,
+      "plannedMinutes": 25
     },
     {
       "name": "스루가야 하카타 마루이 점",
@@ -3114,7 +3298,10 @@
       "address": "福岡県福岡市博多区博多駅中央街9-1 博多マルイ 6F",
       "hours": "10:00~21:00",
       "hoursChecked": "2026-10-31",
-      "hoursSource": "https://www.suruga-ya.jp/feature/realstore/hakata_marui/index.html"
+      "hoursSource": "https://www.suruga-ya.jp/feature/realstore/hakata_marui/index.html",
+      "time": "16:35",
+      "estimated": true,
+      "plannedMinutes": 20
     },
     {
       "name": "라신반 하카타 마루이 점",
@@ -3122,7 +3309,10 @@
       "address": "福岡県福岡市博多区博多駅中央街9-1 博多マルイ 7F",
       "hours": "10:00~21:00",
       "hoursChecked": "2026-10-31",
-      "hoursSource": "https://www.lashinbang.com/store/"
+      "hoursSource": "https://www.lashinbang.com/store/",
+      "time": "17:00",
+      "estimated": true,
+      "plannedMinutes": 20
     },
     {
       "type": "choice",
@@ -3380,7 +3570,10 @@
           "id": "loc-2f7ea04a"
         }
       ],
-      "multi": false
+      "multi": false,
+      "time": "18:10",
+      "estimated": true,
+      "plannedMinutes": 50
     },
     {
       "name": "북오프 후쿠오카 하카타구치점",
@@ -3388,7 +3581,10 @@
       "address": "福岡県福岡市博多区博多駅前3-2-8 住友生命ビル",
       "hours": "10:00~22:00",
       "hoursChecked": "2026-10-31",
-      "hoursSource": "https://www.bookoff.co.jp/shop/shop20314.html"
+      "hoursSource": "https://www.bookoff.co.jp/shop/shop20314.html",
+      "time": "19:10",
+      "estimated": true,
+      "plannedMinutes": 20
     },
     {
       "name": "로피아 하카타 요도바시 점",
@@ -3396,7 +3592,10 @@
       "address": "福岡県福岡市博多区博多駅中央街6-12 ヨドバシ博多 4F",
       "hours": "10:00~21:00",
       "hoursChecked": "2026-10-31",
-      "hoursSource": "https://www.yodobashi-hakata.com/restaurant2/restaurant_lopi.html"
+      "hoursSource": "https://www.yodobashi-hakata.com/restaurant2/restaurant_lopi.html",
+      "time": "19:40",
+      "estimated": true,
+      "plannedMinutes": 20
     },
     {
       "name": "요도바시 카메라 멀티미디어 하카타 점",
@@ -3405,7 +3604,10 @@
       "hours": "09:30~22:00",
       "hoursChecked": "2026-10-31",
       "hoursSource": "https://global.yodobashi/stores/yodobashi_camera/hakata/",
-      "note": "【필수 구매: 레토컬러 아쿠아400 (Lomography LomoChrome? 제품명 현장 확인)】\n \n구매 전 정확한 제품명·ISO 400·필름 규격·재고를 직원에게 확인. 매장별 재고 미확인."
+      "note": "【필수 구매: 레토컬러 아쿠아400 (Lomography LomoChrome? 제품명 현장 확인)】\n \n구매 전 정확한 제품명·ISO 400·필름 규격·재고를 직원에게 확인. 매장별 재고 미확인.",
+      "time": "20:05",
+      "estimated": true,
+      "plannedMinutes": 20
     },
     {
       "name": "야키토리 타다시 하카타 본점",
@@ -3432,25 +3634,37 @@
     {
       "name": "호텔 WBF 그랑드 하카타",
       "q": "ホテルWBFグランデ博多",
-      "note": "숙소 귀환",
+      "note": "하카타 쇼핑 뒤 숙소 귀환 및 체크인. 객실 체크인은 15:00부터 가능. 늦은 체크인 시각을 숙소에 미리 안내할 것.",
       "address": "福岡県福岡市博多区博多駅南2-2-5",
-      "hoursSource": "https://www.ishinhotels.com/wbf/grande-hakata"
+      "hoursSource": "https://www.ishinhotels.com/wbf/grande-hakata",
+      "time": "23:05",
+      "estimated": true,
+      "plannedMinutes": 20
     },
     {
       "name": "호텔 WBF 그랑드 하카타",
       "q": "ホテルWBFグランデ博多",
       "note": "출발",
       "address": "福岡県福岡市博多区博多駅南2-2-5",
-      "hoursSource": "https://www.ishinhotels.com/wbf/grande-hakata"
+      "hoursSource": "https://www.ishinhotels.com/wbf/grande-hakata",
+      "time": "05:40",
+      "estimated": true,
+      "plannedMinutes": 15
     },
     {
       "name": "하카타 역",
-      "q": "하카타역"
+      "q": "하카타역",
+      "time": "06:10",
+      "estimated": true,
+      "plannedMinutes": 15
     },
     {
       "name": "히타 역",
       "q": "히타역",
-      "note": "리바이 동상"
+      "note": "리바이 동상",
+      "time": "08:20",
+      "estimated": false,
+      "plannedMinutes": 20
     },
     {
       "name": "오야마댐 진격의 거인 동상",
@@ -3459,7 +3673,10 @@
       "address": "大分県日田市大山町西大山2008-1 大山ダム下流広場",
       "hours": "하류 광장 연중 개방 (댐 사무소는 평일 08:30~17:00)",
       "hoursSource": "https://shingeki-hita.com/spot/001.html",
-      "hoursChecked": "2026-10-31"
+      "hoursChecked": "2026-10-31",
+      "time": "09:55",
+      "estimated": true,
+      "plannedMinutes": 40
     },
     {
       "name": "진격의 거인 박물관",
@@ -3471,12 +3688,15 @@
       "hoursSource": "https://shingeki-hita.com/news_2026.html",
       "cost": 500,
       "costSource": "https://www.city.hita.oita.jp/site/hitanioideyo/2866.html",
-      "costChecked": "2026-10-31"
+      "costChecked": "2026-10-31",
+      "time": "11:50",
+      "estimated": true,
+      "plannedMinutes": 65
     },
     {
       "name": "삿포로 맥주 규슈 히타 공장",
       "q": "삿포로 맥주 규슈 히타 공장 히타",
-      "note": "운영시간 확인 필요 · 공식 안내상 자유관람 무료, 최종 관람 접수 16:30.",
+      "note": "운영시간 확인 필요 · 공식 안내상 자유관람 무료, 최종 관람 접수 16:30. | 월·화 정기휴관, 11/9 월요일 일정에서 제외함. https://sapporobeer.pro/brewery/kyushuhita/access",
       "address": "大分県日田市大字高瀬6979",
       "hours": "10:00~17:00 (월·화 휴관, 공휴일은 대체휴관)",
       "hoursSource": "https://www.sapporobeer.jp/brewery/kyushuhita/access/",
@@ -3493,7 +3713,10 @@
       "cost": 700,
       "costSource": "https://www.city.hita.oita.jp/site/hitanioideyo/2866.html",
       "costChecked": "2026-10-31",
-      "note": "아넥스 성인 입장료. · 박물관 간 추가 이동비는 미확인으로 합계 제외."
+      "note": "아넥스 성인 입장료. · 박물관 간 추가 이동비는 미확인으로 합계 제외.",
+      "time": "15:10",
+      "estimated": true,
+      "plannedMinutes": 25
     },
     {
       "type": "choice",
@@ -3531,7 +3754,10 @@
     },
     {
       "name": "마메다마치",
-      "q": "마메다마치 히타"
+      "q": "마메다마치 히타",
+      "time": "15:40",
+      "estimated": true,
+      "plannedMinutes": 35
     },
     {
       "name": "히타마부시 센야",
@@ -3553,7 +3779,10 @@
       ],
       "gSource": "https://footinder.app/places/6541ba7547ebc19d09f22cc2",
       "gChecked": "2026-10-31",
-      "gSourceType": "secondary"
+      "gSourceType": "secondary",
+      "time": "14:05",
+      "estimated": true,
+      "plannedMinutes": 50
     },
     {
       "name": "진격의 히타 카페",
@@ -3561,17 +3790,26 @@
       "address": "大分県日田市中央1丁目1-16",
       "hours": "10:00~18:00 (부정기휴무, L.O.17:30)",
       "hoursSource": "https://shingeki-hita.com/news.html",
-      "hoursChecked": "2026-10-31"
+      "hoursChecked": "2026-10-31",
+      "time": "16:20",
+      "estimated": true,
+      "plannedMinutes": 25
     },
     {
       "name": "히타 역",
       "q": "히타역",
-      "note": "복귀"
+      "note": "복귀",
+      "time": "17:00",
+      "estimated": true,
+      "plannedMinutes": 15
     },
     {
       "name": "하카타 역",
       "q": "하카타역",
-      "note": "도착"
+      "note": "도착",
+      "time": "19:10",
+      "estimated": true,
+      "plannedMinutes": 15
     },
     {
       "name": "호텔 WBF 그랑드 하카타",
@@ -3579,13 +3817,17 @@
       "time": "08:45",
       "note": "출국일 호텔 퇴실/출발 권장 시각 08:45(기존 등록된 호텔 체크아웃 11:00은 마감·퇴실 가능 시각으로 별도 유지). 면세 환급 확인을 위해 공항 국제선에 09:45 도착 목표. 출발 전 전날 짐 정리.",
       "address": "福岡県福岡市博多区博多駅南2-2-5",
-      "hoursSource": "https://www.ishinhotels.com/wbf/grande-hakata"
+      "hoursSource": "https://www.ishinhotels.com/wbf/grande-hakata",
+      "estimated": true,
+      "plannedMinutes": 15
     },
     {
       "name": "후쿠오카 공항",
       "q": "후쿠오카 공항",
       "time": "13:00",
-      "note": "7C1404 출발, 14:30 인천 도착"
+      "note": "7C1404 출발, 14:30 인천 도착",
+      "estimated": false,
+      "plannedMinutes": 20
     },
     {
       "name": "카메라의 키타무라 미나 텐진점",
@@ -3594,7 +3836,10 @@
       "address": "福岡県福岡市中央区天神4-3-8 ミーナ天神 2F",
       "hours": "10:00~20:00",
       "hoursChecked": "2026-10-31",
-      "hoursSource": "https://store.kitamura.jp/kitamura/detail/4548/"
+      "hoursSource": "https://store.kitamura.jp/kitamura/detail/4548/",
+      "time": "10:30",
+      "estimated": true,
+      "plannedMinutes": 25
     },
     {
       "name": "라신반 후쿠오카 텐진점",
@@ -3603,7 +3848,10 @@
       "address": "福岡県福岡市中央区天神3-16-21 中村家第一ビル 2F（販売）",
       "hours": "평일 10:00~21:00 / 주말·공휴일 10:00~19:30",
       "hoursChecked": "2026-10-31",
-      "hoursSource": "https://www.lashinbang.com/store/"
+      "hoursSource": "https://www.lashinbang.com/store/",
+      "time": "11:40",
+      "estimated": true,
+      "plannedMinutes": 20
     },
     {
       "name": "라신반 캐널시티 하카타점",
@@ -3612,7 +3860,10 @@
       "address": "福岡県福岡市博多区住吉1-2 キャナルシティ博多 センターウォーク4F",
       "hours": "10:00~21:00",
       "hoursChecked": "2026-10-31",
-      "hoursSource": "https://www.lashinbang.com/store/"
+      "hoursSource": "https://www.lashinbang.com/store/",
+      "time": "12:55",
+      "estimated": true,
+      "plannedMinutes": 20
     },
     {
       "name": "카메라의 나니와 하카타 마루이점",
@@ -3621,7 +3872,10 @@
       "address": "福岡県福岡市博多区博多駅中央街9-1 博多マルイ 5F",
       "hours": "10:00~21:00",
       "hoursChecked": "2026-10-31",
-      "hoursSource": "https://cameranonaniwa.jp/shop/pages/shop_list.aspx"
+      "hoursSource": "https://cameranonaniwa.jp/shop/pages/shop_list.aspx",
+      "time": "16:05",
+      "estimated": true,
+      "plannedMinutes": 25
     },
     {
       "name": "지하철 공항선 · 후쿠오카공항→나카스카와바타",
@@ -3655,7 +3909,10 @@
         "mode": "transit",
         "label": "대중교통 길찾기"
       },
-      "officialUrl": "https://www.jrkyushu-timetable.jp/cgi-bin/sp/sp-tt_list.cgi/28283/"
+      "officialUrl": "https://www.jrkyushu-timetable.jp/cgi-bin/sp/sp-tt_list.cgi/28283/",
+      "time": "08:30",
+      "estimated": true,
+      "plannedMinutes": 100
     },
     {
       "name": "JR 가고시마본선 · 고쿠라→하카타",
@@ -3672,13 +3929,16 @@
         "mode": "transit",
         "label": "대중교통 길찾기"
       },
-      "officialUrl": "https://www.jrkyushu-timetable.jp/cgi-bin/sp/sp-tt_list.cgi/28155/"
+      "officialUrl": "https://www.jrkyushu-timetable.jp/cgi-bin/sp/sp-tt_list.cgi/28155/",
+      "time": "19:15",
+      "estimated": true,
+      "plannedMinutes": 90
     },
     {
       "name": "고속버스 히타호 · 하카타→히타",
       "type": "move",
       "cost": 1980,
-      "note": "노선: 니시테쓰·히타버스 고속버스 '히타호(ひた号)'\n승차: 하카타 버스터미널(博多バスターミナル) — JR 하카타역 옆. 정확한 승차 홈은 당일 전광판 확인.\n방향: 히타(日田) 방면\n하차: 히타 버스터미널(日田バスターミナル) — JR 히타역 인근\n환승: 없음 · 예약 없이 탑승하나 만석이면 다음 버스를 이용해야 함.\n2026-11-09 월요일 공식 예: 하카타 06:31 → 히타 08:20, 07:46 → 09:38, 08:58 → 10:50.\n주의: 07:46편은 히타 도착 후 09:40 오야마행 시내버스 환승이 사실상 불가능한 2분 간격. 이른 댐 방문이면 06:31편 검토.",
+      "note": "노선: 니시테쓰·히타버스 고속버스 '히타호(ひた号)'\n승차: 하카타 버스터미널(博多バスターミナル) — JR 하카타역 옆. 정확한 승차 홈은 당일 전광판 확인.\n방향: 히타(日田) 방면\n하차: 히타 버스터미널(日田バスターミナル) — JR 히타역 인근\n환승: 없음 · 예약 없이 탑승하나 만석이면 다음 버스를 이용해야 함.\n2026-11-09 월요일 공식 예: 하카타 06:31 → 히타 08:20, 07:46 → 09:38, 08:58 → 10:50.\n주의: 07:46편은 히타 도착 후 09:40 오야마행 시내버스 환승이 사실상 불가능한 2분 간격. 이른 댐 방문이면 06:31편 검토. | 선택한 기준 편: 하카타BT 06:31→히타BT 08:20. 2026-10-01 개정 평일 공식 시간표, 당일 확인.",
       "costSource": "https://prtimes.jp/main/html/rd/p/000001018.000017692.html",
       "costChecked": "2026-10-31",
       "route": {
@@ -3689,13 +3949,16 @@
         "mode": "transit",
         "label": "대중교통 길찾기"
       },
-      "officialUrl": "https://hitabus.com/highways/3531"
+      "officialUrl": "https://hitabus.com/highways/3531",
+      "time": "06:31",
+      "estimated": false,
+      "plannedMinutes": 109
     },
     {
       "name": "히타 노선버스 · 히타BT→나카가와라",
       "type": "move",
       "cost": 460,
-      "note": "노선: 히타버스 노선버스 '쓰에타테선(杖立線)'\n승차: 히타 버스터미널(日田バスターミナル) 1번 승차장\n방향: 쓰에타테(杖立)·미즈베노사토 오야마(水辺の郷おおやま) 방면\n하차: 나카가와라(中川原) 정류장 → 오야마댐 진격의 거인 동상까지 도보 약 30분\n2026-11-09 월요일 공식 시각: 히타BT 09:10→나카가와라 09:26, 09:40→10:10, 11:10→11:42.\n주의: 운행 횟수가 적으므로 댐 방문 전 복귀편과 박물관 이동편을 함께 확인해야 함.",
+      "note": "노선: 히타버스 노선버스 '쓰에타테선(杖立線)'\n승차: 히타 버스터미널(日田バスターミナル) 1번 승차장\n방향: 쓰에타테(杖立)·미즈베노사토 오야마(水辺の郷おおやま) 방면\n하차: 나카가와라(中川原) 정류장 → 오야마댐 진격의 거인 동상까지 도보 약 30분\n2026-11-09 월요일 공식 시각: 히타BT 09:10→나카가와라 09:26, 09:40→10:10, 11:10→11:42.\n주의: 운행 횟수가 적으므로 댐 방문 전 복귀편과 박물관 이동편을 함께 확인해야 함. | 기준 편: 히타BT 09:10→나카가와라 09:26. 오야마댐까지 도보 약 30분.",
       "costSource": "https://shingeki-hita.com/spot/001.html",
       "costChecked": "2026-10-31",
       "route": {
@@ -3706,12 +3969,15 @@
         "mode": "transit",
         "label": "대중교통 길찾기"
       },
-      "officialUrl": "https://hitabus.com/regulars/4896"
+      "officialUrl": "https://hitabus.com/regulars/4896",
+      "time": "09:10",
+      "estimated": false,
+      "plannedMinutes": 16
     },
     {
       "name": "히타 노선버스 · 박물관 앞→히타BT",
       "type": "move",
-      "note": "노선: 히타버스 '쓰에타테선(杖立線)' 히타행\n승차: 미즈베노사토 오야마 앞(水辺の郷おおやま前) — 진격의 거인 박물관 본관 앞\n방향: 히타(日田)·히타 버스터미널 방면\n하차: 히타 버스터미널(日田バスターミナル)\n2026-11-09 월요일 공식 출발 예시: 11:27 / 13:08 / 15:27 / 18:05.\n주의: 원래 일정의 460엔은 나카가와라(中川原)에서 히타BT로 돌아오는 구간 요금이므로, 박물관 앞 출발 요금으로 오표시하지 않도록 미확인 처리함. 현장 요금표 확인 필수.\n오야마댐만 방문하고 박물관을 생략한다면 나카가와라(中川原) 정류장에서 히타행을 탑승. 해당 정류장 출발 예: 11:31 / 13:12 / 15:31 / 18:09.",
+      "note": "노선: 히타버스 '쓰에타테선(杖立線)' 히타행\n승차: 미즈베노사토 오야마 앞(水辺の郷おおやま前) — 진격의 거인 박물관 본관 앞\n방향: 히타(日田)·히타 버스터미널 방면\n하차: 히타 버스터미널(日田バスターミナル)\n2026-11-09 월요일 공식 출발 예시: 11:27 / 13:08 / 15:27 / 18:05.\n주의: 원래 일정의 460엔은 나카가와라(中川原)에서 히타BT로 돌아오는 구간 요금이므로, 박물관 앞 출발 요금으로 오표시하지 않도록 미확인 처리함. 현장 요금표 확인 필수.\n오야마댐만 방문하고 박물관을 생략한다면 나카가와라(中川原) 정류장에서 히타행을 탑승. 해당 정류장 출발 예: 11:31 / 13:12 / 15:31 / 18:09. | 기준 편: 박물관 앞 13:08 히타 방면. 놓치면 이후 박물관·점심 계획 지연.",
       "route": {
         "fromName": "水辺の郷おおやま前",
         "from": "",
@@ -3720,13 +3986,16 @@
         "mode": "transit",
         "label": "대중교통 길찾기"
       },
-      "officialUrl": "https://hitabus.com/regulars/4899"
+      "officialUrl": "https://hitabus.com/regulars/4899",
+      "time": "13:08",
+      "estimated": false,
+      "plannedMinutes": 34
     },
     {
       "name": "고속버스 히타호 · 히타→하카타",
       "type": "move",
       "cost": 1980,
-      "note": "노선: 니시테쓰·히타버스 고속버스 '히타호(ひた号)'\n승차: 히타 버스터미널(日田バスターミナル) 2번 승차장\n방향: 후쿠오카(福岡) · 하카타 버스터미널(博多バスターミナル) 방면\n하차: 하카타 버스터미널(博多バスターミナル)\n환승: 없음. 일부 편은 덴진을 경유하고 종착지가 다를 수 있으므로 '博多バスターミナル' 도착 여부 확인.\n주의: 좌석정원제·예약 불필요·만석 시 다음 편. 이후 호텔까지는 도보 또는 시내 교통 이용.",
+      "note": "노선: 니시테쓰·히타버스 고속버스 '히타호(ひた号)'\n승차: 히타 버스터미널(日田バスターミナル) 2번 승차장\n방향: 후쿠오카(福岡) · 하카타 버스터미널(博多バスターミナル) 방면\n하차: 하카타 버스터미널(博多バスターミナル)\n환승: 없음. 일부 편은 덴진을 경유하고 종착지가 다를 수 있으므로 '博多バスターミナル' 도착 여부 확인.\n주의: 좌석정원제·예약 불필요·만석 시 다음 편. 이후 호텔까지는 도보 또는 시내 교통 이용. | 기준 편: 히타BT 17:20 후쿠오카/하카타행. 2026-10-01 개정 평일 시간표.",
       "costSource": "https://prtimes.jp/main/html/rd/p/000001018.000017692.html",
       "costChecked": "2026-10-31",
       "route": {
@@ -3737,7 +4006,10 @@
         "mode": "transit",
         "label": "대중교통 길찾기"
       },
-      "officialUrl": "https://hitabus.com/highways/3533"
+      "officialUrl": "https://hitabus.com/highways/3533",
+      "time": "17:20",
+      "estimated": false,
+      "plannedMinutes": 105
     },
     {
       "name": "지하철 공항선 · 하카타→후쿠오카공항",
@@ -3755,7 +4027,9 @@
         "label": "대중교통 길찾기"
       },
       "officialUrl": "https://subway.city.fukuoka.lg.jp/schedule/",
-      "time": "09:10"
+      "time": "09:10",
+      "estimated": true,
+      "plannedMinutes": 6
     },
     {
       "name": "대림제3동주민센터",
@@ -3772,27 +4046,33 @@
       "name": "홍대입구역 (공항철도 환승)",
       "q": "홍대입구역 공항철도",
       "time": "11:09",
-      "note": "11월 4일 오전 11:09 홍대입구역 도착(사용자 보고 당시 한국 시간 기준). 공항철도 일반열차 인천공항 방면으로 환승."
+      "note": "11월 4일 오전 11:09 홍대입구역 도착(사용자 보고 당시 한국 시간 기준). 공항철도 일반열차 인천공항 방면으로 환승.",
+      "estimated": false,
+      "plannedMinutes": 20
     },
     {
-      "name": "공항철도 일반열차 · 인천공항 방면",
+      "name": "공항철도 일반열차 · 인천공항 방면 (탑승 중)",
       "type": "move",
-      "time": "11:59",
-      "note": "홍대입구역 평일 11:59 출발을 우선 목표로 설정(공항철도 공식 시간표 기준); 놓치면 12:06 전후 열차 확인. 반드시 인천공항1터미널 경유 인천공항2터미널행인지 확인하고 검암 종착 열차는 제외. 실제 열차 운행·도착 시각은 당일 재확인. 교통비는 확인되지 않아 합산하지 않음.",
+      "time": "11:24",
+      "note": "11월 4일 11:24경 사용자가 이미 공항철도에 탑승해 이동 중이라고 알림. 11:24는 탑승 중임을 알린 시각이며 실제 열차 출발 시각은 확인되지 않음. 인천공항1터미널역에 하차.",
       "route": {
-        "fromName": "대림제3동주민센터",
+        "fromName": "홍대입구역",
         "from": "",
-        "toName": "인천국제공항 제1여객터미널",
+        "toName": "인천공항1터미널역",
         "to": "",
         "mode": "transit",
         "label": "지하철·공항철도 대중교통 길찾기"
-      }
+      },
+      "estimated": false,
+      "plannedMinutes": 50
     },
     {
       "name": "인천국제공항 제1여객터미널 · 출국장",
       "q": "인천국제공항 제1여객터미널 3층 출국장",
-      "time": "13:10",
-      "note": "15:20 출발 제주항공 7C1405의 2시간 전(13:20)까지 도착 목표. 13:10은 공항철도역→3층 출국장 이동을 포함한 계획 시각이며 보장된 도착 시각은 아님. 체크인·보안검색 및 당일 열차 운행 확인."
+      "time": "12:35",
+      "note": "【예상】홍대입구역에서 11:24경 공항철도 탑승 중인 상황 기준, 인천공항 제1여객터미널 3층 출국장 12:25~12:45 예상. 실시간 운행이나 실제 도착 시각은 확인되지 않음. 15:20 제주항공 7C1405 탑승 준비.",
+      "estimated": true,
+      "plannedMinutes": 45
     },
     {
       "name": "후쿠오카공항 국제선 8번 승강장 · 텐진 직행버스",
@@ -3809,7 +4089,10 @@
         "to": "",
         "mode": "transit",
         "label": "공항 국제선→텐진 직행버스"
-      }
+      },
+      "time": "17:50",
+      "estimated": true,
+      "plannedMinutes": 30
     },
     {
       "name": "지하철 공항선 · 나카스카와바타→하카타",
@@ -3823,7 +4106,10 @@
         "mode": "transit",
         "label": "대중교통 길찾기"
       },
-      "officialUrl": "https://subway.city.fukuoka.lg.jp/schedule/"
+      "officialUrl": "https://subway.city.fukuoka.lg.jp/schedule/",
+      "time": "08:05",
+      "estimated": true,
+      "plannedMinutes": 10
     },
     {
       "name": "JR 가고시마본선 · 모지코→고쿠라 (신사 경유)",
@@ -3837,7 +4123,10 @@
         "mode": "transit",
         "label": "대중교통 길찾기"
       },
-      "officialUrl": "https://www.jrkyushu-timetable.jp/cgi-bin/sp/sp-tt_list.cgi/28155/"
+      "officialUrl": "https://www.jrkyushu-timetable.jp/cgi-bin/sp/sp-tt_list.cgi/28155/",
+      "time": "14:10",
+      "estimated": true,
+      "plannedMinutes": 15
     },
     {
       "name": "JR 닛포본선 · 고쿠라→시모소네 (쇼하치만)",
@@ -3851,7 +4140,10 @@
         "mode": "transit",
         "label": "대중교통 길찾기"
       },
-      "officialUrl": "https://eki.jr-odekake.net/premises?id=0910106"
+      "officialUrl": "https://eki.jr-odekake.net/premises?id=0910106",
+      "time": "14:45",
+      "estimated": true,
+      "plannedMinutes": 20
     },
     {
       "name": "JR 닛포본선 · 시모소네→고쿠라 (신사 복귀)",
@@ -3865,7 +4157,10 @@
         "mode": "transit",
         "label": "대중교통 길찾기"
       },
-      "officialUrl": "https://eki.jr-odekake.net/premises?id=0910106"
+      "officialUrl": "https://eki.jr-odekake.net/premises?id=0910106",
+      "time": "15:50",
+      "estimated": true,
+      "plannedMinutes": 20
     },
     {
       "name": "고쿠라역→코로나월드 무료 셔틀 (온천)",
@@ -3893,7 +4188,10 @@
         "mode": "transit",
         "label": "대중교통 길찾기"
       },
-      "officialUrl": "https://subway.city.fukuoka.lg.jp/schedule/"
+      "officialUrl": "https://subway.city.fukuoka.lg.jp/schedule/",
+      "time": "21:50",
+      "estimated": true,
+      "plannedMinutes": 12
     },
     {
       "name": "지하철 공항선 · 나카스카와바타→하카타 (투어 집합)",
@@ -3907,7 +4205,10 @@
         "mode": "transit",
         "label": "대중교통 길찾기"
       },
-      "officialUrl": "https://subway.city.fukuoka.lg.jp/schedule/"
+      "officialUrl": "https://subway.city.fukuoka.lg.jp/schedule/",
+      "time": "07:10",
+      "estimated": true,
+      "plannedMinutes": 15
     },
     {
       "name": "지하철 공항선 · 하카타→나카스카와바타 (투어 복귀)",
@@ -3921,7 +4222,10 @@
         "mode": "transit",
         "label": "대중교통 길찾기"
       },
-      "officialUrl": "https://subway.city.fukuoka.lg.jp/schedule/"
+      "officialUrl": "https://subway.city.fukuoka.lg.jp/schedule/",
+      "time": "21:00",
+      "estimated": true,
+      "plannedMinutes": 12
     },
     {
       "name": "지하철 공항선 · 나카스카와바타→하카타 (숙소 이동)",
@@ -3935,12 +4239,15 @@
         "mode": "transit",
         "label": "대중교통 길찾기"
       },
-      "officialUrl": "https://subway.city.fukuoka.lg.jp/schedule/"
+      "officialUrl": "https://subway.city.fukuoka.lg.jp/schedule/",
+      "time": "10:25",
+      "estimated": true,
+      "plannedMinutes": 15
     },
     {
       "name": "히타 쓰에타테선 · 나카가와라→진격의 거인 박물관 본관",
       "type": "move",
-      "note": "노선: 히타버스 쓰에타테선(杖立線)\n승차: 나카가와라(中川原) 정류장 — 오야마댐 동상 방문 후 도보 복귀\n방향: 쓰에타테(杖立)·미즈베노사토 오야마(水辺の郷おおやま) 방면\n하차: 미즈베노사토 오야마 앞(水辺の郷おおやま前) — 진격의 거인 박물관 본관\n월요일 예시: 나카가와라 11:42 → 미즈베노사토 오야마 11:46, 또는 14:00 → 14:04.\n주의: 버스 운행 수가 적어 오야마댐 왕복 도보와 연결이 가능할지 사전 계산 필요. 이 구간 운임 미확인.",
+      "note": "노선: 히타버스 쓰에타테선(杖立線)\n승차: 나카가와라(中川原) 정류장 — 오야마댐 동상 방문 후 도보 복귀\n방향: 쓰에타테(杖立)·미즈베노사토 오야마(水辺の郷おおやま) 방면\n하차: 미즈베노사토 오야마 앞(水辺の郷おおやま前) — 진격의 거인 박물관 본관\n월요일 예시: 나카가와라 11:42 → 미즈베노사토 오야마 11:46, 또는 14:00 → 14:04.\n주의: 버스 운행 수가 적어 오야마댐 왕복 도보와 연결이 가능할지 사전 계산 필요. 이 구간 운임 미확인. | 기준 편: 나카가와라 11:42→박물관 앞 11:46. 동상 사진 후 정류장까지 반드시 복귀.",
       "route": {
         "fromName": "中川原 バス停 大山",
         "from": "",
@@ -3949,7 +4256,10 @@
         "mode": "transit",
         "label": "대중교통 길찾기"
       },
-      "officialUrl": "https://hitabus.com/regulars/4896"
+      "officialUrl": "https://hitabus.com/regulars/4896",
+      "time": "11:42",
+      "estimated": false,
+      "plannedMinutes": 4
     },
     {
       "name": "후쿠오카공항 국내선→국제선 무료 셔틀 (귀국)",
@@ -3957,7 +4267,9 @@
       "note": "교통: 공항 무료 연락버스(노선번호 없음)\n승차: 지하철 후쿠오카공항역 연결 국내선 터미널 무료 셔틀버스 승차장\n방향: 국제선 터미널(国際線) 방면\n하차: 국제선 터미널 1층 → 3층 출국 수속장 이동\n버스 이동 약 10분 전후 + 대기·터미널 도보 별도.\n계획 시각: 국내선 무료 셔틀 승차 09:25 전후(시간표로 확정된 열차·버스 아님). 면세 환급 절차를 위해 국제선 터미널 09:45 도착 목표.",
       "cost": 0,
       "officialUrl": "https://www.fukuoka-airport.jp/access/bus2.html",
-      "time": "09:25"
+      "time": "09:25",
+      "estimated": true,
+      "plannedMinutes": 15
     },
     {
       "type": "choice",
@@ -4218,12 +4530,14 @@
           },
           "id": "loc-5cbb9fee"
         }
-      ]
+      ],
+      "estimated": true,
+      "plannedMinutes": 20
     },
     {
       "type": "choice",
       "title": "저녁",
-      "time": null,
+      "time": "20:50",
       "note": "고쿠라에서 하카타로 돌아온 뒤 저녁. 늦은 귀환이면 영업 종료한 식당은 제외하고 라멘 등 야간 영업 선택. 이 식사는 이동 일정에 따라 생략 가능.",
       "multi": false,
       "options": [
@@ -4479,7 +4793,9 @@
           },
           "id": "loc-5cbb9fee"
         }
-      ]
+      ],
+      "estimated": true,
+      "plannedMinutes": 50
     },
     {
       "type": "choice",
@@ -4626,7 +4942,9 @@
           },
           "id": "loc-5cbb9fee"
         }
-      ]
+      ],
+      "estimated": true,
+      "plannedMinutes": 20
     },
     {
       "type": "choice",
@@ -4886,7 +5204,9 @@
           },
           "id": "loc-a15d37fe"
         }
-      ]
+      ],
+      "estimated": true,
+      "plannedMinutes": 65
     },
     {
       "type": "choice",
@@ -5092,13 +5412,15 @@
           },
           "id": "loc-5cbb9fee"
         }
-      ]
+      ],
+      "estimated": true,
+      "plannedMinutes": 45
     },
     {
       "type": "choice",
       "title": "아침",
-      "time": "07:00",
-      "note": "히타행 버스 출발편과 충돌 주의. 06:31 버스 탑승 시 07:00 개점 식당 이용 불가: 숙소에서 미리 준비한 식사 필수. 07:46 이후 편이라면 하카타역 주변에서 간편식.",
+      "time": "05:50",
+      "note": "히타행 버스 출발편과 충돌 주의. 06:31 버스 탑승 시 07:00 개점 식당 이용 불가: 숙소에서 미리 준비한 식사 필수. 07:46 이후 편이라면 하카타역 주변에서 간편식. | 11/9 히타 오전 06:31 버스 탑승 위해 05:50에 전날 준비한 간편식으로 아침 대체하는 예상 계획. 기존 07:00 호텔 주변 아침식사와 양립 불가.",
       "multi": false,
       "options": [
         {
@@ -5225,12 +5547,14 @@
           },
           "id": "loc-3036b69a"
         }
-      ]
+      ],
+      "estimated": true,
+      "plannedMinutes": 20
     },
     {
       "type": "choice",
       "title": "점심",
-      "time": "13:30",
+      "time": "13:55",
       "note": "오야마댐·진격의 거인 박물관에서 히타 시내 복귀 후 마메다마치 주변 점심. 센야는 바로 근처, 산큐는 히타역 방향, 소후렌 본점은 별도 우회. 버스 시각·대기·당일 접수 확인.",
       "multi": false,
       "options": [
@@ -5348,12 +5672,14 @@
           },
           "id": "loc-db027d04"
         }
-      ]
+      ],
+      "estimated": true,
+      "plannedMinutes": 50
     },
     {
       "type": "choice",
       "title": "저녁",
-      "time": null,
+      "time": "19:35",
       "note": "히타→하카타 고속버스 도착 뒤 하카타역 근처 저녁. 실제 버스 도착 시각과 최종 주문 시간을 확인해 한 곳만 선택.",
       "multi": false,
       "options": [
@@ -5609,7 +5935,9 @@
           },
           "id": "loc-5cbb9fee"
         }
-      ]
+      ],
+      "estimated": true,
+      "plannedMinutes": 60
     },
     {
       "type": "choice",
@@ -5741,7 +6069,9 @@
           },
           "id": "loc-3036b69a"
         }
-      ]
+      ],
+      "estimated": true,
+      "plannedMinutes": 40
     },
     {
       "type": "choice",
@@ -5994,7 +6324,9 @@
           "note": "텐진·다이묘 쇼핑 동선. 손날개 튀김. 좌석 차지 ¥396 및 22시 이후 10% 추가 가능, 요일별 영업시간 확인. 덴진·다이묘에서 먼저 한잔 후 나카스 숙소로 복귀 시 적합.",
           "id": "loc-c7f2c301"
         }
-      ]
+      ],
+      "estimated": true,
+      "plannedMinutes": 60
     },
     {
       "type": "choice",
@@ -6203,7 +6535,10 @@
           "note": "이마이즈미·덴진 쇼핑 동선. 닭껍질 꼬치. 좌석 차지 ¥385 및 22시 이후 심야 10% 별도. 나카스에서 덴진 방면으로 이동이 필요한 우회 후보.",
           "id": "loc-81ddf764"
         }
-      ]
+      ],
+      "time": "22:15",
+      "estimated": true,
+      "plannedMinutes": 40
     },
     {
       "type": "choice",
@@ -6439,7 +6774,10 @@
           "note": "하카타역 하카타구치 남서쪽. 숯불구이·이자카야.",
           "id": "loc-fa049627"
         }
-      ]
+      ],
+      "time": "19:40",
+      "estimated": true,
+      "plannedMinutes": 60
     },
     {
       "type": "choice",
@@ -6675,7 +7013,10 @@
           "note": "하카타역 하카타구치 남서쪽. 숯불구이·이자카야.",
           "id": "loc-fa049627"
         }
-      ]
+      ],
+      "time": "21:15",
+      "estimated": true,
+      "plannedMinutes": 55
     },
     {
       "type": "choice",
@@ -6911,14 +7252,19 @@
           "note": "하카타역 하카타구치 남서쪽. 숯불구이·이자카야.",
           "id": "loc-fa049627"
         }
-      ]
+      ],
+      "time": "20:50",
+      "estimated": true,
+      "plannedMinutes": 60
     },
     {
       "name": "후쿠오카공항 국제선 터미널 도착 · 면세 절차 준비",
       "q": "福岡空港 国際線旅客ターミナル 3階 出発ロビー",
       "time": "09:45",
       "note": "13:00 출발 기준, 3시간 15분 전 국제선 터미널 도착 목표(권장 계획값). 1F 셔틀 하차 → 3F 국제선 출발 일반 구역. 면세 쇼핑했다면 항공사에 캐리어를 맡기기 전에 면세품·여권을 지참해 세관 반출 확인 먼저 진행.",
-      "officialUrl": "https://www.fukuoka-airport.jp/en/flight/flow_int/"
+      "officialUrl": "https://www.fukuoka-airport.jp/en/flight/flow_int/",
+      "estimated": true,
+      "plannedMinutes": 10
     },
     {
       "type": "guide",
@@ -6962,7 +7308,9 @@
           "url": "https://www.customs.go.jp/kaigairyoko/taxrefund/vjw.html"
         }
       ],
-      "checked": "2026-10-31"
+      "checked": "2026-10-31",
+      "estimated": true,
+      "plannedMinutes": 10
     },
     {
       "type": "guide",
@@ -6997,7 +7345,9 @@
           "url": "https://www.fukuoka-airport.jp/en/access/bus2.html"
         }
       ],
-      "checked": "2026-10-31"
+      "checked": "2026-10-31",
+      "estimated": true,
+      "plannedMinutes": 50
     },
     {
       "type": "guide",
@@ -7028,7 +7378,9 @@
           "url": "https://www.customs.go.kr/kcs/cm/cntnts/cntntsView.do?cntntsId=829&mi=2837"
         }
       ],
-      "checked": "2026-10-31"
+      "checked": "2026-10-31",
+      "estimated": true,
+      "plannedMinutes": 10
     },
     {
       "name": "SUPLEX (시에라디자인 취급점)",
@@ -7037,7 +7389,10 @@
       "hours": "11:00 개점 (폐점·휴무는 방문 전 확인 필요)",
       "hoursSource": "https://map.yahoo.co.jp/v3/place/BgSHQ3fUf0-/",
       "hoursChecked": "2026-11-01",
-      "note": "SIERRA DESIGNS(시에라디자인) 공식 취급 편집숍. 니시진 구역: 텐진에서 지하철로 니시진역까지 이동 후 방문. 상품·사이즈는 매장 재고 확인. 11시 개점은 외부 매장 정보 기준이므로 목요일 운영·폐점은 방문 전 재확인."
+      "note": "SIERRA DESIGNS(시에라디자인) 공식 취급 편집숍. 니시진 구역: 텐진에서 지하철로 니시진역까지 이동 후 방문. 상품·사이즈는 매장 재고 확인. 11시 개점은 외부 매장 정보 기준이므로 목요일 운영·폐점은 방문 전 재확인.",
+      "time": "14:45",
+      "estimated": true,
+      "plannedMinutes": 20
     },
     {
       "name": "라리그라스 다이묘점 (티톤브로스)",
@@ -7046,7 +7401,10 @@
       "hours": "10:00~19:00 (화요일 휴무)",
       "hoursSource": "https://raliguras.com/store/daimyo",
       "hoursChecked": "2026-11-01",
-      "note": "Teton Bros.(티톤브로스) 공식 취급점. SUPLEX 방문 후 지하철로 아카사카역 복귀 → 다이묘 쇼핑 이어가기. 원하는 모델·사이즈 재고는 방문 전 확인."
+      "note": "Teton Bros.(티톤브로스) 공식 취급점. SUPLEX 방문 후 지하철로 아카사카역 복귀 → 다이묘 쇼핑 이어가기. 원하는 모델·사이즈 재고는 방문 전 확인.",
+      "time": "15:15",
+      "estimated": true,
+      "plannedMinutes": 20
     },
     {
       "name": "FACTORY (오라리 취급점)",
@@ -7055,7 +7413,10 @@
       "hours": "평일 12:00~19:30",
       "hoursSource": "https://factory-market.com/about.php",
       "hoursChecked": "2026-11-01",
-      "note": "AURALEE(오라리) 남성복 취급 편집숍. 다이묘 의류 쇼핑 후 이마이즈미 방향으로 이동. 상품·사이즈는 현장 재고 확인."
+      "note": "AURALEE(오라리) 남성복 취급 편집숍. 다이묘 의류 쇼핑 후 이마이즈미 방향으로 이동. 상품·사이즈는 현장 재고 확인.",
+      "time": "19:10",
+      "estimated": true,
+      "plannedMinutes": 20
     },
     {
       "name": "더 콘란샵 후쿠오카점 (TEKLA 취급)",
@@ -7064,7 +7425,10 @@
       "hours": "10:00~20:00",
       "hoursSource": "https://www.conranshop.jp/brand/stores?c=5",
       "hoursChecked": "2026-11-01",
-      "note": "TEKLA(테클라) 타월·홈웨어 취급점. 기존 꼼데가르송 이와타야 신관 3F와 같은 건물 B2F라 추가 이동 없이 방문 가능. TEKLA 현재 상품·색상 재고 확인 필요. 브랜드 취급 근거: https://www.excite.co.jp/news/article/Prtimes_2025-08-25-48272-14/"
+      "note": "TEKLA(테클라) 타월·홈웨어 취급점. 기존 꼼데가르송 이와타야 신관 3F와 같은 건물 B2F라 추가 이동 없이 방문 가능. TEKLA 현재 상품·색상 재고 확인 필요. 브랜드 취급 근거: https://www.excite.co.jp/news/article/Prtimes_2025-08-25-48272-14/",
+      "time": "13:20",
+      "estimated": true,
+      "plannedMinutes": 20
     },
     {
       "name": "CABaN 후쿠오카점 (TEKLA 취급)",
@@ -7073,7 +7437,10 @@
       "hours": "11:00~20:00 (부정기 휴무)",
       "hoursSource": "https://store.tomorrowland.co.jp/topics/detail/?article_id=910985",
       "hoursChecked": "2026-11-01",
-      "note": "TEKLA(테클라) 취급 공식 지정 매장. 다이묘 아크테릭스·베이프 쇼핑 구간에 방문. TEKLA 상품·색상·사이즈 재고는 방문 전 매장 확인. 취급 근거: https://store.tomorrowland.co.jp/topics/detail/?article_id=1119053"
+      "note": "TEKLA(테클라) 취급 공식 지정 매장. 다이묘 아크테릭스·베이프 쇼핑 구간에 방문. TEKLA 상품·색상·사이즈 재고는 방문 전 매장 확인. 취급 근거: https://store.tomorrowland.co.jp/topics/detail/?article_id=1119053",
+      "time": "17:05",
+      "estimated": true,
+      "plannedMinutes": 20
     },
     {
       "name": "무인양품 텐진 쇼퍼즈 후쿠오카점",
@@ -7082,7 +7449,10 @@
       "hours": "09:00~21:00",
       "hoursChecked": "2026-11-01",
       "hoursSource": "https://www.muji.com/jp/ja/shop/detail/046700",
-      "note": "목요일 텐진 쇼핑: 미나 텐진 바로 옆 쇼퍼즈 후쿠오카 2F. 미나 텐진(유니클로·GU·키타무라·북오프) 방문 직전에 들르면 우회 이동이 거의 없음. 무인양품 공식 매장 정보 기준."
+      "note": "목요일 텐진 쇼핑: 미나 텐진 바로 옆 쇼퍼즈 후쿠오카 2F. 미나 텐진(유니클로·GU·키타무라·북오프) 방문 직전에 들르면 우회 이동이 거의 없음. 무인양품 공식 매장 정보 기준.",
+      "time": "09:45",
+      "estimated": true,
+      "plannedMinutes": 20
     },
     {
       "name": "유니클로 텐진점 (미나 텐진)",
@@ -7091,7 +7461,10 @@
       "hours": "10:00~20:00",
       "hoursChecked": "2026-11-01",
       "hoursSource": "https://map.uniqlo.com/jp/ja/detail/10101803",
-      "note": "미나 텐진 1F 여성복·2F 남성복/키즈. 기존 카메라의 키타무라(2F), GU(3F), 북오프(7F)와 같은 건물. 목요일 건물 내 순서로 함께 방문."
+      "note": "미나 텐진 1F 여성복·2F 남성복/키즈. 기존 카메라의 키타무라(2F), GU(3F), 북오프(7F)와 같은 건물. 목요일 건물 내 순서로 함께 방문.",
+      "time": "10:05",
+      "estimated": true,
+      "plannedMinutes": 20
     },
     {
       "name": "GU 텐진점 (미나 텐진)",
@@ -7100,7 +7473,10 @@
       "hours": "10:00~20:00",
       "hoursChecked": "2026-11-01",
       "hoursSource": "https://www.mina-tenjin.com/shop/detail.php?shopId=087",
-      "note": "미나 텐진 3F. 유니클로·카메라의 키타무라(2F)와 북오프(7F) 사이에 방문하면 건물 내 동선 간단."
+      "note": "미나 텐진 3F. 유니클로·카메라의 키타무라(2F)와 북오프(7F) 사이에 방문하면 건물 내 동선 간단.",
+      "time": "10:55",
+      "estimated": true,
+      "plannedMinutes": 20
     },
     {
       "name": "무인양품 캐널시티 하카타점",
@@ -7109,7 +7485,10 @@
       "hours": "10:00~21:00",
       "hoursChecked": "2026-11-01",
       "hoursSource": "https://www.muji.com/jp/ja/shop/detail/045849",
-      "note": "일요일 캐널시티 쇼핑 시 함께 방문. 노스빌딩 3~4F, 기존 점프샵·라신반 일정과 동일 쇼핑몰. 이동 동선 최소화."
+      "note": "일요일 캐널시티 쇼핑 시 함께 방문. 노스빌딩 3~4F, 기존 점프샵·라신반 일정과 동일 쇼핑몰. 이동 동선 최소화.",
+      "time": "12:05",
+      "estimated": true,
+      "plannedMinutes": 20
     },
     {
       "name": "유니클로 아뮤에스트 하카타점",
@@ -7118,7 +7497,10 @@
       "hours": "10:00~21:00",
       "hoursChecked": "2026-11-01",
       "hoursSource": "https://map.uniqlo.com/jp/ja/detail/10100923",
-      "note": "일요일 하카타역 쇼핑 구간. 하카타 한큐·하카타 마루이 주변 역 연결 쇼핑몰 아뮤에스트 1F. 이동 중 잠깐 방문하기 좋음."
+      "note": "일요일 하카타역 쇼핑 구간. 하카타 한큐·하카타 마루이 주변 역 연결 쇼핑몰 아뮤에스트 1F. 이동 중 잠깐 방문하기 좋음.",
+      "time": "15:10",
+      "estimated": true,
+      "plannedMinutes": 20
     },
     {
       "name": "GU 요도바시 하카타점",
@@ -7127,19 +7509,28 @@
       "hours": "10:00~21:00",
       "hoursChecked": "2026-11-01",
       "hoursSource": "https://www.yodobashi-hakata.com/fashion2/fashion_gugu.html",
-      "note": "일요일 기존 요도바시 카메라 멀티미디어 하카타 방문과 함께 쇼핑. 같은 건물 3F. 21:00 폐점이므로 저녁·쇼핑 진행 속도에 따라 마감 전 방문 필요."
+      "note": "일요일 기존 요도바시 카메라 멀티미디어 하카타 방문과 함께 쇼핑. 같은 건물 3F. 21:00 폐점이므로 저녁·쇼핑 진행 속도에 따라 마감 전 방문 필요.",
+      "time": "20:35",
+      "estimated": true,
+      "plannedMinutes": 20
     },
     {
       "name": "나카스 포장마차 거리 (야간 관광·산책)",
       "q": "나카스 포장마차 거리 후쿠오카",
-      "note": "술집 방문이나 식사가 아니라 포장마차 거리의 분위기와 야경을 구경하는 관광 일정. 포장마차 이용·음식 주문은 필수 아님. 현장 점포별 운영 여부는 다를 수 있어."
+      "note": "술집 방문이나 식사가 아니라 포장마차 거리의 분위기와 야경을 구경하는 관광 일정. 포장마차 이용·음식 주문은 필수 아님. 현장 점포별 운영 여부는 다를 수 있어.",
+      "time": "22:10",
+      "estimated": true,
+      "plannedMinutes": 25
     },
     {
       "name": "더 밀레니얼스 후쿠오카 (쇼핑 짐 놓기 · 선택)",
       "q": "The Millennials Fukuoka 中洲5丁目2-18",
       "address": "福岡県福岡市博多区中洲5-2-18",
       "hoursSource": "https://www.livelyhotels.com/ja/themillennialsfukuoka/access/",
-      "note": "쇼핑한 물건이 많을 때만 숙소에 들러 짐을 놓고 마이즈루 공원으로 이동. 짐이 적으면 이 경유지를 생략하고 마이즈루 공원으로 직행. 텐진·다이묘 쇼핑 지역→나카스 숙소→마이즈루 공원은 추가 이동이 생기므로 팀랩 입장·관람 시간 여유 확인."
+      "note": "쇼핑한 물건이 많을 때만 숙소에 들러 짐을 놓고 마이즈루 공원으로 이동. 짐이 적으면 이 경유지를 생략하고 마이즈루 공원으로 직행. 텐진·다이묘 쇼핑 지역→나카스 숙소→마이즈루 공원은 추가 이동이 생기므로 팀랩 입장·관람 시간 여유 확인.",
+      "time": "20:45",
+      "estimated": true,
+      "plannedMinutes": 20
     },
     {
       "type": "choice",
@@ -7173,7 +7564,10 @@
         }
       ],
       "multi": false,
-      "note": "도착일 밤 선택. 21:00 술집·나카스 포장마차 거리 관광 뒤 시간이 남으면 한 곳만 방문하거나 생략. 나미하노유는 22:15까지 입장해야 하므로 늦으면 현실적으로 이용하기 어려움."
+      "note": "도착일 밤 선택. 21:00 술집·나카스 포장마차 거리 관광 뒤 시간이 남으면 한 곳만 방문하거나 생략. 나미하노유는 22:15까지 입장해야 하므로 늦으면 현실적으로 이용하기 어려움.",
+      "time": "22:45",
+      "estimated": true,
+      "plannedMinutes": 45
     },
     {
       "type": "choice",
@@ -7207,7 +7601,10 @@
         }
       ],
       "multi": false,
-      "note": "텐진 쇼핑·마이즈루 공원 팀랩·술집 이후 시간과 체력이 남으면 한 곳만 선택. 나미하노유 최종 입장 22:15, 팀랩 시간이 길어지면 사우나 대안을 검토하거나 생략."
+      "note": "텐진 쇼핑·마이즈루 공원 팀랩·술집 이후 시간과 체력이 남으면 한 곳만 선택. 나미하노유 최종 입장 22:15, 팀랩 시간이 길어지면 사우나 대안을 검토하거나 생략.",
+      "time": "22:50",
+      "estimated": true,
+      "plannedMinutes": 40
     },
     {
       "type": "choice",
@@ -7241,7 +7638,10 @@
         }
       ],
       "multi": false,
-      "note": "기타큐슈에서 하카타로 돌아온 뒤 저녁·술집을 마치고 나카스 숙소 근처에서만 선택. 늦으면 22:15 최종 입장인 나미하노유보다 24시간 이용 가능 그린랜드가 현실적. 기존 코로나노유·코로나월드 일정과 무관."
+      "note": "기타큐슈에서 하카타로 돌아온 뒤 저녁·술집을 마치고 나카스 숙소 근처에서만 선택. 늦으면 22:15 최종 입장인 나미하노유보다 24시간 이용 가능 그린랜드가 현실적. 기존 코로나노유·코로나월드 일정과 무관.",
+      "time": "23:00",
+      "estimated": true,
+      "plannedMinutes": 30
     },
     {
       "type": "choice",
@@ -7275,7 +7675,10 @@
         }
       ],
       "multi": false,
-      "note": "유후인 버스투어 종료 후 하카타에서 저녁·술집, 나카스 복귀 때 한 곳 선택하거나 생략. 버스투어 당일 유후인 현지 온천은 다시 넣지 않음."
+      "note": "유후인 버스투어 종료 후 하카타에서 저녁·술집, 나카스 복귀 때 한 곳 선택하거나 생략. 버스투어 당일 유후인 현지 온천은 다시 넣지 않음.",
+      "time": "21:35",
+      "estimated": true,
+      "plannedMinutes": 45
     },
     {
       "type": "choice",
@@ -7309,7 +7712,10 @@
         }
       ],
       "multi": false,
-      "note": "하카타 쇼핑·술집 일정 후 한 곳 선택하거나 생략. WBF 호텔 대욕장은 15시 체크인 후 숙박객 무료, 야오지노유는 숙소 밖의 별도 유료 천연온천. 외부 시설 이용 시 호텔 복귀 동선 고려."
+      "note": "하카타 쇼핑·술집 일정 후 한 곳 선택하거나 생략. WBF 호텔 대욕장은 15시 체크인 후 숙박객 무료, 야오지노유는 숙소 밖의 별도 유료 천연온천. 외부 시설 이용 시 호텔 복귀 동선 고려.",
+      "time": "22:15",
+      "estimated": true,
+      "plannedMinutes": 45
     },
     {
       "type": "choice",
@@ -7343,7 +7749,10 @@
         }
       ],
       "multi": false,
-      "note": "히타 여행에서 하카타로 돌아온 뒤 저녁·술집 후 한 곳 선택. WBF 호텔 대욕장 이용은 숙소로 돌아온 뒤 진행. 외부 야오지노유는 23:30까지 입장해야 하며 다음 날 귀국 준비 우선. 히타 현지 온천을 다시 등록한 것이 아님."
+      "note": "히타 여행에서 하카타로 돌아온 뒤 저녁·술집 후 한 곳 선택. WBF 호텔 대욕장 이용은 숙소로 돌아온 뒤 진행. 외부 야오지노유는 23:30까지 입장해야 하며 다음 날 귀국 준비 우선. 히타 현지 온천을 다시 등록한 것이 아님.",
+      "time": "22:00",
+      "estimated": true,
+      "plannedMinutes": 45
     },
     {
       "type": "choice",
@@ -7404,16 +7813,23 @@
         "mode": "transit",
         "label": "텐진→나카스카와바타 지하철 길찾기"
       },
-      "officialUrl": "https://subway.city.fukuoka.lg.jp/"
+      "officialUrl": "https://subway.city.fukuoka.lg.jp/",
+      "time": "18:25",
+      "estimated": true,
+      "plannedMinutes": 12
     },
     {
-      "name": "돈키호테 하카타역남점 (선택 쇼핑)",
-      "q": "ドン・キホーテ 博多駅南店 福岡市博多区東光寺町2-6-40",
-      "address": "福岡県福岡市博多区東光寺町2-6-40 コマーシャルモール博多 1F・2F",
-      "hours": "09:00~다음날 03:00 (연중무휴)",
-      "note": "호텔 WBF 그랑드 하카타 숙박 중 선택 방문. 하카타역 바로 옆은 아니며 호텔에서도 도보 이동이 길 수 있어 지도에서 경로 확인. 쇼핑 후 짐을 호텔에 두기 편한 날로 11/8 배치. 피곤하면 생략 가능. 면세 대응 매장.",
-      "hoursSource": "https://www.donki.com/store/shop_detail.php?shop_id=656",
-      "hoursChecked": "2026-11-03"
+      "name": "돈키호테 나카스점 (선택 쇼핑)",
+      "q": "ドン・キホーテ 中洲店 福岡県福岡市博多区中洲3-7-24",
+      "address": "福岡県福岡市博多区中洲3-7-24",
+      "hours": "24시간 영업, 연중무휴",
+      "note": "첫 숙소 더 밀레니얼스 후쿠오카 근처. 11/5 숙소 복귀 직전 선택 방문. 11/8 하카타역남점은 이전 요청대로 제외. 면세 가능, 여권 지참. 늦으면 생략 가능.",
+      "hoursSource": "https://www.donki.com/store/shop_detail.php?shop_id=278",
+      "hoursChecked": "2026-11-04",
+      "time": "23:35",
+      "estimated": true,
+      "plannedMinutes": 25,
+      "officialUrl": "https://www.donki.com/store/shop_detail.php?shop_id=278"
     }
   ],
   "packingChecklist": {
