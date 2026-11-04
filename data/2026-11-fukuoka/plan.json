@@ -496,7 +496,7 @@
       "name": "더 밀레니얼스 후쿠오카",
       "q": "The Millennials Fukuoka 中洲5丁目2-18",
       "time": "18:40",
-      "note": "체크인 · 당초 18:10에서 30분 미룬 계획 시각. 입국 심사·무료 셔틀·지하철 소요에 따라 더 늦어질 수 있음.",
+      "note": "체크인 · 원래 요청에 따라 18:10에서 30분 미뤄 둔 18:40 계획 시각을 유지. 11월 4일 17:36 히가시히에역에서 공항선 이동 중이라는 실제 보고가 있어 나카스카와바타역 약 17:45 하차 예상(미확정). 역에서 도보로 숙소 이동, 실제 체크인은 더 빨라질 수 있음.",
       "address": "福岡県福岡市博多区中洲5-2-18",
       "hoursSource": "https://www.livelyhotels.com/ja/themillennialsfukuoka/access/",
       "estimated": true,
@@ -4087,24 +4087,24 @@
       "plannedMinutes": 45
     },
     {
-      "name": "후쿠오카공항 국제선 8번 승강장 · 텐진 직행버스",
+      "name": "지하철 공항선 · 히가시히에역(K12) 통과 (탑승 중)",
       "type": "move",
-      "note": "교통: 니시테쓰 특급 Airport Express(天神～福岡空港国際線)\n승차: 후쿠오카공항 국제선 터미널 1층 8번 승강장\n방향: 니시테쓰 텐진 고속버스터미널(西鉄天神高速バスターミナル) 방면\n하차: 니시테쓰 텐진 고속버스터미널 · 중간 정차 없음\n소요: 약 30분(도로 상황에 따라 변동)\n요금: 성인 500엔 / 교통계 IC카드 480엔(카드 할인은 비용 합계에 미반영)\n탑승 전 11월 4일 실제 운행 시각 확인. 캐리어는 트렁크 적재 가능. 숙소는 텐진이 아닌 나카스에 있으므로 하차 후 추가 이동 필요.",
-      "cost": 500,
-      "officialUrl": "https://nishitetsu.jp/bus/rosen/airportexpress/",
-      "costSource": "https://nishitetsu.jp/bus/rosen/airportexpress/",
-      "costChecked": "2026-11-02",
+      "note": "【실제 위치 보고 · 2026-11-04 17:36 일본 현지시각】후쿠오카공항에서 지하철 공항선으로 이동 중이며 히가시히에역(東比恵, K12)에 있음. 실제 열차 탑승 시각은 미확인. 기존 ‘국제선 8번 승강장 → 텐진 직행버스’ 계획은 취소하고 지하철 경로로 대체. 지하철 요금 260엔은 후쿠오카공항역→나카스카와바타역 구간 성인 편도 표준운임. 이후 나카스카와바타까지 K11 하카타 → K10 기온 → K09 나카스카와바타, 환승 없이 이동.",
+      "cost": 260,
+      "officialUrl": "https://subway.city.fukuoka.lg.jp/kor/route/index.php",
+      "costSource": "https://ekitan.com/rail-company/640/fare/sf-8026/st-7851",
+      "costChecked": "2026-11-04",
       "route": {
-        "fromName": "福岡空港国際線 8番のりば",
+        "fromName": "福岡空港駅 (K13)",
         "from": "",
-        "toName": "西鉄天神高速バスターミナル",
+        "toName": "中洲川端駅 (K09)",
         "to": "",
         "mode": "transit",
-        "label": "공항 국제선→텐진 직행버스"
+        "label": "공항선 후쿠오카공항→나카스카와바타 (히가시히에 경유)"
       },
-      "time": "17:50",
-      "estimated": true,
-      "plannedMinutes": 30
+      "time": "17:36",
+      "estimated": false,
+      "plannedMinutes": 6
     },
     {
       "name": "지하철 공항선 · 나카스카와바타→하카타",
@@ -7819,21 +7819,21 @@
       }
     },
     {
-      "name": "텐진역→나카스카와바타역 (지하철 공항선 1정거장)",
+      "name": "나카스카와바타역(K09) 하차 예정 · 숙소 방향",
       "type": "move",
-      "note": "텐진 고속버스터미널 하차 후 지하철 텐진역(天神駅)까지 실내 연결 통로 이동. 공항선 하카타·후쿠오카공항 방면으로 1정거장 → 나카스카와바타역(中洲川端駅) 하차. 숙소 더 밀레니얼스 후쿠오카까지 도보 약 1~3분. 승강장 이동과 열차 대기시간 별도. 요금은 현장 확인.",
+      "note": "【예상】17:36 히가시히에역(K12) 탑승 중 보고를 기준으로 약 17:45 나카스카와바타역(K09) 도착 예상. 다음 정차역: 하카타(K11) → 기온(K10) → 나카스카와바타(K09). 메이노하마/하카타 방면 동일 열차에서 하차하면 되며 텐진역까지 갈 필요 없음. 열차 실제 도착 시각은 미확인. 더 밀레니얼스 후쿠오카는 역에서 도보 이동.",
       "route": {
-        "fromName": "天神駅",
+        "fromName": "東比恵駅 (K12)",
         "from": "",
-        "toName": "中洲川端駅",
+        "toName": "中洲川端駅 (K09)",
         "to": "",
         "mode": "transit",
-        "label": "텐진→나카스카와바타 지하철 길찾기"
+        "label": "히가시히에→나카스카와바타"
       },
-      "officialUrl": "https://subway.city.fukuoka.lg.jp/",
-      "time": "18:25",
+      "officialUrl": "https://subway.city.fukuoka.lg.jp/kor/route/index.php",
+      "time": "17:45",
       "estimated": true,
-      "plannedMinutes": 12
+      "plannedMinutes": 7
     },
     {
       "name": "돈키호테 나카스점 (선택 쇼핑)",
