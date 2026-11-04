@@ -1044,11 +1044,14 @@
     var nd = plan.days[i + 1];
     if (!nd) return s;
     var first = view(nd).stops.filter(function (x) { return toMin(x.time) != null; })[0];
-    if (!first) return s;
-    var gap = 24 * 60 - stopMin(s) + toMin(first.time);
+    var wakeAt = toMin(s.wakeTime) != null ? s.wakeTime : (first && first.time);
+    if (!wakeAt) return s;
+    var gap = 24 * 60 - stopMin(s) + toMin(wakeAt);
     var r = {};
     Object.keys(s).forEach(function (k) { r[k] = s[k]; });
-    r.next = T('내일 {t} {n}까지 약 {h}시간 {m}분', { t: first.time, n: first.type === 'run' ? T('러닝') : (first.title || first.name), h: Math.floor(gap / 60), m: gap % 60 });
+    r.next = s.wakeTime ?
+      T('내일 {t} 기상, 약 {h}시간 {m}분 수면 (예상)', { t: wakeAt, h: Math.floor(gap / 60), m: gap % 60 }) :
+      T('내일 {t} {n}까지 약 {h}시간 {m}분', { t: first.time, n: first.type === 'run' ? T('러닝') : (first.title || first.name), h: Math.floor(gap / 60), m: gap % 60 });
     return r;
   }
   // 하루 시작 카드: 전날에 취침이 있으면 그날 맨 위에 이어서 표시 (첫 일정 시각이 지나면 다른 일정처럼 접힘)
@@ -1058,9 +1061,17 @@
     var bed = view(pd).stops.filter(function (x) { return x.type === 'sleep'; })[0];
     var first = stops.filter(function (x) { return toMin(x.time) != null; })[0];
     if (!bed || !first) return null;
-    var gap = 24 * 60 - stopMin(bed) + toMin(first.time);
-    return { type: 'sleep', name: bed.name, time: '~ ' + first.time, _k: 'wake',
-      next: T(bed.late ? '오늘 새벽 {a}부터 약 {h}시간 {m}분. {t} {n}부터 하루 시작' : '어젯밤 {a}부터 약 {h}시간 {m}분. {t} {n}부터 하루 시작', { a: bed.time, h: Math.floor(gap / 60), m: gap % 60, t: first.time, n: first.type === 'run' ? T('러닝') : (first.title || first.name) }) };
+    var wakeAt = toMin(bed.wakeTime) != null ? bed.wakeTime : first.time;
+    var gap = 24 * 60 - stopMin(bed) + toMin(wakeAt);
+    var msg = bed.wakeTime ?
+      T('{a}부터 약 {h}시간 {m}분 수면 (예상). {t} 기상, {s} {n}부터 일정 시작', {
+        a: bed.time, h: Math.floor(gap / 60), m: gap % 60, t: wakeAt,
+        s: first.time, n: first.title || first.name
+      }) :
+      T(bed.late ? '오늘 새벽 {a}부터 약 {h}시간 {m}분. {t} {n}부터 하루 시작' : '어젯밤 {a}부터 약 {h}시간 {m}분. {t} {n}부터 하루 시작', {
+        a: bed.time, h: Math.floor(gap / 60), m: gap % 60, t: first.time, n: first.type === 'run' ? T('러닝') : (first.title || first.name)
+      });
+    return { type: 'sleep', name: bed.name, time: '~ ' + wakeAt, _k: 'wake', next: msg };
   }
   // Departure guides are reference cards, not places or expenses. Text content uses
   // textContent only; external official links are allowed only with HTTPS.
@@ -1554,23 +1565,32 @@
     if (b) { pill.style.width = b.offsetWidth + 'px'; pill.style.transform = 'translateX(' + b.offsetLeft + 'px)'; }
   }
 
+  // Compare timestamps against the itinerary date. A late bedtime (00:05 + 24 hours)
+  // must remain pending after midnight until its own start time.
+  function minutesSinceDayStart(dayDate, now) {
+    var a = Date.parse(dayDate + 'T00:00:00Z');
+    var b = Date.parse(now.date + 'T00:00:00Z');
+    return (b - a) / 60000 + now.min;
+  }
   // 오늘 탭이면 이미 시작한 일정 중 가장 최근 것을 현재로, 그 전은 지난 일정으로 표시
   var capIo = null;
   function markNow(scroll) {
     var now = tripNow();
     var day = plan.days[current];
+    var elapsed = minutesSinceDayStart(day.date, now);
     var rows = document.querySelectorAll('#day .it');
     var hit = -1;
     Array.prototype.forEach.call(rows, function (r, j) {
       r.classList.remove('now', 'reached');
       var c = r.querySelector('.now-chip'); if (c) c.remove();
       var m = r.getAttribute('data-min');
-      if (day.date === now.date && m !== '' && +m <= now.min) hit = j;
+      if (m !== '' && +m <= elapsed) hit = j;
     });
     var cap = document.getElementById('nowcap');
     if (capIo) capIo.disconnect();
     // 지난 날짜는 일정 전체를 완료로 접고, 진행 선도 끝까지 채움
-    var over = day.date < now.date;
+    var over = day.date < now.date && (!rows.length || hit === rows.length - 1);
+    if (over) hit = -1;
     Array.prototype.forEach.call(rows, function (r, j) { setPast(r, over || j < hit); });
     if (hit === -1) {
       progress(over && rows.length ? rows[rows.length - 1] : null);
