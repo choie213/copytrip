@@ -587,3 +587,11 @@ html:not(.motion) .wx-m .a-gust { opacity: 1; stroke-dasharray: none; }
   .day-hero-actions { gap:4px; }
   .day-hero-actions .packing-trigger { width:56px; }
 }
+
+/* Scheduled arrival is checked immediately while its detail card remains visible. */
+.it.reached:not(.past) .dot { width:16px; height:16px; left:-23px; top:14px;
+  border:0; background:var(--green); }
+.it.reached:not(.past) .dot::before { content:''; position:absolute; left:5.5px; top:2.5px;
+  width:3.5px; height:7px; border:solid #fff; border-width:0 2px 2px 0;
+  transform:rotate(45deg); }
+.time-estimated { font-weight:550; font-size:10px; color:var(--ink3); white-space:nowrap; }
