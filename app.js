@@ -125,6 +125,7 @@
   var WEATHER_CACHE_KEY = 'trip-weather-latest:' + SLUG;
   var PACKING_KEY = 'trip-packing-v1:' + SLUG;
   var OUTFIT_KEY = 'trip-outfits-v1:' + SLUG;
+  var OUTFIT_EDIT_KEY = 'trip-outfits-edits-v1:' + SLUG;
   var LIVE_WEATHER_URL = 'https://raw.githubusercontent.com/choie213/copytrip/weather-data/data/' +
     encodeURIComponent(SLUG) + '/weather.json';
   var DATA = '../data/' + SLUG + '/';
@@ -369,8 +370,9 @@
     container.scrollTop = scroll;
   }
 
-  // Outfit plans are part of this trip. Checked days are stored locally,
-  // independently of the packing checklist and the weather-swapped itinerary.
+  // Outfit completion and custom edits use separate per-trip local storage keys.
+  // Original plan.json entries stay unchanged and can be restored per day.
+  var outfitEditingDate = null;
   function outfitDays() {
     return plan && Array.isArray(plan.outfits) ? plan.outfits : [];
   }
@@ -380,6 +382,28 @@
     var initial = {};
     outfitDays().forEach(function (o) { if (o.initialChecked) initial[o.date] = true; });
     return initial;
+  }
+  function outfitEdits() {
+    var x = load(OUTFIT_EDIT_KEY);
+    return x && typeof x === 'object' && !Array.isArray(x) ? x : {};
+  }
+  function outfitSaveEdits(data) {
+    try {
+      localStorage.setItem(OUTFIT_EDIT_KEY, JSON.stringify(data));
+      return true;
+    } catch (e) {
+      alert('코디 수정 내용을 저장하지 못했어. 브라우저 저장 공간이나 개인정보 보호 모드를 확인해 줘.');
+      return false;
+    }
+  }
+  function outfitEntry(o, edits) {
+    var e = edits[o.date] || {};
+    return {
+      date: o.date,
+      occasion: typeof e.occasion === 'string' && e.occasion.trim() ? e.occasion : o.occasion,
+      pieces: Array.isArray(e.pieces) && e.pieces.length ? e.pieces : o.pieces,
+      important: typeof e.important === 'boolean' ? e.important : !!o.important
+    };
   }
   function outfitCount(state) {
     return outfitDays().filter(function (o) { return !!state[o.date]; }).length;
@@ -392,13 +416,14 @@
   }
   function outfitOpen() {
     if (!outfitDays().length) return;
+    outfitEditingDate = null;
     outfitRender();
     openSheet('outfit-sheet');
   }
   function outfitRender() {
     var body = document.getElementById('outfit-body');
     if (!body) return;
-    var y = body.scrollTop, state = outfitState();
+    var y = body.scrollTop, state = outfitState(), edits = outfitEdits();
     body.textContent = '';
     var total = outfitDays().length, done = outfitCount(state);
     var summary = el('div', { class: 'outfit-summary' }, [
@@ -407,22 +432,26 @@
     ]);
     body.appendChild(summary);
     body.appendChild(el('p', { class: 'outfit-tip', text:
-      LANG === 'en' ? 'Tick a day after wearing it. Changes are saved on this device.' :
-      LANG === 'ja' ? '着用済みの日にチェックしてください。この端末に保存されます。' :
-      '입은 날을 체크할 수 있어. 기록은 이 기기에 저장돼.' }));
-    outfitDays().forEach(function (o) {
+      LANG === 'en' ? 'Tick a day after wearing it. Edit each look below; saved on this device only.' :
+      LANG === 'ja' ? '着用した日をチェックし、編集できます。変更はこの端末だけに保存されます。' :
+      '착용 완료를 체크하거나 날짜별 코디를 수정할 수 있어. 변경 내용은 이 기기에만 저장돼.' }));
+    outfitDays().forEach(function (original) {
+      var o = outfitEntry(original, edits);
       var day = plan.days.filter(function (d) { return d.date === o.date; })[0];
+      var dateLabel = day ? day.label : o.date.slice(5);
       var checked = !!state[o.date];
       var active = plan.days[current] && plan.days[current].date === o.date;
-      var row = el('label', { class: 'outfit-row' +
+      var editing = outfitEditingDate === o.date;
+      var card = el('section', { class: 'outfit-card' +
         (checked ? ' is-done' : '') + (active ? ' is-current' : '') });
+      var row = el('div', { class: 'outfit-row' });
+      var checkLabel = el('label', { class: 'outfit-check-label' });
       var check = el('input', { type: 'checkbox',
-        'aria-label': (day ? day.label : o.date) + ' ' + o.occasion + ' ' + (LANG === 'en' ? 'worn' : '착용 완료') });
+        'aria-label': dateLabel + ' ' + o.occasion + ' ' + (LANG === 'en' ? 'worn' : '착용 완료') });
       check.checked = checked;
       check.addEventListener('change', function () {
         var update = outfitState();
-        if (check.checked) update[o.date] = true;
-        else update[o.date] = false;
+        update[o.date] = check.checked;
         try {
           localStorage.setItem(OUTFIT_KEY, JSON.stringify(update));
         } catch (e) {
@@ -433,17 +462,94 @@
         outfitRender();
         outfitRefreshTrigger();
       });
-      row.appendChild(check);
-      var content = el('span', { class: 'outfit-content' });
-      var head = el('span', { class: 'outfit-row-head' }, [
-        el('b', { text: (day ? day.label : o.date.slice(5)) + ' · ' + o.occasion })
+      checkLabel.appendChild(check);
+      row.appendChild(checkLabel);
+      var content = el('div', { class: 'outfit-content' });
+      var head = el('div', { class: 'outfit-row-head' }, [
+        el('b', { text: dateLabel + ' · ' + o.occasion })
       ]);
       if (o.important) head.appendChild(el('em', { text: '‼️' }));
       if (active) head.appendChild(el('small', { text: LANG === 'en' ? 'This day' : LANG === 'ja' ? '表示中' : '현재 일정' }));
       content.appendChild(head);
-      content.appendChild(el('span', { class: 'outfit-pieces', text: (o.pieces || []).join(' + ') }));
+      content.appendChild(el('div', { class: 'outfit-pieces', text: (o.pieces || []).join(' + ') }));
       row.appendChild(content);
-      body.appendChild(row);
+      var editButton = el('button', { type: 'button', class: 'outfit-edit-button',
+        'aria-label': dateLabel + ' 코디 ' + (editing ? '수정 취소' : '수정'),
+        text: editing ? '취소' : '수정' });
+      editButton.addEventListener('click', function () {
+        outfitEditingDate = editing ? null : o.date;
+        outfitRender();
+      });
+      row.appendChild(editButton);
+      card.appendChild(row);
+
+      if (editing) {
+        var form = el('form', { class: 'outfit-edit-form' });
+        var occasionLabel = el('label', { class: 'outfit-edit-field' });
+        occasionLabel.appendChild(el('span', { text: '일정 이름' }));
+        var occasionInput = el('input', { type: 'text', maxlength: '40', required: 'required',
+          'aria-label': dateLabel + ' 코디 일정 이름' });
+        occasionInput.value = o.occasion;
+        occasionLabel.appendChild(occasionInput);
+        form.appendChild(occasionLabel);
+        var piecesLabel = el('label', { class: 'outfit-edit-field' });
+        piecesLabel.appendChild(el('span', { text: '입을 옷 · 한 줄에 하나씩' }));
+        var piecesInput = el('textarea', { rows: '4', maxlength: '700', required: 'required',
+          'aria-label': dateLabel + ' 코디 의류 목록' });
+        piecesInput.value = (o.pieces || []).join('\n');
+        piecesLabel.appendChild(piecesInput);
+        form.appendChild(piecesLabel);
+        var importantLabel = el('label', { class: 'outfit-important-label' });
+        var importantCheck = el('input', { type: 'checkbox', 'aria-label': '중요 표시' });
+        importantCheck.checked = o.important;
+        importantLabel.appendChild(importantCheck);
+        importantLabel.appendChild(el('span', { text: '중요 표시 ‼️' }));
+        form.appendChild(importantLabel);
+        var buttons = el('div', { class: 'outfit-edit-actions' });
+        var saveButton = el('button', { type: 'submit', class: 'outfit-save-button', text: '저장' });
+        buttons.appendChild(saveButton);
+        var cancelButton = el('button', { type: 'button', class: 'outfit-cancel-button', text: '취소' });
+        cancelButton.addEventListener('click', function () {
+          outfitEditingDate = null;
+          outfitRender();
+        });
+        buttons.appendChild(cancelButton);
+        if (Object.prototype.hasOwnProperty.call(edits, o.date)) {
+          var resetButton = el('button', { type: 'button', class: 'outfit-reset-button', text: '원래 코디로 복원' });
+          resetButton.addEventListener('click', function () {
+            if (!confirm('이 날짜의 수정 내용을 원래 코디로 복원할까?')) return;
+            var latest = outfitEdits();
+            delete latest[o.date];
+            if (outfitSaveEdits(latest)) {
+              outfitEditingDate = null;
+              outfitRender();
+            }
+          });
+          buttons.appendChild(resetButton);
+        }
+        form.appendChild(buttons);
+        form.addEventListener('submit', function (event) {
+          event.preventDefault();
+          var occasion = occasionInput.value.trim();
+          var pieces = piecesInput.value.split(/\r?\n/).map(function (v) { return v.trim(); }).filter(Boolean);
+          if (!occasion || !pieces.length) {
+            alert('일정 이름과 옷 목록을 입력해 줘.');
+            return;
+          }
+          if (pieces.length > 20 || pieces.some(function (v) { return v.length > 80; })) {
+            alert('옷 목록은 최대 20개, 항목당 80자까지 입력할 수 있어.');
+            return;
+          }
+          var latest = outfitEdits();
+          latest[o.date] = { occasion: occasion, pieces: pieces, important: importantCheck.checked };
+          if (outfitSaveEdits(latest)) {
+            outfitEditingDate = null;
+            outfitRender();
+          }
+        });
+        card.appendChild(form);
+      }
+      body.appendChild(card);
     });
     body.scrollTop = y;
   }
