@@ -68,7 +68,6 @@
             165,
             2,
             3,
-            155,
             7,
             168
           ],
@@ -85,7 +84,6 @@
             165,
             2,
             3,
-            155,
             7,
             168
           ]
@@ -818,12 +816,12 @@
     {
       "name": "더 밀레니얼스 후쿠오카",
       "q": "The Millennials Fukuoka 中洲5丁目2-18",
-      "note": "【11/4 변경 예정】야키니쿠 식사 후 산책을 마치고 숙소 복귀, 샤워 및 취침 준비. 술집과 온천 일정은 오늘 생략. 실제 귀환 시각 미확인.",
+      "note": "【11/4 변경 예정】야키니쿠 식사를 마친 후 포장마차 거리 산책·술집·온천 없이 바로 더 밀레니얼스 후쿠오카로 복귀, 샤워와 취침 준비. 실제 식사 종료 및 숙소 도착 시각 미확인. 21:20은 예상 시각.",
       "address": "福岡県福岡市博多区中洲5-2-18",
       "hoursSource": "https://www.livelyhotels.com/ja/themillennialsfukuoka/access/",
-      "time": "21:45",
+      "time": "21:20",
       "estimated": true,
-      "plannedMinutes": 35
+      "plannedMinutes": 40
     },
     {
       "name": "더 밀레니얼스 후쿠오카",
@@ -7884,7 +7882,7 @@
     {
       "type": "sleep",
       "name": "취침",
-      "time": "22:30",
+      "time": "22:15",
       "late": false,
       "wakeTime": "07:50",
       "estimated": true
