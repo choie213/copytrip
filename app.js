@@ -840,6 +840,8 @@
     if (s.estimated && s.time) shownTime.appendChild(el('span', {
       class: 'time-estimated', text: ' · 예상' }));
     var h = el('div', { class: 'it-head' }, [shownTime]);
+    if (s.plannedMinutes && s.time) h.appendChild(el('span', {
+      class: 'planned-duration', text: (s.type === 'move' ? '이동 약 ' : '체류 약 ') + s.plannedMinutes + '분' }));
     if (typeof s.cost === 'number' && s.cost > 0) h.appendChild(el('span', { class: 'cost', text: price(grouped(s.cost)) }));
     return h;
   }
