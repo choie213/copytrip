@@ -35,6 +35,32 @@ for t in trips:
             if pl.get('weather') not in plan.get('locations', {}): err(f'{slug} {d["date"]}/{key}: weather 지점이 locations에 없음')
             for i in pl.get('sun', []) + pl.get('rain', []):
                 if not isinstance(i, int) or not 0 <= i < n: err(f'{slug} {d["date"]}/{key}: 항목 번호 {i} 범위 밖 (items {n}개)')
+    # For strict schedules, fail on missing/invalid times, out-of-order timestamps,
+    # or a missing overnight sleep event. Historical example trips stay unchanged.
+    if plan.get('trip', {}).get('requireScheduledTimes'):
+        for di, day in enumerate(plan.get('days', [])):
+            for key, pl in day.get('plans', {}).items():
+                for variant in ('sun', 'rain'):
+                    last_min = -1
+                    ids = pl.get(variant, [])
+                    for idx in ids:
+                        if not isinstance(idx, int) or not 0 <= idx < n:
+                            continue  # Invalid indexes are reported above.
+                        it = plan['items'][idx]
+                        when = it.get('time', '')
+                        if not isinstance(when, str) or not re.fullmatch(r'(?:[01][0-9]|2[0-3]):[0-5][0-9]', when):
+                            err(f"{slug} {day['date']}/{key}/{variant} 항목[{idx}] {it.get('name') or it.get('title')}: 유효한 시각 없음")
+                            continue
+                        hours, mins = map(int, when.split(':'))
+                        current_min = hours * 60 + mins + (1440 if it.get('late') else 0)
+                        if current_min < last_min:
+                            err(f"{slug} {day['date']}/{key}/{variant} 항목[{idx}]: 시각 역순")
+                        last_min = current_min
+                    if di < len(plan['days']) - 1 and not any(
+                        0 <= idx < n and plan['items'][idx].get('type') == 'sleep'
+                        for idx in ids if isinstance(idx, int)
+                    ):
+                        err(f"{slug} {day['date']}/{key}/{variant}: 취침 일정 없음")
     for i, it in enumerate(plan.get('items', [])):
         t_ = it.get('time')
         if t_ and not re.fullmatch(r'\d{1,2}:\d{2}', t_): err(f'{slug} items[{i}] {it.get("name")}: time 형식 오류 {t_}')

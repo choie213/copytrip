@@ -5,7 +5,8 @@
     "period": "11월 4일 ~ 10일",
     "timezone": "Asia/Tokyo",
     "currency": "엔",
-    "costNote": "확인된 요금만 합산"
+    "costNote": "확인된 요금만 합산",
+    "requireScheduledTimes": true
   },
   "flights": [
     {
@@ -68,7 +69,8 @@
             135,
             155,
             157,
-            7
+            7,
+            168
           ],
           "rain": [
             110,
@@ -84,7 +86,8 @@
             135,
             155,
             157,
-            7
+            7,
+            168
           ]
         }
       }
@@ -129,7 +132,8 @@
             24,
             158,
             166,
-            25
+            25,
+            169
           ],
           "rain": [
             8,
@@ -162,7 +166,8 @@
             24,
             158,
             166,
-            25
+            25,
+            169
           ]
         }
       }
@@ -206,7 +211,8 @@
             120,
             136,
             159,
-            47
+            47,
+            170
           ],
           "rain": [
             26,
@@ -238,7 +244,8 @@
             120,
             136,
             159,
-            47
+            47,
+            170
           ]
         }
       }
@@ -272,7 +279,8 @@
             137,
             122,
             160,
-            62
+            62,
+            171
           ],
           "rain": [
             48,
@@ -294,7 +302,8 @@
             137,
             122,
             160,
-            62
+            62,
+            171
           ]
         }
       }
@@ -334,7 +343,8 @@
             154,
             138,
             161,
-            80
+            80,
+            172
           ],
           "rain": [
             63,
@@ -362,7 +372,8 @@
             154,
             138,
             161,
-            80
+            80,
+            172
           ]
         }
       }
@@ -397,7 +408,9 @@
             93,
             133,
             139,
-            162
+            162,
+            167,
+            173
           ],
           "rain": [
             81,
@@ -420,7 +433,9 @@
             93,
             133,
             139,
-            162
+            162,
+            167,
+            173
           ]
         }
       }
@@ -7827,6 +7842,60 @@
       "estimated": true,
       "plannedMinutes": 25,
       "officialUrl": "https://www.donki.com/store/shop_detail.php?shop_id=278"
+    },
+    {
+      "name": "호텔 WBF 그랑드 하카타 (객실 복귀)",
+      "q": "ホテルWBFグランデ博多",
+      "address": "福岡県福岡市博多区博多駅南2-2-5",
+      "note": "온천·대욕장 이용 후 객실 복귀. 호텔 대욕장을 선택했다면 같은 건물 내 이동, 외부 온천을 선택했다면 이동 시간이 더 필요할 수 있음. 취침 전 귀국 짐 정리.",
+      "time": "22:50",
+      "estimated": true,
+      "plannedMinutes": 25
+    },
+    {
+      "type": "sleep",
+      "name": "취침",
+      "time": "00:05",
+      "late": true,
+      "wakeTime": "07:50",
+      "estimated": true
+    },
+    {
+      "type": "sleep",
+      "name": "취침",
+      "time": "00:20",
+      "late": true,
+      "wakeTime": "06:20",
+      "estimated": true
+    },
+    {
+      "type": "sleep",
+      "name": "취침",
+      "time": "00:05",
+      "late": true,
+      "wakeTime": "05:35",
+      "estimated": true
+    },
+    {
+      "type": "sleep",
+      "name": "취침",
+      "time": "23:05",
+      "wakeTime": "06:45",
+      "estimated": true
+    },
+    {
+      "type": "sleep",
+      "name": "취침",
+      "time": "23:35",
+      "wakeTime": "04:55",
+      "estimated": true
+    },
+    {
+      "type": "sleep",
+      "name": "취침",
+      "time": "23:20",
+      "wakeTime": "06:50",
+      "estimated": true
     }
   ],
   "packingChecklist": {
