@@ -1453,6 +1453,12 @@
     // settle 로 등장 상태를 먼저 정한 뒤에 맞춰야 함. 먼저 부르면 스타일이 계산되면서 카드 등장 효과가 다시 재생돼 화면이 흔들림
     syncMotion(main, !quiet);
     markNow(false);
+    // Collapsing past stops changes the timeline geometry. Measure again after
+    // Safari has laid out the collapsed summaries, so the green line reaches
+    // the active stop instead of a stale dot position.
+    requestAnimationFrame(function () {
+      if (main === document.getElementById('day')) progress(progressTarget());
+    });
   }
 
   // 등장 효과 없이 바로 최종 모습으로 (조용한 갱신, 스와이프 미리보기)
@@ -2098,6 +2104,12 @@
     markNow(false);
     checkUpdate();
     refreshVisibleWeather();
+  });
+  // iOS Safari/PWA may restore an already open page without a full reload.
+  window.addEventListener('pageshow', function () {
+    if (!plan) return;
+    markNow(false);
+    requestAnimationFrame(function () { progress(progressTarget()); });
   });
   setInterval(function () {
     if (document.visibilityState === 'visible') { checkUpdate(); refreshVisibleWeather(); }
