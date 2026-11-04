@@ -756,6 +756,30 @@
             "checked": "2026-10-31"
           },
           "id": "loc-95b3f281"
+        },
+        {
+          "name": "규카쿠 무한리필 전문점 후쿠오카 나카스점",
+          "q": "牛角食べ放題専門店 福岡中洲店 福岡県福岡市博多区中洲3-7-24",
+          "address": "福岡県福岡市博多区中洲3-7-24 ゲイツビル1F",
+          "note": "나카스카와바타역 바로 옆. 90분 야키니쿠 무한리필 3,058엔(세금 포함)부터. 1인 이용 가능 코스 표기, 실제 좌석·코스는 예약 시 확인. 텐진 지하상가 방문 후 나카스로 돌아오는 동선이므로 이동시간 고려.",
+          "hours": "수요일 11:30~15:00 / 17:00~23:00 (L.O.22:20)",
+          "hoursSource": "https://gyuukakunakasu2.owst.jp/",
+          "hoursChecked": "2026-11-04",
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400102/40062449/",
+          "officialUrl": "https://map.reins.co.jp/gyukaku/detail/922924007",
+          "sourceStatus": "new",
+          "priceBudget": {
+            "night": {
+              "range": [
+                3058,
+                6578
+              ],
+              "basis": "course"
+            },
+            "sourceUrl": "https://gyuukakunakasu2.owst.jp/menu",
+            "checked": "2026-11-04"
+          },
+          "id": "loc-gyukaku-nakasu-20261104"
         }
       ],
       "multi": false,
