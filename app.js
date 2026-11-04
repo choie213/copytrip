@@ -836,7 +836,10 @@
   }
 
   function head(s) {
-    var h = el('div', { class: 'it-head' }, [el('span', { class: 'time', text: s.time || '' })]);
+    var shownTime = el('span', { class: 'time', text: s.time || '' });
+    if (s.estimated && s.time) shownTime.appendChild(el('span', {
+      class: 'time-estimated', text: ' · 예상' }));
+    var h = el('div', { class: 'it-head' }, [shownTime]);
     if (typeof s.cost === 'number' && s.cost > 0) h.appendChild(el('span', { class: 'cost', text: price(grouped(s.cost)) }));
     return h;
   }
@@ -1557,7 +1560,7 @@
     var rows = document.querySelectorAll('#day .it');
     var hit = -1;
     Array.prototype.forEach.call(rows, function (r, j) {
-      r.classList.remove('now');
+      r.classList.remove('now', 'reached');
       var c = r.querySelector('.now-chip'); if (c) c.remove();
       var m = r.getAttribute('data-min');
       if (day.date === now.date && m !== '' && +m <= now.min) hit = j;
@@ -1585,7 +1588,9 @@
       return;
     }
     var cur = rows[hit];
-    cur.classList.add('now');
+    // Mark the reached time immediately: the last timestamp is already due,
+    // even if the next itinerary item has not started yet. Keep its card open.
+    cur.classList.add('now', 'reached');
     cur.querySelector('.time').appendChild(el('span', { class: 'now-chip', text: T('지금') }));
     var next = null;
     for (var j = hit + 1; j < rows.length; j++) if (rows[j].getAttribute('data-min') !== '') { next = rows[j]; break; }
