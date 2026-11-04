@@ -84,6 +84,15 @@
     "  </div>",
     "</div>",
     "",
+    '<div class="sheet" id="outfit-sheet" aria-hidden="true">',
+    '  <div class="scrim" data-close></div>',
+    '  <div class="panel outfit-panel" role="dialog" aria-modal="true" aria-labelledby="outfit-title">',
+    '    <div class="grab"></div>',
+    '    <div class="panel-head"><b id="outfit-title">날짜별 코디</b><button class="btn" type="button" data-close>완료</button></div>',
+    '    <div id="outfit-body"></div>',
+    '  </div>',
+    '</div>',
+    '',
     '<div class="sheet" id="upd-sheet" aria-hidden="true">',
     '  <div class="scrim"></div>',
     '  <div class="panel" role="dialog" aria-modal="true" aria-labelledby="upd-title">',
@@ -115,6 +124,7 @@
   var PICK_KEY = 'trip-pick-v3:' + SLUG;
   var WEATHER_CACHE_KEY = 'trip-weather-latest:' + SLUG;
   var PACKING_KEY = 'trip-packing-v1:' + SLUG;
+  var OUTFIT_KEY = 'trip-outfits-v1:' + SLUG;
   var LIVE_WEATHER_URL = 'https://raw.githubusercontent.com/choie213/copytrip/weather-data/data/' +
     encodeURIComponent(SLUG) + '/weather.json';
   var DATA = '../data/' + SLUG + '/';
@@ -357,6 +367,85 @@
       container.appendChild(restore);
     }
     container.scrollTop = scroll;
+  }
+
+  // Outfit plans are part of this trip. Checked days are stored locally,
+  // independently of the packing checklist and the weather-swapped itinerary.
+  function outfitDays() {
+    return plan && Array.isArray(plan.outfits) ? plan.outfits : [];
+  }
+  function outfitState() {
+    var x = load(OUTFIT_KEY);
+    if (x && typeof x === 'object' && !Array.isArray(x)) return x;
+    var initial = {};
+    outfitDays().forEach(function (o) { if (o.initialChecked) initial[o.date] = true; });
+    return initial;
+  }
+  function outfitCount(state) {
+    return outfitDays().filter(function (o) { return !!state[o.date]; }).length;
+  }
+  function outfitRefreshTrigger() {
+    var count = outfitCount(outfitState()) + '/' + outfitDays().length;
+    Array.prototype.forEach.call(document.querySelectorAll('.outfit-trigger-count'), function (n) {
+      n.textContent = count;
+    });
+  }
+  function outfitOpen() {
+    if (!outfitDays().length) return;
+    outfitRender();
+    openSheet('outfit-sheet');
+  }
+  function outfitRender() {
+    var body = document.getElementById('outfit-body');
+    if (!body) return;
+    var y = body.scrollTop, state = outfitState();
+    body.textContent = '';
+    var total = outfitDays().length, done = outfitCount(state);
+    var summary = el('div', { class: 'outfit-summary' }, [
+      el('strong', { text: LANG === 'en' ? 'Daily outfit plan' : LANG === 'ja' ? '日別コーディネート' : '날짜별 코디 일정' }),
+      el('span', { text: done + '/' + total })
+    ]);
+    body.appendChild(summary);
+    body.appendChild(el('p', { class: 'outfit-tip', text:
+      LANG === 'en' ? 'Tick a day after wearing it. Changes are saved on this device.' :
+      LANG === 'ja' ? '着用済みの日にチェックしてください。この端末に保存されます。' :
+      '입은 날을 체크할 수 있어. 기록은 이 기기에 저장돼.' }));
+    outfitDays().forEach(function (o) {
+      var day = plan.days.filter(function (d) { return d.date === o.date; })[0];
+      var checked = !!state[o.date];
+      var active = plan.days[current] && plan.days[current].date === o.date;
+      var row = el('label', { class: 'outfit-row' +
+        (checked ? ' is-done' : '') + (active ? ' is-current' : '') });
+      var check = el('input', { type: 'checkbox',
+        'aria-label': (day ? day.label : o.date) + ' ' + o.occasion + ' ' + (LANG === 'en' ? 'worn' : '착용 완료') });
+      check.checked = checked;
+      check.addEventListener('change', function () {
+        var update = outfitState();
+        if (check.checked) update[o.date] = true;
+        else update[o.date] = false;
+        try {
+          localStorage.setItem(OUTFIT_KEY, JSON.stringify(update));
+        } catch (e) {
+          alert('코디 체크 기록을 저장하지 못했어. 브라우저 저장 공간을 확인해 줘.');
+          check.checked = !check.checked;
+          return;
+        }
+        outfitRender();
+        outfitRefreshTrigger();
+      });
+      row.appendChild(check);
+      var content = el('span', { class: 'outfit-content' });
+      var head = el('span', { class: 'outfit-row-head' }, [
+        el('b', { text: (day ? day.label : o.date.slice(5)) + ' · ' + o.occasion })
+      ]);
+      if (o.important) head.appendChild(el('em', { text: '‼️' }));
+      if (active) head.appendChild(el('small', { text: LANG === 'en' ? 'This day' : LANG === 'ja' ? '表示中' : '현재 일정' }));
+      content.appendChild(head);
+      content.appendChild(el('span', { class: 'outfit-pieces', text: (o.pieces || []).join(' + ') }));
+      row.appendChild(content);
+      body.appendChild(row);
+    });
+    body.scrollTop = y;
   }
 
   function motionOn() { return document.documentElement.classList.contains('motion'); }
@@ -1273,6 +1362,7 @@
       el('div', { class: 'eyebrow', text: day.full }), el('h2', { text: day.title })
     ]);
     var heroRow = el('div', { class: 'day-hero-row' }, [heroText]);
+    var heroActions = el('div', { class: 'day-hero-actions' });
     if (packingGroups().length) {
       var counts = packingCounts(packingState());
       var button = el('button', { type: 'button', class: 'packing-trigger',
@@ -1283,8 +1373,20 @@
       button.appendChild(el('span', { class: 'packing-trigger-count',
         text: counts.done + '/' + counts.total }));
       button.addEventListener('click', packingOpen);
-      heroRow.appendChild(button);
+      heroActions.appendChild(button);
     }
+    if (outfitDays().length) {
+      var outfitButton = el('button', { type: 'button', class: 'packing-trigger outfit-trigger',
+        'aria-label': '날짜별 코디 보기' });
+      outfitButton.appendChild(el('span', { class: 'packing-trigger-icon', 'aria-hidden': 'true',
+        html: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6a3 3 0 0 1 6 0c0 1.5-1.2 2-2.3 2.7-.5.3-.7.7-.7 1.3v1"/><path d="M12 11 3 17v2h18v-2l-9-6Z"/></svg>' }));
+      outfitButton.appendChild(el('span', { class: 'packing-trigger-label', text: '코디' }));
+      outfitButton.appendChild(el('span', { class: 'outfit-trigger-count',
+        text: outfitCount(outfitState()) + '/' + outfitDays().length }));
+      outfitButton.addEventListener('click', outfitOpen);
+      heroActions.appendChild(outfitButton);
+    }
+    if (heroActions.childNodes.length) heroRow.appendChild(heroActions);
     var hero = el('div', { class: 'day-hero rv' }, [heroRow]);
     if (day.point) hero.appendChild(el('span', { class: 'point', text: day.point }));
     main.appendChild(hero);
@@ -1699,7 +1801,7 @@
     var y0 = null, x0 = 0, dy = 0, lock = null, t0 = 0;
     var reset = function () { panel.style.transition = ''; scrim.style.transition = ''; panel.style.transform = ''; scrim.style.opacity = ''; };
     panel.addEventListener('touchstart', function (e) {
-      var sc = e.target.closest('#wx-body, #packing-body');
+      var sc = e.target.closest('#wx-body, #packing-body, #outfit-body');
       if (e.touches.length !== 1 || (sc && sc.scrollTop > 0)) { y0 = null; return; }
       y0 = e.touches[0].clientY; x0 = e.touches[0].clientX; dy = 0; lock = null; t0 = Date.now();
     }, { passive: true });
