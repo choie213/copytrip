@@ -1,4 +1,4 @@
-// 오프라인에서도 쓸 수 있도록 마지막으로 받은 화면과 데이터를 보관하고, 항상 보관본으로 응답함.
+// 오프라인에서도 쓸 수 있도록 마지막으로 받은 화면과 데이터를 보관함. 일정 JSON은 온라인 최신본을 우선함.
 // 새 버전은 STAGED 에 따로 받아 두었다가 화면을 새로 열 때(내비게이션) 한꺼번에 ACTIVE 로 옮겨 반영함.
 // 여행 폴더마다 이 파일을 그 폴더 범위로 따로 등록하므로, 범위 주소의 폴더 이름이 슬러그
 const ROOT = new URL('./', self.location).href;
@@ -100,6 +100,22 @@ self.addEventListener('message', (event) => {
   if (event.data === 'check') event.waitUntil(stage().then((r) => port.postMessage(r), () => port.postMessage({ offline: true })));
 });
 
+// 일정 파일은 접속할 때마다 온라인 최신본을 우선 사용한다. 이전 화면 캐시가 일정 변경을 가리지 않도록 함.
+// 네트워크가 끊기면 기존 ACTIVE 보관본으로 복구한다.
+async function freshPlan(request) {
+  const key = DATA + 'plan.json';
+  const active = await caches.open(ACTIVE);
+  try {
+    const res = await fetch(request, { cache: 'no-store' });
+    if (res.ok) {
+      await active.put(key, res.clone());
+      await (await caches.open(STAGED)).delete(key);
+      return res;
+    }
+  } catch (e) {}
+  return (await active.match(key)) || fetch(request);
+}
+
 async function fromActive(request, key) {
   const active = await caches.open(ACTIVE);
   const hit = await active.match(key);
@@ -135,6 +151,7 @@ self.addEventListener('fetch', (event) => {
     return;
   }
   const key = keyOf(req.url);
+  if (key === DATA + 'plan.json') { event.respondWith(freshPlan(req)); return; }
   if (key === WEATHER) { event.respondWith(freshWeather(req)); return; }
   if (TRACKED.indexOf(key) === -1) return;
   event.respondWith(fromActive(req, key));
