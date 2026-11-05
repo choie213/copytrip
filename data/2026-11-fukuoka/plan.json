@@ -101,7 +101,6 @@
           "weather": "fukuoka",
           "sun": [
             8,
-            9,
             4,
             149,
             150,
@@ -136,7 +135,6 @@
           ],
           "rain": [
             8,
-            9,
             4,
             149,
             150,
@@ -792,7 +790,7 @@
       "time": "10:30",
       "estimated": true,
       "plannedMinutes": 25,
-      "note": "【11/4 미방문 → 11/5 아침 식사 후】09:19 기상에 따라 아침 식사 후 10:30~10:55 예상 방문. 11/5 다른 쇼핑 일정은 사용자 요청에 따라 그대로 유지하므로 09:45~10:55 쇼핑 항목과 시간이 겹침. 현장 상황에 맞춰 방문 순서 조정 필요. 상점 10:00~20:00 (점포별 상이)."
+      "note": "【11/5 아침 생략】09:19 기상 후 아침 식사 없이 10:30~10:55 텐진 지하상가 예상 방문. 기존 다른 쇼핑 일정 시간은 유지되어 일부 겹침. 상점 10:00~20:00 (점포별 상이)."
     },
     {
       "name": "이나바쵸 잇케이",
@@ -1480,6 +1478,24 @@
             "checked": "2026-10-31"
           },
           "id": "loc-db38f02c"
+        },
+        {
+          "name": "모스버거 하카타 나카스 점",
+          "q": "モスバーガー 博多中洲店",
+          "address": "福岡県福岡市博多区中洲3-7-18",
+          "hours": "09:00~익일 02:00",
+          "hoursSource": "https://tabelog.com/fukuoka/A4001/A400102/40023792/",
+          "hoursChecked": "2026-10-31",
+          "sourceStatus": "existing",
+          "warning": "기존 등록 후보: 타베로그 3.00·구글 4.00 기준 동시 충족 여부 미확인.",
+          "priceMenuExample": {
+            "price": 500,
+            "name": "모스버거 단품",
+            "sourceUrl": "https://www.mos.jp/menu/category/?c_id=1&page=2",
+            "checked": "2026-10-31"
+          },
+          "id": "loc-8b9c63ab",
+          "note": "11월 5일 아침 식사 생략으로 기존 아침 후보를 점심 후보에도 추가. 나카스 소재로 텐진 쇼핑 구역에서 이동이 필요하므로 방문 시 동선·시간 재조정 필요."
         }
       ],
       "multi": false,
@@ -1813,6 +1829,48 @@
             "checked": "2026-10-31"
           },
           "id": "loc-db38f02c"
+        },
+        {
+          "name": "이치란 본사 총본점",
+          "q": "一蘭 本社総本店 福岡 中洲5-3-2",
+          "note": "11월 4일 먹지 못한 이치란 본사 총본점을 11월 5일 저녁 선택지로 추가. 숙소 인근 나카스에 있어 저녁 후 복귀 동선에 적합.",
+          "address": "福岡県福岡市博多区中洲5-3-2",
+          "hours": "24시간 (임시 변경 가능)",
+          "hoursSource": "https://ichiran.com/shop/kyushu/sohonten/",
+          "hoursChecked": "2026-10-31",
+          "tb": [
+            3.45,
+            1371
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400102/40000130/",
+          "ratingChecked": "2026-10-31",
+          "g": [
+            4.2,
+            13337
+          ],
+          "gSource": "https://wanderlog.com/ja/place/details/422225/%E4%B8%80%E8%98%AD-%E6%9C%AC%E7%A4%BE%E7%B7%8F%E6%9C%AC%E5%BA%97",
+          "gChecked": "2026-10-31",
+          "gSourceType": "secondary",
+          "sourceStatus": "existing",
+          "priceBudget": {
+            "day": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "listing"
+            },
+            "night": {
+              "range": [
+                1000,
+                1999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400102/40000130/",
+            "checked": "2026-10-31"
+          },
+          "id": "loc-5cbb9fee"
         }
       ],
       "multi": false,
