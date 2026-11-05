@@ -4774,6 +4774,23 @@
             "checked": "2026-10-31"
           },
           "id": "loc-5cbb9fee"
+        },
+        {
+          "id": "tonkatsu-wakaba-hakata-chikushiguchi-20261106",
+          "name": "돈카츠 와카바 하카타역 치쿠시구치점",
+          "q": "とんかつわか葉 博多駅筑紫口店",
+          "address": "福岡県福岡市博多区博多駅東2-3-28 博多駅東蒲池ビル1F",
+          "hours": "금요일 17:00~21:30 (라스트오더 미확인)",
+          "hoursSource": "https://tabelog.com/fukuoka/A4001/A400101/40064799/",
+          "hoursChecked": "2026-11-06",
+          "tb": [
+            3.49,
+            194
+          ],
+          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40064799/",
+          "ratingChecked": "2026-11-06",
+          "note": "11/6 저녁 후보로 추가. 하카타역 도보권. 20:50 저녁 예정이므로 열차 지연·대기 시 21:30 영업종료 주의. 본점/타 지점과 구별.",
+          "sourceStatus": "new"
         }
       ],
       "estimated": true,
