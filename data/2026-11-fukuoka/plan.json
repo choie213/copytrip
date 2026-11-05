@@ -103,6 +103,7 @@
             8,
             177,
             4,
+            178,
             149,
             150,
             96,
@@ -138,6 +139,7 @@
             8,
             177,
             4,
+            178,
             149,
             150,
             96,
@@ -8050,6 +8052,31 @@
       "plannedMinutes": 30,
       "note": "【2026-11-05 10:42 JST 사용자 보고】모스버거 하카타 나카스점에 도착하여 주문한 음식을 기다리는 중. 10:42는 도착 보고 시각이며 실제 입장 시각은 미확인. 식사 시작·종료 시각 모두 미확인. 아직 식사 완료 아님. 기존 10:32 식사 중 표기는 사용자 정정에 따라 취소.",
       "completed": false
+    },
+    {
+      "name": "BAKE CHEESE TART 텐진 지하상가점 · 간식",
+      "type": "place",
+      "q": "BAKE CHEESE TART 天神地下街店 東4番街225号",
+      "address": "〒810-0001 福岡県福岡市中央区天神2 東4番街 第225号 天神地下街4番街",
+      "time": "11:45",
+      "estimated": true,
+      "plannedMinutes": 10,
+      "note": "【11/5 간식 추가】텐진 지하상가 구경 중 들러 치즈 타르트 간식 구매. 11:45~11:55는 지하상가 방문(11:25~11:50)과 일부 겹치는 내부 방문으로, 별도 이동 없이 지하상가 동선에서 이용. 실제 방문·구매는 아직 미확인. 영업 09:00~21:00, 대표 치즈 타르트 250엔(공식 쇼핑몰 안내 기준).",
+      "hours": "09:00~21:00",
+      "hoursSource": "https://www.tenchika.com/shop/bake/",
+      "hoursChecked": "2026-11-05",
+      "officialUrl": "https://www.tenchika.com/shop/bake/",
+      "priceBudget": {
+        "day": {
+          "range": [
+            250,
+            250
+          ],
+          "basis": "menu"
+        },
+        "sourceUrl": "https://www.tenchika.com/shop/bake/",
+        "checked": "2026-11-05"
+      }
     }
   ],
   "packingChecklist": {
