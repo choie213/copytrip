@@ -1483,24 +1483,6 @@
             "checked": "2026-10-31"
           },
           "id": "loc-db38f02c"
-        },
-        {
-          "name": "모스버거 하카타 나카스 점",
-          "q": "モスバーガー 博多中洲店",
-          "address": "福岡県福岡市博多区中洲3-7-18",
-          "hours": "09:00~익일 02:00",
-          "hoursSource": "https://tabelog.com/fukuoka/A4001/A400102/40023792/",
-          "hoursChecked": "2026-10-31",
-          "sourceStatus": "existing",
-          "warning": "기존 등록 후보: 타베로그 3.00·구글 4.00 기준 동시 충족 여부 미확인.",
-          "priceMenuExample": {
-            "price": 500,
-            "name": "모스버거 단품",
-            "sourceUrl": "https://www.mos.jp/menu/category/?c_id=1&page=2",
-            "checked": "2026-10-31"
-          },
-          "id": "loc-8b9c63ab",
-          "note": "11월 5일 아침 식사 생략으로 기존 아침 후보를 점심 후보에도 추가. 나카스 소재로 텐진 쇼핑 구역에서 이동이 필요하므로 방문 시 동선·시간 재조정 필요."
         }
       ],
       "multi": false,
