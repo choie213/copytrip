@@ -789,10 +789,10 @@
       "hours": "상점 10:00~20:00 / 음식점 ~21:00 (점포별 상이)",
       "hoursSource": "https://www.tenchika.com/service/",
       "hoursChecked": "2026-10-31",
-      "time": "10:00",
+      "time": "10:30",
       "estimated": true,
       "plannedMinutes": 25,
-      "note": "【11/4 미방문 → 11/5 아침 식사 후 이동】10:00~10:25 예상 방문. 기존 11/5 다른 일정의 시간은 변경하지 않음. 09:45 무인양품·10:05 유니클로 등과 시간대가 겹치므로 현장에서 선택·조정 필요. 상점 일반 영업시간 10:00~20:00 (점포별 상이)."
+      "note": "【11/4 미방문 → 11/5 아침 식사 후】09:19 기상에 따라 아침 식사 후 10:30~10:55 예상 방문. 11/5 다른 쇼핑 일정은 사용자 요청에 따라 그대로 유지하므로 09:45~10:55 쇼핑 항목과 시간이 겹침. 현장 상황에 맞춰 방문 순서 조정 필요. 상점 10:00~20:00 (점포별 상이)."
     },
     {
       "name": "이나바쵸 잇케이",
@@ -824,14 +824,16 @@
       "plannedMinutes": 40
     },
     {
-      "name": "더 밀레니얼스 후쿠오카",
+      "name": "더 밀레니얼스 후쿠오카 · 기상",
       "q": "The Millennials Fukuoka 中洲5丁目2-18",
-      "note": "출발",
+      "note": "【사용자 보고 · 2026-11-05 09:19 일본 현지시간】현재 일어났음. 실제 숙소 출발 시각은 미확인. 이 카드는 기존 08:40 숙소 출발 예정에서 실제 기상 기록으로 변경됨.",
       "address": "福岡県福岡市博多区中洲5-2-18",
       "hoursSource": "https://www.livelyhotels.com/ja/themillennialsfukuoka/access/",
-      "time": "08:40",
-      "estimated": true,
-      "plannedMinutes": 20
+      "time": "09:19",
+      "estimated": false,
+      "plannedMinutes": 20,
+      "completed": true,
+      "completedAt": "2026-11-05T09:19+09:00"
     },
     {
       "type": "choice",
@@ -1142,10 +1144,10 @@
         }
       ],
       "multi": false,
-      "time": "09:00",
-      "note": "아침 3곳 중 하나",
+      "time": "09:40",
+      "note": "아침 3곳 중 하나 / 11/5 09:19 기상 보고에 맞춰 아침 식사를 09:40~10:10으로 예상 조정. 숙소 조식은 09:30에 종료될 수 있으므로 다른 후보도 확인.",
       "estimated": true,
-      "plannedMinutes": 35
+      "plannedMinutes": 30
     },
     {
       "name": "북오프 수퍼 바자르 미나 덴진 점",
