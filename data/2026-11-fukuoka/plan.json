@@ -4753,12 +4753,14 @@
       "plannedMinutes": 50
     },
     {
-      "type": "choice",
-      "title": "아침",
+      "type": "place",
       "time": "06:40",
-      "note": "07:45 HEARTS 버스투어 집합 우선! 06:40 전후 나카스 24시간 이치란 또는 07:00 하카타역 다코메카·탄야 중 빠른 테이크아웃을 선택. 줄이 길면 편의점 간편식(평점 비교 대상 아님)으로 대체.",
-      "multi": false,
-      "options": [
+      "note": "2026-11-06 사용자 요청: 11월 7일 버스투어 전 아침을 편의점으로 확정. 삼각김밥·삶은 달걀·생수 등 간단히 구매/식사. 오늘 밤 미리 사두거나 아침에 숙소 주변 편의점 이용. 07:45 HEARTS 버스스테이션 집합 준수. 이전 식당 후보는 다른 일정과 별개이며 본 아침 카드에서는 제외.",
+      "estimated": true,
+      "plannedMinutes": 15,
+      "name": "편의점 아침 · 삼각김밥·삶은 달걀·생수",
+      "q": "コンビニ 中洲川端 福岡",
+      "previousOptions": [
         {
           "id": "loc-millennials-breakfast",
           "name": "더 밀레니얼스 후쿠오카 · 1층 조식",
@@ -4897,9 +4899,7 @@
           },
           "id": "loc-5cbb9fee"
         }
-      ],
-      "estimated": true,
-      "plannedMinutes": 20
+      ]
     },
     {
       "type": "choice",
