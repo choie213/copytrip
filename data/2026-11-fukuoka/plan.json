@@ -278,6 +278,8 @@
           "title": "유후인 버스투어",
           "weather": "yufuin",
           "sun": [
+            204,
+            205,
             48,
             128,
             121,
@@ -301,6 +303,8 @@
             171
           ],
           "rain": [
+            204,
+            205,
             48,
             128,
             121,
@@ -2606,10 +2610,10 @@
     {
       "name": "더 밀레니얼스 후쿠오카",
       "q": "The Millennials Fukuoka 中洲5丁目2-18",
-      "note": "출발, 유투어 버스투어/네이버 결제 메모",
+      "note": "출발, 유투어 버스투어/네이버 결제 메모\n기상·샤워 일정 반영으로 숙소 출발 예상 06:50으로 조정. 실제 출발 시각 미확인.",
       "address": "福岡県福岡市博多区中洲5-2-18",
       "hoursSource": "https://www.livelyhotels.com/ja/themillennialsfukuoka/access/",
-      "time": "06:25",
+      "time": "06:50",
       "estimated": true,
       "plannedMinutes": 20
     },
@@ -4372,7 +4376,7 @@
         "label": "대중교통 길찾기"
       },
       "officialUrl": "https://subway.city.fukuoka.lg.jp/schedule/",
-      "time": "07:10",
+      "time": "07:12",
       "estimated": true,
       "plannedMinutes": 15
     },
@@ -4754,7 +4758,7 @@
     },
     {
       "type": "place",
-      "time": "06:40",
+      "time": "06:55",
       "note": "2026-11-06 사용자 요청: 11월 7일 버스투어 전 아침을 편의점으로 확정. 삼각김밥·삶은 달걀·생수 등 간단히 구매/식사. 오늘 밤 미리 사두거나 아침에 숙소 주변 편의점 이용. 07:45 HEARTS 버스스테이션 집합 준수. 이전 식당 후보는 다른 일정과 별개이며 본 아침 카드에서는 제외.",
       "estimated": true,
       "plannedMinutes": 15,
@@ -8199,6 +8203,20 @@
       "plannedMinutes": 45,
       "q": "The Millennials Fukuoka 中洲5-2-18",
       "note": "21:55경 2층 라운지에 도착했다고 직접 보고. 라운지 도착 확인, 식사 시작/완료 여부는 미확인. 외부 음식·주류 반입은 숙소 안내 준수."
+    },
+    {
+      "name": "기상 완료",
+      "time": "06:22",
+      "estimated": false,
+      "completed": true,
+      "note": "2026-11-07 06:22경 사용자 기상 보고. 실제 기상 순간의 정확한 시각은 미확인."
+    },
+    {
+      "name": "샤워·출발 준비",
+      "time": "06:25",
+      "estimated": true,
+      "plannedMinutes": 20,
+      "note": "사용자가 지금부터 씻겠다고 보고. 완료 여부 미확인. 07:45 HEARTS 집합을 위해 준비를 서두를 것."
     }
   ],
   "packingChecklist": {
