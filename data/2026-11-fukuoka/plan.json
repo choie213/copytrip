@@ -217,9 +217,10 @@
             46,
             102,
             120,
-            127,
             47,
-            136,
+            200,
+            201,
+            202,
             170
           ],
           "rain": [
@@ -256,9 +257,10 @@
             46,
             102,
             120,
-            127,
             47,
-            136,
+            200,
+            201,
+            202,
             170
           ]
         }
@@ -2591,12 +2593,13 @@
     {
       "name": "더 밀레니얼스 후쿠오카",
       "q": "The Millennials Fukuoka 中洲5丁目2-18",
-      "note": "2026년 11월 6일 19:46경 더 밀레니얼스 후쿠오카 숙소 도착을 사용자 직접 보고. 당일 기타큐슈 일정 종료. 온천 및 추가 야간 일정 생략.",
+      "note": "11월 6일 19:46 더 밀레니얼스 후쿠오카 숙소 도착 완료(사용자 직접 보고).",
       "address": "福岡県福岡市博多区中洲5-2-18",
       "hoursSource": "https://www.livelyhotels.com/ja/themillennialsfukuoka/access/",
       "time": "19:46",
       "estimated": false,
-      "plannedMinutes": 10
+      "plannedMinutes": 10,
+      "completed": true
     },
     {
       "name": "더 밀레니얼스 후쿠오카",
@@ -8160,6 +8163,30 @@
         "mode": "transit",
         "label": "길찾기"
       }
+    },
+    {
+      "name": "편의점 장보기 · 저녁 및 음료",
+      "time": "20:40",
+      "estimated": true,
+      "plannedMinutes": 20,
+      "q": "コンビニ 福岡市博多区中洲5丁目",
+      "note": "숙소 근처 편의점에서 저녁 식사와 마실 음료 구매. 이용할 편의점 지점은 현장에서 선택, 아직 구매 완료 전."
+    },
+    {
+      "name": "숙소에서 샤워 및 환복",
+      "time": "21:05",
+      "estimated": true,
+      "plannedMinutes": 25,
+      "q": "The Millennials Fukuoka 中洲5丁目2-18",
+      "note": "편의점 장보기를 마치고 숙소에서 먼저 씻고 옷을 갈아입기. 아직 완료 전."
+    },
+    {
+      "name": "숙소 2층 라운지 · 편의점 음식으로 저녁",
+      "time": "21:35",
+      "estimated": true,
+      "plannedMinutes": 45,
+      "q": "The Millennials Fukuoka 中洲5丁目2-18",
+      "note": "샤워를 끝낸 다음 숙소 2층 라운지에서 편의점에서 산 음식과 음료를 먹고 쉬기. 외부 음식 반입 및 음주 가능 구역은 호텔 현장 안내에 따르기. 아직 식사 완료 전."
     }
   ],
   "packingChecklist": {
