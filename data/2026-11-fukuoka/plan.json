@@ -6282,57 +6282,8 @@
       "type": "choice",
       "title": "술집",
       "multi": false,
-      "note": "숙소 복귀 후 시간·체력이 남는 경우만 선택. 늦거나 피곤하면 생략.\n2026-11-06 실제 방문 여부 미확인. 기존 술집 후보 보존.",
+      "note": "숙소 근처 술집 후보 5곳. 기존 교자노 캇짱·쿠시카츠 다나카 유지, 나머지 4곳 제외하고 근처 후보 3곳 추가. 실제 방문 여부 미확인. 숙소 도착 후 선택 가능.",
       "options": [
-        {
-          "name": "나카스 포장마차 거리",
-          "q": "나카스 포장마차 거리 후쿠오카",
-          "sourceStatus": "existing",
-          "note": "기존 등록한 거리 자체이며 특정 점포가 아님. 점포별 영업·가격·라스트오더 확인 필요.",
-          "warning": "개별 점포를 특정하지 않아 평점·1인 예산 확인 불가. 방문 후 가게 직접 선택.",
-          "closeTime": "점포별 상이",
-          "loFood": "점포별 상이",
-          "loDrink": "점포별 상이",
-          "id": "loc-28e203cd"
-        },
-        {
-          "name": "토킨",
-          "q": "焼鳥 と金 今泉1-9-19",
-          "tb": [
-            3.32,
-            146
-          ],
-          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400103/40051584/",
-          "address": "福岡県福岡市中央区今泉1-9-19 bulala 102",
-          "hours": "매일 17:00~익일 05:00",
-          "hoursSource": "https://www.yakitori-tokin.com/",
-          "ratingChecked": "2026-10-31",
-          "hoursChecked": "2026-10-31",
-          "sourceStatus": "existing",
-          "g": [
-            4.5,
-            null
-          ],
-          "gSource": "https://www.google.com/maps/search/?api=1&query=%E7%84%BC%E9%B3%A5%20%E3%81%A8%E9%87%91%20%E4%BB%8A%E6%B3%891-9-19",
-          "gChecked": "2026-10-31",
-          "gSourceType": "secondary",
-          "priceBudget": {
-            "night": {
-              "range": [
-                3000,
-                3999
-              ],
-              "basis": "listing"
-            },
-            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400103/40051584/",
-            "checked": "2026-10-31"
-          },
-          "closeTime": "익일 05:00",
-          "loFood": "익일 03:45",
-          "loDrink": "익일 04:15",
-          "note": "텐진 지역 술집. 나카스 숙소 기준 도보 우회 약 15~25분 가능.",
-          "id": "loc-0310542a"
-        },
         {
           "name": "교자노 캇짱 나카스점",
           "q": "餃子のかっちゃん 中洲店 福岡県福岡市博多区中洲5-1-2 MA中洲川端1,2F",
@@ -6410,8 +6361,36 @@
           "id": "loc-dd4d12ba"
         },
         {
+          "name": "야키토리 토리탄 하카타 나카스점",
+          "q": "焼き鳥 鳥たん 博多中洲店",
+          "address": "福岡県福岡市博多区中洲5-1-7 スプーンビル 2F",
+          "tb": [
+            3.38,
+            null
+          ],
+          "tbUrl": "https://tabelog.com/en/fukuoka/A4001/A400102/40067699/",
+          "hours": "17:00~23:30",
+          "closeTime": "23:30",
+          "loFood": "22:30",
+          "loDrink": "23:00",
+          "hoursSource": "https://tabelog.com/en/fukuoka/A4001/A400102/40067699/",
+          "note": "숙소 도보 약 2~3분(추정). 야키토리·우설. 금요일 기준 운영시간은 방문 전 재확인.",
+          "sourceStatus": "new",
+          "priceBudget": {
+            "night": {
+              "range": [
+                3000,
+                3999
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://tabelog.com/en/fukuoka/A4001/A400102/40067699/",
+            "checked": "2026-11-06"
+          }
+        },
+        {
           "name": "핫슈 나카스점",
-          "q": "九州素材 和食 個室 八州 中洲店 福岡県福岡市博多区中洲5-2-3 松居壱番館2F",
+          "q": "八州 中洲店",
           "address": "福岡県福岡市博多区中洲5-2-3 松居壱番館2F",
           "tb": [
             3.13,
@@ -6422,68 +6401,30 @@
             4.4,
             null
           ],
-          "gSource": "https://www.google.com/maps/search/?api=1&query=%E4%B9%9D%E5%B7%9E%E7%B4%A0%E6%9D%90%20%E5%92%8C%E9%A3%9F%20%E5%80%8B%E5%AE%A4%20%E5%85%AB%E5%B7%9E%20%E4%B8%AD%E6%B4%B2%E5%BA%97%20%E7%A6%8F%E5%B2%A1%E7%9C%8C%E7%A6%8F%E5%B2%A1%E5%B8%82%E5%8D%9A%E5%A4%9A%E5%8C%BA%E4%B8%AD%E6%B4%B25-2-3%20%E6%9D%BE%E5%B1%85%E5%A3%B1%E7%95%AA%E9%A4%A82F",
-          "gChecked": "2026-10-31",
-          "gSourceType": "secondary",
-          "ratingChecked": "2026-10-31",
-          "sourceStatus": "new",
-          "priceBudget": {
-            "night": {
-              "range": [
-                3000,
-                3999
-              ],
-              "basis": "listing"
-            },
-            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400102/40068818/",
-            "checked": "2026-10-31"
-          },
-          "hours": "수 17:00~익일01:00 / 금 16:00~익일01:00 (방문일 11/6 기준 확인)",
-          "hoursSource": "https://tabelog.com/fukuoka/A4001/A400102/40068818/",
-          "hoursChecked": "2026-10-31",
+          "gSource": "https://www.google.com/maps/search/?api=1&query=八州 中洲店",
+          "hours": "금 16:00~익일01:00",
           "closeTime": "익일 01:00",
           "loFood": "익일 00:00",
           "loDrink": "익일 00:30",
-          "note": "숙소 근처 규슈 요리. 자리 차지 등 추가 비용 가능.",
-          "id": "loc-b9a13113"
+          "note": "숙소 도보 약 1~2분(추정). 규슈 향토요리. 기존 후보에서 재검토해 숙소 근접 후보로 다시 등록.",
+          "sourceStatus": "new"
         },
         {
-          "name": "신지다이 후쿠오카 텐진점",
-          "q": "新時代 福岡天神店 福岡県福岡市中央区今泉1-19-18",
-          "address": "福岡県福岡市中央区今泉1-19-18",
+          "name": "하카타 옷쇼이",
+          "q": "博多おっしょい 上川端町10-3",
+          "address": "福岡県福岡市博多区上川端町10-3",
           "tb": [
-            3.38,
+            3.45,
             null
           ],
-          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400103/40061776/",
-          "g": [
-            4.4,
-            null
-          ],
-          "gSource": "https://www.google.com/maps/search/?api=1&query=%E6%96%B0%E6%99%82%E4%BB%A3%20%E7%A6%8F%E5%B2%A1%E5%A4%A9%E7%A5%9E%E5%BA%97%20%E7%A6%8F%E5%B2%A1%E7%9C%8C%E7%A6%8F%E5%B2%A1%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E4%BB%8A%E6%B3%891-19-18",
-          "gChecked": "2026-10-31",
-          "gSourceType": "secondary",
-          "ratingChecked": "2026-10-31",
-          "sourceStatus": "new",
-          "priceBudget": {
-            "night": {
-              "range": [
-                2000,
-                2999
-              ],
-              "basis": "listing"
-            },
-            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400103/40061776/",
-            "checked": "2026-10-31"
-          },
-          "hours": "11:30~익일 05:00 (공식 매장 안내) (방문일 11/6 기준 확인)",
-          "hoursSource": "https://shinjidai-fukuokatenjin.owst.jp/",
-          "hoursChecked": "2026-10-31",
-          "closeTime": "익일 05:00",
-          "loFood": "익일 04:00",
-          "loDrink": "익일 04:30",
-          "note": "이마이즈미·덴진 쇼핑 동선. 닭껍질 꼬치. 좌석 차지 ¥385 및 22시 이후 심야 10% 별도. 나카스에서 덴진 방면으로 이동이 필요한 우회 후보.",
-          "id": "loc-81ddf764"
+          "tbUrl": "https://tabelog.com/en/fukuoka/A4001/A400102/R1474/rstLst/RC0106/",
+          "hours": "금 16:00~익일03:00",
+          "closeTime": "익일 03:00",
+          "loFood": "미확인",
+          "loDrink": "미확인",
+          "hoursSource": "https://www.hakataosshoi.com/english.html",
+          "note": "숙소 도보 약 4~6분(추정). 꼬치·해산물·교자. 공식 사이트 기준 금요일 영업시간, 라스트오더 미확인.",
+          "sourceStatus": "new"
         }
       ],
       "time": "22:35",
