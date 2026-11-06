@@ -820,12 +820,23 @@
     if (!s.hoursSource || !/^https:\/\//.test(s.hoursSource)) return null;
     return s.hoursSource;
   }
+  // 일정 메모는 최종 안내만 표시한다. 이전에 덧붙인 날짜별 변경 이력은 숨긴다.
+  // 변경 이력은 Git 커밋에 남고, 카드에는 현재 유효한 메모만 노출된다.
+  function currentNote(value) {
+    if (typeof value !== 'string') return '';
+    var note = value;
+    var history = /(?:\s*\/\s*|\n)\s*【(?:20\d\d[-./]\d{1,2}[-./]\d{1,2}|\d{1,2}\/\d{1,2}|\d{1,2}:\d{2}\s+JST|사용자|현장|실제|재조정|정정|갱신|변경|동선 최적화|동선 인접 신규)[^】]*】/;
+    var cutoff = history.exec(note);
+    if (cutoff) note = note.slice(0, cutoff.index);
+    if (/^\s*【(?:20\d\d[-./]\d{1,2}[-./]\d{1,2}|\d{1,2}\/\d{1,2}|사용자|현장|실제|재조정|정정|갱신|변경|동선 최적화)/.test(note)) return '';
+    return note.replace(/\s*\/\s*$/, '').trim();
+  }
   function body(s) {
     var t = el('div', { class: 'title', text: s.name });
     if (s.rec) t.appendChild(el('span', { class: 'rec', text: T('추천') }));
     var b = el('div', null, [t, pills(s)]);
     var hours = openingText(s); if (hours) b.appendChild(hours);
-    if (s.note) b.appendChild(lines('note', s.note));
+    var description = currentNote(s.note); if (description) b.appendChild(lines('note', description));
     if (s.address && !s.tip) b.appendChild(el('div', { class: 'place-address-inline', text: s.address }));
     if (s.tip) b.appendChild(lines('tip', s.tip));
     if (s.warning) b.appendChild(el('div', { class: 'choice-warning general-warning', text: s.warning }));
@@ -856,7 +867,7 @@
     if (o.hours) rows.push({ text: (LANG === 'ja' ? '営業時間 ' : LANG === 'en' ? 'Hours ' : '영업시간 ') + o.hours });
     if (o.loFood) rows.push({ text: (LANG === 'ja' ? '料理 L.O. ' : LANG === 'en' ? 'Food L.O. ' : '음식 라스트오더 ') + o.loFood });
     if (o.loDrink) rows.push({ text: (LANG === 'ja' ? 'ドリンク L.O. ' : LANG === 'en' ? 'Drink L.O. ' : '음료 라스트오더 ') + o.loDrink });
-    if (o.note) rows.push({ text: o.note });
+    var optionNote = currentNote(o.note); if (optionNote) rows.push({ text: optionNote });
     if (o.tip) rows.push({ text: o.tip });
     if (o.detailNote) rows.push({ text: o.detailNote });
     if (o.warning) rows.push({ text: o.warning, warning: true });
@@ -923,7 +934,7 @@
   function choiceCard(c, key) {
     var chosen = selectedFor(c, key);
     var card = el('div', { class: 'card' }, [head(c), el('div', { class: 'choice-tag' }, [c.title, el('span', { class: 'choice-hint', text: T(c.multi ? '여러 곳 체크 가능' : '하나 고르기') })])]);
-    if (c.note) card.appendChild(lines('note', c.note));
+    var mealNote = currentNote(c.note); if (mealNote) card.appendChild(lines('note', mealNote));
     var box = el('div', { class: 'opts' + (c.multi ? ' multi' : '') + (chosen.length ? ' picked' : '') });
     c.options.forEach(function (o, oi) {
       var on = chosen.indexOf(o.id) !== -1;
@@ -1014,7 +1025,7 @@
 
   function moveCard(m) {
     var card = el('div', { class: 'card' }, [head(m), el('div', { class: 'title', text: m.name })]);
-    if (m.note) card.appendChild(lines('note', m.note));
+    var routeNote = currentNote(m.note); if (routeNote) card.appendChild(lines('note', routeNote));
     if (m.route) {
       var r = m.route;
       var a = acts(r.label || m.name, dirLink(r.fromName, r.from, r.toName, r.to, r.mode), dirEmbed(r.from, r.to, r.mode));
