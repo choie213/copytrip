@@ -2960,7 +2960,7 @@
       "note": "숙소 귀환",
       "address": "福岡県福岡市博多区中洲5-2-18",
       "hoursSource": "https://www.livelyhotels.com/ja/themillennialsfukuoka/access/",
-      "time": "22:30",
+      "time": "23:10",
       "estimated": true,
       "plannedMinutes": 20
     },
@@ -4334,7 +4334,7 @@
         "label": "대중교통 길찾기"
       },
       "officialUrl": "https://subway.city.fukuoka.lg.jp/schedule/",
-      "time": "21:00",
+      "time": "22:00",
       "estimated": true,
       "plannedMinutes": 12
     },
@@ -4850,176 +4850,9 @@
       "type": "choice",
       "title": "저녁",
       "time": "18:15",
-      "note": "유후인 투어 하카타역 17:50 도착 후 바로 선택. 하카타역 주변 우선, 긴 대기 발생 시 숙소 이동으로 변경.",
+      "note": "2026-11-07 기존 키와미야 두 지점만 유지하고 나머지 후보 삭제, 하카타역·나카스 숙소 근처 야키니쿠 신규 후보 추가. 무한리필 선택 시 90분 이상 걸릴 수 있어 필름 구매 및 술집 시간 조정 필요. 선택 후보는 예약 확정이 아님.",
       "multi": false,
       "options": [
-        {
-          "name": "하카타 잇소 하카타역 히가시 본점",
-          "q": "博多一双 博多駅東本店",
-          "address": "福岡県福岡市博多区博多駅東3-1-6",
-          "tb": [
-            3.72,
-            null
-          ],
-          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40032701/",
-          "g": [
-            4,
-            null
-          ],
-          "gSource": "https://restaurantguru.jp/pork-Fukuoka-m28",
-          "hours": "11:00~24:00 (재료 소진·부정기 휴무 확인)",
-          "hoursSource": "https://tabelog.com/fukuoka/A4001/A400101/40032701/",
-          "note": "JR 하카타역 도보 약 6분. 대기 가능, 진한 돈코츠 라멘.",
-          "sourceStatus": "new",
-          "ratingChecked": "2026-10-31",
-          "gChecked": "2026-10-31",
-          "gSourceType": "secondary",
-          "priceBudget": {
-            "day": {
-              "range": [
-                0,
-                999
-              ],
-              "basis": "listing"
-            },
-            "night": {
-              "range": [
-                0,
-                999
-              ],
-              "basis": "listing"
-            },
-            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40032701/",
-            "checked": "2026-10-31"
-          },
-          "id": "loc-afd604e0"
-        },
-        {
-          "name": "기스이마루 하카타 1번가(해산물 아침 정식)",
-          "q": "博多の海鮮料理 喜水丸 博多一番街店",
-          "address": "福岡県福岡市博多区博多駅中央街1-1 JR博多駅B1F",
-          "tb": [
-            3.49,
-            null
-          ],
-          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40058853/",
-          "g": [
-            4.2,
-            null
-          ],
-          "gSource": "https://restaurantguru.jp/fried-fish-Fukuoka-m237",
-          "hours": "07:30부터 / 아침 07:30~10:00",
-          "hoursSource": "https://hakata-1bangai.com/morningmenu/",
-          "note": "하카타역 지하, 명란·생선 정식. 07:30 전 도착이면 이용 불가.",
-          "sourceStatus": "new",
-          "ratingChecked": "2026-10-31",
-          "gChecked": "2026-10-31",
-          "gSourceType": "secondary",
-          "priceBudget": {
-            "day": {
-              "range": [
-                1000,
-                1999
-              ],
-              "basis": "listing"
-            },
-            "night": {
-              "range": [
-                2000,
-                2999
-              ],
-              "basis": "listing"
-            },
-            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40058853/",
-            "checked": "2026-10-31"
-          },
-          "id": "loc-3036b69a"
-        },
-        {
-          "name": "모츠나베 오오야마 키테 하카타 점",
-          "q": "博多もつ鍋おおやま KITTE博多9F",
-          "note": "원본 메모: 점심으로 고른 곳을 고려해서 정하기 / 다른 끼니의 기존 검증 음식점을 이 식사 선택지에 새로 연결.",
-          "address": "福岡県福岡市博多区博多駅中央街9-1 KITTE博多 9F",
-          "hours": "11:00~23:00 (L.O.22:30)",
-          "hoursSource": "https://www.motu-ooyama.com/shop/kittehakata/",
-          "hoursChecked": "2026-10-31",
-          "tb": [
-            3.43,
-            null
-          ],
-          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40042647/",
-          "detailNote": "15시 이후 별도 테이블 요금 400엔(매장 공식 안내).",
-          "ratingChecked": "2026-10-31",
-          "g": [
-            4.4,
-            null
-          ],
-          "gSource": "https://wanderlog.com/ja/list/geoCategory/474517",
-          "gChecked": "2026-10-31",
-          "gSourceType": "secondary",
-          "sourceStatus": "new",
-          "priceBudget": {
-            "day": {
-              "range": [
-                1000,
-                1999
-              ],
-              "basis": "listing"
-            },
-            "night": {
-              "range": [
-                2000,
-                2999
-              ],
-              "basis": "listing"
-            },
-            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40042647/",
-            "checked": "2026-10-31"
-          },
-          "id": "loc-0657ba10"
-        },
-        {
-          "name": "하카타 라멘 신신 키테 하카타 점",
-          "q": "博多らーめん ShinShin KITTE博多店",
-          "tb": [
-            3.49,
-            null
-          ],
-          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40042485/",
-          "address": "福岡県福岡市博多区博多駅中央街9-1 KITTE博多 B1F",
-          "hours": "11:00~23:00 (L.O.22:30)",
-          "hoursSource": "https://tabelog.com/fukuoka/A4001/A400101/40042485/",
-          "ratingChecked": "2026-10-31",
-          "hoursChecked": "2026-10-31",
-          "g": [
-            4.1,
-            null
-          ],
-          "gSource": "https://wanderlog.com/ja/list/geoCategory/1508112/kyushu%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%81%AE%E6%9C%80%E9%AB%98%E3%81%AE%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%B3%E3%82%B9%E3%83%9D%E3%83%83%E3%83%88",
-          "gChecked": "2026-10-31",
-          "gSourceType": "secondary",
-          "sourceStatus": "new",
-          "note": "다른 끼니의 기존 검증 음식점을 이 식사 선택지에 새로 연결.",
-          "priceBudget": {
-            "day": {
-              "range": [
-                0,
-                999
-              ],
-              "basis": "listing"
-            },
-            "night": {
-              "range": [
-                0,
-                999
-              ],
-              "basis": "listing"
-            },
-            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40042485/",
-            "checked": "2026-10-31"
-          },
-          "id": "loc-ae41d8ec"
-        },
         {
           "name": "키와미야 하카타 점",
           "q": "極味や 博多店 博多バスターミナル1F",
@@ -5103,10 +4936,89 @@
             "checked": "2026-10-31"
           },
           "id": "loc-a15d37fe"
+        },
+        {
+          "name": "규타 혼진 요도바시 하카타점 · 야키니쿠 무한리필",
+          "q": "焼肉の牛太本陣 ヨドバシ博多店",
+          "address": "福岡県福岡市博多区博多駅中央街6-12 ヨドバシ博多4F",
+          "hours": "토요일 11:00~23:00 (L.O. 21:30 안내, 방문 전 재확인)",
+          "hoursSource": "https://gourmet.aumo.jp/areas/1481/categories/c128/scenes/11",
+          "note": "요도바시 4층 식사 후 같은 건물에서 35mm 필름 구매 가능. 무한리필 코스·가격은 매장 확인, 1인 이용 가능 여부 미확인.",
+          "sourceStatus": "new",
+          "g": [
+            3.8,
+            28
+          ],
+          "gSourceType": "business-search",
+          "gChecked": "2026-11-07",
+          "id": "loc-nov07-gyuta-yodobashi"
+        },
+        {
+          "name": "규카쿠 무한리필 전문점 후쿠오카 나카스점",
+          "q": "牛角食べ放題専門店 福岡中洲店",
+          "address": "福岡県福岡市博多区中洲3-7-24 ゲイツビル1F",
+          "hours": "토요일 11:30~24:00 (공식 2026-11-07 안내)",
+          "hoursSource": "https://map.reins.co.jp/gyukaku/detail/922924007",
+          "note": "나카스카와바타역 인접, 숙소 근처. 90분 무한리필 3,058엔부터(공식 코스 페이지), 1인부터 안내. 요도바시 방문은 하카타역 쪽으로 별도 이동.",
+          "sourceStatus": "new",
+          "g": [
+            4.3,
+            726
+          ],
+          "gSourceType": "business-search",
+          "gChecked": "2026-11-07",
+          "priceBudget": {
+            "night": {
+              "range": [
+                3058,
+                6578
+              ],
+              "basis": "official-menu"
+            },
+            "sourceUrl": "https://gyuukakunakasu2.owst.jp/menu",
+            "checked": "2026-11-07"
+          },
+          "id": "loc-nov07-gyukaku-nakasu"
+        },
+        {
+          "name": "원카루비 프리미엄 나카스점 · 야키니쿠 무한리필",
+          "q": "ワンカルビ PREMIUM 中洲",
+          "address": "福岡県福岡市博多区中洲4-6-12 prato NAKASU 4F",
+          "hours": "토요일 16:00~23:00 (방문 전 확인)",
+          "note": "나카스의 테이블 주문식 무한리필. 코스 가격·1인 이용 가능 여부 확인 필요.",
+          "sourceStatus": "new",
+          "g": [
+            4.3,
+            17
+          ],
+          "gSourceType": "business-search",
+          "gChecked": "2026-11-07",
+          "id": "loc-nov07-onekarubi-nakasu"
+        },
+        {
+          "name": "야키니쿠 코코카라 나카스점 · 단품",
+          "q": "焼肉ここから 中洲店",
+          "address": "福岡県福岡市博多区中洲2-6-9",
+          "hours": "토요일 18:00~익일05:00 (음식 L.O. 익일04:00)",
+          "hoursSource": "https://yakinikukokokara-nakasu.owst.jp/",
+          "note": "무한리필이 아닌 단품 야키니쿠 후보. 나카스 숙소 복귀 동선에 적합. 평균 저녁 4,001~5,000엔 안내.",
+          "sourceStatus": "new",
+          "priceBudget": {
+            "night": {
+              "range": [
+                4001,
+                5000
+              ],
+              "basis": "listing"
+            },
+            "sourceUrl": "https://yakinikukokokara-nakasu.owst.jp/",
+            "checked": "2026-11-07"
+          },
+          "id": "loc-nov07-kokokara-nakasu"
         }
       ],
       "estimated": true,
-      "plannedMinutes": 65
+      "plannedMinutes": 100
     },
     {
       "type": "choice",
@@ -6616,7 +6528,7 @@
           "id": "loc-fa049627"
         }
       ],
-      "time": "19:40",
+      "time": "21:00",
       "estimated": true,
       "plannedMinutes": 60
     },
@@ -7526,7 +7438,7 @@
       ],
       "multi": false,
       "note": "유후인 버스투어 종료 후 하카타에서 저녁·술집, 나카스 복귀 때 한 곳 선택하거나 생략. 버스투어 당일 유후인 현지 온천은 다시 넣지 않음.",
-      "time": "21:35",
+      "time": "22:30",
       "estimated": true,
       "plannedMinutes": 45
     },
@@ -7717,7 +7629,7 @@
     {
       "type": "sleep",
       "name": "취침",
-      "time": "23:05",
+      "time": "23:40",
       "wakeTime": "06:45",
       "estimated": true
     },
@@ -8327,10 +8239,10 @@
       "q": "ヨドバシカメラ マルチメディア博多",
       "address": "福岡県福岡市博多区博多駅中央街6-12",
       "hours": "09:30~22:00 (방문 전 확인)",
-      "time": "19:25",
+      "time": "20:10",
       "estimated": true,
       "plannedMinutes": 30,
-      "note": "2026-11-07 사용자 요청: 하카타 복귀 후 저녁 식사 직후 방문. 35mm 컬러 네거티브 필름 구매 목적. 재고·가격 미확인. 저녁 식사 실제 종료 시각에 따라 방문 시각 조정, 22:00 영업 종료 전 방문."
+      "note": "2026-11-07 사용자 요청: 하카타 복귀 후 저녁 식사 직후 방문. 35mm 컬러 네거티브 필름 구매 목적. 재고·가격 미확인. 저녁 식사 실제 종료 시각에 따라 방문 시각 조정, 22:00 영업 종료 전 방문. | 무한리필 식사 선택을 고려해 예상 방문을 20:10으로 조정. 나카스에서 식사하면 하카타역으로 다시 이동 필요."
     }
   ],
   "packingChecklist": {
