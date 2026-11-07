@@ -301,9 +301,9 @@
             224,
             61,
             225,
+            122,
             129,
             137,
-            122,
             160,
             62,
             171
@@ -332,9 +332,9 @@
             224,
             61,
             225,
+            122,
             129,
             137,
-            122,
             160,
             62,
             171
@@ -4322,9 +4322,9 @@
       "plannedMinutes": 15
     },
     {
-      "name": "지하철 공항선 · 하카타→나카스카와바타 (투어 복귀)",
+      "name": "지하철 공항선 · 하카타→나카스카와바타 (카메라샵 후 저녁 이동)",
       "type": "move",
-      "note": "노선: 후쿠오카시 지하철 공항선(K 노선, K11 → K09)\n승차: 하카타역(博多駅, K11)\n방향: 메이노하마(姪浜)·카라쓰(唐津) 방면\n하차: 나카스카와바타역(中洲川端, K09) · 환승 없음\n숙소까지 도보 이동.",
+      "note": "요도바시카메라 하카타점에서 나카스 저녁 후보(원카루비 등)로 이동할 경우 이용.\n후쿠오카시 지하철 공항선: 하카타역 K11 → 나카스카와바타역 K09, 메이노하마·카라쓰 방향, 환승 없음.\n키와미야 등 하카타역 근처 저녁 후보 선택 시 이동 시간·순서 재조정 필요.",
       "route": {
         "fromName": "博多駅",
         "from": "",
@@ -4334,7 +4334,7 @@
         "label": "대중교통 길찾기"
       },
       "officialUrl": "https://subway.city.fukuoka.lg.jp/schedule/",
-      "time": "22:00",
+      "time": "18:50",
       "estimated": true,
       "plannedMinutes": 12
     },
@@ -6297,178 +6297,71 @@
       "type": "choice",
       "title": "술집",
       "multi": false,
-      "note": "유후인 투어 하카타 도착 → 저녁 → 하카타역 주변 술집 한 곳 → 나카스 숙소. 역 치쿠시구치(동쪽)와 하카타구치(서쪽)의 출구 차이 확인.",
+      "note": "2026-11-07 나카스 숙소(더 밀레니얼스 후쿠오카 中洲5-2-18) 근처의 저렴한 술집과 포장 안주로 전면 교체. 하카타역 주변 기존 선택지 전부 제거. 포장 1순위 츠구미(5꼬치 ¥1,100), 가성비/포장 만마루, 분위기 사케이치반. 이미 저녁 식사 후 가볍게 들르거나 포장해서 숙소 이동. 2층 라운지 외부 음식 반입 가능 여부는 호텔 확인.",
       "options": [
         {
-          "name": "야키토리 타다시 하카타 본점",
-          "q": "薫香炭火焼き 炊き餃子 焼鳥ただし 博多本店",
-          "address": "福岡県福岡市博多区博多駅東2-3-1",
-          "tb": [
-            3.37,
-            null
-          ],
-          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40002372/",
-          "g": [
-            4,
-            null
-          ],
-          "gSource": "https://ru.restaurantguru.com/%E7%84%BC%E9%B3%A5%E3%81%9F%E3%81%A0%E3%81%97-%E5%8D%9A%E5%A4%9A%E6%9C%AC%E5%BA%97-Fukuoka",
-          "gChecked": "2026-10-31",
-          "gSourceType": "secondary",
-          "ratingChecked": "2026-10-31",
-          "sourceStatus": "existing",
-          "hours": "월·일·공휴일 17:00~24:00 / 화~토 17:00~익일01:00 (토요일 기준 영업 종료 익일 01:00)",
-          "hoursSource": "https://tabelog.com/fukuoka/A4001/A400101/40002372/",
-          "hoursChecked": "2026-10-31",
+          "name": "츠구미 나카스카와바타점 · 야키토리 포장",
+          "q": "鶫 中洲川端店",
+          "address": "福岡県福岡市博多区中洲5-2-3 B1F",
+          "hours": "토요일 17:00~23:00 (음식·음료 L.O.22:30)",
+          "hoursSource": "https://tsugumi-nakasu.owst.jp/",
+          "closeTime": "23:00",
+          "loFood": "22:30",
+          "loDrink": "22:30",
+          "note": "숙소 더 밀레니얼스 후쿠오카(中洲5-2-18)와 같은 나카스 5초메. 공식 포장 안내: 5꼬치 ¥1,100 / 8꼬치 ¥1,700 / 야키토리 도시락 ¥1,100. 포장 주문은 미리 연락 권장, 접수 가능 여부 현장 재확인. 포장 후 숙소 2층 라운지 이용 가능 여부 프런트 확인.",
+          "takeout": true,
+          "takeoutSource": "https://r.gnavi.co.jp/ff40ey7a0000/menu7/",
           "priceBudget": {
             "night": {
               "range": [
-                3000,
-                3999
+                1100,
+                2100
               ],
-              "basis": "listing"
+              "basis": "takeout-menu"
             },
-            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40002372/",
-            "checked": "2026-10-31"
+            "sourceUrl": "https://r.gnavi.co.jp/ff40ey7a0000/menu7/",
+            "checked": "2026-11-07"
           },
-          "closeTime": "익일 01:00",
+          "sourceStatus": "new",
+          "id": "loc-20261107-tsugumi-nakasu"
+        },
+        {
+          "name": "오사카 만마루 나카스카와바타점 · 가성비/포장",
+          "q": "屋台居酒屋 大阪 満マル 中洲川端店",
+          "address": "福岡県福岡市博多区上川端町10-5",
+          "hours": "11:30~익일01:00 (부정기 휴무)",
+          "hoursSource": "https://osaka-manmaru.com/shoplist/manmaru_nakasukawabata/",
+          "closeTime": "익일01:00",
           "loFood": "미확인",
           "loDrink": "미확인",
-          "note": "하카타역 동쪽 야키토리 전문점.",
-          "id": "loc-36018dc1"
-        },
-        {
-          "name": "하카타 후도 본점",
-          "q": "はかた風土 本店 福岡県福岡市博多区博多駅東2-4-17 第六岡部ビル1F",
-          "address": "福岡県福岡市博多区博多駅東2-4-17 第六岡部ビル1F",
-          "tb": [
-            3.43,
-            null
-          ],
-          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40001994/",
-          "g": [
-            4.5,
-            null
-          ],
-          "gSource": "https://www.google.com/maps/search/?api=1&query=%E3%81%AF%E3%81%8B%E3%81%9F%E9%A2%A8%E5%9C%9F%20%E6%9C%AC%E5%BA%97%20%E7%A6%8F%E5%B2%A1%E7%9C%8C%E7%A6%8F%E5%B2%A1%E5%B8%82%E5%8D%9A%E5%A4%9A%E5%8C%BA%E5%8D%9A%E5%A4%9A%E9%A7%85%E6%9D%B12-4-17%20%E7%AC%AC%E5%85%AD%E5%B2%A1%E9%83%A8%E3%83%93%E3%83%AB1F",
-          "gChecked": "2026-10-31",
-          "gSourceType": "secondary",
-          "ratingChecked": "2026-10-31",
-          "sourceStatus": "new",
+          "note": "나카스카와바타역 도보 약 3분. 쿠시카츠·타코야키·저렴한 술집 안주. 공식 홈페이지 테이크아웃 지원 명시. 예산 1인 약 ¥1,000~2,000(실제 주문에 따라 다름). 공식 사이트 결제수단 현금 안내.",
+          "takeout": true,
+          "takeoutSource": "https://osaka-manmaru.com/shoplist/manmaru_nakasukawabata/",
           "priceBudget": {
             "night": {
               "range": [
-                3000,
-                3999
+                1000,
+                2000
               ],
               "basis": "listing"
             },
-            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40001994/",
-            "checked": "2026-10-31"
+            "sourceUrl": "https://osaka-manmaru.com/shoplist/manmaru_nakasukawabata/",
+            "checked": "2026-11-07"
           },
-          "hours": "금·토 17:00~익일01:00 / 일·월 17:00~24:00 (방문일 11/7 기준 확인)",
-          "hoursSource": "https://hakata-food.owst.jp/",
-          "hoursChecked": "2026-10-31",
-          "closeTime": "토 익일 01:00 / 일·월 24:00",
-          "loFood": "토 익일 00:00 / 일·월 23:00",
-          "loDrink": "토 익일 00:30 / 일·월 23:30",
-          "note": "하카타역 치쿠시구치 도보 5분. 야키토리·모츠나베. 흡연점포로 20세 미만 입점 불가.",
-          "id": "loc-8a4e7282"
+          "sourceStatus": "new",
+          "id": "loc-20261107-manmaru-nakasu"
         },
         {
-          "name": "하카타 오엔타이 토리사카바",
-          "q": "博多応援隊 とり酒場 博多店 福岡県福岡市博多区博多駅東2-4-7",
-          "address": "福岡県福岡市博多区博多駅東2-4-7",
-          "tb": [
-            3.14,
-            null
-          ],
-          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40068996/",
-          "g": [
-            4.5,
-            null
-          ],
-          "gSource": "https://www.google.com/maps/search/?api=1&query=%E5%8D%9A%E5%A4%9A%E5%BF%9C%E6%8F%B4%E9%9A%8A%20%E3%81%A8%E3%82%8A%E9%85%92%E5%A0%B4%20%E5%8D%9A%E5%A4%9A%E5%BA%97%20%E7%A6%8F%E5%B2%A1%E7%9C%8C%E7%A6%8F%E5%B2%A1%E5%B8%82%E5%8D%9A%E5%A4%9A%E5%8C%BA%E5%8D%9A%E5%A4%9A%E9%A7%85%E6%9D%B12-4-7",
-          "gChecked": "2026-10-31",
-          "gSourceType": "secondary",
-          "ratingChecked": "2026-10-31",
-          "sourceStatus": "new",
-          "priceBudget": {
-            "night": {
-              "range": [
-                3000,
-                3999
-              ],
-              "basis": "listing"
-            },
-            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40068996/",
-            "checked": "2026-10-31"
-          },
-          "hours": "토 12:00~익일01:00 / 일 12:00~24:00 / 월 17:00~익일01:00 (방문일 11/7 기준 확인)",
-          "hoursSource": "https://tabelog.com/fukuoka/A4001/A400101/40068996/",
-          "hoursChecked": "2026-10-31",
-          "closeTime": "토 익일 01:00 / 일 24:00 / 월 익일 01:00",
-          "loFood": "토·월 익일 00:00 / 일 23:00",
-          "loDrink": "토·월 익일 00:30 / 일 23:30",
-          "note": "하카타역 동쪽. 야키토리·모츠나베. 오토시(자리 음식) ¥418 추가.",
-          "id": "loc-9a9b5ba9"
-        },
-        {
-          "name": "야키토리 이오리",
-          "q": "焼とり家 庵 福岡県福岡市博多区博多駅前4-15-17",
-          "address": "福岡県福岡市博多区博多駅前4-15-17",
-          "tb": [
-            3.42,
-            null
-          ],
-          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40030585/",
-          "g": [
-            5,
-            null
-          ],
-          "gSource": "https://www.google.com/maps/search/?api=1&query=%E7%84%BC%E3%81%A8%E3%82%8A%E5%AE%B6%20%E5%BA%B5%20%E7%A6%8F%E5%B2%A1%E7%9C%8C%E7%A6%8F%E5%B2%A1%E5%B8%82%E5%8D%9A%E5%A4%9A%E5%8C%BA%E5%8D%9A%E5%A4%9A%E9%A7%85%E5%89%8D4-15-17",
-          "gChecked": "2026-10-31",
-          "gSourceType": "secondary",
-          "ratingChecked": "2026-10-31",
-          "sourceStatus": "new",
-          "priceBudget": {
-            "night": {
-              "range": [
-                3000,
-                3999
-              ],
-              "basis": "listing"
-            },
-            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40030585/",
-            "checked": "2026-10-31"
-          },
-          "hours": "월~토 17:30~익일04:00 / 일 17:00~익일01:00 (방문일 11/7 기준 확인)",
-          "hoursSource": "https://iori-fukuoka.com/store_information/",
-          "hoursChecked": "2026-10-31",
-          "closeTime": "토·월 익일 04:00 / 일 익일 01:00",
-          "loFood": "토·월 익일 03:00 / 일 익일 00:00",
-          "loDrink": "토·월 익일 03:30 / 일 익일 00:30",
-          "note": "하카타역 하카타구치 도보 약 4분. 늦은 시간 야키토리. 공식 매장 페이지 음식·음료 L.O. 기준(서로 다른 안내가 있어 재확인).",
-          "id": "loc-5fb8ad44"
-        },
-        {
-          "name": "토리키조쿠 하카타 치쿠시구치점",
-          "q": "鳥貴族 博多筑紫口店 福岡県福岡市博多区博多駅東2-1-24 ギャラリーハカタB1F",
-          "address": "福岡県福岡市博多区博多駅東2-1-24 ギャラリーハカタB1F",
-          "tb": [
-            3.05,
-            null
-          ],
-          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40062081/",
-          "g": [
-            4.2,
-            null
-          ],
-          "gSource": "https://www.google.com/maps/search/?api=1&query=%E9%B3%A5%E8%B2%B4%E6%97%8F%20%E5%8D%9A%E5%A4%9A%E7%AD%91%E7%B4%AB%E5%8F%A3%E5%BA%97%20%E7%A6%8F%E5%B2%A1%E7%9C%8C%E7%A6%8F%E5%B2%A1%E5%B8%82%E5%8D%9A%E5%A4%9A%E5%8C%BA%E5%8D%9A%E5%A4%9A%E9%A7%85%E6%9D%B12-1-24%20%E3%82%AE%E3%83%A3%E3%83%A9%E3%83%AA%E3%83%BC%E3%83%8F%E3%82%AB%E3%82%BFB1F",
-          "gChecked": "2026-10-31",
-          "gSourceType": "secondary",
-          "ratingChecked": "2026-10-31",
-          "sourceStatus": "new",
+          "name": "사케이치반 · 현지식 저렴한 이자카야",
+          "q": "酒一番 中洲4-4-9",
+          "address": "福岡県福岡市博多区中洲4-4-9",
+          "hours": "16:30~23:00 (음식 L.O.22:15, 정보 출처 간 일부 차이)",
+          "hoursSource": "https://tabelog.com/fukuoka/A4001/A400102/40002107/",
+          "closeTime": "23:00",
+          "loFood": "22:15",
+          "loDrink": "미확인",
+          "note": "숙소 가까운 나카스 4초메 현지식 술집. 식사 평균 ¥2,000~2,999, 오토시 요금 없음(타베로그 안내), 현금만 결제 안내. 포장 여부 미확인. 오래된 가게 분위기.",
+          "takeout": false,
           "priceBudget": {
             "night": {
               "range": [
@@ -6477,60 +6370,56 @@
               ],
               "basis": "listing"
             },
-            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40062081/",
-            "checked": "2026-10-31"
+            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400102/40002107/",
+            "checked": "2026-11-07"
           },
-          "hours": "매일 16:00~익일 04:00 (방문일 11/7 기준 확인)",
-          "hoursSource": "https://map.torikizoku.co.jp/detail/724/",
-          "hoursChecked": "2026-10-31",
-          "closeTime": "익일 04:00",
-          "loFood": "미확인",
-          "loDrink": "미확인",
-          "note": "하카타역 치쿠시구치 약 2분. 균일가 꼬치 이자카야. 음식·음료 L.O. 미확인.",
-          "id": "loc-2789f6d2"
+          "sourceStatus": "new",
+          "id": "loc-20261107-sakeichiban"
         },
         {
-          "name": "친푼칸푼 하카타점",
-          "q": "ちんぷんかんぷん 博多店 福岡県福岡市博多区博多駅前4-38-10 ビエラ博多テラス",
-          "address": "福岡県福岡市博多区博多駅前4-38-10 ビエラ博多テラス",
-          "tb": [
-            3.05,
-            null
-          ],
-          "tbUrl": "https://tabelog.com/fukuoka/A4001/A400101/40074568/",
-          "g": [
-            4.5,
-            null
-          ],
-          "gSource": "https://www.google.com/maps/search/?api=1&query=%E3%81%A1%E3%82%93%E3%81%B7%E3%82%93%E3%81%8B%E3%82%93%E3%81%B7%E3%82%93%20%E5%8D%9A%E5%A4%9A%E5%BA%97%20%E7%A6%8F%E5%B2%A1%E7%9C%8C%E7%A6%8F%E5%B2%A1%E5%B8%82%E5%8D%9A%E5%A4%9A%E5%8C%BA%E5%8D%9A%E5%A4%9A%E9%A7%85%E5%89%8D4-38-10%20%E3%83%93%E3%82%A8%E3%83%A9%E5%8D%9A%E5%A4%9A%E3%83%86%E3%83%A9%E3%82%B9",
-          "gChecked": "2026-10-31",
-          "gSourceType": "secondary",
-          "ratingChecked": "2026-10-31",
-          "sourceStatus": "new",
+          "name": "하카타 옷쇼이 · 야키토리 포장",
+          "q": "博多おっしょい 上川端町10-3",
+          "address": "福岡県福岡市博多区上川端町10-3",
+          "hours": "토요일 14:00~익일03:00",
+          "hoursSource": "https://www.hakataosshoi.com/",
+          "closeTime": "익일03:00",
+          "loFood": "익일02:30 (상점가 안내)",
+          "loDrink": "익일02:30 (상점가 안내)",
+          "note": "나카스카와바타역 5번 출구 도보 약 3분. 공식 포장: 야키토리 6꼬치 ¥1,390 / 10꼬치 ¥2,390(웹 주문가). 닭모모구이·교자 등도 포장 가능. 포장 전화 또는 온라인 주문. 숙소 라운지 외부 음식 이용 규칙은 현장 확인.",
+          "takeout": true,
+          "takeoutSource": "https://www.hakataosshoi.com/takeout.html",
           "priceBudget": {
             "night": {
               "range": [
-                4000,
-                4999
+                1390,
+                2390
               ],
-              "basis": "listing"
+              "basis": "takeout-menu"
             },
-            "sourceUrl": "https://tabelog.com/fukuoka/A4001/A400101/40074568/",
-            "checked": "2026-10-31"
+            "sourceUrl": "https://osshoi.base.shop/",
+            "checked": "2026-11-07"
           },
-          "hours": "매일 15:00~24:00 (방문일 11/7 기준 확인)",
-          "hoursSource": "https://tabelog.com/fukuoka/A4001/A400101/40074568/",
-          "hoursChecked": "2026-10-31",
-          "closeTime": "24:00",
-          "loFood": "23:00",
-          "loDrink": "23:30",
-          "note": "하카타역 하카타구치 남서쪽. 숯불구이·이자카야.",
-          "id": "loc-fa049627"
+          "sourceStatus": "new",
+          "id": "loc-20261107-hakataosshoi"
+        },
+        {
+          "name": "토리사카바 나카스점 · 저렴한 하이볼",
+          "q": "とり酒場 中洲店 上川端町4-229",
+          "address": "福岡県福岡市博多区上川端町4-229",
+          "hours": "토요일 12:00~22:30 (L.O. 공식 사이트 확인)",
+          "hoursSource": "https://torisakabanakasu.owst.jp/",
+          "closeTime": "22:30",
+          "loFood": "미확인",
+          "loDrink": "미확인",
+          "note": "나카스카와바타역 도보 약 4분. 공식 홍보 가격 하이볼 ¥188, 생맥주 ¥299 (매장 프로모션 변경 가능). 포장 여부는 미확인. 밤늦게 이용 시 영업 종료 22:30 주의.",
+          "takeout": false,
+          "sourceStatus": "new",
+          "id": "loc-20261107-torisakaba-nakasu"
         }
       ],
       "time": "21:15",
       "estimated": true,
-      "plannedMinutes": 60
+      "plannedMinutes": 45
     },
     {
       "type": "choice",
@@ -7437,7 +7326,7 @@
         }
       ],
       "multi": false,
-      "note": "유후인 버스투어 종료 후 하카타에서 저녁·술집, 나카스 복귀 때 한 곳 선택하거나 생략. 버스투어 당일 유후인 현지 온천은 다시 넣지 않음.",
+      "note": "나카스 숙소 근처에서 저녁·술집(또는 포장) 이후 선택적으로 사우나·대욕장. 과로 시 생략 가능. 늦은 시간에는 입장 마감 시간 확인.",
       "time": "22:30",
       "estimated": true,
       "plannedMinutes": 45
